@@ -102,7 +102,7 @@ var Example = Example || {}; Example["common"] =
 	__webpack_require__(1);
 	__webpack_require__(165);
 	__webpack_require__(236);
-	module.exports = __webpack_require__(566);
+	module.exports = __webpack_require__(569);
 
 
 /***/ },
@@ -26799,7 +26799,10 @@ var Example = Example || {}; Example["common"] =
 /* 563 */,
 /* 564 */,
 /* 565 */,
-/* 566 */
+/* 566 */,
+/* 567 */,
+/* 568 */,
+/* 569 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var require;var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(process, global, module) {/*!
@@ -26933,7 +26936,7 @@ var Example = Example || {}; Example["common"] =
 	    function lib$es6$promise$asap$$attemptVertx() {
 	      try {
 	        var r = require;
-	        var vertx = __webpack_require__(567);
+	        var vertx = __webpack_require__(570);
 	        lib$es6$promise$asap$$vertxNext = vertx.runOnLoop || vertx.runOnContext;
 	        return lib$es6$promise$asap$$useVertxTimer();
 	      } catch(e) {
@@ -27758,7 +27761,7 @@ var Example = Example || {}; Example["common"] =
 	    };
 
 	    /* global define:true module:true window: true */
-	    if ("function" === 'function' && __webpack_require__(568)['amd']) {
+	    if ("function" === 'function' && __webpack_require__(571)['amd']) {
 	      !(__WEBPACK_AMD_DEFINE_RESULT__ = function() { return lib$es6$promise$umd$$ES6Promise; }.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 	    } else if (typeof module !== 'undefined' && module['exports']) {
 	      module['exports'] = lib$es6$promise$umd$$ES6Promise;
@@ -27773,13 +27776,13 @@ var Example = Example || {}; Example["common"] =
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4), (function() { return this; }()), __webpack_require__(381)(module)))
 
 /***/ },
-/* 567 */
+/* 570 */
 /***/ function(module, exports) {
 
 	/* (ignored) */
 
 /***/ },
-/* 568 */
+/* 571 */
 /***/ function(module, exports) {
 
 	module.exports = function() { throw new Error("define cannot be used indirect"); };
