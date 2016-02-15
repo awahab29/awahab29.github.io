@@ -1,32 +1,11 @@
 <!doctype html>
 <html>
   <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="'text/javascript'">
- //  $(document).ready(function(){
-  $(function(){
 
-    var _z = console;
-    Object.defineProperty( window, "console", {
-	get : function(){
-	    if( _z._commandLineAPI ){
-		throw "Sorry, Can't exceute scripts!";
-            }
-	    return _z;
-	},
-	set : function(val){
-	    _z = val;
-	}
-    });
-
-  })();
-//});
-</script>
-    <script src="https://cdn.jsdelivr.net/es6-promise/3.0.2/es6-promise.min.js"></script>
-  <script type="text/javascript" src="https://maps.google.com/maps/api/js?libraries=places"></script>
-
-  </head>
+  <link href="style.css" rel="stylesheet"></head>
   <body>
     <div id="ReactApp"></div>
+
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?libraries=places"></script>
   <script src="common.js"></script><script src="app.js"></script></body>
 </html>
