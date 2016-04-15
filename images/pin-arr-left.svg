@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="31px" viewBox="0 0 24 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>pin-arr-left</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dep-pin-right-01" transform="translate(-44.000000, 0.000000)" fill="#C52032">
+            <g id="pin-arr-left" transform="translate(44.000000, 0.000000)">
+                <g id="XMLID_38_">
+                    <g id="Layer_8_2_">
+                        <path d="M23.5,11.8 C23.5,5.4 18.3,0.3 12,0.3 C5.7,0.3 0.5,5.5 0.5,11.8 C0.5,15.9 2.6,19.4 5.8,21.5 L12.1,30.7 L18.4,21.5 C21.4,19.5 23.5,15.9 23.5,11.8 L23.5,11.8 Z M12,2.2 C17.3,2.2 21.7,6.5 21.7,11.9 C21.7,17.3 17.4,21.6 12,21.6 C6.6,21.6 2.3,17.3 2.3,11.9 C2.3,6.5 6.7,2.2 12,2.2 L12,2.2 Z" id="XMLID_39_"></path>
+                    </g>
+                </g>
+                <g id="XMLID_36_" transform="translate(7.000000, 6.000000)">
+                    <path d="M0.2,10.8 C-0.1,10.5 0.8,9.2 2.2,7.7 C2.3,7.6 2.4,7.5 2.5,7.4 L1.9,1.2 L2.3,0.8 L4.1,5.9 C5.2,4.9 6.4,3.8 7.2,3.2 L6.6,1 L6.7,0.9 L7.7,2.9 C7.8,2.8 7.9,2.8 8,2.8 C8,2.8 8,2.9 7.9,3.1 L9.9,4 L9.8,4.1 L7.6,3.6 C7,4.4 6,5.6 5,6.8 L10.1,8.4 L9.7,8.8 L3.5,8.4 C3.4,8.5 3.3,8.6 3.2,8.7 C1.8,10.1 0.4,11 0.2,10.8 L0.2,10.8 Z" id="XMLID_37_"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

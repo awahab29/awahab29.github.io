@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>Time Picker</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M12,0 C5.37223529,0 0,5.37223529 0,12 C0,18.6277647 5.37223529,24 12,24 C18.6277647,24 24,18.6269804 24,12 C24,5.37301961 18.6277647,0 12,0 Z M12,22.4767451 C6.21376471,22.4767451 1.5232549,17.7862745 1.5232549,12 C1.5232549,6.21376471 6.21376471,1.5232549 12,1.5232549 C17.7862745,1.5232549 22.4767451,6.21376471 22.4767451,12 C22.4767451,17.7862745 17.7862745,22.4767451 12,22.4767451 Z M12.75,4.5472549 L11.2732549,4.5472549 L11.2965098,12.774 L16.476,17.2034902 L17.3902353,15.9142353 L12.75,12.0232157 L12.75,4.5472549 L12.75,4.5472549 Z" id="Time-Picker" fill="#898989"></path>
+    </g>
+</svg>

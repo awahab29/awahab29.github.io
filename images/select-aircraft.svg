@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="55px" height="54px" viewBox="0 0 55 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>Select Aircraft</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M57.262873,23.119082 C57.262873,20.7014777 55.3294865,18.586074 53.1199018,18.586074 L37.9290076,18.586074 L24.1191037,-5.58996893 L18.5951422,-5.58996893 L25.5000941,18.586074 L10.3091999,18.586074 L6.16622869,12.5420632 L2.02325753,12.5420632 L4.7852383,23.119082 L2.02325753,33.6961008 L6.16622869,33.6961008 L10.3091999,27.65209 L25.5000941,27.65209 L18.5951422,51.8281329 L24.1191037,51.8281329 L37.9290076,27.65209 L53.1199018,27.65209 C55.3294865,27.65209 57.262873,25.5366863 57.262873,23.119082 L57.262873,23.119082 Z" id="Select-Aircraft" fill="#FFFFFF" transform="translate(29.643065, 23.119082) rotate(-27.000000) translate(-29.643065, -23.119082) "></path>
+    </g>
+</svg>
