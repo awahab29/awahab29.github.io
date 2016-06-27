@@ -1,6 +1,6 @@
 {
-  "app.css": "style.css",
-  "app.js": "scripts/app.5bef58d974f773bf7a5c.js",
+  "app.css": "style.22c15b09cf77644edcd4.css",
+  "app.js": "scripts/app.22c15b09cf77644edcd4.js",
   "images\\ACaslonPro-Regular.otf": "images/ACaslonPro-Regular.otf",
   "images\\CL350.png": "images/CL350.png",
   "images\\CL605.png": "images/CL605.png",
@@ -36,10 +36,8 @@
   "images\\Roboto-Thin.woff2": "images/Roboto-Thin.woff2",
   "images\\account.svg": "images/account.svg",
   "images\\ad.svg": "images/ad.svg",
-  "images\\add-itineraries-right.svg": "images/add-itineraries-right.svg",
   "images\\add-new-leg-resp.svg": "images/add-new-leg-resp.svg",
   "images\\add-new-leg.svg": "images/add-new-leg.svg",
-  "images\\add-passenger-right.svg": "images/add-passenger-right.svg",
   "images\\add-passenger.svg": "images/add-passenger.svg",
   "images\\ae.svg": "images/ae.svg",
   "images\\aeroplanes-layout.png": "images/aeroplanes-layout.png",
@@ -59,6 +57,7 @@
   "images\\arrow-down.png": "images/arrow-down.png",
   "images\\arrow-left-disable.svg": "images/arrow-left-disable.svg",
   "images\\arrow-left.svg": "images/arrow-left.svg",
+  "images\\arrow-right.svg": "images/arrow-right.svg",
   "images\\arrow-up.png": "images/arrow-up.png",
   "images\\as.svg": "images/as.svg",
   "images\\at.svg": "images/at.svg",
@@ -325,7 +324,6 @@
   "images\\sc.svg": "images/sc.svg",
   "images\\sd.svg": "images/sd.svg",
   "images\\se.svg": "images/se.svg",
-  "images\\see-weather.svg": "images/see-weather.svg",
   "images\\select-aircraft-hover.svg": "images/select-aircraft-hover.svg",
   "images\\select-aircraft.svg": "images/select-aircraft.svg",
   "images\\sg.svg": "images/sg.svg",
@@ -378,7 +376,6 @@
   "images\\vi.svg": "images/vi.svg",
   "images\\vistajet-logo-white.svg": "images/vistajet-logo-white.svg",
   "images\\vistajet-logo.svg": "images/vistajet-logo.svg",
-  "images\\vistajet_logo_splash.png": "images/vistajet_logo_splash.png",
   "images\\vj-info.svg": "images/vj-info.svg",
   "images\\vj-news.svg": "images/vj-news.svg",
   "images\\vn.svg": "images/vn.svg",
@@ -392,5 +389,5 @@
   "images\\zm.svg": "images/zm.svg",
   "images\\zw.svg": "images/zw.svg",
   "libphonenumber.js": "libphonenumber.js",
-  "vendor.js": "scripts/vendor.5bef58d974f773bf7a5c.js"
+  "vendor.js": "scripts/vendor.22c15b09cf77644edcd4.js"
 }
