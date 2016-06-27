@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" height="512" width="512">
+<svg xmlns="http://www.w3.org/2000/svg" height="480" width="640">
   <desc>
     The United States of America flag, produced by Daniel McRae
   </desc>
   <defs>
     <clipPath id="a">
-      <path fill-opacity=".67" d="M0 0h512v512H0z"/>
+      <path fill-opacity=".67" d="M-123.43 0h682.67v512h-682.67z"/>
     </clipPath>
   </defs>
-  <g fill-rule="evenodd" clip-path="url(#a)">
+  <g fill-rule="evenodd" clip-path="url(#a)" transform="matrix(.94 0 0 .94 115.72 0)">
     <path fill="#fff" d="M-123.43 233.05H723.1v205.97h-846.53z"/>
     <path fill="#081873" d="M-122.76 0h845.95v256.64h-845.95zM-122.52 385.87H729.6V512h-852.12z"/>
     <path fill="#de3929" d="M-122.52 302.55h845.95v39.65h-845.95z"/>
