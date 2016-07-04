@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>plane-icon-empty</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="plane-icon-empty" stroke="#747678">
+            <path d="M46.3696676,22.1311638 C48.5022081,23.2601558 48.4963928,26.9777713 46.6230469,28.4988783 L37.6907701,28.8212101 L21.0508063,44.861371 L15.583627,45.7120611 L25.4920068,27.8209847 L13.7310499,28.0685488 L8.34196125,36.3769002 L2,35.998908 L8.91102642,25.3528203 L2.11132078,14.4749528 L7.8784016,13.7488755 L13.4851473,21.624405 L25.3200412,21.6875422 L15.0087466,4.45275987 L19.899384,4 L38.1053154,21.7855709 L46.3696676,22.1311638 Z" id="Fill-1-Copy-2"></path>
+        </g>
+    </g>
+</svg>
