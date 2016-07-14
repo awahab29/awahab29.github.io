@@ -20,6 +20,8 @@ webpackJsonp([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	__webpack_require__(1427);
+	__webpack_require__(1428);
 	__webpack_require__(1429);
 	__webpack_require__(1430);
 	__webpack_require__(1431);
@@ -27,12 +29,10 @@ webpackJsonp([0],[
 	__webpack_require__(1433);
 	__webpack_require__(1434);
 	__webpack_require__(1435);
-	__webpack_require__(1436);
-	__webpack_require__(1437);
 
-	__webpack_require__(884).polyfill(); //taking polyfill globally
-	__webpack_require__(1438); //for materializ-css js
-	__webpack_require__(1442); // For slider in Aicrafts modal
+	__webpack_require__(882).polyfill(); //taking polyfill globally
+	__webpack_require__(1436); //for materializ-css js
+	__webpack_require__(1440); // For slider in Aicrafts modal
 
 	(0, _reactTapEventPlugin2.default)();
 
@@ -510,87 +510,79 @@ webpackJsonp([0],[
 
 	var _LoginForm2 = _interopRequireDefault(_LoginForm);
 
-	var _Dashboard = __webpack_require__(601);
+	var _Dashboard = __webpack_require__(602);
 
 	var _Dashboard2 = _interopRequireDefault(_Dashboard);
 
-	var _AppPage = __webpack_require__(609);
+	var _AppPage = __webpack_require__(610);
 
 	var _AppPage2 = _interopRequireDefault(_AppPage);
 
-	var _ParentRoute = __webpack_require__(713);
+	var _ParentRoute = __webpack_require__(803);
 
 	var _ParentRoute2 = _interopRequireDefault(_ParentRoute);
 
-	var _NotFound = __webpack_require__(714);
+	var _NotFound = __webpack_require__(804);
 
 	var _NotFound2 = _interopRequireDefault(_NotFound);
 
-	var _ForgotPasswordForm = __webpack_require__(715);
+	var _ForgotPasswordForm = __webpack_require__(805);
 
 	var _ForgotPasswordForm2 = _interopRequireDefault(_ForgotPasswordForm);
 
-	var _ChangePasswordForm = __webpack_require__(720);
-
-	var _ChangePasswordForm2 = _interopRequireDefault(_ChangePasswordForm);
-
-	var _RAF = __webpack_require__(725);
+	var _RAF = __webpack_require__(810);
 
 	var _RAF2 = _interopRequireDefault(_RAF);
 
-	var _Itinerary = __webpack_require__(1213);
+	var _Itinerary = __webpack_require__(1210);
 
 	var _Itinerary2 = _interopRequireDefault(_Itinerary);
 
-	var _SignupForm = __webpack_require__(1263);
+	var _SignupForm = __webpack_require__(1260);
 
 	var _SignupForm2 = _interopRequireDefault(_SignupForm);
 
-	var _OrderConfirm = __webpack_require__(1268);
+	var _OrderConfirm = __webpack_require__(1265);
 
 	var _OrderConfirm2 = _interopRequireDefault(_OrderConfirm);
 
-	var _ItineraryDetailPage = __webpack_require__(1269);
+	var _ItineraryDetailPage = __webpack_require__(1266);
 
 	var _ItineraryDetailPage2 = _interopRequireDefault(_ItineraryDetailPage);
 
-	var _EditItinerary = __webpack_require__(1295);
-
-	var _EditItinerary2 = _interopRequireDefault(_EditItinerary);
-
-	var _User = __webpack_require__(599);
+	var _User = __webpack_require__(600);
 
 	var _User2 = _interopRequireDefault(_User);
 
-	var _TermsConditionsPage = __webpack_require__(1296);
+	var _TermsConditionsPage = __webpack_require__(1294);
 
 	var _TermsConditionsPage2 = _interopRequireDefault(_TermsConditionsPage);
 
-	var _MyAccountPage = __webpack_require__(1306);
+	var _MyAccountPage = __webpack_require__(1304);
 
 	var _MyAccountPage2 = _interopRequireDefault(_MyAccountPage);
 
-	var _AccountBalancePage = __webpack_require__(1308);
+	var _AccountBalancePage = __webpack_require__(1306);
 
 	var _AccountBalancePage2 = _interopRequireDefault(_AccountBalancePage);
 
-	var _PersonalDetailsPage = __webpack_require__(1378);
+	var _PersonalDetailsPage = __webpack_require__(1376);
 
 	var _PersonalDetailsPage2 = _interopRequireDefault(_PersonalDetailsPage);
 
-	var _PassportPage = __webpack_require__(1406);
+	var _PassportPage = __webpack_require__(1404);
 
 	var _PassportPage2 = _interopRequireDefault(_PassportPage);
 
-	var _PassportListPage = __webpack_require__(1412);
+	var _PassportListPage = __webpack_require__(1410);
 
 	var _PassportListPage2 = _interopRequireDefault(_PassportListPage);
 
-	var _PassportFormPage = __webpack_require__(1420);
+	var _PassportFormPage = __webpack_require__(1418);
 
 	var _PassportFormPage2 = _interopRequireDefault(_PassportFormPage);
 
-	var _ChangePasswordPage = __webpack_require__(1427);
+	var _ChangePasswordPage = __webpack_require__(1425);
 
 	var _ChangePasswordPage2 = _interopRequireDefault(_ChangePasswordPage);
 
@@ -626,25 +618,24 @@ webpackJsonp([0],[
 	    _react2.default.createElement(_reactRouter.Route, { path: 'signup', component: _SignupForm2.default, onEnter: requireUnAuth, showBreadcrum: false }),
 	    _react2.default.createElement(_reactRouter.Route, { path: 'dashboard', component: _Dashboard2.default, onEnter: requireAuth, showBreadcrum: false }),
 	    _react2.default.createElement(_reactRouter.Route, { path: 'forgotpassword', component: _ForgotPasswordForm2.default, onEnter: requireUnAuth, showBreadcrum: false }),
-	    _react2.default.createElement(_reactRouter.Route, { path: 'changepassword', component: _ChangePasswordForm2.default, onEnter: requireAuth, showBreadcrum: false }),
 	    _react2.default.createElement(
 	      _reactRouter.Route,
-	      { path: 'itineraries', component: _ParentRoute2.default, onEnter: requireAuth, showBreadcrum: true },
-	      _react2.default.createElement(_reactRouter.IndexRoute, { component: _Itinerary2.default, onEnter: requireAuth, showBreadcrum: true }),
-	      _react2.default.createElement(_reactRouter.Route, { path: 'itinerary-edit/:orderKey/:orderId/:legId', component: _EditItinerary2.default, onEnter: requireAuth, showBreadcrum: false }),
-	      _react2.default.createElement(_reactRouter.Route, { path: 'itinerary-detail/:orderKey/:orderId/:legId', component: _ItineraryDetailPage2.default, onEnter: requireAuth, showBreadcrum: true })
+	      { path: 'itineraries', component: _ParentRoute2.default, onEnter: requireAuth, showBreadcrum: true, title: 'My Itineraries' },
+	      _react2.default.createElement(_reactRouter.IndexRoute, { component: _Itinerary2.default, onEnter: requireAuth }),
+	      _react2.default.createElement(_reactRouter.Route, { path: 'itinerary-edit/:orderKey/:orderId/:legId', component: _RAF2.default, onEnter: requireAuth, showBreadcrum: true, title: 'Edit Itinerary' }),
+	      _react2.default.createElement(_reactRouter.Route, { path: 'itinerary-detail/:orderKey/:orderId/:legId/:status', component: _ItineraryDetailPage2.default, onEnter: requireAuth, showBreadcrum: true, title: 'Itinerary Detail' })
 	    ),
-	    _react2.default.createElement(_reactRouter.Route, { path: 'request-flight', component: _RAF2.default, onEnter: requireAuth, showBreadcrum: true }),
-	    _react2.default.createElement(_reactRouter.Route, { path: 'confirm-order', component: _OrderConfirm2.default, onEnter: requireAuth, showBreadcrum: true }),
+	    _react2.default.createElement(_reactRouter.Route, { path: 'request-flight', component: _RAF2.default, onEnter: requireAuth, showBreadcrum: true, title: 'Request Flight' }),
+	    _react2.default.createElement(_reactRouter.Route, { path: 'confirm-order', component: _OrderConfirm2.default, onEnter: requireAuth, showBreadcrum: true, title: 'Confirmation' }),
 	    _react2.default.createElement(
 	      _reactRouter.Route,
-	      { path: 'my-account', component: _MyAccountPage2.default, onEnter: requireAuth, title: 'My Account' },
-	      _react2.default.createElement(_reactRouter.Route, { path: 'personal-details', component: _PersonalDetailsPage2.default, onEnter: requireAuth, title: 'Personal Details' }),
-	      _react2.default.createElement(_reactRouter.Route, { path: 'change-password', component: _ChangePasswordPage2.default, onEnter: requireAuth, title: 'Change Password' }),
-	      _react2.default.createElement(_reactRouter.Route, { path: 'account-balance', component: _AccountBalancePage2.default, onEnter: requireAuth, title: 'Account Balance' }),
+	      { path: 'my-account', component: _MyAccountPage2.default, onEnter: requireAuth, showBreadcrum: true, title: 'My Account' },
+	      _react2.default.createElement(_reactRouter.Route, { path: 'personal-details', component: _PersonalDetailsPage2.default, onEnter: requireAuth, showBreadcrum: true, title: 'Personal Details' }),
+	      _react2.default.createElement(_reactRouter.Route, { path: 'change-password', component: _ChangePasswordPage2.default, onEnter: requireAuth, showBreadcrum: true, title: 'Change Password' }),
+	      _react2.default.createElement(_reactRouter.Route, { path: 'account-balance', component: _AccountBalancePage2.default, onEnter: requireAuth, showBreadcrum: true, title: 'Account Balance' }),
 	      _react2.default.createElement(
 	        _reactRouter.Route,
-	        { path: 'passport', component: _PassportPage2.default, onEnter: requireAuth, title: 'My Passports' },
+	        { path: 'passport', component: _PassportPage2.default, onEnter: requireAuth, showBreadcrum: true, title: 'My Passports' },
 	        _react2.default.createElement(_reactRouter.IndexRoute, { component: _PassportListPage2.default }),
 	        _react2.default.createElement(_reactRouter.Route, { path: ':id', component: _PassportFormPage2.default })
 	      )
@@ -2998,11 +2989,11 @@ webpackJsonp([0],[
 
 	var _LoginActions2 = _interopRequireDefault(_LoginActions);
 
-	var _Login = __webpack_require__(595);
+	var _Login = __webpack_require__(596);
 
 	var _Login2 = _interopRequireDefault(_Login);
 
-	var _LoginStore = __webpack_require__(597);
+	var _LoginStore = __webpack_require__(598);
 
 	var _LoginStore2 = _interopRequireDefault(_LoginStore);
 
@@ -4390,7 +4381,7 @@ webpackJsonp([0],[
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.FORMATTER = exports.TIME_TO_SHOW_CREW = exports.LEG_STATUS_CONFIRMED = exports.LEG_STATUS_UNCONFIRMED = exports.LEG_STATUS_ON_REQUEST = exports.LEG_STATUS_REQUESTED = exports.ITINERARY_STATUS_DECLINED = exports.ITINERARY_STATUS_CONFIRMED = exports.ITINERARY_STATUS_ON_REQUEST = exports.WEATHER_ICONS = exports.GET_FILE_URL = exports.POST_FILE_URL = exports.WRITE_USER_SETTINGS = exports.ADD_ITINERARY_SERVICE = exports.FETCH_AIRPORT_SERVICES = exports.FETCH_SINGLE_ITINERARY = exports.AIRPORT_DETAILS_URL = exports.DETAIL_FORECAST_URL = exports.FORECAST_URL = exports.FETCH_PAST_ITINERARIES_URL = exports.FETCH_UPCOMING_ITINERARIES_URL = exports.REQUEST_FLIGHT_URL = exports.AIRPORTS_URL = exports.AIRCRAFTS_URL = exports.MORE_INVOICE_PAGE_SIZE = exports.INVOICE_PAGE_SIZE = exports.SEARCH_PASSENGER_URL = exports.MANAGE_PASSENGER_URL = exports.TERMS_CONDITIONS_URL = exports.FILE_SERVER_URL = exports.ACCOUNT_BALANCE_MORE_INVOICES_URL = exports.ACCOUNT_BALANCE_URL = exports.MANAGE_PAX_URL = exports.SEARCH_PAX_URL = exports.FREQUENT_PAX_URL = exports.CUSTOMER_SELECTION_URL = exports.CATERING_PROPOSAL_URL = exports.CATERING_STATE_URL = exports.LOGOUT_URL = exports.RESET_PASSWORD_URL = exports.CHANGE_PASSWORD_URL = exports.REGISTER_URL = exports.GET_TOKEN_URL = exports.AUTHENTICATE_URL = exports.BASE_SERVICE_URL = exports.SIGNUP_CONTEXT_PASSWORD = exports.SIGNUP_CONTEXT = exports.CONTEXT = exports.HTTP_HEADERS = exports.APP_VERSION = exports.EXPIRYOFCOOKIE = exports.TIMEOUT = exports.SALT = exports.ENCRYPTION_KEY = undefined;
+	exports.FORMATTER = exports.TIME_TO_SHOW_CREW = exports.LEG_STATUS_CONFIRMED = exports.LEG_STATUS_UNCONFIRMED = exports.LEG_STATUS_ON_REQUEST = exports.LEG_STATUS_REQUESTED = exports.ITINERARY_STATUS_DECLINED = exports.ITINERARY_STATUS_CONFIRMED = exports.ITINERARY_STATUS_ON_REQUEST = exports.WEATHER_ICONS = exports.ITINERARY_REFRESH_INTERVAL_IN_MILLISECONDS = exports.GET_FILE_URL = exports.POST_FILE_URL = exports.WRITE_USER_SETTINGS = exports.ADD_ITINERARY_SERVICE = exports.FETCH_AIRPORT_SERVICES = exports.FETCH_SINGLE_ITINERARY = exports.AIRPORT_DETAILS_URL = exports.DETAIL_FORECAST_URL = exports.FORECAST_URL = exports.FETCH_PAST_ITINERARIES_URL = exports.FETCH_UPCOMING_ITINERARIES_URL = exports.REQUEST_FLIGHT_URL = exports.AIRPORTS_URL = exports.AIRCRAFTS_URL = exports.MORE_INVOICE_PAGE_SIZE = exports.INVOICE_PAGE_SIZE = exports.SEARCH_PASSENGER_URL = exports.MANAGE_PASSENGER_URL = exports.TERMS_CONDITIONS_URL = exports.FILE_SERVER_URL = exports.ACCOUNT_BALANCE_MORE_INVOICES_URL = exports.ACCOUNT_BALANCE_URL = exports.MANAGE_PAX_URL = exports.CUSTOMER_SELECTION_URL = exports.CATERING_PROPOSAL_URL = exports.CATERING_STATE_URL = exports.SEARCH_PAX_URL = exports.FREQUENT_PAX_URL = exports.LOGOUT_URL = exports.RESET_PASSWORD_URL = exports.CHANGE_PASSWORD_URL = exports.REGISTER_URL = exports.GET_TOKEN_URL = exports.AUTHENTICATE_URL = exports.BASE_SERVICE_URL = exports.SIGNUP_CONTEXT_PASSWORD = exports.SIGNUP_CONTEXT = exports.CONTEXT = exports.HTTP_HEADERS = exports.BUILD_VERSION = exports.APP_VERSION = exports.EXPIRYOFCOOKIE = exports.TIMEOUT = exports.SALT = exports.ENCRYPTION_KEY = undefined;
 
 	var _Helpers = __webpack_require__(317);
 
@@ -4410,7 +4401,8 @@ webpackJsonp([0],[
 
 	var EXPIRYOFCOOKIE = exports.EXPIRYOFCOOKIE = 365; //Cookie Expiry In Days
 
-	var APP_VERSION = exports.APP_VERSION = '1.0.0';
+	var APP_VERSION = exports.APP_VERSION = '<app_version>';
+	var BUILD_VERSION = exports.BUILD_VERSION = '<app_version_revision>';
 
 	var HTTP_HEADERS = exports.HTTP_HEADERS = {
 	  'deviceInfo': 'WEB',
@@ -4437,6 +4429,9 @@ webpackJsonp([0],[
 	//Production
 	//export const BASE_SERVICE_URL = 'https://webservice.vistajet.com/extranetServices/1.1/';
 
+	//UAT
+	// export const BASE_SERVICE_URL = 'https://webserviceuat.vistajet.com/extranetServices/1.1/';
+
 	var AUTHENTICATE_URL = exports.AUTHENTICATE_URL = BASE_SERVICE_URL + 'user/{context}/{username}/authenticate/1.2/?source=CUSTOMERWEB';
 
 	var GET_TOKEN_URL = exports.GET_TOKEN_URL = BASE_SERVICE_URL + 'user/{context}/{username}/token/';
@@ -4449,15 +4444,15 @@ webpackJsonp([0],[
 
 	var LOGOUT_URL = exports.LOGOUT_URL = BASE_SERVICE_URL + 'user/' + CONTEXT + '/{token}/logout/V2/';
 
+	var FREQUENT_PAX_URL = exports.FREQUENT_PAX_URL = BASE_SERVICE_URL + 'customerapp/' + CONTEXT + '/{token}/frequentPaxAirports';
+
+	var SEARCH_PAX_URL = exports.SEARCH_PAX_URL = BASE_SERVICE_URL + 'customerapp/' + CONTEXT + '/{token}/passenger/search?key={term}';
+
 	var CATERING_STATE_URL = exports.CATERING_STATE_URL = BASE_SERVICE_URL + 'customerapp/' + CONTEXT + '/{token}/catering/cateringState';
 
 	var CATERING_PROPOSAL_URL = exports.CATERING_PROPOSAL_URL = BASE_SERVICE_URL + 'customerapp/' + CONTEXT + '/{token}/catering/cateringProposal/{flightId}/1.2';
 
 	var CUSTOMER_SELECTION_URL = exports.CUSTOMER_SELECTION_URL = BASE_SERVICE_URL + 'customerapp/' + CONTEXT + '/{token}/catering/customerSelection';
-
-	var FREQUENT_PAX_URL = exports.FREQUENT_PAX_URL = BASE_SERVICE_URL + 'customerapp/' + CONTEXT + '/{token}/frequentPaxAirports';
-
-	var SEARCH_PAX_URL = exports.SEARCH_PAX_URL = BASE_SERVICE_URL + 'customerapp/' + CONTEXT + '/{token}/passenger/search?key={term}';
 
 	var MANAGE_PAX_URL = exports.MANAGE_PAX_URL = BASE_SERVICE_URL + 'customerapp/' + CONTEXT + '/{token}/passenger/manage/1.2?{key}={uniqueIdentifier}';
 
@@ -4505,6 +4500,8 @@ webpackJsonp([0],[
 	var POST_FILE_URL = exports.POST_FILE_URL = BASE_SERVICE_URL + 'files/postfile?fileKey={key}';
 
 	var GET_FILE_URL = exports.GET_FILE_URL = BASE_SERVICE_URL + 'files/getfile?fileKey={key}';
+
+	var ITINERARY_REFRESH_INTERVAL_IN_MILLISECONDS = exports.ITINERARY_REFRESH_INTERVAL_IN_MILLISECONDS = 600000;
 
 	var WEATHER_ICONS = exports.WEATHER_ICONS = {
 	  'clear-day': 'sun',
@@ -4890,15 +4887,18 @@ webpackJsonp([0],[
 	    }, {
 	        key: 'isPast',
 	        value: function isPast(leg) {
-	            var time = _moment2.default.utc(leg.arrivalAirportTimeLocal[0]);
+	            if (!leg) {
+	                return true;
+	            }
+	            var time = _moment2.default.utc((leg.arrivalAirportTimeLocal || [])[0]);
 
 	            //finding offset difference
-	            var timeZoneOffset = this.findOffset(time, leg.arrivalAirport);
+	            var timeZoneOffset = this.findOffset(time, leg.arrivalAirport || {});
 	            var isPast = false;
 
 	            // for example time was 21:54+01:00
 	            // after below call, it will become 20:54
-	            var arrivalUtcObj = this.getUtcDateObj(leg.arrivalAirportTimeLocal[0]);
+	            var arrivalUtcObj = this.getUtcDateObj((leg.arrivalAirportTimeLocal || [])[0]);
 
 	            // now adjust airport timezone in above time
 	            arrivalUtcObj.setTime(arrivalUtcObj.getTime() - timeZoneOffset * 60 * 1000);
@@ -4967,6 +4967,20 @@ webpackJsonp([0],[
 	                statusStr = 'On Request';
 	            }
 	            return statusStr;
+	        }
+	    }, {
+	        key: 'customRoundOff',
+	        value: function customRoundOff(rdTotal) {
+
+	            //if(conf
+	            var dRoundTotal = Math.floor(rdTotal);
+	            var dPointTotal = Math.round(rdTotal - dRoundTotal, 1);
+	            if (dPointTotal > 0.0 & dPointTotal < 0.5) {
+	                dRoundTotal = dRoundTotal + 0.5;
+	            } else if (dPointTotal >= 0.5) {
+	                dRoundTotal = dRoundTotal + 1.0;
+	            }
+	            return dRoundTotal;
 	        }
 
 	        /**
@@ -5090,6 +5104,23 @@ webpackJsonp([0],[
 	                    }
 	                }); // For intializing Modal
 	            });
+	        }
+	    }, {
+	        key: 'isBodyScroll',
+	        value: function isBodyScroll(flag) {
+
+	            if (!flag) {
+	                // TODO - modal scroll hack for iphone
+	                if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i)) {
+	                    $('body').css({ position: 'fixed' });
+	                    $('body').css({ backgroundAttachment: 'fixed' });
+	                }
+	            } else {
+	                // TODO - remove postion from body when modal close
+	                if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i)) {
+	                    $('body').removeAttr('style');
+	                }
+	            }
 	        }
 	    }, {
 	        key: 'getMonthName',
@@ -5231,6 +5262,16 @@ webpackJsonp([0],[
 	            }
 
 	            return isGuid;
+	        }
+	    }, {
+	        key: 'getFutureDateOffset',
+	        value: function getFutureDateOffset() {
+	            var date = new Date();
+	            if (date.getMonth() + 1 >= 6) {
+	                return 12;
+	            } else {
+	                return 12 - date.getMonth();
+	            }
 	        }
 	    }]);
 
@@ -8682,42 +8723,11 @@ webpackJsonp([0],[
 
 	var _superagent2 = _interopRequireDefault(_superagent);
 
+	var _normalizePassport = __webpack_require__(595);
+
+	var _normalizePassport2 = _interopRequireDefault(_normalizePassport);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function parseBoolean(value) {
-	  return value === true || value === 'true';
-	}
-
-	function v(value, parser) {
-	  var v = Array.isArray(value) ? value[0] : value;
-	  switch (parser) {
-	    case Boolean:
-	      return parseBoolean(v);
-	    case Number:
-	      return parseFloat(value, 10);
-	    default:
-	      return v;
-	  }
-	}
-
-	var normalizePassports = function normalizePassports(passport) {
-	  var newPassport = {
-	    displayName: v(passport.displayName),
-	    expiresOnDate: v(passport.expiresOnDate || passport.expiry),
-	    id: v(passport.id || passport.passportId),
-	    isActive: v(passport.isActive, Boolean),
-	    isDefault: v(passport.isDefault, Boolean),
-	    isInvalid: v(passport.isInvalid, Boolean),
-	    isOnHands: v(passport.isOnHands, Boolean),
-	    isoIssuedByCountry: v(passport.isoIssuedByCountry || passport.isoPassportIssuedByCountry),
-	    isoPassportCountry: v(passport.isoPassportCountry),
-	    issuedByCountry: v(passport.issuedByCountry),
-	    passportCountry: v(passport.passportCountry),
-	    passportNumber: v(passport.passportNumber),
-	    visas: v(passport.visas || passport.visas)
-	  };
-	  return newPassport;
-	};
 
 	var LoginSource = {
 	  login: function login(payload) {
@@ -8782,12 +8792,7 @@ webpackJsonp([0],[
 	          try {
 	            var authenticatedUser = jsonData.customerAppAuthResponse.authenticatedUser[0];
 
-	            var passportDataNormalized = [];
-	            if (authenticatedUser.passport) {
-	              authenticatedUser.passport.map(function (passport) {
-	                passportDataNormalized.push(normalizePassports(passport));
-	              });
-	            }
+	            var passportDataNormalized = authenticatedUser.passport ? authenticatedUser.passport.map(_normalizePassport2.default) : [];
 
 	            var personalData = {
 	              accessType: authenticatedUser.accessType,
@@ -8807,15 +8812,10 @@ webpackJsonp([0],[
 	            };
 	            resolve({ userData: personalData, userToken: payload.token, userCredentials: key });
 	            //if the requested user has to change password then change password first
-	            /*            if(jsonData.customerAppAuthResponse.authenticatedUser[0].isChangedPassword[0] == 'true'){
-	               cache.saveSession('oldpassuser', payload.username);
-	             cache.saveSession('oldpass', key);
-	             cache.saveSession('usertoken', payload.token);
-	               window.location.hash = 'changepassword';
-	               return;
-	             }*/
-
-	            //resolve({userData: jsonData.customerAppAuthResponse.authenticatedUser[0], userToken: payload.token, userCredentials: key});
+	            if (jsonData.customerAppAuthResponse.authenticatedUser[0].isChangedPassword[0] == 'true') {
+	              window.location.hash = 'my-account/change-password';
+	              return;
+	            }
 	          } catch (e) {
 	            try {
 	              if (jsonData.vjResponse.success[0] == 'false') {
@@ -9140,6 +9140,8 @@ webpackJsonp([0],[
 
 	var CATERING_NOT_FOUND = exports.CATERING_NOT_FOUND = "We would be delighted to accommodate any catering preferences you may have. In case no specific requirements are requested, VIP catering suitable to the time of day will be provided.";
 
+	var CATERING_NOT_AVAILABLE = exports.CATERING_NOT_AVAILABLE = "Catering information is not available at this time.";
+
 	var FBO_NOT_FOUND = exports.FBO_NOT_FOUND = "FBO information will be made available before the flight.";
 
 	var CREW_NOT_FOUND = exports.CREW_NOT_FOUND = "Crew information will be made available before the flight.";
@@ -9151,12 +9153,14 @@ webpackJsonp([0],[
 	    loginFailed: 'We could not log you in. Please check your username and password and try again.',
 	    legAddSuccessMsg: 'You have successfully created your flight from {deptAirport} to {arrivalAirport}',
 	    legUpdateSuccessMsg: 'Your Flight from {deptAirport} to {arrivalAirport} has been updated Successfully',
-	    passengerExceed: '{Aircraft} allows {pastLimit} passengers. Number of passengers will be reduced to {newLimit}',
+	    passengerExceed: '{Aircraft} allows {pastLimit} passengers. Number of passengers will be reduced to {newLimit}.',
 	    legUpdateWarning: 'Please update the opened leg first',
-	    500: 'Something unexpected happened, Please contact VistaJet Member Service.',
+	    500: 'Something unexpected happened. Please contact VistaJet Member Service.',
 	    501: 'No services are available currently',
 	    1: 'Phone Number already exists',
 	    2: 'User already exists',
+	    400: 'Bad request',
+	    1007: 'You are not authorized to book a flight. Please contact member service',
 	    firstNameRequired: 'First Name is required.',
 	    lastNameRequired: 'Last Name is required',
 	    emailRequired: 'Email is required',
@@ -9168,9 +9172,7 @@ webpackJsonp([0],[
 	    phoneIncorrect: 'Phone No. is incorrect',
 	    countryRequired: 'Country is required',
 	    termsRequired: 'Please Agree to Terms & Conditions',
-	    singupSuccess: 'Signup successful',
-	    400: 'Bad request',
-	    1007: 'You are not authorized to book a flight. Please contact member service'
+	    singupSuccess: 'Signup successful'
 	};
 
 /***/ },
@@ -10685,6 +10687,51 @@ webpackJsonp([0],[
 
 /***/ },
 /* 595 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	function parseBoolean(value) {
+	  return value === true || value === 'true';
+	}
+
+	function v(value, parser) {
+	  var v = Array.isArray(value) ? value[0] : value;
+	  switch (parser) {
+	    case Boolean:
+	      return parseBoolean(v);
+	    case Number:
+	      return parseFloat(value, 10);
+	    default:
+	      return v;
+	  }
+	}
+
+	var normalizePassportUtil = function normalizePassportUtil(passport) {
+	  return {
+	    displayName: v(passport.displayName),
+	    expiresOnDate: v(passport.expiresOnDate || passport.expiry),
+	    id: v(passport.id || passport.passportId),
+	    isActive: v(passport.isActive, Boolean),
+	    isDefault: v(passport.isDefault, Boolean),
+	    isInvalid: v(passport.isInvalid, Boolean),
+	    isOnHands: v(passport.isOnHands, Boolean),
+	    isoIssuedByCountry: v(passport.isoIssuedByCountry || passport.isoPassportIssuedByCountry),
+	    isoPassportCountry: v(passport.isoPassportCountry),
+	    issuedByCountry: v(passport.issuedByCountry),
+	    passportCountry: v(passport.passportCountry),
+	    passportNumber: v(passport.passportNumber),
+	    visas: v(passport.visas || passport.visas)
+	  };
+	};
+
+	exports.default = normalizePassportUtil;
+
+/***/ },
+/* 596 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -10695,7 +10742,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _marked = __webpack_require__(596);
+	var _marked = __webpack_require__(597);
 
 	var _marked2 = _interopRequireDefault(_marked);
 
@@ -10893,7 +10940,7 @@ webpackJsonp([0],[
 	module.exports = Login;
 
 /***/ },
-/* 596 */
+/* 597 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
@@ -12185,7 +12232,7 @@ webpackJsonp([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 597 */
+/* 598 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -12200,11 +12247,11 @@ webpackJsonp([0],[
 
 	var _LoginActions2 = _interopRequireDefault(_LoginActions);
 
-	var _AppDataSource = __webpack_require__(598);
+	var _AppDataSource = __webpack_require__(599);
 
 	var _AppDataSource2 = _interopRequireDefault(_AppDataSource);
 
-	var _User = __webpack_require__(599);
+	var _User = __webpack_require__(600);
 
 	var _User2 = _interopRequireDefault(_User);
 
@@ -12261,7 +12308,9 @@ webpackJsonp([0],[
 	                console.log('unable to load frequent pax on login');
 	            });
 
-	            window.location.hash = 'dashboard';
+	            if (window.location.hash.indexOf('change-password') < 0) {
+	                window.location.hash = 'dashboard';
+	            }
 	        }
 	    }, {
 	        key: 'onAfterLoginFailure',
@@ -12313,7 +12362,7 @@ webpackJsonp([0],[
 	module.exports = _AltApp2.default.createStore(LoginStore, 'LoginStore');
 
 /***/ },
-/* 598 */
+/* 599 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -12335,6 +12384,10 @@ webpackJsonp([0],[
 	var _Helpers = __webpack_require__(317);
 
 	var _Helpers2 = _interopRequireDefault(_Helpers);
+
+	var _LoginActions = __webpack_require__(266);
+
+	var _LoginActions2 = _interopRequireDefault(_LoginActions);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -12359,7 +12412,9 @@ webpackJsonp([0],[
 	        }
 	        if (err != null) {
 	          //error occured
-	          if (err.timeout === _Constants.TIMEOUT) {
+	          if (err.status == 401) {
+	            _LoginActions2.default.afterLogout(true);
+	          } else if (err.timeout === _Constants.TIMEOUT) {
 	            reject({ message: _Messages.ERROR_MESSAGES['timeout'] });
 	          } else {
 	            reject({ message: _Messages.ERROR_MESSAGES['500'] });
@@ -12396,7 +12451,9 @@ webpackJsonp([0],[
 
 	        if (err != null) {
 	          //error occured
-	          if (err.timeout === _Constants.TIMEOUT) {
+	          if (err.status == 401) {
+	            _LoginActions2.default.afterLogout(true);
+	          } else if (err.timeout === _Constants.TIMEOUT) {
 	            reject({ message: _Messages.ERROR_MESSAGES['timeout'] });
 	          } else {
 	            reject({ message: _Messages.ERROR_MESSAGES['500'] });
@@ -12419,7 +12476,9 @@ webpackJsonp([0],[
 
 	        if (err != null) {
 	          //error occured
-	          if (err.timeout === _Constants.TIMEOUT) {
+	          if (err.status == 401) {
+	            _LoginActions2.default.afterLogout(true);
+	          } else if (err.timeout === _Constants.TIMEOUT) {
 	            reject({ message: _Messages.ERROR_MESSAGES['timeout'] });
 	          } else {
 	            reject({ message: _Messages.ERROR_MESSAGES['500'] });
@@ -12437,7 +12496,7 @@ webpackJsonp([0],[
 	module.exports = AppDataSource;
 
 /***/ },
-/* 599 */
+/* 600 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -12615,7 +12674,7 @@ webpackJsonp([0],[
 	        key: 'getProfilePicture',
 	        value: function getProfilePicture() {
 	            var info = this.getInfo();
-	            return !!info.imageURL ? info.imageURL : __webpack_require__(600);
+	            return !!info.imageURL ? info.imageURL : __webpack_require__(601);
 	        }
 	    }, {
 	        key: 'isBroker',
@@ -12632,13 +12691,13 @@ webpackJsonp([0],[
 	module.exports = user;
 
 /***/ },
-/* 600 */
+/* 601 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/profile.png";
 
 /***/ },
-/* 601 */
+/* 602 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -12649,7 +12708,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _User = __webpack_require__(599);
+	var _User = __webpack_require__(600);
 
 	var _User2 = _interopRequireDefault(_User);
 
@@ -12661,13 +12720,13 @@ webpackJsonp([0],[
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	__webpack_require__(602);
 	__webpack_require__(603);
 	__webpack_require__(604);
 	__webpack_require__(605);
 	__webpack_require__(606);
 	__webpack_require__(607);
 	__webpack_require__(608);
+	__webpack_require__(609);
 
 	var Dashboard = function (_React$Component) {
 	  _inherits(Dashboard, _React$Component);
@@ -12866,22 +12925,31 @@ webpackJsonp([0],[
 	            ),
 	            _react2.default.createElement(
 	              'li',
-	              { className: 'white-box center vistajet-info' },
+	              { className: 'white-box my-account center' },
 	              _react2.default.createElement(
 	                'a',
 	                { href: 'https://www.vistajet.com/news/', target: '_blank' },
 	                _react2.default.createElement(
 	                  'svg',
-	                  { className: 'dashboard-icons' },
+	                  { className: 'dashboard-icons', x: '0px', y: '0px', viewBox: '0 0 117.568 98.649', 'enable-background': 'new 0 0 117.568 98.649' },
 	                  _react2.default.createElement(
 	                    'g',
-	                    { id: 'Page-1' },
+	                    { id: 'XMLID_21_' },
 	                    _react2.default.createElement(
 	                      'g',
-	                      { id: 'Plan-a-Flight' },
-	                      _react2.default.createElement('path', { id: 'Shape', className: 'svg-path', d: 'M29,42.5c-0.7,0-1.3,0.3-1.7,0.7l-4.9,4.9l-4.1,0l1-1c0.2-0.2,0.2-0.6,0-0.9\r c-0.2-0.2-0.6-0.2-0.9,0l-1.9,1.9l-8,0c-0.2,0-0.3,0.1-0.4,0.2l-1.4,1.4c-0.1,0.1-0.2,0.3-0.2,0.5c0,0.2,0.2,0.4,0.3,0.5l8.8,4.2\r l-1.3,1.3l-5.6,0h0c-0.2,0-0.3,0.1-0.4,0.2l-0.7,0.7c-0.1,0.1-0.2,0.3-0.2,0.5c0,0.2,0.2,0.4,0.3,0.5l3.6,1.7\r c-0.1,0.3-0.2,0.6-0.2,0.9c-0.1,0.5,0.1,1.1,0.4,1.5c0.4,0.4,0.9,0.6,1.4,0.6h0c0.1,0,0.2,0,0.2,0c0.3,0,0.6-0.1,0.9-0.2l1.7,3.5\r c0.1,0.2,0.2,0.3,0.4,0.3c0,0,0.1,0,0.1,0c0.1,0,0.3-0.1,0.4-0.1l0.8-0.7c0.1-0.1,0.2-0.3,0.2-0.5l0-5.5l1.2-1.2l4,8.3\r c0.1,0.2,0.2,0.3,0.4,0.3c0,0,0.1,0,0.1,0c0.1,0,0.3-0.1,0.4-0.1l1.6-1.3c0.1-0.1,0.2-0.3,0.2-0.5l0-7.9l1.9-1.9\r c0.2-0.2,0.2-0.6,0-0.9c-0.2-0.2-0.6-0.2-0.9,0l-1,1l0-3.8l5.2-5.2c0.5-0.5,0.7-1.1,0.7-1.7c0-0.7-0.3-1.3-0.7-1.7\r C30.2,42.7,29.6,42.5,29,42.5L29,42.5z M8,50l0.6-0.6l12.4,0l-4.7,4.7L8,50L8,50z M9,57.5l3.8,0L12.3,58c-0.2,0.2-0.4,0.5-0.6,0.8\r L9,57.5L9,57.5z M16.4,64.9l-1.3-2.7c0.3-0.2,0.5-0.4,0.8-0.6l0.5-0.5L16.4,64.9L16.4,64.9z M24.3,65l-0.7,0.6l-3.8-8l4.6-4.5\r L24.3,65L24.3,65z M29.8,45.8L16.6,59.1c0,0,0,0,0,0l-1.6,1.6c-0.6,0.6-1.3,0.9-2.1,1c0,0-0.1,0-0.1,0c-0.2,0-0.3-0.1-0.5-0.2\r c-0.1-0.1-0.2-0.3-0.1-0.5c0.1-0.8,0.5-1.5,1-2.1l14.9-14.8c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4\r c0.2,0.2,0.4,0.5,0.4,0.9C30.2,45.3,30.1,45.6,29.8,45.8L29.8,45.8z' }),
-	                      _react2.default.createElement('path', { id: 'Shape_1_', className: 'svg-path', d: 'M38.2,27.4c0.5-3.8-0.2-6.9-2.2-8.9c-1.6-1.6-3.9-2.4-6.7-2.3c-2.7,0-5.7,0.8-9.1,2.2\r c-1.1-0.1-2.1-0.2-3.2-0.2c-7.7,0-15,3-20.5,8.5c-6.5,6.4-9.2,15.2-8.3,23.6c-1.4,3.4-2.2,6.4-2.2,9.1c0,2.9,0.7,5.1,2.3,6.7\r c1.5,1.5,3.8,2.3,6.5,2.3c0.7,0,1.5-0.1,2.4-0.2C2.6,73.2,9.6,76,17,76c7.7,0,15-3,20.5-8.5C48.5,56.5,48.8,38.7,38.2,27.4\r L38.2,27.4z M35.1,19.4c1.5,1.5,2.2,3.9,1.9,6.9c-4-3.9-9-6.4-14.4-7.5C28.3,16.8,32.7,17,35.1,19.4L35.1,19.4z M-10.8,65.1\r c-2.4-2.4-2.6-6.9-0.6-12.5c1,5.2,3.5,10.2,7.5,14.4C-6.9,67.3-9.3,66.7-10.8,65.1L-10.8,65.1z M36.6,66.6\r c-5.2,5.2-12.2,8.1-19.6,8.1c-6.8,0-13.2-2.4-18.2-6.8c3-0.7,6.4-2,9.9-4c0.3-0.2,0.4-0.5,0.2-0.8c-0.2-0.3-0.5-0.4-0.8-0.2\r c-3.7,2.1-7.3,3.5-10.4,4c-0.1-0.1-0.2-0.2-0.2-0.2c-10.8-10.8-10.8-28.3,0-39.1c5.2-5.2,12.2-8.1,19.6-8.1s14.4,2.9,19.6,8.1\r c0.1,0.1,0.2,0.2,0.2,0.2c-0.6,3.3-2.1,7.2-4.5,11.2c-0.2,0.3-0.1,0.7,0.2,0.9c0.1,0.1,0.2,0.1,0.3,0.1c0.2,0,0.4-0.1,0.5-0.3\r c2.2-3.8,3.8-7.4,4.5-10.7C47.4,39.7,47,56.3,36.6,66.6L36.6,66.6z' })
-	                    )
+	                      { id: 'XMLID_20_' },
+	                      _react2.default.createElement('path', { id: 'XMLID_8_', fill: '#CCCCCC', d: 'M97.524,94.009H10.289V6.293h87.235V94.009z M12.487,91.811h82.839V8.491H12.487V91.811z' }),
+	                      _react2.default.createElement('path', { id: 'XMLID_12_', fill: '#CCCCCC', d: 'M97.504,93.119l-2.178-0.209V17.343h16.844L97.504,93.119z M97.524,19.541v61.907\r l11.982-61.907H97.524z' })
+	                    ),
+	                    _react2.default.createElement('rect', { id: 'XMLID_2_', x: '22.918', y: '18.442', fill: '#CCCCCC', width: '61.976', height: '7.972' }),
+	                    _react2.default.createElement('rect', { id: 'XMLID_6_', x: '22.918', y: '29.693', fill: '#CCCCCC', width: '35.552', height: '5.066' }),
+	                    _react2.default.createElement('path', { id: 'XMLID_5_', fill: '#CCCCCC', d: 'M42.592,44.876v18.209H24.384V44.876H42.592 M44.058,43.41H22.918v21.139h21.139V43.41\r L44.058,43.41z' }),
+	                    _react2.default.createElement('rect', { id: 'XMLID_7_', x: '52.009', y: '43.41', fill: '#CCCCCC', width: '32.885', height: '4.804' }),
+	                    _react2.default.createElement('rect', { id: 'XMLID_9_', x: '52.009', y: '51.578', fill: '#CCCCCC', width: '32.885', height: '4.804' }),
+	                    _react2.default.createElement('rect', { id: 'XMLID_10_', x: '52.009', y: '59.745', fill: '#CCCCCC', width: '32.885', height: '4.804' }),
+	                    _react2.default.createElement('rect', { id: 'XMLID_25_', x: '22.918', y: '72.53', fill: '#CCCCCC', width: '61.977', height: '2.198' }),
+	                    _react2.default.createElement('rect', { id: 'XMLID_40_', x: '22.918', y: '81.786', fill: '#CCCCCC', width: '61.977', height: '2.198' }),
+	                    _react2.default.createElement('path', { id: 'XMLID_13_', fill: '#CCCCCC', d: 'M32.691,57.146c0,0,0.046-2.164,3.166-3.736c3.121-1.572,8.201-3.576,8.201-3.576\r s-10.724,3.254-11.754,4.624c0,0-0.342,0.569-0.251,0.911c0,0-0.342-0.364-1.23-0.296c-0.888,0.068-6.857,2.323-7.904,3.052\r c0,0,6.515-2.301,7.996-1.913C32.395,56.599,32.691,57.146,32.691,57.146z' })
 	                  )
 	                ),
 	                _react2.default.createElement(
@@ -12926,49 +12994,49 @@ webpackJsonp([0],[
 	module.exports = Dashboard;
 
 /***/ },
-/* 602 */
+/* 603 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/request-a-flight.svg";
 
 /***/ },
-/* 603 */
+/* 604 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/my-itinerary.svg";
 
 /***/ },
-/* 604 */
+/* 605 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/my-account.svg";
 
 /***/ },
-/* 605 */
+/* 606 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/vj-info.svg";
 
 /***/ },
-/* 606 */
+/* 607 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/vj-news.svg";
 
 /***/ },
-/* 607 */
+/* 608 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/how-to-fly.svg";
 
 /***/ },
-/* 608 */
+/* 609 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/our-fleet.svg";
 
 /***/ },
-/* 609 */
+/* 610 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -12979,27 +13047,27 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Header = __webpack_require__(610);
+	var _Header = __webpack_require__(611);
 
 	var _Header2 = _interopRequireDefault(_Header);
 
-	var _Footer = __webpack_require__(683);
+	var _Footer = __webpack_require__(797);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
-	var _vistajetLogoWhite = __webpack_require__(684);
+	var _vistajetLogoWhite = __webpack_require__(798);
 
 	var _vistajetLogoWhite2 = _interopRequireDefault(_vistajetLogoWhite);
 
-	var _snackbar = __webpack_require__(685);
+	var _snackbar = __webpack_require__(799);
 
 	var _snackbar2 = _interopRequireDefault(_snackbar);
 
-	var _Loader = __webpack_require__(706);
+	var _Loader = __webpack_require__(801);
 
 	var _Loader2 = _interopRequireDefault(_Loader);
 
-	var _Breadcrumb = __webpack_require__(707);
+	var _Breadcrumb = __webpack_require__(802);
 
 	var _Breadcrumb2 = _interopRequireDefault(_Breadcrumb);
 
@@ -13011,7 +13079,7 @@ webpackJsonp([0],[
 
 	var _Cache2 = _interopRequireDefault(_Cache);
 
-	var _RAFActions = __webpack_require__(708);
+	var _RAFActions = __webpack_require__(682);
 
 	var _RAFActions2 = _interopRequireDefault(_RAFActions);
 
@@ -13040,24 +13108,6 @@ webpackJsonp([0],[
 	    }
 
 	    _createClass(AppPage, [{
-	        key: 'getBreadCrumbs',
-	        value: function getBreadCrumbs(breadcrumbs) {
-	            var spliceCount = 0;
-
-	            breadcrumbs = breadcrumbs.slice(0);
-
-	            if (breadcrumbs[1] != null) {
-	                breadcrumbs.splice(spliceCount, 1);
-	            }
-
-	            return breadcrumbs;
-	        }
-	    }, {
-	        key: 'showBreadCrum',
-	        value: function showBreadCrum(breadcrumbs) {
-	            return !!breadcrumbs[0] ? breadcrumbs[0].showBreadcrum : false;
-	        }
-	    }, {
 	        key: 'handleSnackClose',
 	        value: function handleSnackClose() {
 
@@ -13092,20 +13142,18 @@ webpackJsonp([0],[
 	        key: 'render',
 	        value: function render() {
 	            var breadcrumb = void 0;
-	            if (this.context.router.isActive('/my-account')) {
-	                breadcrumb = _react2.default.createElement(_Breadcrumb2.default, {
-	                    routes: this.props.routes,
-	                    params: this.props.params
-	                });
-	            }
-
 	            var self = this;
+
+	            breadcrumb = _react2.default.createElement(_Breadcrumb2.default, {
+	                routes: this.props.routes,
+	                params: this.props.params
+	            });
+
 	            return _react2.default.createElement(
 	                'div',
 	                null,
 	                _react2.default.createElement(_Loader2.default, null),
-	                _react2.default.createElement(_Header2.default, { logoSvg: _vistajetLogoWhite2.default, breadcrumbs: this.getBreadCrumbs(this.props.routes),
-	                    showBreadCrum: this.showBreadCrum(this.props.routes) }),
+	                _react2.default.createElement(_Header2.default, { logoSvg: _vistajetLogoWhite2.default }),
 	                breadcrumb,
 	                _react2.default.createElement(
 	                    'div',
@@ -13141,7 +13189,7 @@ webpackJsonp([0],[
 	module.exports = AppPage;
 
 /***/ },
-/* 610 */
+/* 611 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -13152,11 +13200,11 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _NavigationMenu = __webpack_require__(611);
+	var _NavigationMenu = __webpack_require__(612);
 
 	var _NavigationMenu2 = _interopRequireDefault(_NavigationMenu);
 
-	var _User = __webpack_require__(599);
+	var _User = __webpack_require__(600);
 
 	var _User2 = _interopRequireDefault(_User);
 
@@ -13177,77 +13225,15 @@ webpackJsonp([0],[
 	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Header).call(this, props));
 
 	    _this.state = {
-	      'User': _User2.default,
-	      'breadcrumbs': _this.props.breadcrumbs,
-	      'showBreadCrum': _this.props.showBreadCrum
+	      'User': _User2.default
 	    };
 	    return _this;
 	  }
 
 	  _createClass(Header, [{
-	    key: 'componentWillReceiveProps',
-	    value: function componentWillReceiveProps(nextProps) {
-	      this.setState({
-	        breadcrumbs: nextProps.breadcrumbs,
-	        showBreadCrum: nextProps.showBreadCrum
-	      });
-	    }
-	  }, {
 	    key: 'render',
 	    value: function render() {
 	      var _this2 = this;
-
-	      var breadCrumbsSection = null,
-	          breadCrumbs = [];
-
-	      if (this.state.showBreadCrum && this.state.breadcrumbs.length) {
-	        var parentPath = '#';
-	        this.state.breadcrumbs.map(function (item, itemIndex) {
-	          var partialPath = (item.path || '').split(':');
-	          var path = partialPath.length > 1 ? '' : item.path;
-	          var title = item.component.title;
-	          if (item.indexRoute) {
-	            title = item.indexRoute.component.title;
-	            parentPath += '/' + path;
-	          }
-	          if (path) {
-	            path = item.indexRoute ? parentPath : parentPath + path;
-	            breadCrumbs.push(_react2.default.createElement(
-	              'span',
-	              { className: 'breadcrumb', key: itemIndex },
-	              _react2.default.createElement(
-	                'a',
-	                { href: path },
-	                title
-	              )
-	            ));
-	          } else if (partialPath.length > 1) {
-	            breadCrumbs.push(_react2.default.createElement(
-	              'span',
-	              { className: 'breadcrumb', key: itemIndex },
-	              title
-	            ));
-	          }
-	        });
-	        breadCrumbs = _react2.default.createElement(
-	          'section',
-	          { className: 'v-breadCrumbs' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'col l12 m12 s12' },
-	            _react2.default.createElement(
-	              'a',
-	              { href: '#/dashboard', className: 'breadcrumb', key: 'h' },
-	              _react2.default.createElement(
-	                'i',
-	                { className: 'material-icons' },
-	                'home'
-	              )
-	            ),
-	            breadCrumbs
-	          )
-	        );
-	      }
 
 	      return _react2.default.createElement(
 	        'div',
@@ -13277,8 +13263,7 @@ webpackJsonp([0],[
 	              }
 	            }()
 	          )
-	        ),
-	        breadCrumbs
+	        )
 	      );
 	    }
 	  }]);
@@ -13289,7 +13274,7 @@ webpackJsonp([0],[
 	module.exports = Header;
 
 /***/ },
-/* 611 */
+/* 612 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -13304,35 +13289,49 @@ webpackJsonp([0],[
 
 	var _LoginActions2 = _interopRequireDefault(_LoginActions);
 
-	var _User = __webpack_require__(599);
+	var _User = __webpack_require__(600);
 
 	var _User2 = _interopRequireDefault(_User);
 
-	var _account = __webpack_require__(612);
+	var _account = __webpack_require__(613);
 
 	var _account2 = _interopRequireDefault(_account);
 
-	var _logout = __webpack_require__(613);
+	var _logout = __webpack_require__(614);
 
 	var _logout2 = _interopRequireDefault(_logout);
 
-	var _itinerary = __webpack_require__(614);
+	var _itinerary = __webpack_require__(615);
 
 	var _itinerary2 = _interopRequireDefault(_itinerary);
 
-	var _home = __webpack_require__(615);
+	var _home = __webpack_require__(616);
 
 	var _home2 = _interopRequireDefault(_home);
 
-	var _cross = __webpack_require__(616);
+	var _cross = __webpack_require__(617);
 
 	var _cross2 = _interopRequireDefault(_cross);
 
-	var _leftNav = __webpack_require__(617);
+	var _leftNav = __webpack_require__(618);
 
 	var _leftNav2 = _interopRequireDefault(_leftNav);
 
-	var _PersonalDetailsStore = __webpack_require__(680);
+	var _Constants = __webpack_require__(316);
+
+	var _RAFStore = __webpack_require__(681);
+
+	var _RAFStore2 = _interopRequireDefault(_RAFStore);
+
+	var _ConfirmDialog = __webpack_require__(790);
+
+	var _ConfirmDialog2 = _interopRequireDefault(_ConfirmDialog);
+
+	var _Helpers = __webpack_require__(317);
+
+	var _Helpers2 = _interopRequireDefault(_Helpers);
+
+	var _PersonalDetailsStore = __webpack_require__(794);
 
 	var _PersonalDetailsStore2 = _interopRequireDefault(_PersonalDetailsStore);
 
@@ -13353,11 +13352,13 @@ webpackJsonp([0],[
 	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(NavigationMenu).call(this, props));
 
 	        _this.close = function () {
-	            return _this.setState({ open: false });
+	            _this.setState({ open: false });
+	            _Helpers2.default.isBodyScroll(_this.state.open);
 	        };
 
 	        _this.open = function () {
-	            return _this.setState({ open: true });
+	            _this.setState({ open: true });
+	            _Helpers2.default.isBodyScroll(_this.state.open);
 	        };
 
 	        _this.state = { open: false, User: _User2.default };
@@ -13368,13 +13369,22 @@ webpackJsonp([0],[
 	        key: 'logout',
 	        value: function logout() {
 	            this.close();
-	            _LoginActions2.default.logout(_PersonalDetailsStore2.default.getState().edited);
+	            var storeStateRAF = _RAFStore2.default.getState();
+	            if (storeStateRAF.stateDirty) {
+	                this.refs.confirmLogout.setState({ open: true });
+	            } else {
+	                _LoginActions2.default.logout(_PersonalDetailsStore2.default.getState().edited);
+	            }
+	        }
+	    }, {
+	        key: 'handleconfirmLogout',
+	        value: function handleconfirmLogout() {
+	            this.refs.confirmLogout.setState({ open: false });
+	            _LoginActions2.default.logout();
 	        }
 	    }, {
 	        key: 'render',
 	        value: function render() {
-	            var _this2 = this;
-
 	            var userMenu = [_react2.default.createElement(
 	                'li',
 	                { key: '1' },
@@ -13416,9 +13426,7 @@ webpackJsonp([0],[
 	                        width: 300,
 	                        openRight: true,
 	                        open: this.state.open,
-	                        onRequestChange: function onRequestChange(open) {
-	                            return _this2.setState({ open: open });
-	                        }
+	                        onRequestChange: this.close
 	                    },
 	                    _react2.default.createElement(
 	                        'ul',
@@ -13559,9 +13567,29 @@ webpackJsonp([0],[
 	                                    )
 	                                )
 	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'col s12 m12 l12', style: { padding: "0 30px" } },
+	                            'Version ',
+	                            _Constants.APP_VERSION
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'col s12 m12 l12', style: { padding: "0 30px" } },
+	                            'Build No. ',
+	                            _Constants.BUILD_VERSION
 	                        )
 	                    )
-	                )
+	                ),
+	                _react2.default.createElement(_ConfirmDialog2.default, {
+	                    ref: 'confirmLogout',
+	                    content: 'Your changes will be lost if not submitted. Would you like to continue?',
+	                    title: 'Confirmation',
+	                    cancelLabel: 'No',
+	                    confirmLabel: 'Yes',
+	                    handleConfirm: this.handleconfirmLogout.bind(this)
+	                })
 	            );
 	        }
 	    }]);
@@ -13572,37 +13600,36 @@ webpackJsonp([0],[
 	module.exports = NavigationMenu;
 
 /***/ },
-/* 612 */
+/* 613 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/account.svg";
 
 /***/ },
-/* 613 */
+/* 614 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/logout.svg";
 
 /***/ },
-/* 614 */
+/* 615 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/itinerary.svg";
 
 /***/ },
-/* 615 */
+/* 616 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/home.svg";
 
 /***/ },
-/* 616 */
+/* 617 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/cross.svg";
 
 /***/ },
-/* 617 */,
 /* 618 */,
 /* 619 */,
 /* 620 */,
@@ -13665,301 +13692,766 @@ webpackJsonp([0],[
 /* 677 */,
 /* 678 */,
 /* 679 */,
-/* 680 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _AltApp = __webpack_require__(267);
-
-	var _AltApp2 = _interopRequireDefault(_AltApp);
-
-	var _MyAccountActions = __webpack_require__(681);
-
-	var _MyAccountActions2 = _interopRequireDefault(_MyAccountActions);
-
-	var _LoginActions = __webpack_require__(266);
-
-	var _LoginActions2 = _interopRequireDefault(_LoginActions);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	var normalizePersonalDetails = function normalizePersonalDetails(response) {
-	  var userData = response.userData;
-	  return {
-	    passengerId: userData.personId && userData.personId[0],
-	    passengerFirstName: userData.firstName && userData.firstName[0],
-	    passengerLastName: userData.lastName && userData.lastName[0],
-	    passengerEmail: response.userName,
-	    phoneNumber: userData.phoneNumber && userData.phoneNumber[0],
-	    passengerDob: userData.dateOfBirth && userData.dateOfBirth[0],
-	    imageURL: userData.imageURL && userData.imageURL[0]
-	  };
-	};
-
-	var PersonalDetailsStore = function () {
-	  function PersonalDetailsStore() {
-	    _classCallCheck(this, PersonalDetailsStore);
-
-	    if (sessionStorage.personalDetails && sessionStorage.personalDetails != 'undefined') {
-	      this.personalDetails = JSON.parse(sessionStorage.getItem('personalDetails'));
-	    } else {
-	      this.personalDetails = {
-	        passengerId: null,
-	        passengerFirstName: null,
-	        passengerLastName: null,
-	        passengerEmail: null,
-	        phoneNumber: null,
-	        passengerDob: null,
-	        imageURL: null
-	      };
-	    }
-	    this.editMessage = null;
-	    this.preventedLogout = false;
-	    this.edited = false;
-	    this.bindListeners({
-	      onAfterLogin: _LoginActions2.default.AFTER_LOGIN,
-	      onAfterLogout: _LoginActions2.default.AFTER_LOGOUT,
-	      onUpdatePreventedLogout: _LoginActions2.default.LOGOUT
-	    });
-	    this.bindActions(_MyAccountActions2.default);
-	  }
-
-	  _createClass(PersonalDetailsStore, [{
-	    key: 'onUpdatePreventedLogout',
-	    value: function onUpdatePreventedLogout(preventedLogout) {
-	      this.setState({ preventedLogout: preventedLogout });
-	    }
-	  }, {
-	    key: 'onUpdateEdited',
-	    value: function onUpdateEdited(edited) {
-	      this.setState({ edited: edited });
-	    }
-	  }, {
-	    key: 'onAfterLogin',
-	    value: function onAfterLogin(response) {
-
-	      var personalDetails = normalizePersonalDetails(response);
-
-	      this.setState({ personalDetails: personalDetails });
-	      sessionStorage.setItem('personalDetails', JSON.stringify(personalDetails));
-	    }
-	  }, {
-	    key: 'onAfterLogout',
-	    value: function onAfterLogout() {
-	      sessionStorage.removeItem('personalDetails');
-	      this.setState({
-	        personalDetails: null,
-	        editMessage: null
-	      });
-	    }
-	  }, {
-	    key: 'onAfterUpdatePersonalDetails',
-	    value: function onAfterUpdatePersonalDetails(_ref) {
-	      var response = _ref.response;
-	      var message = _ref.message;
-
-	      if (message.indexOf('updated') > 0) {
-	        var personalDetails = normalizePersonalDetails(response);
-
-	        this.setState({ editMessage: message, personalDetails: personalDetails, edited: false });
-	        sessionStorage.setItem('personalDetails', JSON.stringify(personalDetails));
-	      } else {
-	        this.setState({ editMessage: message });
-	      }
-	    }
-	  }, {
-	    key: 'onUpdateEditMessage',
-	    value: function onUpdateEditMessage(message) {
-	      this.setState({ editMessage: message });
-	    }
-	  }]);
-
-	  return PersonalDetailsStore;
-	}();
-
-	exports.default = _AltApp2.default.createStore(PersonalDetailsStore, 'PersonalDetailsStore');
-
-/***/ },
+/* 680 */,
 /* 681 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {'use strict';
 
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	var _AltApp = __webpack_require__(267);
 
 	var _AltApp2 = _interopRequireDefault(_AltApp);
 
-	var _MyAccountSource = __webpack_require__(682);
+	var _react = __webpack_require__(1);
 
-	var _MyAccountSource2 = _interopRequireDefault(_MyAccountSource);
+	var _react2 = _interopRequireDefault(_react);
 
-	var _LoginSource = __webpack_require__(432);
+	var _RAFActions = __webpack_require__(682);
 
-	var _LoginSource2 = _interopRequireDefault(_LoginSource);
+	var _RAFActions2 = _interopRequireDefault(_RAFActions);
 
 	var _Cache = __webpack_require__(281);
 
 	var _Cache2 = _interopRequireDefault(_Cache);
 
+	var _jslinq = __webpack_require__(685);
+
+	var _jslinq2 = _interopRequireDefault(_jslinq);
+
 	var _Helpers = __webpack_require__(317);
 
 	var _Helpers2 = _interopRequireDefault(_Helpers);
 
-	var _User = __webpack_require__(599);
+	var _Messages = __webpack_require__(588);
+
+	var _autoComplete = __webpack_require__(687);
+
+	var _autoComplete2 = _interopRequireDefault(_autoComplete);
+
+	var _moment = __webpack_require__(320);
+
+	var _moment2 = _interopRequireDefault(_moment);
+
+	var _User = __webpack_require__(600);
 
 	var _User2 = _interopRequireDefault(_User);
+
+	var _reactAddonsUpdate = __webpack_require__(698);
+
+	var _reactAddonsUpdate2 = _interopRequireDefault(_reactAddonsUpdate);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	var MyAccountActions = function () {
-	  function MyAccountActions() {
-	    _classCallCheck(this, MyAccountActions);
+	var RAFStore = function () {
+	  function RAFStore() {
+	    _classCallCheck(this, RAFStore);
+
+	    this.filter = function (searchText, key, item) {
+	      return searchText == null ? false : !!item.searchAbleText.match(new RegExp(searchText.replace(/[.?*+^$[\]\\(){}\}|-]/g, "\\$&"), 'i'));
+	    };
+	    this.initializeStore();
+	    this.bindActions(_RAFActions2.default);
 	  }
 
-	  _createClass(MyAccountActions, [{
-	    key: 'setTermsConditions',
-	    value: function setTermsConditions(termsConditions) {
-	      return termsConditions;
-	    }
-	  }, {
-	    key: 'fetchTermsConditions',
-	    value: function fetchTermsConditions() {
-	      var _this = this;
+	  _createClass(RAFStore, [{
+	    key: 'initializeStore',
+	    value: function initializeStore() {
+	      this.pickdsChanged = false;
+	      this.dropdsChanged = false;
+	      this.aircrafts = [];
+	      this.airports = [];
 
-	      return function (dispatch) {
-	        dispatch();
+	      this.message = '';
+	      this.successMesg = '';
+	      this.tabIndex = 0;
+	      this.stateDirty = false;
 
-	        _Helpers2.default.showLoader(true);
+	      this.pickFilter = _autoComplete2.default.noFilter;
+	      this.allPickAirportsList = [];
+	      this.pickAirports = [];
 
-	        _MyAccountSource2.default.fetchTermsConditions().then(function (data) {
-	          _Helpers2.default.showLoader(false);
-	          _this.setTermsConditions(data);
-	        }, function (err) {
-	          _Helpers2.default.showLoader(false);
-	        });
+	      this.dropFilter = _autoComplete2.default.noFilter;
+	      this.allDropAirportsList = [];
+	      this.dropAirports = [];
+
+	      this.nearbyAirports = [];
+	      this.recentAirports = [];
+
+	      this.recentAirportsList = [];
+
+	      this.legs = [];
+
+	      var time = (0, _moment2.default)().add(10, 'minutes').format("HH:mm");
+	      var timeArr = time.split(":");
+	      var hours = timeArr[0];
+	      var minutes = _Helpers2.default.roundTo5Minutes(timeArr[1]);
+
+	      this.isOrderFromItinerary = false;
+
+	      this.emptyLeg = {
+
+	        tempId: Math.random(), guid: null,
+	        date: (0, _moment2.default)().add(10, 'minutes').format('MM/DD/YYYY'),
+	        time: hours + ":" + minutes,
+	        defaultDate: (0, _moment2.default)().add(10, 'minutes').toDate(),
+	        minDate: (0, _moment2.default)().add(10, 'minutes').toDate(),
+	        maxDate: (0, _moment2.default)().add(_Helpers2.default.getFutureDateOffset(), 'months').toDate(),
+	        from: null, to: null, fromLocation: { lat: 0, lng: 0 }, toLocation: { lat: 0, lng: 0 },
+	        departTime: null, arrivalTime: null, aircraft: null, duration: null, passengerCount: 1,
+	        toAirportText: '', fromAirportText: '', //text to show in autocomplete
+	        fromAirportObj: null, toAirportObj: null, aircraftObj: null, maxPax: 2,
+	        fromWeather: null, toWeather: null, editMode: false, //if true it will open in tabs form
+	        flagClassFrom: '', flagClassTo: '', fromSelectedClass: '', toSelectedClass: '',
+	        formMode: 'add' //leg mode if open in tabs form
 	      };
+	      this.activeLeg = {}; //leg to show in tabs
+	      this.loadActiveLeg();
+	      this.itinerary = '';
+	      this.cancelRestoreLeg = {};
+
+	      // taking this variable to have geo location of user in store so that it can be re used
+	      this.userLocation = '';
 	    }
 	  }, {
-	    key: 'updatePersonalDetails',
-	    value: function updatePersonalDetails(data) {
-	      var _this2 = this;
+	    key: 'loadActiveLeg',
+	    value: function loadActiveLeg() {
+	      this.activeLeg = {}; //first get refrence of free obj
+	      this.activeLeg = (0, _reactAddonsUpdate2.default)({}, { $merge: this.emptyLeg });
 
-	      return function (dispatch) {
-	        dispatch();
-	        _Helpers2.default.showLoader(true);
-	        _MyAccountSource2.default.updatePersonalDetails(data).then(function (dataUpdated) {
-	          _Helpers2.default.showLoader(false);
+	      this.activeLeg.editMode = true;
+	      this.activeLeg.guid = _Helpers2.default.guid();
+	      this.legs.push(this.activeLeg);
+	    }
+	  }, {
+	    key: 'onUpdateAirCraft',
+	    value: function onUpdateAirCraft(aircraft) {
+	      this.stateDirty = true;
+	      this.activeLeg.aircraft = aircraft;
+	      this.activeLeg.aircraftObj = (0, _jslinq2.default)(this.aircrafts).singleOrDefault(function (el) {
+	        return el.code[0] == aircraft;
+	      });
 
-	          var data = {
-	            userToken: _Cache2.default.getSession('usertoken'),
-	            userName: _Cache2.default.getSession('username'),
-	            userData: dataUpdated.data
-	          };
-	          // TODO @vsilva remove jquery                                                                  
-	          if (data.userData.imageURL) {
-	            $('span.usrImg').css('background', 'url(' + data.userData.imageURL + ') no-repeat');
+	      this.activeLeg.maxPax = parseInt(this.activeLeg.aircraftObj.maxNumberOfPassengers[0]);
+
+	      if (this.activeLeg.fromAirportObj != null && this.activeLeg.toAirportObj != null) {
+	        this.calculateDuration(); //if airports selected then calculate duration also
+	      }
+
+	      if (this.activeLeg.passengerCount > this.activeLeg.maxPax) {
+	        var successMesg = '';
+	        successMesg = _Messages.ERROR_MESSAGES['passengerExceed'];
+	        successMesg = successMesg.replace('{Aircraft}', _Helpers2.default.capitalizeFirstLetter(this.activeLeg.aircraftObj.displayName[0]));
+	        successMesg = successMesg.replace('{pastLimit}', this.activeLeg.maxPax);
+	        successMesg = successMesg.replace('{newLimit}', this.activeLeg.maxPax);
+	        this.successMesg = successMesg;
+
+	        //TODO: need to call showSnackMessage directly instead of state.
+	        var self = this;
+	        setTimeout(function () {
+	          self.successMesg = '';
+	        }, 1000);
+	        this.activeLeg.passengerCount = this.activeLeg.maxPax;
+	      }
+	    }
+	  }, {
+	    key: 'onAddLeg',
+	    value: function onAddLeg() {
+
+	      this.activeLeg.editMode = false;
+
+	      this.legs.sort(function (a, b) {
+	        return new Date(a.departTime) - new Date(b.departTime);
+	      });
+
+	      this.tabIndex = 0;
+	      var successMesg = '';
+	      if (this.activeLeg.formMode != 'edit') {
+	        successMesg = _Messages.ERROR_MESSAGES['legAddSuccessMsg'];
+	      } else {
+	        successMesg = _Messages.ERROR_MESSAGES['legUpdateSuccessMsg'];
+	      }
+	      successMesg = successMesg.replace('{deptAirport}', _Helpers2.default.capitalizeFirstLetter(this.activeLeg.fromAirportObj.name[0]));
+	      successMesg = successMesg.replace('{arrivalAirport}', _Helpers2.default.capitalizeFirstLetter(this.activeLeg.toAirportObj.name[0]));
+	      this.successMesg = successMesg;
+	      this.activeLeg.formMode = 'add'; //if it was in edit mode make it add mode explicitly again
+	      //TODO: need to call showSnackMessage directly instead of state.
+	      var self = this;
+	      setTimeout(function () {
+	        self.successMesg = '';
+	      }, 1000);
+	      setTimeout(function () {
+	        _Helpers2.default.setRAFMapHeight();
+	      }, 500);
+	    }
+	  }, {
+	    key: 'onAddMoreLeg',
+	    value: function onAddMoreLeg() {
+
+	      this.loadActiveLeg();
+
+	      this.tabIndex = 0;
+	      this.activeLeg.tempId = _Helpers2.default.guid();
+
+	      this.stateDirty = true;
+	      //from last leg destination to starting leg destination
+	      this.activeLeg.from = this.legs[this.legs.length - 2].to;
+	      this.activeLeg.defaultDate = undefined;
+	      this.activeLeg.date = 'Invalid date';
+	      this.onLoadNearby(this.userLocation);
+
+	      var time = (0, _moment2.default)().add(10, 'minutes').format("HH:mm");
+	      var timeArr = time.split(":");
+	      var hours = timeArr[0];
+	      var minutes = _Helpers2.default.roundTo5Minutes(timeArr[1]);
+	      //this.activeLeg.time=hours+":"+minutes;
+	      this.activeLeg.time = '';
+	      this.activeLeg.departTime = null;
+	      this.activeLeg.arrivalTime = null;
+	      this.activeLeg.fromAirportObj = this.legs[this.legs.length - 2].toAirportObj;
+	      this.activeLeg.fromAirportText = _Helpers2.default.capitalizeFirstLetter(this.activeLeg.fromAirportObj.name[0]) + ' ' + this.activeLeg.fromAirportObj.icao[0];
+	      this.activeLeg.flagClassFrom = 'flag-style flag-icon flag-icon-' + this.activeLeg.fromAirportObj.iso2[0].toLowerCase().substring(0, 2);
+	      this.activeLeg.fromSelectedClass = 'country-selected';
+	      this.activeLeg.aircraftObj = this.legs[this.legs.length - 2].aircraftObj;
+	      this.activeLeg.aircraft = this.activeLeg.aircraftObj.code[0];
+	      this.activeLeg.maxPax = parseInt(this.activeLeg.aircraftObj.maxNumberOfPassengers[0]);
+	      this.activeLeg.passengerCount = parseInt(this.legs[this.legs.length - 2].passengerCount);
+	      this.activeLeg.fromWeather = this.legs[this.legs.length - 2].toWeather;
+	      //this.setUserAircraft();
+	    }
+	  }, {
+	    key: 'onAddReturnLeg',
+	    value: function onAddReturnLeg() {
+
+	      this.loadActiveLeg();
+	      this.stateDirty = true;
+	      this.activeLeg.tempId = _Helpers2.default.guid();
+	      this.tabIndex = 0;
+
+	      //from last leg destination to starting leg destination
+	      this.activeLeg.from = this.legs[this.legs.length - 2].to;
+	      this.activeLeg.to = this.legs[0].from;
+
+	      this.activeLeg.passengerCount = this.legs[this.legs.length - 2].passengerCount;
+	      this.activeLeg.aircraft = this.legs[this.legs.length - 2].aircraft;
+	      this.activeLeg.aircraftObj = this.legs[this.legs.length - 2].aircraftObj;
+	      this.activeLeg.maxPax = this.legs[this.legs.length - 2].maxPax;
+	      this.activeLeg.toAirportObj = this.activeLeg.arrivalAirport = this.legs[0].fromAirportObj;
+	      this.activeLeg.fromAirportObj = this.activeLeg.departureAirport = this.legs[this.legs.length - 2].toAirportObj;
+	      this.activeLeg.fromWeather = this.legs[this.legs.length - 2].toWeather;
+	      this.activeLeg.toWeather = this.legs[0].fromWeather; //TODO: fetch the dest weather in return leg also
+
+	      //now datetime picker would be greater than arrival time
+	      var d = new Date(this.legs[this.legs.length - 2].arrivalTime);
+	      var mom = (0, _moment2.default)(d);
+	      this.activeLeg.defaultDate = undefined;
+	      //this.activeLeg.defaultDate = new Date(d.getTime() + (-1 * mom.utcOffset() *60000)); //subtracting utc offset
+
+	      this.activeLeg.date = 'Invalid date';
+	      this.activeLeg.time = '';
+	      this.activeLeg.departTime = null;
+	      this.activeLeg.arrivalTime = null;
+
+	      this.activeLeg.fromAirportText = _Helpers2.default.capitalizeFirstLetter(this.activeLeg.fromAirportObj.name[0]) + ' ' + this.activeLeg.fromAirportObj.icao[0];
+	      this.activeLeg.toAirportText = _Helpers2.default.capitalizeFirstLetter(this.activeLeg.toAirportObj.name[0]) + ' ' + this.activeLeg.toAirportObj.icao[0];
+
+	      this.activeLeg.flagClassFrom = 'flag-style flag-icon flag-icon-' + this.activeLeg.fromAirportObj.iso2[0].toLowerCase().substring(0, 2);
+	      this.activeLeg.fromSelectedClass = 'country-selected';
+
+	      this.activeLeg.flagClassTo = 'flag-style flag-icon flag-icon-' + this.activeLeg.toAirportObj.iso2[0].toLowerCase().substring(0, 2);
+	      this.activeLeg.toSelectedClass = 'country-selected';
+
+	      this.pickAirports = this.allPickAirportsList;
+	      this.pickFilter = this.filter;
+	      this.pickdsChanged = true;
+
+	      this.dropAirports = this.allDropAirportsList;
+	      this.dropFilter = this.filter;
+	      this.dropdsChanged = true;
+
+	      this.calculateDuration();
+	    }
+	  }, {
+	    key: 'onLoadItinerary',
+	    value: function onLoadItinerary(data) {
+
+	      var self = this;
+	      this.legs = [];
+	      this.itinerary = data.itinerary.itinerariesResponse.itinerary[0];
+	      var key = data.params.key;
+	      var selectedLegId = data.params.legId;
+	      var uniqueIdentifier = data.params.uniqueIdentifier;
+	      this.isOrderFromItinerary = true;
+	      data.itinerary.itinerariesResponse.itinerary[0].legs[0].leg.forEach(function (leg) {
+
+	        self.activeLeg = {
+
+	          tempId: Math.random(),
+	          guid: _Helpers2.default.guid(),
+
+	          date: (0, _moment2.default)(leg.departureAirportTimeLocal[0]).format('MM/DD/YYYY'),
+	          time: (0, _moment2.default)(leg.departureAirportTimeLocal[0]).format('HH:mm'),
+	          timePicker: now,
+	          defaultDate: (0, _moment2.default)().add(10, 'minutes').toDate(),
+	          minDate: (0, _moment2.default)().add(10, 'minutes').toDate(),
+	          from: null, to: null, fromLocation: { lat: 0, lng: 0 }, toLocation: { lat: 0, lng: 0 },
+	          departTime: leg.departureAirportTimeLocal[0],
+	          arrivalTime: leg.arrivalAirportTimeLocal[0],
+	          departureAirportTimeLocal: leg.departureAirportTimeLocal,
+	          arrivalAirportTimeLocal: leg.arrivalAirportTimeLocal,
+	          aircraft: null, duration: null, passengerCount: leg.numberOfPassenger[0],
+	          toAirportText: '', fromAirportText: '', //text to show in autocomplete
+	          fromAirportObj: null, toAirportObj: null, aircraftObj: null, maxPax: 2,
+	          fromWeather: null, toWeather: null, editMode: false, //if true it will open in tabs form
+	          flagClassFrom: '', flagClassTo: '', fromSelectedClass: '', toSelectedClass: '',
+	          formMode: '' }; //leg mode if open in tabs form}
+
+	        /*Get Itenerary Detail*/
+	        //var airPorts = Cache.getLocal('airports', true);
+	        //var airCrafts = Cache.getLocal('aircrafts', true).aircraftTypeResponseDtoes.aircrafttype;
+	        ////this.itineraryDetail = data.itinerary.itinerariesResponse.itinerary[0];
+	        //this.itineraryDetail.orderKey = data.key;
+	        //this.itineraryDetail.orderId = data.uniqueIdentifier;
+	        //
+	        //this.itineraryDetail.legs[0].leg.forEach(function(leg) {
+	        self.activeLeg.fromAirportObj = self.activeLeg.departureAirport = (0, _jslinq2.default)(self.airports).where(function (e) {
+	          return e.airport.id[0] == leg.departureAirportId[0];
+	        }).toList()[0].airport;
+
+	        self.activeLeg.toAirportObj = self.activeLeg.arrivalAirport = (0, _jslinq2.default)(self.airports).where(function (e) {
+	          return e.airport.id[0] == leg.arrivalAirportId[0];
+	        }).toList()[0].airport;
+
+	        // if leg lies in 24 hour format OR request Aircraft is not set OR is equal to N/A
+	        // then use key aircraftTypeName to get aircraft details
+	        // else use key requestedAircraftTypeName to get aircraft details
+	        //if() {
+	        self.activeLeg.aircraftObj = (0, _jslinq2.default)(self.aircrafts).where(function (e) {
+	          return e.code[0] == leg.aircraftTypeName[0] || e.displayName[0] == leg.aircraftTypeName[0] || e.name[0] == leg.aircraftTypeName[0];
+	        }).toList()[0];
+	        //}
+	        //else {
+	        //  self.activeLeg.aircraft = JsLinq(self.aircrafts).where(function(e){ return e.code[0] == leg.requestedAircraftTypeName[0] || e.displayName[0] == leg.requestedAircraftTypeName[0] || e.name[0] == leg.requestedAircraftTypeName[0] }).toList()[0];
+	        //}
+	        if (leg.flightLegExtIdentifier == selectedLegId || leg.legId == selectedLegId) {
+	          if (_Helpers2.default.isEditableLeg(self.activeLeg)) {
+	            self.activeLeg.formMode = 'edit';
+	            self.activeLeg.editMode = true;
 	          }
-	          $('span.usrTitle').text(data.userData.firstName);
-	          //cache.saveSession('userdata', data.userData, true);                                                      
-	          _User2.default.login(data);
-	          _this2.afterUpdatePersonalDetails(data, 'Personal details updated!');
-	          //this.getTokenAfterUpdate(dataUpdated, payload);
-	        }, function (err) {
-	          _Helpers2.default.showLoader(false);
-	          _this2.afterUpdatePersonalDetails(err, 'An error occurred.');
-	        });
-	      };
+	        }
+
+	        self.activeLeg.maxPax = parseInt(self.activeLeg.aircraftObj.maxNumberOfPassengers[0]);
+	        self.activeLeg.from = self.activeLeg.fromAirportObj.id[0];
+	        self.activeLeg.to = self.activeLeg.toAirportObj.id[0];
+	        self.activeLeg.fromAirportText = _Helpers2.default.capitalizeFirstLetter(self.activeLeg.fromAirportObj.name[0]) + ' ' + self.activeLeg.fromAirportObj.icao[0];
+	        self.activeLeg.toAirportText = _Helpers2.default.capitalizeFirstLetter(self.activeLeg.toAirportObj.name[0]) + ' ' + self.activeLeg.toAirportObj.icao[0];
+
+	        self.activeLeg.flagClassFrom = 'flag-style flag-icon flag-icon-' + self.activeLeg.fromAirportObj.iso2[0].toLowerCase().substring(0, 2);
+	        self.activeLeg.fromSelectedClass = 'country-selected';
+
+	        self.activeLeg.flagClassTo = 'flag-style flag-icon flag-icon-' + self.activeLeg.toAirportObj.iso2[0].toLowerCase().substring(0, 2);
+	        self.activeLeg.toSelectedClass = 'country-selected';
+
+	        self.activeLeg.duration = _Helpers2.default.getFlightDuration(self.activeLeg.fromAirportObj, self.activeLeg.toAirportObj, self.activeLeg.aircraftObj);
+
+	        if ("legId" in leg) {
+	          leg.key = "flightLegId";
+	          leg.uniqueIdentifier = leg.legId[0];
+	        } else {
+	          leg.key = "flightLegExtIdentifier";
+	          leg.uniqueIdentifier = leg.flightLegExtIdentifier[0];
+	        }
+	        //});
+	        /*Get Itenerary Detail*/
+	        self.legs.push(self.activeLeg);
+	      });
 	    }
 	  }, {
-	    key: 'getTokenAfterUpdate',
-	    value: function getTokenAfterUpdate(dataUpdated, payload) {
-	      var _this3 = this;
+	    key: 'onEditLeg',
+	    value: function onEditLeg(data) {
 
-	      return function (dispatch) {
+	      var legToEdit = (0, _jslinq2.default)(this.legs).singleOrDefault(function (e) {
+	        return e.guid == data.guid;
+	      });
 
-	        dispatch();
+	      //this.cancelRestoreLeg = ReactUpdate(this.cancelRestoreLeg, {$merge:legToEdit});
+	      $.extend(this.cancelRestoreLeg, legToEdit);
+	      this.activeLeg = {};
+	      this.activeLeg = legToEdit; //refer to this obj in legs list
+	      this.stateDirty = true;
 
-	        _LoginSource2.default.login(payload).then(function (data) {
+	      this.activeLeg.formMode = 'edit';
 
-	          payload.token = data.token;
-	          _this3.authenticateAfterUpdate(dataUpdated, payload);
-	        }).catch(function (response) {
-	          _this3.afterUpdatePersonalDetails(dataUpdated, 'An error occurred.');
-	        });
-	      };
+	      this.activeLeg.defaultDate = new Date(legToEdit.date + ' ' + legToEdit.time);
+	      this.activeLeg.editMode = true;
+
+	      this.activeLeg.fromAirportText = _Helpers2.default.capitalizeFirstLetter(this.activeLeg.fromAirportObj.name[0]) + ' ' + this.activeLeg.fromAirportObj.icao[0];
+	      this.activeLeg.toAirportText = _Helpers2.default.capitalizeFirstLetter(this.activeLeg.toAirportObj.name[0]) + ' ' + this.activeLeg.toAirportObj.icao[0];
+
+	      this.activeLeg.flagClassFrom = 'flag-style flag-icon flag-icon-' + this.activeLeg.fromAirportObj.iso2[0].toLowerCase().substring(0, 2);
+	      this.activeLeg.fromSelectedClass = 'country-selected';
+
+	      this.activeLeg.flagClassTo = 'flag-style flag-icon flag-icon-' + this.activeLeg.toAirportObj.iso2[0].toLowerCase().substring(0, 2);
+	      this.activeLeg.toSelectedClass = 'country-selected';
+	      this.activeLeg.departureAirport = this.activeLeg.fromAirportObj;
+	      this.activeLeg.arrivalAirport = this.activeLeg.toAirportObj;
+	      this.pickAirports = this.allPickAirportsList;
+	      this.pickFilter = this.filter;
+	      this.pickdsChanged = true;
+
+	      this.dropAirports = this.allDropAirportsList;
+	      this.dropFilter = this.filter;
+	      this.dropdsChanged = true;
+
+	      this.tabIndex = data.tabIndex;
 	    }
 	  }, {
-	    key: 'authenticateAfterUpdate',
-	    value: function authenticateAfterUpdate(dataUpdated, payload) {
-	      var _this4 = this;
+	    key: 'onDeleteLeg',
+	    value: function onDeleteLeg(guid) {
 
-	      return function (dispatch) {
+	      this.legs = this.legs.filter(function (e) {
+	        return e.guid != guid;
+	      }); //removing from array
 
-	        dispatch();
+	      if (this.legs.length == 0) {
+	        this.stateDirty = false;
+	        this.loadActiveLeg();
+	        this.setUserAircraft();
+	        this.tabIndex = 0;
+	      }
+	    }
+	  }, {
+	    key: 'onCancelLeg',
+	    value: function onCancelLeg() {
+	      if (this.activeLeg.formMode == 'edit') {
+	        //this.activeLeg = ReactUpdate(this.activeLeg, {$merge:this.cancelRestoreLeg});
 
-	        _LoginSource2.default.authenticate(payload).then(function (data) {
-	          data.userName = payload.username;
-	          data.rememberMe = payload.remember;
-	          data.userData.password = payload.password;
-	          dataUpdated.imageURL = data.userData.imageURL;
-	          if (dataUpdated.imageURL) {
-	            $('div.usrProfile > span.usrImg').css('background', 'url(' + data.userData.imageURL[0] + ') no-repeat');
+	        //$.extend(this.activeLeg, this.cancelRestoreLeg);
+
+	        this.activeLeg.fromAirportText = _Helpers2.default.capitalizeFirstLetter(this.activeLeg.fromAirportObj.name[0]) + ' ' + this.activeLeg.fromAirportObj.icao[0];
+	        this.activeLeg.toAirportText = _Helpers2.default.capitalizeFirstLetter(this.activeLeg.toAirportObj.name[0]) + ' ' + this.activeLeg.toAirportObj.icao[0];
+
+	        this.activeLeg.formMode = 'edit';
+	      } else {
+	        //add new add return add more case
+	        this.activeLeg.formMode = 'add';
+	        this.activeLeg.editMode = false;
+
+	        this.legs.pop(); //just pop in add more and in add return
+
+	        if (this.legs.length == 0) {
+	          // load the active leg in first add case
+	          this.loadActiveLeg();
+	          this.setUserAircraft();
+	          this.activeLeg.passengerCount = 1;
+	          this.activeLeg.fromAirportText = null;
+	          this.activeLeg.toAirportText = null;
+	        }
+	      }
+
+	      var time = (0, _moment2.default)().add(10, 'minutes').format("HH:mm");
+	      var timeArr = time.split(":");
+	      var hours = timeArr[0];
+	      var minutes = _Helpers2.default.roundTo5Minutes(timeArr[1]);
+
+	      this.activeLeg.time = hours + ":" + minutes;
+	      this.activeLeg.defaultDate = (0, _moment2.default)().add(10, 'minutes').toDate();
+	      this.activeLeg.date = (0, _moment2.default)().add(10, 'minutes').format('MM/DD/YYYY');
+	      this.tabIndex = 0;
+
+	      setTimeout(function () {
+	        _Helpers2.default.setRAFMapHeight();
+	      }, 500);
+	    }
+	  }, {
+	    key: 'setUserAircraft',
+	    value: function setUserAircraft() {
+	      var userPrefAircraft = _User2.default.getPreferredAirCraft();
+
+	      if (!!userPrefAircraft) {
+	        var a = (0, _jslinq2.default)(this.aircrafts).where(function (e) {
+	          return e.id[0] == userPrefAircraft;
+	        }).toList()[0];
+
+	        this.activeLeg.aircraftObj = a;
+	        this.activeLeg.aircraft = a.code[0];
+	        this.activeLeg.maxPax = parseInt(this.activeLeg.aircraftObj.maxNumberOfPassengers[0]);
+	      }
+	    }
+	  }, {
+	    key: 'onLoadAircrafts',
+	    value: function onLoadAircrafts(data) {
+	      this.aircrafts = data.aircrafts.aircraftTypeResponseDtoes.aircrafttype;
+	      this.aircrafts.sort(function (a, b) {
+	        return parseInt(b.rank[0]) - parseInt(a.rank[0]);
+	      });
+	      this.setUserAircraft();
+	    }
+	  }, {
+	    key: 'onLoadAirports',
+	    value: function onLoadAirports(data) {
+	      /*this.airports = data.airports.listOfAirports.airport;*/
+	      this.airports = [];
+	      var self = this;
+	      data.airports.listOfAirports.airport.forEach(function (airport) {
+	        self.airports.push({
+	          searchString: airport.city[0].trim() + ' ' + (airport.iata != null ? airport.iata[0].trim() : '') + ' ' + airport.name[0].trim() + ' ' + airport.icao[0].trim() + ' ' + airport.country[0].trim() + ' ' + (airport.iso2 != null ? airport.iso2[0].trim() : ''),
+	          selectedText: _Helpers2.default.capitalizeFirstLetter(airport.name[0]) + ' ' + airport.icao[0],
+	          //text: Helpers.capitalizeFirstLetter(airport.name[0])+' '+airport.icao[0],
+	          displayText: _Helpers2.default.getAirportDisplayText(airport),
+	          airport: airport
+	        });
+	      });
+	      var rec = [];
+
+	      if (_Cache2.default.sessionExists('recentAirports')) {
+	        this.recentAirports = _Cache2.default.getSession('recentAirports', true);
+	        var allAir = this.airports;
+	        this.recentAirports.forEach(function (air) {
+	          var airport = (0, _jslinq2.default)(allAir).singleOrDefault(function (e) {
+	            return e.airport.id[0] == air;
+	          });
+	          rec.push({
+	            searchString: airport.airport.city[0].trim() + ' ' + (airport.airport.iata != null ? airport.airport.iata[0].trim() : '') + ' ' + airport.airport.name[0].trim() + ' ' + airport.airport.icao[0].trim() + ' ' + airport.airport.country[0].trim() + ' ' + (airport.airport.iso2 != null ? airport.airport.iso2[0].trim() : ''),
+	            selectedText: _Helpers2.default.capitalizeFirstLetter(airport.airport.name[0]) + ' ' + airport.airport.icao[0],
+	            //text: Helpers.capitalizeFirstLetter(airport.name[0])+' '+airport.icao[0],
+	            displayText: _Helpers2.default.getAirportDisplayText(airport.airport),
+	            airport: airport.airport
+
+	          });
+	        });
+	      } else {
+	        rec = [];
+	      }
+	      //{rec.push({
+	      //      searchString: '',
+	      //      selectedText:'',
+	      //      displayText: 'No Items Found',
+	      //      airport: ''
+	      //    })
+	      //}
+
+	      this.recentAirportsList = rec;
+	    }
+	  }, {
+	    key: 'onLoadNearby',
+	    value: function onLoadNearby(country) {
+	      this.userLocation = country;
+
+	      var nearbyairports = [];
+
+	      if (country.length > 0) {
+	        this.airports.forEach(function (airport) {
+	          if (country == airport.airport.country[0].toLowerCase()) {
+	            nearbyairports.push({
+	              searchString: airport.airport.city[0].trim() + ' ' + (airport.airport.iata != null ? airport.airport.iata[0].trim() : '') + ' ' + airport.airport.name[0].trim() + ' ' + airport.airport.icao[0].trim() + ' ' + airport.airport.country[0].trim() + ' ' + (airport.airport.iso2 != null ? airport.airport.iso2[0].trim() : ''),
+	              selectedText: _Helpers2.default.capitalizeFirstLetter(airport.airport.name[0]) + ' ' + airport.airport.icao[0],
+	              displayText: _Helpers2.default.getAirportDisplayText(airport.airport),
+	              airport: airport.airport
+
+	            });
 	          }
-	          $('div.usrProfile > span.usrTitle').text(data.userData.firstName[0]);
-
-	          _User2.default.login(data);
-
-	          _this4.afterUpdatePersonalDetails(dataUpdated, 'Personal details updated!');
-	        }).catch(function (response) {
-	          _this4.afterUpdatePersonalDetails(dataUpdated, 'An error occurred.');
 	        });
-	      };
+	      } else {
+	        nearbyairports.push([{
+	          text: 'No Items Found',
+	          searchAbleText: ''
+
+	        }]);
+	      }
+	      this.nearbyAirports = nearbyairports;
 	    }
 	  }, {
-	    key: 'afterUpdatePersonalDetails',
-	    value: function afterUpdatePersonalDetails(response, message) {
-	      return { response: response, message: message };
+	    key: 'onNextClick',
+	    value: function onNextClick(index) {
+
+	      this.tabIndex = index.index;
+	      //this.message = '';
 	    }
 	  }, {
-	    key: 'updateEditMessage',
-	    value: function updateEditMessage(message) {
-	      return function (dispatch) {
-	        dispatch(message);
-	      };
+	    key: 'onSelectPassengerCount',
+	    value: function onSelectPassengerCount(c) {
+	      this.activeLeg.passengerCount = c;
+	      this.stateDirty = true;
 	    }
 	  }, {
-	    key: 'updatePreventedLogout',
-	    value: function updatePreventedLogout(preventedLogout) {
-	      return preventedLogout;
+	    key: 'calculateDuration',
+	    value: function calculateDuration() {
+
+	      this.activeLeg.duration = _Helpers2.default.getFlightDuration(this.activeLeg.fromAirportObj, this.activeLeg.toAirportObj, this.activeLeg.aircraftObj);
+	      if (this.activeLeg.time != '') {
+	        var datetimeString = this.activeLeg.date + ' ' + this.activeLeg.time;
+	        this.activeLeg.departTime = _Helpers2.default.getDepartTime(datetimeString, this.activeLeg.fromAirportObj);
+	        this.activeLeg.arrivalTime = _Helpers2.default.getArrivalTime(this.activeLeg.departTime, this.activeLeg.duration, this.activeLeg.fromAirportObj, this.activeLeg.toAirportObj);
+	      }
 	    }
 	  }, {
-	    key: 'updateEdited',
-	    value: function updateEdited(edited) {
-	      return edited;
+	    key: 'onPickupSelectionChange',
+	    value: function onPickupSelectionChange(data) {
+
+	      if (data.selectedAirport != null) {
+	        this.stateDirty = true;
+	        var utcTimeToCompare = _Helpers2.default.getLatestTimeOfAirport(data.selectedAirport);
+
+	        //if(this.activeLeg.fromAirportObj==null ||
+	        //    (data.selectedAirport.name[0]!=this.activeLeg.fromAirportObj.name[0])
+	        //    || this.activeLeg.time !=utcTimeToCompare.format("HH:mm")){
+	        //  this.onShowErrorMessage({message:"Your Departure time is set to current time of Departure airport"});
+	        //}
+	        //this.activeLeg.time=utcTimeToCompare.format("HH:mm");
+
+	        this.activeLeg.minDate = utcTimeToCompare._d;
+	        this.activeLeg.from = data.selectedAirport.id[0];
+	        this.activeLeg.fromAirportObj = this.activeLeg.departureAirport = data.selectedAirport;
+	        this.activeLeg.fromLocation = { lat: data.selectedAirport.latitude[0], lng: data.selectedAirport.longitude[0] };
+	        this.activeLeg.flagClassFrom = 'flag-style flag-icon flag-icon-' + data.selectedAirport.iso2[0].toLowerCase().substring(0, 2);
+	        this.activeLeg.fromSelectedClass = 'country-selected';
+	        var count = (0, _jslinq2.default)(this.recentAirports).where(function (e) {
+	          return e == parseInt(data.selectedAirport.id[0]);
+	        }).count();
+	        if (count < 1) {
+	          this.recentAirports.push(parseInt(data.selectedAirport.id[0]));
+	          _Cache2.default.saveSession('recentAirports', this.recentAirports, true);
+	        }
+	      }
+
+	      //calculation arrival time also
+	      if (this.activeLeg.toAirportObj != null) {
+	        this.calculateDuration();
+	      }
+	    }
+	  }, {
+	    key: 'onDropSelectionChange',
+	    value: function onDropSelectionChange(data) {
+
+	      if (data.selectedAirport != null) {
+	        this.stateDirty = true;
+	        this.activeLeg.to = data.selectedAirport.id[0];
+	        this.activeLeg.toAirportObj = this.activeLeg.arrivalAirport = data.selectedAirport;
+
+	        this.activeLeg.toLocation = { lat: data.selectedAirport.latitude[0], lng: data.selectedAirport.longitude[0] };
+
+	        this.activeLeg.flagClassTo = 'flag-style flag-icon flag-icon-' + data.selectedAirport.iso2[0].toLowerCase().substring(0, 2);
+	        this.activeLeg.toSelectedClass = 'country-selected';
+	        var count = (0, _jslinq2.default)(this.recentAirports).where(function (e) {
+	          return e == parseInt(data.selectedAirport.id[0]);
+	        }).count();
+	        if (count < 1) {
+	          this.recentAirports.push(parseInt(data.selectedAirport.id[0]));
+	          _Cache2.default.saveSession('recentAirports', this.recentAirports, true);
+	        }
+	        //calculation arrival time also
+	        if (this.activeLeg.fromAirportObj != null) {
+	          this.calculateDuration();
+	        }
+	      }
+	    }
+	  }, {
+	    key: 'onPickupAirportChange',
+	    value: function onPickupAirportChange(text) {
+	      this.activeLeg.flagClassFrom = '';
+	      this.activeLeg.fromSelectedClass = '';
+	      if (text.length > 0 || this.pickdsChanged == false) {
+	        this.pickAirports = this.allPickAirportsList;
+	        this.pickFilter = this.filter;
+	        this.pickdsChanged = true;
+	      } else {
+	        this.pickAirports = this.nearbyAirports;
+	        this.pickFilter = _autoComplete2.default.noFilter;
+	      }
+	      this.stateDirty = true;
+	    }
+	  }, {
+	    key: 'onDropAirportChange',
+	    value: function onDropAirportChange(text) {
+	      this.activeLeg.flagClassTo = '';
+	      this.activeLeg.toSelectedClass = '';
+	      if (text.length > 0 || this.dropdsChanged == false) {
+	        this.dropAirports = this.allDropAirportsList;
+	        this.dropFilter = this.filter;
+	        this.dropdsChanged = true;
+	      } else {
+	        this.dropAirports = this.nearbyAirports;
+	        this.dropFilter = _autoComplete2.default.noFilter;
+	      }
+	      this.stateDirty = true;
+	    }
+	  }, {
+	    key: 'onUpdateTime',
+	    value: function onUpdateTime(newTime) {
+	      this.activeLeg.time = newTime;
+	      this.stateDirty = true;
+
+	      if (this.activeLeg.fromAirportObj != null && this.activeLeg.toAirportObj != null) {
+	        this.calculateDuration();
+	      }
+	    }
+	  }, {
+	    key: 'onUpdateDate',
+	    value: function onUpdateDate(newDate) {
+	      this.activeLeg.date = newDate;
+	      this.stateDirty = true;
+
+	      if (this.activeLeg.fromAirportObj != null && this.activeLeg.toAirportObj != null) {
+	        this.calculateDuration();
+	      }
+	    }
+	  }, {
+	    key: 'onSubmitOrderSuccess',
+	    value: function onSubmitOrderSuccess() {
+	      //resetting the store
+	      _Cache2.default.saveSession('legs', this.legs, true);
+
+	      this.legs = [];
+
+	      this.loadActiveLeg();
+	      this.stateDirty = false;
+
+	      this.tabIndex = 0;
+	      this.message = '';
+
+	      window.location.hash = 'confirm-order';
+	    }
+	  }, {
+	    key: 'onShowMessage',
+	    value: function onShowMessage(data) {
+	      this.message = data.message;
+	      this.tabIndex = data.tabIndex;
+	    }
+	  }, {
+	    key: 'onShowErrorMessage',
+	    value: function onShowErrorMessage(data) {
+	      this.successMesg = data.message;
+	      //TODO: need to call showSnackMessage directly instead of state.
+	      var self = this;
+	      setTimeout(function () {
+	        self.successMesg = '';
+	      }, 1000);
+	    }
+	  }, {
+	    key: 'onFetchWeatherSuccess',
+	    value: function onFetchWeatherSuccess(data) {
+
+	      if (data.dest == 'from') {
+	        this.activeLeg.fromWeather = data;
+	      } else {
+	        this.activeLeg.toWeather = data;
+	      }
+	    }
+	  }, {
+	    key: 'onResetForm',
+	    value: function onResetForm() {
+	      this.initializeStore();
 	    }
 	  }]);
 
-	  return MyAccountActions;
+	  return RAFStore;
 	}();
 
-	exports.default = _AltApp2.default.createActions(MyAccountActions);
+	module.exports = _AltApp2.default.createStore(RAFStore, 'RAFStore');
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(318)))
 
 /***/ },
@@ -13968,570 +14460,17 @@ webpackJsonp([0],[
 
 	'use strict';
 
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _Parsers = __webpack_require__(433);
-
-	var _superagent = __webpack_require__(589);
-
-	var _superagent2 = _interopRequireDefault(_superagent);
-
-	var _Cache = __webpack_require__(281);
-
-	var _Cache2 = _interopRequireDefault(_Cache);
-
-	var _Constants = __webpack_require__(316);
-
-	var _Helpers = __webpack_require__(317);
-
-	var _Helpers2 = _interopRequireDefault(_Helpers);
-
-	var _moment = __webpack_require__(320);
-
-	var _moment2 = _interopRequireDefault(_moment);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var parseXml = __webpack_require__(434).parseString;
-
-	var getPassportPayload = function getPassportPayload(passport) {
-	  var teste = normalizePassports(passport);
-	  return '\n    <passport>\n      <id>' + passport.id + '</id>\n      <isDefault>' + passport.isDefault + '</isDefault>\n      <isActive>' + passport.isActive + '</isActive>\n      <passportNumber>' + passport.passportNumber + '</passportNumber>\n      <isoPassportCountry>' + passport.isoPassportCountry + '</isoPassportCountry>\n      <isoIssuedByCountry>' + passport.isoIssuedByCountry + '</isoIssuedByCountry>           \n      <expiresOnDate>' + (0, _moment2.default)(passport.expiresOnDate).format() + '</expiresOnDate>\n      <displayName>' + passport.displayName + '</displayName>\n      <isAdded>false</isAdded>\n      <isUpdated>true</isUpdated>\n      <isDeleted>false</isDeleted>\n    </passport>\n  ';
-	};
-
-	function parseBoolean(value) {
-	  return value === true || value === 'true';
-	}
-
-	function v(value, parser) {
-	  var v = Array.isArray(value) ? value[0] : value;
-	  switch (parser) {
-	    case Boolean:
-	      return parseBoolean(v);
-	    case Number:
-	      return parseFloat(value, 10);
-	    default:
-	      return v;
-	  }
-	}
-
-	var normalizePassports = function normalizePassports(passport) {
-	  var newPassport = {
-	    displayName: v(passport.displayName),
-	    expiresOnDate: v(passport.expiresOnDate || passport.expiry),
-	    id: v(passport.id || passport.passportId),
-	    isActive: v(passport.isActive, Boolean),
-	    isDefault: v(passport.isDefault, Boolean),
-	    isInvalid: v(passport.isInvalid, Boolean),
-	    isOnHands: v(passport.isOnHands, Boolean),
-	    isoIssuedByCountry: v(passport.isoIssuedByCountry || passport.isoPassportIssuedByCountry),
-	    isoPassportCountry: v(passport.isoPassportCountry),
-	    issuedByCountry: v(passport.issuedByCountry),
-	    passportCountry: v(passport.passportCountry),
-	    passportNumber: v(passport.passportNumber),
-	    visas: v(passport.visas || passport.visas)
-	  };
-	  return newPassport;
-	};
-
-	var MyAccountSource = {
-	  fetchTermsConditions: function fetchTermsConditions() {
-	    return new Promise(function (resolve, reject) {
-	      var url = _Constants.TERMS_CONDITIONS_URL.replace('{token}', token);
-	      _superagent2.default.get(url).accept('application/xml').type('application/xml').timeout(_Constants.TIMEOUT).end(function (err, res) {
-	        _Helpers2.default.showLoader(false);
-	        if (err) {
-	          if (err.timeout) {
-	            reject({ message: 'Server not responding' });
-	          } else {
-	            reject({ message: 'An error occured' });
-	          }
-	        } else {
-
-	          parseXml(res.text, function (err, result) {
-	            if (err) {
-	              reject();
-	            } else {
-	              resolve(result);
-	            }
-	          });
-	        }
-	      });
-	    });
-	  },
-	  fetchOtherPersonalDetails: function fetchOtherPersonalDetails(userName, userToken) {
-
-	    return new Promise(function (resolve, reject) {
-
-	      var url = _Constants.SEARCH_PASSENGER_URL.replace('{context}', _Constants.CONTEXT).replace('{token}', userToken).replace('{searchTerm}', userName);
-
-	      _superagent2.default.get(url).accept('application/xml').type('application/xml').timeout(_Constants.TIMEOUT).end(function (err, res) {
-	        _Helpers2.default.showLoader(false);
-	        if (err) {
-	          if (err.timeout) {
-	            reject({ message: 'Server not responding' });
-	          } else {
-	            reject({ message: 'An error occured' });
-	          }
-	        } else {
-
-	          parseXml(res.text, function (err, result) {
-	            if (err) {
-	              reject();
-	            } else {
-	              resolve({ data: result });
-	            }
-	          });
-	        }
-	      });
-	    });
-	  },
-	  updatePersonalDetails: function updatePersonalDetails(updateData) {
-
-	    return new Promise(function (resolve, reject) {
-
-	      var imageData = updateData.imageData;
-	      if (imageData) {
-	        if (imageData.indexOf('base64,') >= 0) {
-	          imageData = imageData.substring(imageData.indexOf(',') + 1);
-	        }
-	      } else {
-	        imageData = null;
-	      }
-
-	      var payloadChangedPhone;
-	      if (updateData.oldPhoneNumber != updateData.phoneNumber) {
-	        payloadChangedPhone = '<changedPhoneNumbers>\n                                  <changedPhoneNumber>\n                                      <oldPhoneNumber>' + updateData.oldPhoneNumber + '</oldPhoneNumber>\n                                      <newPhoneNumber>' + updateData.phoneNumber + '</newPhoneNumber>\n                                  </changedPhoneNumber>\n                              </changedPhoneNumbers>';
-	      } else {
-	        payloadChangedPhone = '';
-	      }
-
-	      var payloadChangedImage;
-	      if (imageData) {
-	        payloadChangedImage = '<passengerImageUrl>' + imageData + '</passengerImageUrl>';
-	      } else {
-	        payloadChangedImage = '';
-	      }
-
-	      var passports = _Cache2.default.getSession('userdata', true).passport;
-	      var payloadPassports = '';
-	      if (passports) {
-	        payloadPassports = '<passports>';
-	        passports.map(function (passport) {
-	          if (passport.isActive) {
-	            payloadPassports += getPassportPayload(passport);
-	          }
-	        });
-	        payloadPassports += '</passports>';
-	      }
-
-	      var reqPayload = '<passengerManageRequest>\n                    <passengers>\n                        <updated>\n                            <updatedPassengersList>\n                                <passengerId>' + updateData.passengerId + '</passengerId>\n                                <passengerFirstName>' + updateData.passengerFirstName + '</passengerFirstName>\n                                <passengerLastName>' + updateData.passengerLastName + '</passengerLastName>\n                                ' + payloadChangedImage + '\n                                <passengerEmail>' + updateData.passengerEmail + '</passengerEmail>\n                                ' + payloadChangedPhone + '\n                                <passengerDob>' + (0, _moment2.default)(updateData.passengerDob).format() + '</passengerDob>\n                                ' + payloadPassports + '\n                            </updatedPassengersList>\n                        </updated>\n                    </passengers>\n                </passengerManageRequest>';
-
-	      var url = _Constants.MANAGE_PASSENGER_URL.replace('{context}', _Constants.CONTEXT).replace('{token}', _Cache2.default.getSession('usertoken')).replace('{id}', '-1');
-
-	      _superagent2.default.post(url).send(reqPayload).accept('application/xml').type('application/xml').timeout(_Constants.TIMEOUT).end(function (err, res) {
-	        if (err) {
-	          if (err.timeout) {
-	            reject({ message: 'Server not responding' });
-	          } else {
-	            reject();
-	          }
-	        } else {
-	          parseXml(res.text, function (err, result) {
-	            if (err) {
-	              reject();
-	            } else {
-
-	              var userData = _Cache2.default.getSession('userdata', true);
-	              var passportDataNormalized = [];
-	              if (result.passenger.passports) {
-	                result.passenger.passports.map(function (passport) {
-	                  passportDataNormalized.push(normalizePassports(passport));
-	                });
-	              }
-	              var personalData = {
-	                accessType: userData.accessType,
-	                customerId: userData.customerId,
-	                dateOfBirth: result.passenger.dateOfBirth,
-	                firstName: result.passenger.firstName,
-	                gender: result.passenger.gender,
-	                genderId: userData.genderId,
-	                id: result.passenger.passengerId,
-	                imageURL: imageData ? [updateData.imageData] : userData.imageURL,
-	                isChangedPassword: userData.isChangedPassword,
-	                lastName: result.passenger.lastName,
-	                passport: passportDataNormalized,
-	                personId: userData.personId,
-	                userPreferences: userData.userPreferences,
-	                phoneNumber: result.passenger.phoneNumbers[0].phoneNumber
-	              };
-
-	              resolve({ data: personalData });
-	              //resolve(createStoreObjects(result.passenger.passports));
-	            }
-	          });
-	        }
-	      });
-	    });
-	  },
-	  changePassword: function changePassword(passwordData) {
-
-	    return new Promise(function (resolve, reject) {
-	      _Helpers2.default.showLoader(true);
-	      var url = _Constants.CHANGE_PASSWORD_URL.replace('{username}', _Cache2.default.getSession('username'));
-
-	      var reqPayload = '<vjRequest><credentials>{token}{key}</credentials><newPassword>{newPassword}</newPassword></vjRequest>';
-
-	      var data = _Cache2.default.getSession('username') + '\+' + passwordData.oldPass;
-
-	      var key = _Helpers2.default.encryptData(_Cache2.default.getSession('usertoken'), data);
-
-	      var newPassEnc = _Helpers2.default.encryptData(_Cache2.default.getSession('usertoken'), passwordData.newPass);
-
-	      reqPayload = reqPayload.replace('{key}', key).replace('{token}', _Cache2.default.getSession('usertoken')).replace('{newPassword}', newPassEnc);
-
-	      _superagent2.default.put(url).send(reqPayload).accept('application/xml').type('application/xml').timeout(_Constants.TIMEOUT).end(function (err, res) {
-	        _Helpers2.default.showLoader(false);
-	        if (err) {
-	          if (err.timeout) {
-	            reject({ message: 'Server not responding' });
-	          } else {
-	            reject({ message: 'An error occured' });
-	          }
-	        } else {
-
-	          parseXml(res.text, function (err, result) {
-	            if (err) {
-	              reject();
-	            } else {
-	              resolve({ success: result.vjResponse.success[0] });
-	            }
-	          });
-	        }
-	      });
-	    });
-	  }
-	};
-
-	exports.default = MyAccountSource;
-
-/***/ },
-/* 683 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Footer = function (_React$Component) {
-	    _inherits(Footer, _React$Component);
-
-	    function Footer(props) {
-	        _classCallCheck(this, Footer);
-
-	        return _possibleConstructorReturn(this, Object.getPrototypeOf(Footer).call(this, props));
-	    }
-
-	    _createClass(Footer, [{
-	        key: "render",
-	        value: function render() {
-	            return _react2.default.createElement(
-	                "footer",
-	                { className: "page-footer" },
-	                _react2.default.createElement(
-	                    "div",
-	                    { className: "footer-copyright brown-text text-lighten" },
-	                    _react2.default.createElement(
-	                        "div",
-	                        { className: "container-fluid row" },
-	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "col l8 m8 hide-on-small-only" },
-	                            _react2.default.createElement(
-	                                "a",
-	                                { className: "mrl", href: "https://www.vistajet.com/", target: "_blank" },
-	                                "VistaJet"
-	                            ),
-	                            _react2.default.createElement(
-	                                "a",
-	                                { className: "mrl", href: "https://www.vistajet.com/us/category/lifestyle/", target: "_blank" },
-	                                "Lifestyle"
-	                            ),
-	                            _react2.default.createElement(
-	                                "a",
-	                                { className: "mrl", href: "https://www.vistajet.com/fleet/", target: "_blank" },
-	                                "Our Fleet"
-	                            ),
-	                            _react2.default.createElement(
-	                                "a",
-	                                { className: "", href: "https://www.vistajet.com/about-us/", target: "_blank" },
-	                                "About VistaJet"
-	                            )
-	                        ),
-	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "col l4 m4 right-align hide-on-small-only" },
-	                            _react2.default.createElement(
-	                                "a",
-	                                { href: "tel:+44-0-207-060-5700" },
-	                                "Call: +44 (0) 207 060 5700"
-	                            )
-	                        ),
-	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "col s12 center-align hide-on-med-and-up" },
-	                            _react2.default.createElement(
-	                                "a",
-	                                { href: "tel:+44-0-207-060-5700" },
-	                                "Call: +44 (0) 207 060 5700"
-	                            )
-	                        )
-	                    )
-	                )
-	            );
-	        }
-	    }]);
-
-	    return Footer;
-	}(_react2.default.Component);
-
-	module.exports = Footer;
-
-/***/ },
-/* 684 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "images/vistajet-logo-white.svg";
-
-/***/ },
-/* 685 */,
-/* 686 */,
-/* 687 */,
-/* 688 */,
-/* 689 */,
-/* 690 */,
-/* 691 */,
-/* 692 */,
-/* 693 */,
-/* 694 */,
-/* 695 */,
-/* 696 */,
-/* 697 */,
-/* 698 */,
-/* 699 */,
-/* 700 */,
-/* 701 */,
-/* 702 */,
-/* 703 */,
-/* 704 */,
-/* 705 */,
-/* 706 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _Helpers = __webpack_require__(317);
-
-	var _Helpers2 = _interopRequireDefault(_Helpers);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Loader = function (_React$Component) {
-	    _inherits(Loader, _React$Component);
-
-	    function Loader(props) {
-	        _classCallCheck(this, Loader);
-
-	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Loader).call(this, props));
-
-	        _this.loaderClass = 'vj-loader-active';
-	        _this.state = {
-	            open: false
-	        };
-	        return _this;
-	    }
-
-	    _createClass(Loader, [{
-	        key: 'display',
-	        value: function display(isVisible) {
-	            this.setState({ open: isVisible });
-	        }
-	    }, {
-	        key: 'hide',
-	        value: function hide() {
-	            var classes = document.body.getAttribute('class');
-	            classes = !!classes ? classes : '';
-	            classes = classes.replace(this.loaderClass, '');
-	            document.body.setAttribute('class', classes);
-	        }
-	    }, {
-	        key: 'show',
-	        value: function show() {
-	            var classes = document.body.getAttribute('class');
-	            classes = !!classes ? classes : '';
-	            classes = classes + ' ' + this.loaderClass;
-	            document.body.setAttribute('class', classes);
-	        }
-	    }, {
-	        key: 'componentDidMount',
-	        value: function componentDidMount() {
-	            _Helpers2.default.refs.loader = this;
-	        }
-	    }, {
-	        key: 'render',
-	        value: function render() {
-	            var _loader = null;
-	            if (!!this.state && !!this.state.open) {
-	                _loader = _react2.default.createElement(
-	                    'div',
-	                    null,
-	                    _react2.default.createElement('div', { className: 'vj-loader-overlay' }),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'vj-loader', style: { display: 'inline-block' } },
-	                        _react2.default.createElement(
-	                            'svg',
-	                            { className: 'logo', version: '1.1', id: 'Layer_1', x: '0px', y: '0px', viewBox: '0 0 1328.9 521.2', style: { enableBackground: "new 0 0 1328.9 521.2" } },
-	                            _react2.default.createElement(
-	                                'g',
-	                                null,
-	                                _react2.default.createElement('path', { className: 'path', fill: 'none', strokeWidth: '8', stroke: '#c60c30', d: 'M623,425c0,0,2.4-112.3,164.4-193.9s425.7-185.7,425.7-185.7S656.4,214.3,602.9,285.5c0,0-17.7,29.6-13,47.3\r c0,0-17.7-18.9-63.9-15.4c-46.1,3.5-356,120.6-410.3,158.5c0,0,338.2-119.4,415.1-99.3C607.7,396.6,623,425,623,425z' })
-	                            )
-	                        )
-	                    )
-	                );
-
-	                this.show();
-	            } else {
-	                this.hide();
-	            }
-	            return _loader;
-	        }
-	    }]);
-
-	    return Loader;
-	}(_react2.default.Component);
-
-	module.exports = Loader;
-
-/***/ },
-/* 707 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(165);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function CrumbLink(props) {
-	  return _react2.default.createElement(
-	    _reactRouter.Link,
-	    {
-	      className: 'breadcrumb',
-	      to: props.to
-	    },
-	    props.children
-	  );
-	}
-
-	CrumbLink.propTypes = {
-	  to: _react.PropTypes.string,
-	  children: _react.PropTypes.node.isRequired
-	};
-
-	function Breadcrumb(_ref) {
-	  var routes = _ref.routes;
-	  var params = _ref.params;
-
-	  var path = void 0;
-	  var breadcrumbs = routes.reduce(function (memo, route, index) {
-	    if (route.title || route.path == '/') {
-	      path = index > 1 ? path + '/' + route.path : route.path;
-	      memo.push(_react2.default.createElement(
-	        CrumbLink,
-	        {
-	          key: route.path,
-	          to: (0, _reactRouter.formatPattern)(path, params)
-	        },
-	        route.title || _react2.default.createElement(
-	          'i',
-	          { className: 'material-icons' },
-	          'home'
-	        )
-	      ));
-	    }
-	    return memo;
-	  }, []);
-
-	  return _react2.default.createElement(
-	    'section',
-	    { className: 'v-breadCrumbs' },
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'col l12 m12 s12' },
-	      breadcrumbs
-	    )
-	  );
-	}
-
-	Breadcrumb.propTypes = {
-	  routes: _react.PropTypes.array.isRequired
-	};
-
-	exports.default = Breadcrumb;
-
-/***/ },
-/* 708 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	var _AltApp = __webpack_require__(267);
 
 	var _AltApp2 = _interopRequireDefault(_AltApp);
 
-	var _RAFSource = __webpack_require__(709);
+	var _RAFSource = __webpack_require__(683);
 
 	var _RAFSource2 = _interopRequireDefault(_RAFSource);
 
-	var _AppDataSource = __webpack_require__(598);
+	var _AppDataSource = __webpack_require__(599);
 
 	var _AppDataSource2 = _interopRequireDefault(_AppDataSource);
 
@@ -14549,11 +14488,11 @@ webpackJsonp([0],[
 
 	var _Messages = __webpack_require__(588);
 
-	var _jslinq = __webpack_require__(711);
+	var _jslinq = __webpack_require__(685);
 
 	var _jslinq2 = _interopRequireDefault(_jslinq);
 
-	var _ItinerarySource = __webpack_require__(712);
+	var _ItinerarySource = __webpack_require__(686);
 
 	var _ItinerarySource2 = _interopRequireDefault(_ItinerarySource);
 
@@ -14903,7 +14842,7 @@ webpackJsonp([0],[
 	module.exports = _AltApp2.default.createActions(RAFActions);
 
 /***/ },
-/* 709 */
+/* 683 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14922,7 +14861,7 @@ webpackJsonp([0],[
 
 	var _moment2 = _interopRequireDefault(_moment);
 
-	var _User = __webpack_require__(599);
+	var _User = __webpack_require__(600);
 
 	var _User2 = _interopRequireDefault(_User);
 
@@ -14933,6 +14872,10 @@ webpackJsonp([0],[
 	var _superagent = __webpack_require__(589);
 
 	var _superagent2 = _interopRequireDefault(_superagent);
+
+	var _LoginActions = __webpack_require__(266);
+
+	var _LoginActions2 = _interopRequireDefault(_LoginActions);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -15002,7 +14945,9 @@ webpackJsonp([0],[
 
 	        if (err != null) {
 	          //error occured
-	          if (err.timeout === _Constants.TIMEOUT) {
+	          if (err.status == 401) {
+	            _LoginActions2.default.afterLogout(true);
+	          } else if (err.timeout === _Constants.TIMEOUT) {
 	            reject({ message: _Messages.ERROR_MESSAGES['timeout'] });
 	          } else {
 	            var jsonData = (0, _Parsers.parseXmlStringToJson)(err.response.text);
@@ -15038,13 +14983,15 @@ webpackJsonp([0],[
 
 	      var url = _Constants.FORECAST_URL.replace('{lat}', payload.airport.latitude[0]).replace('{long}', payload.airport.longitude[0]).replace('{time}', time);
 
-	      var jsonp = __webpack_require__(710);
+	      var jsonp = __webpack_require__(684);
 	      _superagent2.default.get(url).timeout(_Constants.TIMEOUT).use(jsonp).end(function (err, res) {
 	        var data = res.body;
 	        if (err != null) {
 	          //error occured
 	          _Cache2.default.removeSession('showLoader');
-	          if (err.timeout === _Constants.TIMEOUT) {
+	          if (err.status == 401) {
+	            _LoginActions2.default.afterLogout(true);
+	          } else if (err.timeout === _Constants.TIMEOUT) {
 	            reject({ message: _Messages.ERROR_MESSAGES['timeout'] });
 	          } else {
 	            reject({ message: _Messages.ERROR_MESSAGES['500'] });
@@ -15074,7 +15021,7 @@ webpackJsonp([0],[
 	module.exports = RAFSource;
 
 /***/ },
-/* 710 */
+/* 684 */
 /***/ function(module, exports) {
 
 	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -15137,8 +15084,8 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 711 */,
-/* 712 */
+/* 685 */,
+/* 686 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15164,6 +15111,10 @@ webpackJsonp([0],[
 	var _superagent = __webpack_require__(589);
 
 	var _superagent2 = _interopRequireDefault(_superagent);
+
+	var _LoginActions = __webpack_require__(266);
+
+	var _LoginActions2 = _interopRequireDefault(_LoginActions);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -15195,7 +15146,9 @@ webpackJsonp([0],[
 
 	                if (err != null) {
 	                    //error occured
-	                    if (err.timeout === _Constants.TIMEOUT) {
+	                    if (err.status == 401) {
+	                        _LoginActions2.default.afterLogout(true);
+	                    } else if (err.timeout === _Constants.TIMEOUT) {
 	                        reject({ message: _Messages.ERROR_MESSAGES['timeout'] });
 	                    } else {
 	                        reject({ message: _Messages.ERROR_MESSAGES['500'] });
@@ -15228,7 +15181,9 @@ webpackJsonp([0],[
 
 	                if (err != null) {
 	                    //error occured
-	                    if (err.timeout === _Constants.TIMEOUT) {
+	                    if (err.status == 401) {
+	                        _LoginActions2.default.afterLogout(true);
+	                    } else if (err.timeout === _Constants.TIMEOUT) {
 	                        reject({ message: _Messages.ERROR_MESSAGES['timeout'] });
 	                    } else {
 	                        reject({ message: _Messages.ERROR_MESSAGES['500'] });
@@ -15249,7 +15204,9 @@ webpackJsonp([0],[
 	                _Helpers2.default.showLoader(false);
 	                if (err != null) {
 	                    //error occured
-	                    if (err.timeout === _Constants.TIMEOUT) {
+	                    if (err.status == 401) {
+	                        _LoginActions2.default.afterLogout(true);
+	                    } else if (err.timeout === _Constants.TIMEOUT) {
 	                        reject({ message: _Messages.ERROR_MESSAGES['timeout'] });
 	                    } else {
 	                        reject({ message: _Messages.ERROR_MESSAGES['500'] });
@@ -15288,13 +15245,15 @@ webpackJsonp([0],[
 	                url = _Constants.DETAIL_FORECAST_URL.replace('{lat}', leg.arrivalAirport.latitude[0]).replace('{long}', leg.arrivalAirport.longitude[0]).replace('{time}', leg.arrivalAirportTimeLocal[0]);
 	            }
 
-	            var jsonp = __webpack_require__(710);
+	            var jsonp = __webpack_require__(684);
 	            _superagent2.default.get(url).timeout(_Constants.TIMEOUT).use(jsonp).end(function (err, res) {
 	                var data = res.body;
 	                if (err != null) {
 	                    //error occured
 	                    _Cache2.default.removeSession('showLoader');
-	                    if (err.timeout === _Constants.TIMEOUT) {
+	                    if (err.status == 401) {
+	                        _LoginActions2.default.afterLogout(true);
+	                    } else if (err.timeout === _Constants.TIMEOUT) {
 	                        reject({ message: _Messages.ERROR_MESSAGES['timeout'] });
 	                    } else {
 	                        reject({ message: _Messages.ERROR_MESSAGES['500'] });
@@ -15342,7 +15301,9 @@ webpackJsonp([0],[
 
 	                if (err != null) {
 	                    //error occured
-	                    if (err.timeout === _Constants.TIMEOUT) {
+	                    if (err.status == 401) {
+	                        _LoginActions2.default.afterLogout(true);
+	                    } else if (err.timeout === _Constants.TIMEOUT) {
 	                        reject({ message: _Messages.ERROR_MESSAGES['timeout'] });
 	                    } else {
 	                        reject({ message: _Messages.ERROR_MESSAGES['500'] });
@@ -15359,7 +15320,1034 @@ webpackJsonp([0],[
 	module.exports = ItinerarySource;
 
 /***/ },
-/* 713 */
+/* 687 */,
+/* 688 */,
+/* 689 */,
+/* 690 */,
+/* 691 */,
+/* 692 */,
+/* 693 */,
+/* 694 */,
+/* 695 */,
+/* 696 */,
+/* 697 */,
+/* 698 */,
+/* 699 */,
+/* 700 */,
+/* 701 */,
+/* 702 */,
+/* 703 */,
+/* 704 */,
+/* 705 */,
+/* 706 */,
+/* 707 */,
+/* 708 */,
+/* 709 */,
+/* 710 */,
+/* 711 */,
+/* 712 */,
+/* 713 */,
+/* 714 */,
+/* 715 */,
+/* 716 */,
+/* 717 */,
+/* 718 */,
+/* 719 */,
+/* 720 */,
+/* 721 */,
+/* 722 */,
+/* 723 */,
+/* 724 */,
+/* 725 */,
+/* 726 */,
+/* 727 */,
+/* 728 */,
+/* 729 */,
+/* 730 */,
+/* 731 */,
+/* 732 */,
+/* 733 */,
+/* 734 */,
+/* 735 */,
+/* 736 */,
+/* 737 */,
+/* 738 */,
+/* 739 */,
+/* 740 */,
+/* 741 */,
+/* 742 */,
+/* 743 */,
+/* 744 */,
+/* 745 */,
+/* 746 */,
+/* 747 */,
+/* 748 */,
+/* 749 */,
+/* 750 */,
+/* 751 */,
+/* 752 */,
+/* 753 */,
+/* 754 */,
+/* 755 */,
+/* 756 */,
+/* 757 */,
+/* 758 */,
+/* 759 */,
+/* 760 */,
+/* 761 */,
+/* 762 */,
+/* 763 */,
+/* 764 */,
+/* 765 */,
+/* 766 */,
+/* 767 */,
+/* 768 */,
+/* 769 */,
+/* 770 */,
+/* 771 */,
+/* 772 */,
+/* 773 */,
+/* 774 */,
+/* 775 */,
+/* 776 */,
+/* 777 */,
+/* 778 */,
+/* 779 */,
+/* 780 */,
+/* 781 */,
+/* 782 */,
+/* 783 */,
+/* 784 */,
+/* 785 */,
+/* 786 */,
+/* 787 */,
+/* 788 */,
+/* 789 */,
+/* 790 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _dialog = __webpack_require__(791);
+
+	var _dialog2 = _interopRequireDefault(_dialog);
+
+	var _flatButton = __webpack_require__(792);
+
+	var _flatButton2 = _interopRequireDefault(_flatButton);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var ConfirmDialog = function (_React$Component) {
+	    _inherits(ConfirmDialog, _React$Component);
+
+	    function ConfirmDialog(props) {
+	        _classCallCheck(this, ConfirmDialog);
+
+	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ConfirmDialog).call(this, props));
+
+	        _this.actions = [_react2.default.createElement(_flatButton2.default, {
+	            label: _this.props.cancelLabel,
+	            secondary: true,
+	            onTouchTap: _this.props.handleReject || _this.handleClose.bind(_this)
+	        }), _react2.default.createElement(_flatButton2.default, {
+	            label: _this.props.confirmLabel,
+	            primary: true,
+	            keyboardFocused: true,
+	            onTouchTap: _this.props.handleConfirm || _this.handleOk.bind(_this)
+	        })];
+
+	        _this.state = {
+	            open: !!_this.props.nextLocationPath
+	        };
+	        return _this;
+	    }
+
+	    _createClass(ConfirmDialog, [{
+	        key: 'componentWillReceiveProps',
+	        value: function componentWillReceiveProps(nextProps, nextState) {
+	            if (Object.keys(nextState).length == 0 || nextState.open === this.state.open) {
+	                this.setState({
+	                    open: !!nextProps.nextLocationPath
+	                });
+	            }
+	        }
+	    }, {
+	        key: 'shouldComponentUpdate',
+	        value: function shouldComponentUpdate(nextProps, nextState) {
+	            return nextState.open !== this.state.open || nextProps.nextLocationPath !== this.props.nextLocationPath;
+	        }
+	    }, {
+	        key: 'handleClose',
+	        value: function handleClose() {
+	            if (this.props.onCancel) {
+	                this.props.onCancel();
+	            }
+	            this.setState({ open: false });
+	        }
+	    }, {
+	        key: 'handleOk',
+	        value: function handleOk() {
+	            if (this.props.nextLocationPath && this.props.onTransition) {
+	                this.props.onTransition(this.props.nextLocationPath);
+	            }
+	            this.setState({ open: false });
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                _dialog2.default,
+	                {
+	                    title: this.props.title,
+	                    actions: this.actions,
+	                    modal: false,
+	                    className: 'top-index',
+	                    open: this.state.open,
+	                    onRequestClose: this.props.handleReject || this.handleClose.bind(this)
+	                },
+	                this.props.content
+	            );
+	        }
+	    }]);
+
+	    return ConfirmDialog;
+	}(_react2.default.Component);
+
+	;
+
+	module.exports = ConfirmDialog;
+
+/***/ },
+/* 791 */,
+/* 792 */,
+/* 793 */,
+/* 794 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _AltApp = __webpack_require__(267);
+
+	var _AltApp2 = _interopRequireDefault(_AltApp);
+
+	var _MyAccountActions = __webpack_require__(795);
+
+	var _MyAccountActions2 = _interopRequireDefault(_MyAccountActions);
+
+	var _LoginActions = __webpack_require__(266);
+
+	var _LoginActions2 = _interopRequireDefault(_LoginActions);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var normalizePersonalDetails = function normalizePersonalDetails(response) {
+	  var userData = response.userData;
+	  return {
+	    passengerId: userData.personId && userData.personId[0],
+	    passengerFirstName: userData.firstName && userData.firstName[0],
+	    passengerLastName: userData.lastName && userData.lastName[0],
+	    passengerEmail: response.userName,
+	    phoneNumber: userData.phoneNumber && userData.phoneNumber[0],
+	    passengerDob: userData.dateOfBirth && userData.dateOfBirth[0],
+	    imageURL: userData.imageURL && userData.imageURL[0]
+	  };
+	};
+
+	var PersonalDetailsStore = function () {
+	  function PersonalDetailsStore() {
+	    _classCallCheck(this, PersonalDetailsStore);
+
+	    if (sessionStorage.personalDetails && sessionStorage.personalDetails != 'undefined') {
+	      this.personalDetails = JSON.parse(sessionStorage.getItem('personalDetails'));
+	    } else {
+	      this.personalDetails = {
+	        passengerId: null,
+	        passengerFirstName: null,
+	        passengerLastName: null,
+	        passengerEmail: null,
+	        phoneNumber: null,
+	        passengerDob: null,
+	        imageURL: null
+	      };
+	    }
+	    this.editMessage = null;
+	    this.preventedLogout = false;
+	    this.edited = false;
+	    this.bindListeners({
+	      onAfterLogin: _LoginActions2.default.AFTER_LOGIN,
+	      onAfterLogout: _LoginActions2.default.AFTER_LOGOUT,
+	      onUpdatePreventedLogout: _LoginActions2.default.LOGOUT
+	    });
+	    this.bindActions(_MyAccountActions2.default);
+	  }
+
+	  _createClass(PersonalDetailsStore, [{
+	    key: 'onUpdatePreventedLogout',
+	    value: function onUpdatePreventedLogout(preventedLogout) {
+	      this.setState({ preventedLogout: preventedLogout });
+	    }
+	  }, {
+	    key: 'onUpdateEdited',
+	    value: function onUpdateEdited(edited) {
+	      this.setState({ edited: edited });
+	    }
+	  }, {
+	    key: 'onAfterLogin',
+	    value: function onAfterLogin(response) {
+
+	      var personalDetails = normalizePersonalDetails(response);
+
+	      this.setState({ personalDetails: personalDetails });
+	      sessionStorage.setItem('personalDetails', JSON.stringify(personalDetails));
+	    }
+	  }, {
+	    key: 'onAfterLogout',
+	    value: function onAfterLogout() {
+	      sessionStorage.removeItem('personalDetails');
+	      this.setState({
+	        personalDetails: null,
+	        editMessage: null
+	      });
+	    }
+	  }, {
+	    key: 'onAfterUpdatePersonalDetails',
+	    value: function onAfterUpdatePersonalDetails(_ref) {
+	      var response = _ref.response;
+	      var message = _ref.message;
+
+	      if (message.indexOf('updated') > 0) {
+	        var personalDetails = normalizePersonalDetails(response);
+
+	        this.setState({ editMessage: message, personalDetails: personalDetails, edited: false });
+	        sessionStorage.setItem('personalDetails', JSON.stringify(personalDetails));
+	      } else {
+	        this.setState({ editMessage: message });
+	      }
+	    }
+	  }, {
+	    key: 'onUpdateEditMessage',
+	    value: function onUpdateEditMessage(message) {
+	      this.setState({ editMessage: message });
+	    }
+	  }]);
+
+	  return PersonalDetailsStore;
+	}();
+
+	exports.default = _AltApp2.default.createStore(PersonalDetailsStore, 'PersonalDetailsStore');
+
+/***/ },
+/* 795 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function($) {'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _AltApp = __webpack_require__(267);
+
+	var _AltApp2 = _interopRequireDefault(_AltApp);
+
+	var _MyAccountSource = __webpack_require__(796);
+
+	var _MyAccountSource2 = _interopRequireDefault(_MyAccountSource);
+
+	var _LoginSource = __webpack_require__(432);
+
+	var _LoginSource2 = _interopRequireDefault(_LoginSource);
+
+	var _Cache = __webpack_require__(281);
+
+	var _Cache2 = _interopRequireDefault(_Cache);
+
+	var _Helpers = __webpack_require__(317);
+
+	var _Helpers2 = _interopRequireDefault(_Helpers);
+
+	var _User = __webpack_require__(600);
+
+	var _User2 = _interopRequireDefault(_User);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var MyAccountActions = function () {
+	  function MyAccountActions() {
+	    _classCallCheck(this, MyAccountActions);
+	  }
+
+	  _createClass(MyAccountActions, [{
+	    key: 'setTermsConditions',
+	    value: function setTermsConditions(termsConditions) {
+	      return termsConditions;
+	    }
+	  }, {
+	    key: 'fetchTermsConditions',
+	    value: function fetchTermsConditions() {
+	      var _this = this;
+
+	      return function (dispatch) {
+	        dispatch();
+
+	        _Helpers2.default.showLoader(true);
+
+	        _MyAccountSource2.default.fetchTermsConditions().then(function (data) {
+	          _Helpers2.default.showLoader(false);
+	          _this.setTermsConditions(data);
+	        }, function (err) {
+	          _Helpers2.default.showLoader(false);
+	        });
+	      };
+	    }
+	  }, {
+	    key: 'updatePersonalDetails',
+	    value: function updatePersonalDetails(data) {
+	      var _this2 = this;
+
+	      return function (dispatch) {
+	        dispatch();
+	        _Helpers2.default.showLoader(true);
+	        _MyAccountSource2.default.updatePersonalDetails(data).then(function (dataUpdated) {
+	          _Helpers2.default.showLoader(false);
+
+	          var data = {
+	            userToken: _Cache2.default.getSession('usertoken'),
+	            userName: _Cache2.default.getSession('username'),
+	            userData: dataUpdated.data
+	          };
+	          // TODO @vsilva remove jquery                                                                  
+	          if (data.userData.imageURL) {
+	            $('span.usrImg').css('background', 'url(' + data.userData.imageURL + ') no-repeat');
+	          }
+	          $('span.usrTitle').text(data.userData.firstName);
+	          //cache.saveSession('userdata', data.userData, true);                                                      
+	          _User2.default.login(data);
+	          _this2.afterUpdatePersonalDetails(data, 'Personal details updated!');
+	          //this.getTokenAfterUpdate(dataUpdated, payload);
+	        }, function (err) {
+	          _Helpers2.default.showLoader(false);
+	          _this2.afterUpdatePersonalDetails(err, 'An error occurred.');
+	        });
+	      };
+	    }
+	  }, {
+	    key: 'getTokenAfterUpdate',
+	    value: function getTokenAfterUpdate(dataUpdated, payload) {
+	      var _this3 = this;
+
+	      return function (dispatch) {
+
+	        dispatch();
+
+	        _LoginSource2.default.login(payload).then(function (data) {
+
+	          payload.token = data.token;
+	          _this3.authenticateAfterUpdate(dataUpdated, payload);
+	        }).catch(function (response) {
+	          _this3.afterUpdatePersonalDetails(dataUpdated, 'An error occurred.');
+	        });
+	      };
+	    }
+	  }, {
+	    key: 'authenticateAfterUpdate',
+	    value: function authenticateAfterUpdate(dataUpdated, payload) {
+	      var _this4 = this;
+
+	      return function (dispatch) {
+
+	        dispatch();
+
+	        _LoginSource2.default.authenticate(payload).then(function (data) {
+	          data.userName = payload.username;
+	          data.rememberMe = payload.remember;
+	          data.userData.password = payload.password;
+	          dataUpdated.imageURL = data.userData.imageURL;
+	          if (dataUpdated.imageURL) {
+	            $('div.usrProfile > span.usrImg').css('background', 'url(' + data.userData.imageURL[0] + ') no-repeat');
+	          }
+	          $('div.usrProfile > span.usrTitle').text(data.userData.firstName[0]);
+
+	          _User2.default.login(data);
+
+	          _this4.afterUpdatePersonalDetails(dataUpdated, 'Personal details updated!');
+	        }).catch(function (response) {
+	          _this4.afterUpdatePersonalDetails(dataUpdated, 'An error occurred.');
+	        });
+	      };
+	    }
+	  }, {
+	    key: 'afterUpdatePersonalDetails',
+	    value: function afterUpdatePersonalDetails(response, message) {
+	      return { response: response, message: message };
+	    }
+	  }, {
+	    key: 'updateEditMessage',
+	    value: function updateEditMessage(message) {
+	      return function (dispatch) {
+	        dispatch(message);
+	      };
+	    }
+	  }, {
+	    key: 'updatePreventedLogout',
+	    value: function updatePreventedLogout(preventedLogout) {
+	      return preventedLogout;
+	    }
+	  }, {
+	    key: 'updateEdited',
+	    value: function updateEdited(edited) {
+	      return edited;
+	    }
+	  }]);
+
+	  return MyAccountActions;
+	}();
+
+	exports.default = _AltApp2.default.createActions(MyAccountActions);
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(318)))
+
+/***/ },
+/* 796 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _Parsers = __webpack_require__(433);
+
+	var _superagent = __webpack_require__(589);
+
+	var _superagent2 = _interopRequireDefault(_superagent);
+
+	var _Cache = __webpack_require__(281);
+
+	var _Cache2 = _interopRequireDefault(_Cache);
+
+	var _Constants = __webpack_require__(316);
+
+	var _Helpers = __webpack_require__(317);
+
+	var _Helpers2 = _interopRequireDefault(_Helpers);
+
+	var _moment = __webpack_require__(320);
+
+	var _moment2 = _interopRequireDefault(_moment);
+
+	var _LoginActions = __webpack_require__(266);
+
+	var _LoginActions2 = _interopRequireDefault(_LoginActions);
+
+	var _normalizePassport = __webpack_require__(595);
+
+	var _normalizePassport2 = _interopRequireDefault(_normalizePassport);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var parseXml = __webpack_require__(434).parseString;
+
+
+	var getPassportPayload = function getPassportPayload(passport) {
+	  return '\n    <passport>\n      <id>' + passport.id + '</id>\n      <isDefault>' + passport.isDefault + '</isDefault>\n      <isActive>' + passport.isActive + '</isActive>\n      <passportNumber>' + passport.passportNumber + '</passportNumber>\n      <isoPassportCountry>' + passport.isoPassportCountry + '</isoPassportCountry>\n      <isoIssuedByCountry>' + passport.isoIssuedByCountry + '</isoIssuedByCountry>\n      <expiresOnDate>' + (0, _moment2.default)(passport.expiresOnDate).format() + '</expiresOnDate>\n      <displayName>' + passport.displayName + '</displayName>\n      <isAdded>false</isAdded>\n      <isUpdated>true</isUpdated>\n      <isDeleted>false</isDeleted>\n    </passport>\n  ';
+	};
+
+	var MyAccountSource = {
+	  fetchTermsConditions: function fetchTermsConditions() {
+	    return new Promise(function (resolve, reject) {
+	      var url = _Constants.TERMS_CONDITIONS_URL.replace('{token}', token);
+	      _superagent2.default.get(url).accept('application/xml').type('application/xml').timeout(_Constants.TIMEOUT).end(function (err, res) {
+	        _Helpers2.default.showLoader(false);
+	        if (err) {
+	          if (err.status == 401) {
+	            _LoginActions2.default.afterLogout(true);
+	          } else if (err.timeout) {
+	            reject({ message: 'Server not responding' });
+	          } else {
+	            reject({ message: 'An error occured' });
+	          }
+	        } else {
+
+	          parseXml(res.text, function (err, result) {
+	            if (err) {
+	              reject();
+	            } else {
+	              resolve(result);
+	            }
+	          });
+	        }
+	      });
+	    });
+	  },
+	  fetchOtherPersonalDetails: function fetchOtherPersonalDetails(userName, userToken) {
+
+	    return new Promise(function (resolve, reject) {
+
+	      var url = _Constants.SEARCH_PASSENGER_URL.replace('{context}', _Constants.CONTEXT).replace('{token}', userToken).replace('{searchTerm}', userName);
+
+	      _superagent2.default.get(url).accept('application/xml').type('application/xml').timeout(_Constants.TIMEOUT).end(function (err, res) {
+	        _Helpers2.default.showLoader(false);
+	        if (err) {
+	          if (err.status == 401) {
+	            _LoginActions2.default.afterLogout(true);
+	          } else if (err.timeout) {
+	            reject({ message: 'Server not responding' });
+	          } else {
+	            reject({ message: 'An error occured' });
+	          }
+	        } else {
+
+	          parseXml(res.text, function (err, result) {
+	            if (err) {
+	              reject();
+	            } else {
+	              resolve({ data: result });
+	            }
+	          });
+	        }
+	      });
+	    });
+	  },
+	  updatePersonalDetails: function updatePersonalDetails(updateData) {
+
+	    return new Promise(function (resolve, reject) {
+
+	      var imageData = updateData.imageData;
+	      if (imageData) {
+	        if (imageData.indexOf('base64,') >= 0) {
+	          imageData = imageData.substring(imageData.indexOf(',') + 1);
+	        }
+	      } else {
+	        imageData = null;
+	      }
+
+	      var payloadChangedPhone;
+	      if (updateData.oldPhoneNumber != updateData.phoneNumber) {
+	        payloadChangedPhone = '<changedPhoneNumbers>\n                                  <changedPhoneNumber>\n                                      <oldPhoneNumber>' + updateData.oldPhoneNumber + '</oldPhoneNumber>\n                                      <newPhoneNumber>' + updateData.phoneNumber + '</newPhoneNumber>\n                                  </changedPhoneNumber>\n                              </changedPhoneNumbers>';
+	      } else {
+	        payloadChangedPhone = '';
+	      }
+
+	      var payloadChangedImage;
+	      if (imageData) {
+	        payloadChangedImage = '<passengerImageUrl>' + imageData + '</passengerImageUrl>';
+	      } else {
+	        payloadChangedImage = '';
+	      }
+
+	      var passports = _Cache2.default.getSession('userdata', true).passport;
+	      var payloadPassports = '';
+	      if (passports) {
+	        payloadPassports = '<passports>';
+	        passports.map(function (passport) {
+	          if (passport.isActive) {
+	            payloadPassports += getPassportPayload(passport);
+	          }
+	        });
+	        payloadPassports += '</passports>';
+	      }
+
+	      var reqPayload = '<passengerManageRequest>\n                    <passengers>\n                        <updated>\n                            <updatedPassengersList>\n                                <passengerId>' + updateData.passengerId + '</passengerId>\n                                <passengerFirstName>' + updateData.passengerFirstName + '</passengerFirstName>\n                                <passengerLastName>' + updateData.passengerLastName + '</passengerLastName>\n                                ' + payloadChangedImage + '\n                                <passengerEmail>' + updateData.passengerEmail + '</passengerEmail>\n                                ' + payloadChangedPhone + '\n                                <passengerDob>' + (0, _moment2.default)(updateData.passengerDob).format() + '</passengerDob>\n                                ' + payloadPassports + '\n                            </updatedPassengersList>\n                        </updated>\n                    </passengers>\n                </passengerManageRequest>';
+
+	      var url = _Constants.MANAGE_PASSENGER_URL.replace('{context}', _Constants.CONTEXT).replace('{token}', _Cache2.default.getSession('usertoken')).replace('{id}', '-1');
+
+	      _superagent2.default.post(url).send(reqPayload).accept('application/xml').type('application/xml').timeout(_Constants.TIMEOUT).end(function (err, res) {
+	        if (err) {
+	          if (err.status == 401) {
+	            _LoginActions2.default.afterLogout(true);
+	          } else if (err.timeout) {
+	            reject({ message: 'Server not responding' });
+	          } else {
+	            reject();
+	          }
+	        } else {
+	          parseXml(res.text, function (err, result) {
+	            if (err) {
+	              reject();
+	            } else {
+
+	              var userData = _Cache2.default.getSession('userdata', true);
+	              var passportDataNormalized = result.passenger.passports ? result.passenger.passports.map(_normalizePassport2.default) : [];
+	              var personalData = {
+	                accessType: userData.accessType,
+	                customerId: userData.customerId,
+	                dateOfBirth: result.passenger.dateOfBirth,
+	                firstName: result.passenger.firstName,
+	                gender: result.passenger.gender,
+	                genderId: userData.genderId,
+	                id: result.passenger.passengerId,
+	                imageURL: imageData ? [updateData.imageData] : userData.imageURL,
+	                isChangedPassword: userData.isChangedPassword,
+	                lastName: result.passenger.lastName,
+	                passport: passportDataNormalized,
+	                personId: userData.personId,
+	                userPreferences: userData.userPreferences,
+	                phoneNumber: result.passenger.phoneNumbers[0].phoneNumber
+	              };
+
+	              resolve({ data: personalData });
+	              //resolve(createStoreObjects(result.passenger.passports));
+	            }
+	          });
+	        }
+	      });
+	    });
+	  },
+	  changePassword: function changePassword(passwordData) {
+
+	    return new Promise(function (resolve, reject) {
+	      _Helpers2.default.showLoader(true);
+	      var url = _Constants.CHANGE_PASSWORD_URL.replace('{username}', _Cache2.default.getSession('username'));
+
+	      var reqPayload = '<vjRequest><credentials>{token}{key}</credentials><newPassword>{newPassword}</newPassword></vjRequest>';
+
+	      var data = _Cache2.default.getSession('username') + '\+' + passwordData.oldPass;
+
+	      var key = _Helpers2.default.encryptData(_Cache2.default.getSession('usertoken'), data);
+
+	      var newPassEnc = _Helpers2.default.encryptData(_Cache2.default.getSession('usertoken'), passwordData.newPass);
+
+	      reqPayload = reqPayload.replace('{key}', key).replace('{token}', _Cache2.default.getSession('usertoken')).replace('{newPassword}', newPassEnc);
+
+	      _superagent2.default.put(url).send(reqPayload).accept('application/xml').type('application/xml').timeout(_Constants.TIMEOUT).end(function (err, res) {
+	        _Helpers2.default.showLoader(false);
+	        if (err) {
+	          if (err.status == 401) {
+	            _LoginActions2.default.afterLogout(true);
+	          } else if (err.timeout) {
+	            reject({ message: 'Server not responding' });
+	          } else {
+	            reject({ message: 'An error occured' });
+	          }
+	        } else {
+
+	          parseXml(res.text, function (err, result) {
+	            if (err) {
+	              reject();
+	            } else {
+	              resolve({ success: result.vjResponse.success[0] });
+	            }
+	          });
+	        }
+	      });
+	    });
+	  }
+	};
+
+	exports.default = MyAccountSource;
+
+/***/ },
+/* 797 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Footer = function (_React$Component) {
+	    _inherits(Footer, _React$Component);
+
+	    function Footer(props) {
+	        _classCallCheck(this, Footer);
+
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(Footer).call(this, props));
+	    }
+
+	    _createClass(Footer, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "footer",
+	                { className: "page-footer" },
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "footer-copyright brown-text text-lighten" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "container-fluid row" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "col l8 m8 hide-on-small-only" },
+	                            _react2.default.createElement(
+	                                "a",
+	                                { className: "mrl", href: "https://www.vistajet.com/", target: "_blank" },
+	                                "VistaJet"
+	                            ),
+	                            _react2.default.createElement(
+	                                "a",
+	                                { className: "mrl", href: "https://www.vistajet.com/us/category/lifestyle/", target: "_blank" },
+	                                "Lifestyle"
+	                            ),
+	                            _react2.default.createElement(
+	                                "a",
+	                                { className: "mrl", href: "https://www.vistajet.com/fleet/", target: "_blank" },
+	                                "Our Fleet"
+	                            ),
+	                            _react2.default.createElement(
+	                                "a",
+	                                { className: "", href: "https://www.vistajet.com/about-us/", target: "_blank" },
+	                                "About VistaJet"
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "col l4 m4 right-align hide-on-small-only" },
+	                            _react2.default.createElement(
+	                                "a",
+	                                { href: "tel:+44-0-207-060-5700" },
+	                                "Call: +44 (0) 207 060 5700"
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "col s12 center-align hide-on-med-and-up" },
+	                            _react2.default.createElement(
+	                                "a",
+	                                { href: "tel:+44-0-207-060-5700" },
+	                                "Call: +44 (0) 207 060 5700"
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Footer;
+	}(_react2.default.Component);
+
+	module.exports = Footer;
+
+/***/ },
+/* 798 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "images/vistajet-logo-white.svg";
+
+/***/ },
+/* 799 */,
+/* 800 */,
+/* 801 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Helpers = __webpack_require__(317);
+
+	var _Helpers2 = _interopRequireDefault(_Helpers);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Loader = function (_React$Component) {
+	    _inherits(Loader, _React$Component);
+
+	    function Loader(props) {
+	        _classCallCheck(this, Loader);
+
+	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Loader).call(this, props));
+
+	        _this.loaderClass = 'vj-loader-active';
+	        _this.state = {
+	            open: false
+	        };
+	        return _this;
+	    }
+
+	    _createClass(Loader, [{
+	        key: 'display',
+	        value: function display(isVisible) {
+	            this.setState({ open: isVisible });
+	        }
+	    }, {
+	        key: 'hide',
+	        value: function hide() {
+	            var classes = document.body.getAttribute('class');
+	            classes = !!classes ? classes : '';
+	            classes = classes.replace(this.loaderClass, '');
+	            document.body.setAttribute('class', classes);
+	        }
+	    }, {
+	        key: 'show',
+	        value: function show() {
+	            var classes = document.body.getAttribute('class');
+	            classes = !!classes ? classes : '';
+	            classes = classes + ' ' + this.loaderClass;
+	            document.body.setAttribute('class', classes);
+	        }
+	    }, {
+	        key: 'componentDidMount',
+	        value: function componentDidMount() {
+	            _Helpers2.default.refs.loader = this;
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            var _loader = null;
+	            if (!!this.state && !!this.state.open) {
+	                _loader = _react2.default.createElement(
+	                    'div',
+	                    null,
+	                    _react2.default.createElement('div', { className: 'vj-loader-overlay' }),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'vj-loader', style: { display: 'inline-block' } },
+	                        _react2.default.createElement(
+	                            'svg',
+	                            { className: 'logo', version: '1.1', id: 'Layer_1', x: '0px', y: '0px', viewBox: '0 0 1328.9 521.2', style: { enableBackground: "new 0 0 1328.9 521.2" } },
+	                            _react2.default.createElement(
+	                                'g',
+	                                null,
+	                                _react2.default.createElement('path', { className: 'path', fill: 'none', strokeWidth: '8', stroke: '#c60c30', d: 'M623,425c0,0,2.4-112.3,164.4-193.9s425.7-185.7,425.7-185.7S656.4,214.3,602.9,285.5c0,0-17.7,29.6-13,47.3\r c0,0-17.7-18.9-63.9-15.4c-46.1,3.5-356,120.6-410.3,158.5c0,0,338.2-119.4,415.1-99.3C607.7,396.6,623,425,623,425z' })
+	                            )
+	                        )
+	                    )
+	                );
+
+	                this.show();
+	            } else {
+	                this.hide();
+	            }
+	            return _loader;
+	        }
+	    }]);
+
+	    return Loader;
+	}(_react2.default.Component);
+
+	module.exports = Loader;
+
+/***/ },
+/* 802 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(165);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function CrumbLink(props) {
+	  return _react2.default.createElement(
+	    _reactRouter.Link,
+	    {
+	      className: 'breadcrumb',
+	      to: props.to
+	    },
+	    props.children
+	  );
+	}
+
+	CrumbLink.propTypes = {
+	  to: _react.PropTypes.string,
+	  children: _react.PropTypes.node.isRequired
+	};
+
+	function Breadcrumb(_ref) {
+	  var routes = _ref.routes;
+	  var params = _ref.params;
+
+	  var path = void 0;
+	  var breadcrumbs = [];
+
+	  if (routes && routes.length > 1 && routes[1].showBreadcrum) {
+
+	    breadcrumbs = routes.reduce(function (memo, route, index) {
+	      if (route.title || route.path == '/') {
+	        path = index > 1 ? path + '/' + route.path : route.path;
+	        memo.push(_react2.default.createElement(
+	          CrumbLink,
+	          {
+	            key: route.path,
+	            to: (0, _reactRouter.formatPattern)(path, params)
+	          },
+	          route.title || _react2.default.createElement(
+	            'i',
+	            { className: 'material-icons' },
+	            'home'
+	          )
+	        ));
+	      }
+	      return memo;
+	    }, []);
+	  }
+
+	  return breadcrumbs.length > 0 ? _react2.default.createElement(
+	    'section',
+	    { className: 'v-breadCrumbs' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'col l12 m12 s12' },
+	      breadcrumbs
+	    )
+	  ) : _react2.default.createElement('span', null);
+	}
+
+	Breadcrumb.propTypes = {
+	  routes: _react.PropTypes.array.isRequired
+	};
+
+	exports.default = Breadcrumb;
+
+/***/ },
+/* 803 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15410,7 +16398,7 @@ webpackJsonp([0],[
 	module.exports = ParentRoute;
 
 /***/ },
-/* 714 */
+/* 804 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -15459,7 +16447,7 @@ webpackJsonp([0],[
 	module.exports = NotFound;
 
 /***/ },
-/* 715 */
+/* 805 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15474,11 +16462,11 @@ webpackJsonp([0],[
 
 	var _altContainer2 = _interopRequireDefault(_altContainer);
 
-	var _ForgotPassword = __webpack_require__(716);
+	var _ForgotPassword = __webpack_require__(806);
 
 	var _ForgotPassword2 = _interopRequireDefault(_ForgotPassword);
 
-	var _ForgotPasswordStore = __webpack_require__(719);
+	var _ForgotPasswordStore = __webpack_require__(809);
 
 	var _ForgotPasswordStore2 = _interopRequireDefault(_ForgotPasswordStore);
 
@@ -15522,7 +16510,7 @@ webpackJsonp([0],[
 	module.exports = ForgotPasswordForm;
 
 /***/ },
-/* 716 */
+/* 806 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15533,7 +16521,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ForgotPasswordActions = __webpack_require__(717);
+	var _ForgotPasswordActions = __webpack_require__(807);
 
 	var _ForgotPasswordActions2 = _interopRequireDefault(_ForgotPasswordActions);
 
@@ -15662,7 +16650,7 @@ webpackJsonp([0],[
 	module.exports = ForgotPassword;
 
 /***/ },
-/* 717 */
+/* 807 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15673,7 +16661,7 @@ webpackJsonp([0],[
 
 	var _AltApp2 = _interopRequireDefault(_AltApp);
 
-	var _ForgotPasswordSource = __webpack_require__(718);
+	var _ForgotPasswordSource = __webpack_require__(808);
 
 	var _ForgotPasswordSource2 = _interopRequireDefault(_ForgotPasswordSource);
 
@@ -15745,7 +16733,7 @@ webpackJsonp([0],[
 	module.exports = _AltApp2.default.createActions(ForgotPasswordActions);
 
 /***/ },
-/* 718 */
+/* 808 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15763,6 +16751,10 @@ webpackJsonp([0],[
 	var _superagent = __webpack_require__(589);
 
 	var _superagent2 = _interopRequireDefault(_superagent);
+
+	var _LoginActions = __webpack_require__(266);
+
+	var _LoginActions2 = _interopRequireDefault(_LoginActions);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -15783,7 +16775,9 @@ webpackJsonp([0],[
 
 	        if (err != null) {
 	          //error occured
-	          if (err.timeout === _Constants.TIMEOUT) {
+	          if (err.status == 401) {
+	            _LoginActions2.default.afterLogout(true);
+	          } else if (err.timeout === _Constants.TIMEOUT) {
 	            reject({ message: _Messages.ERROR_MESSAGES['timeout'] });
 	          } else {
 	            reject({ message: _Messages.ERROR_MESSAGES['500'] });
@@ -15801,7 +16795,7 @@ webpackJsonp([0],[
 	module.exports = ForgotPasswordSource;
 
 /***/ },
-/* 719 */
+/* 809 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15812,7 +16806,7 @@ webpackJsonp([0],[
 
 	var _AltApp2 = _interopRequireDefault(_AltApp);
 
-	var _ForgotPasswordActions = __webpack_require__(717);
+	var _ForgotPasswordActions = __webpack_require__(807);
 
 	var _ForgotPasswordActions2 = _interopRequireDefault(_ForgotPasswordActions);
 
@@ -15860,7 +16854,7 @@ webpackJsonp([0],[
 	module.exports = _AltApp2.default.createStore(ForgotPasswordStore, 'ForgotPasswordStore');
 
 /***/ },
-/* 720 */
+/* 810 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15875,433 +16869,15 @@ webpackJsonp([0],[
 
 	var _altContainer2 = _interopRequireDefault(_altContainer);
 
-	var _ChangePassword = __webpack_require__(721);
-
-	var _ChangePassword2 = _interopRequireDefault(_ChangePassword);
-
-	var _ChangePasswordStore = __webpack_require__(724);
-
-	var _ChangePasswordStore2 = _interopRequireDefault(_ChangePasswordStore);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var ForgotPasswordForm = function (_React$Component) {
-	  _inherits(ForgotPasswordForm, _React$Component);
-
-	  function ForgotPasswordForm() {
-	    _classCallCheck(this, ForgotPasswordForm);
-
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(ForgotPasswordForm).apply(this, arguments));
-	  }
-
-	  _createClass(ForgotPasswordForm, [{
-	    key: 'componentDidMount',
-	    value: function componentDidMount() {
-	      document.title = 'Change Password | VistaJet';
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        _altContainer2.default,
-	        { store: _ChangePasswordStore2.default },
-	        _react2.default.createElement(_ChangePassword2.default, null)
-	      );
-	    }
-	  }]);
-
-	  return ForgotPasswordForm;
-	}(_react2.default.Component);
-
-	ForgotPasswordForm.title = "Change Password";
-
-	module.exports = ForgotPasswordForm;
-
-/***/ },
-/* 721 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _ChangePasswordActions = __webpack_require__(722);
-
-	var _ChangePasswordActions2 = _interopRequireDefault(_ChangePasswordActions);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var ChangePassword = function (_React$Component) {
-	  _inherits(ChangePassword, _React$Component);
-
-	  function ChangePassword() {
-	    _classCallCheck(this, ChangePassword);
-
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(ChangePassword).apply(this, arguments));
-	  }
-
-	  _createClass(ChangePassword, [{
-	    key: 'handleSubmit',
-	    value: function handleSubmit(e) {
-	      e.preventDefault();
-
-	      _ChangePasswordActions2.default.changePassword({ pass: e.target[0].value.trim(), confirm_pass: e.target[1].value.trim() });
-	    }
-	  }, {
-	    key: 'componentWillUnmount',
-	    value: function componentWillUnmount() {
-	      _ChangePasswordActions2.default.resetForm();
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        { className: 'row' },
-	        _react2.default.createElement(
-	          'form',
-	          { className: 'col s12', onSubmit: this.handleSubmit },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'row' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'col l12 m12 s12' },
-	              _react2.default.createElement(
-	                'h4',
-	                { className: 'center vistajet-text' },
-	                'Change Password'
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: this.props.message.length > 0 ? 'row show' : 'row hide' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'col l4 m6 s12 offset-m3 offset-l4' },
-	              _react2.default.createElement(
-	                'p',
-	                { className: 'center msg' },
-	                ' ',
-	                this.props.message,
-	                ' '
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'row mbn' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'input-field col l4 m6 s12 offset-m3 offset-l4' },
-	              _react2.default.createElement('input', { id: 'new_pass', name: 'new_pass',
-	                type: 'password',
-
-	                className: 'validate white'
-	              }),
-	              _react2.default.createElement(
-	                'label',
-	                { 'for': 'new_pass', 'data-error': 'wrong', 'data-success': 'right' },
-	                'New password'
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'row mbn' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'input-field col l4 m6 s12 offset-m3 offset-l4' },
-	              _react2.default.createElement('input', { id: 'confirm_new_pass', name: 'confirm_new_pass',
-	                type: 'password',
-
-	                className: 'validate white'
-	              }),
-	              _react2.default.createElement(
-	                'label',
-	                { 'for': 'confirm_new_pass', 'data-error': 'wrong', 'data-success': 'right' },
-	                'Confirm password'
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'row' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'input-field col l4 m6 offset-m3 s12 offset-l4 center', 'data-id': '5' },
-	              _react2.default.createElement(
-	                'button',
-	                { label: 'Send Email', className: 'waves-effect waves-light btn', type: 'submit' },
-	                'Change Password'
-	              )
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return ChangePassword;
-	}(_react2.default.Component);
-
-	module.exports = ChangePassword;
-
-/***/ },
-/* 722 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _AltApp = __webpack_require__(267);
-
-	var _AltApp2 = _interopRequireDefault(_AltApp);
-
-	var _ChangePasswordSource = __webpack_require__(723);
-
-	var _ChangePasswordSource2 = _interopRequireDefault(_ChangePasswordSource);
-
-	var _Cache = __webpack_require__(281);
-
-	var _Cache2 = _interopRequireDefault(_Cache);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	var ChangePasswordActions = function () {
-	  function ChangePasswordActions() {
-	    _classCallCheck(this, ChangePasswordActions);
-	  }
-
-	  _createClass(ChangePasswordActions, [{
-	    key: 'validatePass',
-	    value: function validatePass(data) {
-	      var returnObj = { success: true, message: '' };
-	      if (data.pass.trim() == '') {
-	        returnObj.success = false;
-	        returnObj.message += ' Password required';
-	      }
-
-	      if (data.confirm_pass.trim() == '') {
-	        returnObj.success = false;
-	        returnObj.message += ' Confirm Password required';
-	      }
-
-	      if (data.pass.trim() != data.confirm_pass.trim()) {
-	        returnObj.success = false;
-	        returnObj.message += ' Passwords mismatched';
-	      }
-
-	      return returnObj;
-	    }
-	  }, {
-	    key: 'messageChange',
-	    value: function messageChange(msg) {
-	      return msg;
-	    }
-	  }, {
-	    key: 'changePassword',
-	    value: function changePassword(data) {
-	      var _this = this;
-
-	      return function (dispatch) {
-
-	        dispatch();
-	        var actionDispatcher = _this;
-
-	        var validate = _this.validatePass(data);
-	        if (!validate.success) {
-	          actionDispatcher.messageChange({ message: validate.message, color: 'red' });
-	          return;
-	        }
-
-	        actionDispatcher.messageChange({ message: "Please wait...", color: "blue" }); //dispatch the please wait msg
-
-	        _ChangePasswordSource2.default.changePassword(data.pass).then(function (data) {
-	          _Cache2.default.removeSession('oldpass');
-	          _Cache2.default.removeSession('oldpassuser');
-
-	          //TODO: need to handle the correct responses from api
-	          actionDispatcher.messageChange({ message: 'Your password has been updated', color: 'blue' });
-	        }).catch(function (response) {
-	          actionDispatcher.messageChange({ message: response.message, color: 'red' });
-	        });
-	      };
-	    }
-	  }, {
-	    key: 'resetForm',
-	    value: function resetForm() {
-	      return null;
-	    }
-	  }]);
-
-	  return ChangePasswordActions;
-	}();
-
-	module.exports = _AltApp2.default.createActions(ChangePasswordActions);
-
-/***/ },
-/* 723 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _Parsers = __webpack_require__(433);
-
-	var _Cache = __webpack_require__(281);
-
-	var _Cache2 = _interopRequireDefault(_Cache);
-
-	var _Constants = __webpack_require__(316);
-
-	var _Messages = __webpack_require__(588);
-
-	var _Helpers = __webpack_require__(317);
-
-	var _Helpers2 = _interopRequireDefault(_Helpers);
-
-	var _superagent = __webpack_require__(589);
-
-	var _superagent2 = _interopRequireDefault(_superagent);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var ChangePasswordSource = {
-	  changePassword: function changePassword(newPass) {
-
-	    return new Promise(function (resolve, reject) {
-
-	      _Helpers2.default.showLoader(true);
-	      var url = _Constants.CHANGE_PASSWORD_URL.replace('{username}', _Cache2.default.getSession('oldpassuser'));
-
-	      var reqPayload = '<vjRequest><credentials>{credentials}</credentials><newPassword>{newPassword}</newPassword></vjRequest>';
-	      var newPassEnc = _Helpers2.default.encryptData(_Cache2.default.getSession('usertoken'), newPass);
-	      reqPayload = reqPayload.replace('{credentials}', _Cache2.default.getSession('oldpass')).replace('{newPassword}', newPassEnc);
-
-	      _superagent2.default.put(url).send(reqPayload).timeout(_Constants.TIMEOUT).set(_Constants.HTTP_HEADERS).end(function (err, res) {
-
-	        _Helpers2.default.showLoader(false);
-
-	        if (err != null) {
-	          //error occured
-	          if (err.timeout === _Constants.TIMEOUT) {
-	            reject({ message: _Messages.ERROR_MESSAGES['timeout'] });
-	          } else {
-	            reject({ message: _Messages.ERROR_MESSAGES['500'] });
-	          }
-	        } else {
-	          var jsonData = (0, _Parsers.parseXmlStringToJson)(res.text);
-
-	          resolve({ success: jsonData.vjResponse.success[0] });
-	        }
-	      });
-	    });
-	  }
-	};
-
-	module.exports = ChangePasswordSource;
-
-/***/ },
-/* 724 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _AltApp = __webpack_require__(267);
-
-	var _AltApp2 = _interopRequireDefault(_AltApp);
-
-	var _ChangePasswordActions = __webpack_require__(722);
-
-	var _ChangePasswordActions2 = _interopRequireDefault(_ChangePasswordActions);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	var ChangePasswordStore = function () {
-	  function ChangePasswordStore() {
-	    _classCallCheck(this, ChangePasswordStore);
-
-	    this.initializeStore();
-	    this.bindActions(_ChangePasswordActions2.default);
-	  }
-
-	  _createClass(ChangePasswordStore, [{
-	    key: 'initializeStore',
-	    value: function initializeStore() {
-	      this.password = '';
-	      this.confirmPassword = '';
-	      this.message = '';
-	      this.messageColor = '';
-
-	      this.passwordError = false;
-	    }
-	  }, {
-	    key: 'onResetForm',
-	    value: function onResetForm() {
-	      this.initializeStore();
-	    }
-	  }, {
-	    key: 'onMessageChange',
-	    value: function onMessageChange(msg) {
-	      this.message = msg.message;
-	      this.messageColor = msg.color;
-	    }
-	  }]);
-
-	  return ChangePasswordStore;
-	}();
-
-	module.exports = _AltApp2.default.createStore(ChangePasswordStore, 'ChangePasswordStore');
-
-/***/ },
-/* 725 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _altContainer = __webpack_require__(255);
-
-	var _altContainer2 = _interopRequireDefault(_altContainer);
-
-	var _RAFActions = __webpack_require__(708);
+	var _RAFActions = __webpack_require__(682);
 
 	var _RAFActions2 = _interopRequireDefault(_RAFActions);
 
-	var _RAFStore = __webpack_require__(726);
+	var _RAFStore = __webpack_require__(681);
 
 	var _RAFStore2 = _interopRequireDefault(_RAFStore);
 
-	var _Main = __webpack_require__(813);
+	var _Main = __webpack_require__(811);
 
 	var _Main2 = _interopRequireDefault(_Main);
 
@@ -16360,859 +16936,7 @@ webpackJsonp([0],[
 	module.exports = RAF;
 
 /***/ },
-/* 726 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function($) {'use strict';
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _AltApp = __webpack_require__(267);
-
-	var _AltApp2 = _interopRequireDefault(_AltApp);
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _RAFActions = __webpack_require__(708);
-
-	var _RAFActions2 = _interopRequireDefault(_RAFActions);
-
-	var _Cache = __webpack_require__(281);
-
-	var _Cache2 = _interopRequireDefault(_Cache);
-
-	var _jslinq = __webpack_require__(711);
-
-	var _jslinq2 = _interopRequireDefault(_jslinq);
-
-	var _Helpers = __webpack_require__(317);
-
-	var _Helpers2 = _interopRequireDefault(_Helpers);
-
-	var _Messages = __webpack_require__(588);
-
-	var _autoComplete = __webpack_require__(727);
-
-	var _autoComplete2 = _interopRequireDefault(_autoComplete);
-
-	var _moment = __webpack_require__(320);
-
-	var _moment2 = _interopRequireDefault(_moment);
-
-	var _User = __webpack_require__(599);
-
-	var _User2 = _interopRequireDefault(_User);
-
-	var _reactAddonsUpdate = __webpack_require__(702);
-
-	var _reactAddonsUpdate2 = _interopRequireDefault(_reactAddonsUpdate);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	var RAFStore = function () {
-	  function RAFStore() {
-	    _classCallCheck(this, RAFStore);
-
-	    this.filter = function (searchText, key, item) {
-	      return searchText == null ? false : !!item.searchAbleText.match(new RegExp(searchText.replace(/[.?*+^$[\]\\(){}\}|-]/g, "\\$&"), 'i'));
-	    };
-	    this.initializeStore();
-	    this.bindActions(_RAFActions2.default);
-	  }
-
-	  _createClass(RAFStore, [{
-	    key: 'initializeStore',
-	    value: function initializeStore() {
-	      this.pickdsChanged = false;
-	      this.dropdsChanged = false;
-	      this.aircrafts = [];
-	      this.airports = [];
-
-	      this.message = '';
-	      this.successMesg = '';
-	      this.tabIndex = 0;
-	      this.stateDirty = false;
-
-	      this.pickFilter = _autoComplete2.default.noFilter;
-	      this.allPickAirportsList = [];
-	      this.pickAirports = [];
-
-	      this.dropFilter = _autoComplete2.default.noFilter;
-	      this.allDropAirportsList = [];
-	      this.dropAirports = [];
-
-	      this.nearbyAirports = [];
-	      this.recentAirports = [];
-
-	      this.recentAirportsList = [];
-
-	      this.legs = [];
-
-	      var time = (0, _moment2.default)().add(10, 'minutes').format("HH:mm");
-	      var timeArr = time.split(":");
-	      var hours = timeArr[0];
-	      var minutes = _Helpers2.default.roundTo5Minutes(timeArr[1]);
-
-	      this.isOrderFromItinerary = false;
-
-	      this.emptyLeg = {
-
-	        tempId: Math.random(), guid: null,
-	        date: (0, _moment2.default)().add(10, 'minutes').format('MM/DD/YYYY'),
-	        time: hours + ":" + minutes,
-	        defaultDate: (0, _moment2.default)().add(10, 'minutes').toDate(),
-	        minDate: (0, _moment2.default)().add(10, 'minutes').toDate(),
-	        from: null, to: null, fromLocation: { lat: 0, lng: 0 }, toLocation: { lat: 0, lng: 0 },
-	        departTime: null, arrivalTime: null, aircraft: null, duration: null, passengerCount: 1,
-	        toAirportText: '', fromAirportText: '', //text to show in autocomplete
-	        fromAirportObj: null, toAirportObj: null, aircraftObj: null, maxPax: 2,
-	        fromWeather: null, toWeather: null, editMode: false, //if true it will open in tabs form
-	        flagClassFrom: '', flagClassTo: '', fromSelectedClass: '', toSelectedClass: '',
-	        formMode: 'add' //leg mode if open in tabs form
-	      };
-	      this.activeLeg = {}; //leg to show in tabs
-	      this.loadActiveLeg();
-	      this.itinerary = '';
-	      this.cancelRestoreLeg = {};
-
-	      // taking this variable to have geo location of user in store so that it can be re used
-	      this.userLocation = '';
-	    }
-	  }, {
-	    key: 'loadActiveLeg',
-	    value: function loadActiveLeg() {
-	      this.activeLeg = {}; //first get refrence of free obj
-	      this.activeLeg = (0, _reactAddonsUpdate2.default)({}, { $merge: this.emptyLeg });
-
-	      this.activeLeg.editMode = true;
-	      this.activeLeg.guid = _Helpers2.default.guid();
-	      this.legs.push(this.activeLeg);
-	    }
-	  }, {
-	    key: 'onUpdateAirCraft',
-	    value: function onUpdateAirCraft(aircraft) {
-	      var previousAircraftName = this.activeLeg.aircraftObj.displayName[0];
-	      this.stateDirty = true;
-	      this.activeLeg.aircraft = aircraft;
-	      this.activeLeg.aircraftObj = (0, _jslinq2.default)(this.aircrafts).singleOrDefault(function (el) {
-	        return el.code[0] == aircraft;
-	      });
-
-	      this.activeLeg.maxPax = parseInt(this.activeLeg.aircraftObj.maxNumberOfPassengers[0]);
-
-	      if (this.activeLeg.fromAirportObj != null && this.activeLeg.toAirportObj != null) {
-	        this.calculateDuration(); //if airports selected then calculate duration also
-	      }
-
-	      if (this.activeLeg.passengerCount > this.activeLeg.maxPax) {
-	        var successMesg = '';
-	        successMesg = _Messages.ERROR_MESSAGES['passengerExceed'];
-	        successMesg = successMesg.replace('{Aircraft}', _Helpers2.default.capitalizeFirstLetter(previousAircraftName));
-	        successMesg = successMesg.replace('{pastLimit}', this.activeLeg.passengerCount);
-	        successMesg = successMesg.replace('{newLimit}', this.activeLeg.maxPax);
-	        this.successMesg = successMesg;
-
-	        //TODO: need to call showSnackMessage directly instead of state.
-	        var self = this;
-	        setTimeout(function () {
-	          self.successMesg = '';
-	        }, 1000);
-	        this.activeLeg.passengerCount = this.activeLeg.maxPax;
-	      }
-	    }
-	  }, {
-	    key: 'onAddLeg',
-	    value: function onAddLeg() {
-
-	      this.activeLeg.editMode = false;
-
-	      this.legs.sort(function (a, b) {
-	        return new Date(a.departTime) - new Date(b.departTime);
-	      });
-
-	      this.tabIndex = 0;
-	      var successMesg = '';
-	      if (this.activeLeg.formMode != 'edit') {
-	        successMesg = _Messages.ERROR_MESSAGES['legAddSuccessMsg'];
-	      } else {
-	        successMesg = _Messages.ERROR_MESSAGES['legUpdateSuccessMsg'];
-	      }
-	      successMesg = successMesg.replace('{deptAirport}', _Helpers2.default.capitalizeFirstLetter(this.activeLeg.fromAirportObj.name[0]));
-	      successMesg = successMesg.replace('{arrivalAirport}', _Helpers2.default.capitalizeFirstLetter(this.activeLeg.toAirportObj.name[0]));
-	      this.successMesg = successMesg;
-	      this.activeLeg.formMode = 'add'; //if it was in edit mode make it add mode explicitly again
-	      //TODO: need to call showSnackMessage directly instead of state.
-	      var self = this;
-	      setTimeout(function () {
-	        self.successMesg = '';
-	      }, 1000);
-	      setTimeout(function () {
-	        _Helpers2.default.setRAFMapHeight();
-	      }, 500);
-	    }
-	  }, {
-	    key: 'onAddMoreLeg',
-	    value: function onAddMoreLeg() {
-
-	      this.loadActiveLeg();
-
-	      this.tabIndex = 0;
-	      this.activeLeg.tempId = _Helpers2.default.guid();
-
-	      this.stateDirty = true;
-	      //from last leg destination to starting leg destination
-	      this.activeLeg.from = this.legs[this.legs.length - 2].to;
-	      this.activeLeg.defaultDate = undefined;
-	      this.activeLeg.date = 'Invalid date';
-	      this.onLoadNearby(this.userLocation);
-
-	      var time = (0, _moment2.default)().add(10, 'minutes').format("HH:mm");
-	      var timeArr = time.split(":");
-	      var hours = timeArr[0];
-	      var minutes = _Helpers2.default.roundTo5Minutes(timeArr[1]);
-	      //this.activeLeg.time=hours+":"+minutes;
-	      this.activeLeg.time = '';
-	      this.activeLeg.departTime = null;
-	      this.activeLeg.arrivalTime = null;
-
-	      this.activeLeg.fromAirportObj = this.activeLeg.departureAirport = this.legs[this.legs.length - 2].toAirportObj;
-
-	      this.activeLeg.fromAirportText = _Helpers2.default.capitalizeFirstLetter(this.activeLeg.fromAirportObj.name[0]) + ' ' + this.activeLeg.fromAirportObj.icao[0];
-	      this.activeLeg.flagClassFrom = 'flag-style flag-icon flag-icon-' + this.activeLeg.fromAirportObj.iso2[0].toLowerCase().substring(0, 2);
-	      this.activeLeg.fromSelectedClass = 'country-selected';
-	      this.activeLeg.aircraftObj = this.legs[this.legs.length - 2].aircraftObj;
-	      this.activeLeg.aircraft = this.activeLeg.aircraftObj.code[0];
-	      this.activeLeg.maxPax = parseInt(this.activeLeg.aircraftObj.maxNumberOfPassengers[0]);
-	      this.activeLeg.passengerCount = parseInt(this.legs[this.legs.length - 2].passengerCount);
-	      this.activeLeg.fromWeather = this.legs[this.legs.length - 2].toWeather;
-	      //this.setUserAircraft();
-	    }
-	  }, {
-	    key: 'onAddReturnLeg',
-	    value: function onAddReturnLeg() {
-
-	      this.loadActiveLeg();
-	      this.stateDirty = true;
-	      this.activeLeg.tempId = _Helpers2.default.guid();
-	      this.tabIndex = 0;
-
-	      //from last leg destination to starting leg destination
-	      this.activeLeg.from = this.legs[this.legs.length - 2].to;
-	      this.activeLeg.to = this.legs[0].from;
-
-	      this.activeLeg.passengerCount = this.legs[this.legs.length - 2].passengerCount;
-	      this.activeLeg.aircraft = this.legs[this.legs.length - 2].aircraft;
-	      this.activeLeg.aircraftObj = this.legs[this.legs.length - 2].aircraftObj;
-	      this.activeLeg.maxPax = this.legs[this.legs.length - 2].maxPax;
-	      this.activeLeg.toAirportObj = this.activeLeg.arrivalAirport = this.legs[0].fromAirportObj;
-	      this.activeLeg.fromAirportObj = this.activeLeg.departureAirport = this.legs[this.legs.length - 2].toAirportObj;
-	      this.activeLeg.fromWeather = this.legs[this.legs.length - 2].toWeather;
-	      this.activeLeg.toWeather = this.legs[0].fromWeather; //TODO: fetch the dest weather in return leg also
-
-	      //now datetime picker would be greater than arrival time
-	      var d = new Date(this.legs[this.legs.length - 2].arrivalTime);
-	      var mom = (0, _moment2.default)(d);
-	      this.activeLeg.defaultDate = undefined;
-	      //this.activeLeg.defaultDate = new Date(d.getTime() + (-1 * mom.utcOffset() *60000)); //subtracting utc offset
-
-	      this.activeLeg.date = 'Invalid date';
-	      this.activeLeg.time = '';
-	      this.activeLeg.departTime = null;
-	      this.activeLeg.arrivalTime = null;
-
-	      this.activeLeg.fromAirportText = _Helpers2.default.capitalizeFirstLetter(this.activeLeg.fromAirportObj.name[0]) + ' ' + this.activeLeg.fromAirportObj.icao[0];
-	      this.activeLeg.toAirportText = _Helpers2.default.capitalizeFirstLetter(this.activeLeg.toAirportObj.name[0]) + ' ' + this.activeLeg.toAirportObj.icao[0];
-
-	      this.activeLeg.flagClassFrom = 'flag-style flag-icon flag-icon-' + this.activeLeg.fromAirportObj.iso2[0].toLowerCase().substring(0, 2);
-	      this.activeLeg.fromSelectedClass = 'country-selected';
-
-	      this.activeLeg.flagClassTo = 'flag-style flag-icon flag-icon-' + this.activeLeg.toAirportObj.iso2[0].toLowerCase().substring(0, 2);
-	      this.activeLeg.toSelectedClass = 'country-selected';
-
-	      this.pickAirports = this.allPickAirportsList;
-	      this.pickFilter = this.filter;
-	      this.pickdsChanged = true;
-
-	      this.dropAirports = this.allDropAirportsList;
-	      this.dropFilter = this.filter;
-	      this.dropdsChanged = true;
-
-	      this.calculateDuration();
-	    }
-	  }, {
-	    key: 'onLoadItinerary',
-	    value: function onLoadItinerary(data) {
-
-	      var self = this;
-	      this.legs = [];
-	      this.itinerary = data.itinerary.itinerariesResponse.itinerary[0];
-	      var key = data.params.key;
-	      var selectedLegId = data.params.legId;
-	      var uniqueIdentifier = data.params.uniqueIdentifier;
-	      this.isOrderFromItinerary = true;
-	      data.itinerary.itinerariesResponse.itinerary[0].legs[0].leg.forEach(function (leg) {
-
-	        self.activeLeg = {
-
-	          tempId: Math.random(),
-	          guid: _Helpers2.default.guid(),
-
-	          date: (0, _moment2.default)(leg.departureAirportTimeLocal[0]).format('MM/DD/YYYY'),
-	          time: (0, _moment2.default)(leg.departureAirportTimeLocal[0]).format('HH:mm'),
-	          timePicker: now,
-	          defaultDate: (0, _moment2.default)().add(10, 'minutes').toDate(),
-	          minDate: (0, _moment2.default)().add(10, 'minutes').toDate(),
-	          from: null, to: null, fromLocation: { lat: 0, lng: 0 }, toLocation: { lat: 0, lng: 0 },
-	          departTime: leg.departureAirportTimeLocal[0],
-	          arrivalTime: leg.arrivalAirportTimeLocal[0],
-	          departureAirportTimeLocal: leg.departureAirportTimeLocal,
-	          arrivalAirportTimeLocal: leg.arrivalAirportTimeLocal,
-	          aircraft: null, duration: null, passengerCount: leg.numberOfPassenger[0],
-	          toAirportText: '', fromAirportText: '', //text to show in autocomplete
-	          fromAirportObj: null, toAirportObj: null, aircraftObj: null, maxPax: 2,
-	          fromWeather: null, toWeather: null, editMode: false, //if true it will open in tabs form
-	          flagClassFrom: '', flagClassTo: '', fromSelectedClass: '', toSelectedClass: '',
-	          formMode: '' }; //leg mode if open in tabs form}
-
-	        /*Get Itenerary Detail*/
-	        //var airPorts = Cache.getLocal('airports', true);
-	        //var airCrafts = Cache.getLocal('aircrafts', true).aircraftTypeResponseDtoes.aircrafttype;
-	        ////this.itineraryDetail = data.itinerary.itinerariesResponse.itinerary[0];
-	        //this.itineraryDetail.orderKey = data.key;
-	        //this.itineraryDetail.orderId = data.uniqueIdentifier;
-	        //
-	        //this.itineraryDetail.legs[0].leg.forEach(function(leg) {
-	        self.activeLeg.fromAirportObj = self.activeLeg.departureAirport = (0, _jslinq2.default)(self.airports).where(function (e) {
-	          return e.airport.id[0] == leg.departureAirportId[0];
-	        }).toList()[0].airport;
-
-	        self.activeLeg.toAirportObj = self.activeLeg.arrivalAirport = (0, _jslinq2.default)(self.airports).where(function (e) {
-	          return e.airport.id[0] == leg.arrivalAirportId[0];
-	        }).toList()[0].airport;
-
-	        // if leg lies in 24 hour format OR request Aircraft is not set OR is equal to N/A
-	        // then use key aircraftTypeName to get aircraft details
-	        // else use key requestedAircraftTypeName to get aircraft details
-	        //if() {
-	        self.activeLeg.aircraftObj = (0, _jslinq2.default)(self.aircrafts).where(function (e) {
-	          return e.code[0] == leg.aircraftTypeName[0] || e.displayName[0] == leg.aircraftTypeName[0] || e.name[0] == leg.aircraftTypeName[0];
-	        }).toList()[0];
-	        //}
-	        //else {
-	        //  self.activeLeg.aircraft = JsLinq(self.aircrafts).where(function(e){ return e.code[0] == leg.requestedAircraftTypeName[0] || e.displayName[0] == leg.requestedAircraftTypeName[0] || e.name[0] == leg.requestedAircraftTypeName[0] }).toList()[0];
-	        //}
-	        if (leg.flightLegExtIdentifier == selectedLegId || leg.legId == selectedLegId) {
-	          if (_Helpers2.default.isEditableLeg(self.activeLeg)) {
-	            self.activeLeg.formMode = 'edit';
-	            self.activeLeg.editMode = true;
-	          }
-	        }
-
-	        self.activeLeg.maxPax = parseInt(self.activeLeg.aircraftObj.maxNumberOfPassengers[0]);
-	        self.activeLeg.from = self.activeLeg.fromAirportObj.id[0];
-	        self.activeLeg.to = self.activeLeg.toAirportObj.id[0];
-	        self.activeLeg.fromAirportText = _Helpers2.default.capitalizeFirstLetter(self.activeLeg.fromAirportObj.name[0]) + ' ' + self.activeLeg.fromAirportObj.icao[0];
-	        self.activeLeg.toAirportText = _Helpers2.default.capitalizeFirstLetter(self.activeLeg.toAirportObj.name[0]) + ' ' + self.activeLeg.toAirportObj.icao[0];
-
-	        self.activeLeg.flagClassFrom = 'flag-style flag-icon flag-icon-' + self.activeLeg.fromAirportObj.iso2[0].toLowerCase().substring(0, 2);
-	        self.activeLeg.fromSelectedClass = 'country-selected';
-
-	        self.activeLeg.flagClassTo = 'flag-style flag-icon flag-icon-' + self.activeLeg.toAirportObj.iso2[0].toLowerCase().substring(0, 2);
-	        self.activeLeg.toSelectedClass = 'country-selected';
-
-	        self.activeLeg.duration = _Helpers2.default.getFlightDuration(self.activeLeg.fromAirportObj, self.activeLeg.toAirportObj, self.activeLeg.aircraftObj);
-
-	        if ("legId" in leg) {
-	          leg.key = "flightLegId";
-	          leg.uniqueIdentifier = leg.legId[0];
-	        } else {
-	          leg.key = "flightLegExtIdentifier";
-	          leg.uniqueIdentifier = leg.flightLegExtIdentifier[0];
-	        }
-	        //});
-	        /*Get Itenerary Detail*/
-	        self.legs.push(self.activeLeg);
-	      });
-	    }
-	  }, {
-	    key: 'onEditLeg',
-	    value: function onEditLeg(data) {
-
-	      var legToEdit = (0, _jslinq2.default)(this.legs).singleOrDefault(function (e) {
-	        return e.guid == data.guid;
-	      });
-
-	      //this.cancelRestoreLeg = ReactUpdate(this.cancelRestoreLeg, {$merge:legToEdit});
-	      $.extend(this.cancelRestoreLeg, legToEdit);
-	      this.activeLeg = {};
-	      this.activeLeg = legToEdit; //refer to this obj in legs list
-	      this.stateDirty = true;
-
-	      this.activeLeg.formMode = 'edit';
-
-	      this.activeLeg.defaultDate = new Date(legToEdit.date + ' ' + legToEdit.time);
-	      this.activeLeg.editMode = true;
-
-	      this.activeLeg.fromAirportText = _Helpers2.default.capitalizeFirstLetter(this.activeLeg.fromAirportObj.name[0]) + ' ' + this.activeLeg.fromAirportObj.icao[0];
-	      this.activeLeg.toAirportText = _Helpers2.default.capitalizeFirstLetter(this.activeLeg.toAirportObj.name[0]) + ' ' + this.activeLeg.toAirportObj.icao[0];
-
-	      this.activeLeg.flagClassFrom = 'flag-style flag-icon flag-icon-' + this.activeLeg.fromAirportObj.iso2[0].toLowerCase().substring(0, 2);
-	      this.activeLeg.fromSelectedClass = 'country-selected';
-
-	      this.activeLeg.flagClassTo = 'flag-style flag-icon flag-icon-' + this.activeLeg.toAirportObj.iso2[0].toLowerCase().substring(0, 2);
-	      this.activeLeg.toSelectedClass = 'country-selected';
-	      this.activeLeg.departureAirport = this.activeLeg.fromAirportObj;
-	      this.activeLeg.arrivalAirport = this.activeLeg.toAirportObj;
-	      this.pickAirports = this.allPickAirportsList;
-	      this.pickFilter = this.filter;
-	      this.pickdsChanged = true;
-
-	      this.dropAirports = this.allDropAirportsList;
-	      this.dropFilter = this.filter;
-	      this.dropdsChanged = true;
-
-	      this.tabIndex = data.tabIndex;
-	    }
-	  }, {
-	    key: 'onDeleteLeg',
-	    value: function onDeleteLeg(guid) {
-
-	      this.legs = this.legs.filter(function (e) {
-	        return e.guid != guid;
-	      }); //removing from array
-
-	      if (this.legs.length == 0) {
-	        this.loadActiveLeg();
-	        this.setUserAircraft();
-	        this.tabIndex = 0;
-	      }
-	    }
-	  }, {
-	    key: 'onCancelLeg',
-	    value: function onCancelLeg() {
-	      if (this.activeLeg.formMode == 'edit') {
-	        //this.activeLeg = ReactUpdate(this.activeLeg, {$merge:this.cancelRestoreLeg});
-
-	        //$.extend(this.activeLeg, this.cancelRestoreLeg);
-
-	        this.activeLeg.fromAirportText = _Helpers2.default.capitalizeFirstLetter(this.activeLeg.fromAirportObj.name[0]) + ' ' + this.activeLeg.fromAirportObj.icao[0];
-	        this.activeLeg.toAirportText = _Helpers2.default.capitalizeFirstLetter(this.activeLeg.toAirportObj.name[0]) + ' ' + this.activeLeg.toAirportObj.icao[0];
-	        var time = (0, _moment2.default)().add(10, 'minutes').format("HH:mm");
-	        var timeArr = time.split(":");
-	        var hours = timeArr[0];
-	        var minutes = _Helpers2.default.roundTo5Minutes(timeArr[1]);
-	        this.activeLeg.time = hours + ":" + minutes;
-
-	        //this.activeLeg.formMode = 'edit';
-
-	        this.activeLeg.formMode = 'add';
-	        this.activeLeg.editMode = false;
-	      } else {
-	        //add new add return add more case
-
-	        this.legs.pop(); //just pop in add more and in add return
-
-	        if (this.legs.length == 0) {
-	          // load the active leg in first add case
-	          // this.stateDirty = false;
-	          this.loadActiveLeg();
-	          this.setUserAircraft();
-	          this.activeLeg.passengerCount = 1;
-	          var time = (0, _moment2.default)().add(10, 'minutes').format("HH:mm");
-	          var timeArr = time.split(":");
-	          var hours = timeArr[0];
-	          var minutes = _Helpers2.default.roundTo5Minutes(timeArr[1]);
-	          this.activeLeg.time = hours + ":" + minutes;
-	          this.activeLeg.fromAirportText = null;
-	          this.activeLeg.toAirportText = null;
-	        }
-	      }
-
-	      this.tabIndex = 0;
-	      setTimeout(function () {
-	        _Helpers2.default.setRAFMapHeight();
-	      }, 500);
-	    }
-	  }, {
-	    key: 'setUserAircraft',
-	    value: function setUserAircraft() {
-	      var userPrefAircraft = _User2.default.getPreferredAirCraft();
-
-	      if (!!userPrefAircraft) {
-	        var a = (0, _jslinq2.default)(this.aircrafts).where(function (e) {
-	          return e.id[0] == userPrefAircraft;
-	        }).toList()[0];
-
-	        this.activeLeg.aircraftObj = a;
-	        this.activeLeg.aircraft = a.code[0];
-	        this.activeLeg.maxPax = parseInt(this.activeLeg.aircraftObj.maxNumberOfPassengers[0]);
-	      }
-	    }
-	  }, {
-	    key: 'onLoadAircrafts',
-	    value: function onLoadAircrafts(data) {
-	      this.aircrafts = data.aircrafts.aircraftTypeResponseDtoes.aircrafttype;
-	      this.aircrafts.sort(function (a, b) {
-	        return parseInt(b.rank[0]) - parseInt(a.rank[0]);
-	      });
-	      this.setUserAircraft();
-	    }
-	  }, {
-	    key: 'onLoadAirports',
-	    value: function onLoadAirports(data) {
-	      /*this.airports = data.airports.listOfAirports.airport;*/
-	      this.airports = [];
-	      var self = this;
-	      data.airports.listOfAirports.airport.forEach(function (airport) {
-	        self.airports.push({
-	          searchString: airport.city[0].trim() + ' ' + (airport.iata != null ? airport.iata[0].trim() : '') + ' ' + airport.name[0].trim() + ' ' + airport.icao[0].trim() + ' ' + airport.country[0].trim() + ' ' + (airport.iso2 != null ? airport.iso2[0].trim() : ''),
-	          selectedText: _Helpers2.default.capitalizeFirstLetter(airport.name[0]) + ' ' + airport.icao[0],
-	          //text: Helpers.capitalizeFirstLetter(airport.name[0])+' '+airport.icao[0],
-	          displayText: _Helpers2.default.getAirportDisplayText(airport),
-	          airport: airport
-	        });
-	      });
-	      var rec = [];
-
-	      if (_Cache2.default.sessionExists('recentAirports')) {
-	        this.recentAirports = _Cache2.default.getSession('recentAirports', true);
-	        var allAir = this.airports;
-	        this.recentAirports.forEach(function (air) {
-	          var airport = (0, _jslinq2.default)(allAir).singleOrDefault(function (e) {
-	            return e.airport.id[0] == air;
-	          });
-	          rec.push({
-	            searchString: airport.airport.city[0].trim() + ' ' + (airport.airport.iata != null ? airport.airport.iata[0].trim() : '') + ' ' + airport.airport.name[0].trim() + ' ' + airport.airport.icao[0].trim() + ' ' + airport.airport.country[0].trim() + ' ' + (airport.airport.iso2 != null ? airport.airport.iso2[0].trim() : ''),
-	            selectedText: _Helpers2.default.capitalizeFirstLetter(airport.airport.name[0]) + ' ' + airport.airport.icao[0],
-	            //text: Helpers.capitalizeFirstLetter(airport.name[0])+' '+airport.icao[0],
-	            displayText: _Helpers2.default.getAirportDisplayText(airport.airport),
-	            airport: airport.airport
-
-	          });
-	        });
-	      } else {
-	        rec = [];
-	      }
-	      //{rec.push({
-	      //      searchString: '',
-	      //      selectedText:'',
-	      //      displayText: 'No Items Found',
-	      //      airport: ''
-	      //    })
-	      //}
-
-	      this.recentAirportsList = rec;
-	    }
-	  }, {
-	    key: 'onLoadNearby',
-	    value: function onLoadNearby(country) {
-	      this.userLocation = country;
-
-	      var nearbyairports = [];
-
-	      if (country.length > 0) {
-	        this.airports.forEach(function (airport) {
-	          if (country == airport.airport.country[0].toLowerCase()) {
-	            nearbyairports.push({
-	              searchString: airport.airport.city[0].trim() + ' ' + (airport.airport.iata != null ? airport.airport.iata[0].trim() : '') + ' ' + airport.airport.name[0].trim() + ' ' + airport.airport.icao[0].trim() + ' ' + airport.airport.country[0].trim() + ' ' + (airport.airport.iso2 != null ? airport.airport.iso2[0].trim() : ''),
-	              selectedText: _Helpers2.default.capitalizeFirstLetter(airport.airport.name[0]) + ' ' + airport.airport.icao[0],
-	              displayText: _Helpers2.default.getAirportDisplayText(airport.airport),
-	              airport: airport.airport
-
-	            });
-	          }
-	        });
-	      } else {
-	        nearbyairports.push([{
-	          text: 'No Items Found',
-	          searchAbleText: ''
-
-	        }]);
-	      }
-	      this.nearbyAirports = nearbyairports;
-	    }
-	  }, {
-	    key: 'onNextClick',
-	    value: function onNextClick(index) {
-
-	      this.tabIndex = index.index;
-	      //this.message = '';
-	    }
-	  }, {
-	    key: 'onSelectPassengerCount',
-	    value: function onSelectPassengerCount(c) {
-	      this.activeLeg.passengerCount = c;
-	      this.stateDirty = true;
-	    }
-	  }, {
-	    key: 'calculateDuration',
-	    value: function calculateDuration() {
-
-	      this.activeLeg.duration = _Helpers2.default.getFlightDuration(this.activeLeg.fromAirportObj, this.activeLeg.toAirportObj, this.activeLeg.aircraftObj);
-	      if (this.activeLeg.time != '') {
-	        var datetimeString = this.activeLeg.date + ' ' + this.activeLeg.time;
-	        this.activeLeg.departTime = _Helpers2.default.getDepartTime(datetimeString, this.activeLeg.fromAirportObj);
-	        this.activeLeg.arrivalTime = _Helpers2.default.getArrivalTime(this.activeLeg.departTime, this.activeLeg.duration, this.activeLeg.fromAirportObj, this.activeLeg.toAirportObj);
-	      }
-	    }
-	  }, {
-	    key: 'onPickupSelectionChange',
-	    value: function onPickupSelectionChange(data) {
-
-	      if (data.selectedAirport != null) {
-	        this.stateDirty = true;
-	        var utcTimeToCompare = _Helpers2.default.getLatestTimeOfAirport(data.selectedAirport);
-
-	        //if(this.activeLeg.fromAirportObj==null ||
-	        //    (data.selectedAirport.name[0]!=this.activeLeg.fromAirportObj.name[0])
-	        //    || this.activeLeg.time !=utcTimeToCompare.format("HH:mm")){
-	        //  this.onShowErrorMessage({message:"Your Departure time is set to current time of Departure airport"});
-	        //}
-	        //this.activeLeg.time=utcTimeToCompare.format("HH:mm");
-
-	        this.activeLeg.minDate = utcTimeToCompare._d;
-	        this.activeLeg.from = data.selectedAirport.id[0];
-	        this.activeLeg.fromAirportObj = this.activeLeg.departureAirport = data.selectedAirport;
-	        this.activeLeg.fromLocation = { lat: data.selectedAirport.latitude[0], lng: data.selectedAirport.longitude[0] };
-	        this.activeLeg.flagClassFrom = 'flag-style flag-icon flag-icon-' + data.selectedAirport.iso2[0].toLowerCase().substring(0, 2);
-	        this.activeLeg.fromSelectedClass = 'country-selected';
-	        var count = (0, _jslinq2.default)(this.recentAirports).where(function (e) {
-	          return e == parseInt(data.selectedAirport.id[0]);
-	        }).count();
-	        if (count < 1) {
-	          this.recentAirports.push(parseInt(data.selectedAirport.id[0]));
-	          _Cache2.default.saveSession('recentAirports', this.recentAirports, true);
-	        }
-	      }
-
-	      //calculation arrival time also
-	      if (this.activeLeg.toAirportObj != null) {
-	        this.calculateDuration();
-	      }
-	    }
-	  }, {
-	    key: 'onDropSelectionChange',
-	    value: function onDropSelectionChange(data) {
-
-	      if (data.selectedAirport != null) {
-	        this.stateDirty = true;
-	        this.activeLeg.to = data.selectedAirport.id[0];
-	        this.activeLeg.toAirportObj = this.activeLeg.arrivalAirport = data.selectedAirport;
-
-	        this.activeLeg.toLocation = { lat: data.selectedAirport.latitude[0], lng: data.selectedAirport.longitude[0] };
-
-	        this.activeLeg.flagClassTo = 'flag-style flag-icon flag-icon-' + data.selectedAirport.iso2[0].toLowerCase().substring(0, 2);
-	        this.activeLeg.toSelectedClass = 'country-selected';
-	        var count = (0, _jslinq2.default)(this.recentAirports).where(function (e) {
-	          return e == parseInt(data.selectedAirport.id[0]);
-	        }).count();
-	        if (count < 1) {
-	          this.recentAirports.push(parseInt(data.selectedAirport.id[0]));
-	          _Cache2.default.saveSession('recentAirports', this.recentAirports, true);
-	        }
-	        //calculation arrival time also
-	        if (this.activeLeg.fromAirportObj != null) {
-	          this.calculateDuration();
-	        }
-	      }
-	    }
-	  }, {
-	    key: 'onPickupAirportChange',
-	    value: function onPickupAirportChange(text) {
-	      this.activeLeg.flagClassFrom = '';
-	      this.activeLeg.fromSelectedClass = '';
-	      if (text.length > 0 || this.pickdsChanged == false) {
-	        this.pickAirports = this.allPickAirportsList;
-	        this.pickFilter = this.filter;
-	        this.pickdsChanged = true;
-	      } else {
-	        this.pickAirports = this.nearbyAirports;
-	        this.pickFilter = _autoComplete2.default.noFilter;
-	      }
-	      this.stateDirty = true;
-	    }
-	  }, {
-	    key: 'onDropAirportChange',
-	    value: function onDropAirportChange(text) {
-	      this.activeLeg.flagClassTo = '';
-	      this.activeLeg.toSelectedClass = '';
-	      if (text.length > 0 || this.dropdsChanged == false) {
-	        this.dropAirports = this.allDropAirportsList;
-	        this.dropFilter = this.filter;
-	        this.dropdsChanged = true;
-	      } else {
-	        this.dropAirports = this.nearbyAirports;
-	        this.dropFilter = _autoComplete2.default.noFilter;
-	      }
-	      this.stateDirty = true;
-	    }
-	  }, {
-	    key: 'onUpdateTime',
-	    value: function onUpdateTime(newTime) {
-	      this.activeLeg.time = newTime;
-	      this.stateDirty = true;
-
-	      if (this.activeLeg.fromAirportObj != null && this.activeLeg.toAirportObj != null) {
-	        this.calculateDuration();
-	      }
-	    }
-	  }, {
-	    key: 'onUpdateDate',
-	    value: function onUpdateDate(newDate) {
-	      this.activeLeg.date = newDate;
-	      this.stateDirty = true;
-
-	      if (this.activeLeg.fromAirportObj != null && this.activeLeg.toAirportObj != null) {
-	        this.calculateDuration();
-	      }
-	    }
-	  }, {
-	    key: 'onSubmitOrderSuccess',
-	    value: function onSubmitOrderSuccess() {
-	      //resetting the store
-	      _Cache2.default.saveSession('legs', this.legs, true);
-
-	      this.legs = [];
-
-	      this.loadActiveLeg();
-	      this.stateDirty = false;
-
-	      this.tabIndex = 0;
-	      this.message = '';
-
-	      window.location.hash = 'confirm-order';
-	    }
-	  }, {
-	    key: 'onShowMessage',
-	    value: function onShowMessage(data) {
-	      this.message = data.message;
-	      this.tabIndex = data.tabIndex;
-	    }
-	  }, {
-	    key: 'onShowErrorMessage',
-	    value: function onShowErrorMessage(data) {
-	      this.successMesg = data.message;
-	      //TODO: need to call showSnackMessage directly instead of state.
-	      var self = this;
-	      setTimeout(function () {
-	        self.successMesg = '';
-	      }, 1000);
-	    }
-	  }, {
-	    key: 'onFetchWeatherSuccess',
-	    value: function onFetchWeatherSuccess(data) {
-
-	      if (data.dest == 'from') {
-	        this.activeLeg.fromWeather = data;
-	      } else {
-	        this.activeLeg.toWeather = data;
-	      }
-	    }
-	  }, {
-	    key: 'onResetForm',
-	    value: function onResetForm() {
-	      this.initializeStore();
-	    }
-	  }]);
-
-	  return RAFStore;
-	}();
-
-	module.exports = _AltApp2.default.createStore(RAFStore, 'RAFStore');
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(318)))
-
-/***/ },
-/* 727 */,
-/* 728 */,
-/* 729 */,
-/* 730 */,
-/* 731 */,
-/* 732 */,
-/* 733 */,
-/* 734 */,
-/* 735 */,
-/* 736 */,
-/* 737 */,
-/* 738 */,
-/* 739 */,
-/* 740 */,
-/* 741 */,
-/* 742 */,
-/* 743 */,
-/* 744 */,
-/* 745 */,
-/* 746 */,
-/* 747 */,
-/* 748 */,
-/* 749 */,
-/* 750 */,
-/* 751 */,
-/* 752 */,
-/* 753 */,
-/* 754 */,
-/* 755 */,
-/* 756 */,
-/* 757 */,
-/* 758 */,
-/* 759 */,
-/* 760 */,
-/* 761 */,
-/* 762 */,
-/* 763 */,
-/* 764 */,
-/* 765 */,
-/* 766 */,
-/* 767 */,
-/* 768 */,
-/* 769 */,
-/* 770 */,
-/* 771 */,
-/* 772 */,
-/* 773 */,
-/* 774 */,
-/* 775 */,
-/* 776 */,
-/* 777 */,
-/* 778 */,
-/* 779 */,
-/* 780 */,
-/* 781 */,
-/* 782 */,
-/* 783 */,
-/* 784 */,
-/* 785 */,
-/* 786 */,
-/* 787 */,
-/* 788 */,
-/* 789 */,
-/* 790 */,
-/* 791 */,
-/* 792 */,
-/* 793 */,
-/* 794 */,
-/* 795 */,
-/* 796 */,
-/* 797 */,
-/* 798 */,
-/* 799 */,
-/* 800 */,
-/* 801 */,
-/* 802 */,
-/* 803 */,
-/* 804 */,
-/* 805 */,
-/* 806 */,
-/* 807 */,
-/* 808 */,
-/* 809 */,
-/* 810 */,
-/* 811 */,
-/* 812 */,
-/* 813 */
+/* 811 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {'use strict';
@@ -17225,7 +16949,7 @@ webpackJsonp([0],[
 
 	var _reactRouter = __webpack_require__(165);
 
-	var _RAFActions = __webpack_require__(708);
+	var _RAFActions = __webpack_require__(682);
 
 	var _RAFActions2 = _interopRequireDefault(_RAFActions);
 
@@ -17233,17 +16957,21 @@ webpackJsonp([0],[
 
 	var _Helpers2 = _interopRequireDefault(_Helpers);
 
-	var _MarkerAction = __webpack_require__(814);
+	var _MarkerAction = __webpack_require__(812);
 
 	var _MarkerAction2 = _interopRequireDefault(_MarkerAction);
 
-	var _MapForm = __webpack_require__(815);
+	var _MapForm = __webpack_require__(813);
 
 	var _MapForm2 = _interopRequireDefault(_MapForm);
 
-	var _Order = __webpack_require__(913);
+	var _Order = __webpack_require__(911);
 
 	var _Order2 = _interopRequireDefault(_Order);
+
+	var _ConfirmDialog = __webpack_require__(790);
+
+	var _ConfirmDialog2 = _interopRequireDefault(_ConfirmDialog);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -17256,16 +16984,54 @@ webpackJsonp([0],[
 	var Main = function (_React$Component) {
 	    _inherits(Main, _React$Component);
 
+	    _createClass(Main, [{
+	        key: 'onChange',
+	        value: function onChange() {
+	            this.context.router.replaceWith('/');
+	        }
+	    }]);
+
 	    function Main(props) {
 	        _classCallCheck(this, Main);
 
 	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Main).call(this, props));
 
 	        _this.state = {};
+	        _this.confirmedNav = false;
 	        return _this;
 	    }
 
+	    // Asynchronous version of `setRouteLeaveHook`.
+	    // Instead of synchronously returning a result, the hook is expected to
+	    // return a promise.
+
+
 	    _createClass(Main, [{
+	        key: 'setAsyncRouteLeaveHook',
+	        value: function setAsyncRouteLeaveHook(router, route, hook) {
+	            var withinHook = false;
+	            var finalResult = undefined;
+	            var finalResultSet = false;
+	            router.setRouteLeaveHook(route, function (nextLocation) {
+	                withinHook = true;
+	                if (!finalResultSet) {
+	                    hook(nextLocation).then(function (result) {
+	                        finalResult = result;
+	                        finalResultSet = true;
+	                        if (!withinHook && nextLocation) {
+	                            // Re-schedule the navigation
+	                            router.push(nextLocation);
+	                        }
+	                    });
+	                }
+	                var result = finalResultSet ? finalResult : false;
+	                withinHook = false;
+	                finalResult = undefined;
+	                finalResultSet = false;
+	                return result;
+	            });
+	        }
+	    }, {
 	        key: 'componentWillMount',
 	        value: function componentWillMount() {
 
@@ -17297,15 +17063,32 @@ webpackJsonp([0],[
 	            _MarkerAction2.default.AddAirport();
 	        }
 	    }, {
+	        key: 'routerWillLeave',
+	        value: function routerWillLeave(nextLocation) {
+	            var self = this;
+	            return new Promise(function (resolve, reject) {
+	                if (self.confirmedNav || !self.props.stateDirty || nextLocation.pathname.indexOf('login') > -1) {
+	                    // No unsaved changes -- leave
+	                    resolve(true);
+	                } else {
+	                    self.refs.confirmNavigation.setState({ open: true, nextLocation: nextLocation });
+	                    self.confirmedNav = false;
+	                    window.location.hash = 'request-flight';
+	                    resolve(false);
+	                }
+	            });
+	        }
+	    }, {
+	        key: 'handleconfirmNavigation',
+	        value: function handleconfirmNavigation() {
+	            this.confirmedNav = true;
+	            this.refs.confirmNavigation.setState({ open: false });
+	            window.location.hash = this.refs.confirmNavigation.state.nextLocation.pathname;
+	        }
+	    }, {
 	        key: 'componentDidMount',
 	        value: function componentDidMount() {
-	            var _this2 = this;
-
-	            this.props.router.setRouteLeaveHook(this.props.route, function () {
-	                if (_this2.props.stateDirty) {
-	                    return 'Your changes will be lost if not submitted. Would you like to continue? ';
-	                };
-	            });
+	            this.setAsyncRouteLeaveHook(this.context.router, this.props.route, this.routerWillLeave.bind(this));
 
 	            $('a.map-mobile-btn').on('click', function (e) {
 	                var header = $('a.map-mobile-btn');
@@ -17377,6 +17160,14 @@ webpackJsonp([0],[
 	                                message: this.props.message, recentAirportsList: this.props.recentAirportsList,
 	                                airports: this.props.airports, nearbyAirports: this.props.nearbyAirports,
 	                                isOrderFromItinerary: this.props.isOrderFromItinerary
+	                            }),
+	                            _react2.default.createElement(_ConfirmDialog2.default, {
+	                                ref: 'confirmNavigation',
+	                                content: 'Your changes will be lost if not submitted. Would you like to continue?',
+	                                title: 'Confirmation',
+	                                cancelLabel: 'No',
+	                                confirmLabel: 'Yes',
+	                                handleConfirm: this.handleconfirmNavigation.bind(this)
 	                            })
 	                        )
 	                    )
@@ -17393,13 +17184,16 @@ webpackJsonp([0],[
 	    zoom: _react2.default.PropTypes.number,
 	    greatPlaceCoords: _react2.default.PropTypes.any
 	};
+	Main.contextTypes = {
+	    router: _react2.default.PropTypes.object.isRequired
+	};
 
 
 	module.exports = (0, _reactRouter.withRouter)(Main);
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(318)))
 
 /***/ },
-/* 814 */
+/* 812 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -17457,7 +17251,7 @@ webpackJsonp([0],[
 	module.exports = _AltApp2.default.createActions(MarkerAction);
 
 /***/ },
-/* 815 */
+/* 813 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -17472,15 +17266,15 @@ webpackJsonp([0],[
 
 	var _altContainer2 = _interopRequireDefault(_altContainer);
 
-	var _MarkerAction = __webpack_require__(814);
+	var _MarkerAction = __webpack_require__(812);
 
 	var _MarkerAction2 = _interopRequireDefault(_MarkerAction);
 
-	var _MarkerStore = __webpack_require__(816);
+	var _MarkerStore = __webpack_require__(814);
 
 	var _MarkerStore2 = _interopRequireDefault(_MarkerStore);
 
-	var _Map = __webpack_require__(819);
+	var _Map = __webpack_require__(817);
 
 	var _Map2 = _interopRequireDefault(_Map);
 
@@ -17523,7 +17317,7 @@ webpackJsonp([0],[
 	module.exports = MapForm;
 
 /***/ },
-/* 816 */
+/* 814 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {'use strict';
@@ -17534,27 +17328,27 @@ webpackJsonp([0],[
 
 	var _AltApp2 = _interopRequireDefault(_AltApp);
 
-	var _MarkerAction = __webpack_require__(814);
+	var _MarkerAction = __webpack_require__(812);
 
 	var _MarkerAction2 = _interopRequireDefault(_MarkerAction);
 
-	var _ItineraryDetailActions = __webpack_require__(817);
+	var _ItineraryDetailActions = __webpack_require__(815);
 
 	var _ItineraryDetailActions2 = _interopRequireDefault(_ItineraryDetailActions);
 
-	var _RAFActions = __webpack_require__(708);
+	var _RAFActions = __webpack_require__(682);
 
 	var _RAFActions2 = _interopRequireDefault(_RAFActions);
 
-	var _RAFStore = __webpack_require__(726);
+	var _RAFStore = __webpack_require__(681);
 
 	var _RAFStore2 = _interopRequireDefault(_RAFStore);
 
-	var _ItineraryDetailStore = __webpack_require__(818);
+	var _ItineraryDetailStore = __webpack_require__(816);
 
 	var _ItineraryDetailStore2 = _interopRequireDefault(_ItineraryDetailStore);
 
-	var _jslinq = __webpack_require__(711);
+	var _jslinq = __webpack_require__(685);
 
 	var _jslinq2 = _interopRequireDefault(_jslinq);
 
@@ -17572,7 +17366,10 @@ webpackJsonp([0],[
 	    this.bindActions(_RAFActions2.default);
 	    this.bindActions(_ItineraryDetailActions2.default);
 
-	    this.bindListeners({ onLoadSingleItinerary: _ItineraryDetailActions2.default.changeActiveLeg });
+	    this.bindListeners({
+	      onLoadSingleItinerary: _ItineraryDetailActions2.default.changeActiveLeg,
+	      onLoadSingleItinerary: _ItineraryDetailActions2.default.changeActiveLegById
+	    });
 	  }
 
 	  _createClass(MarkerStore, [{
@@ -17807,7 +17604,7 @@ webpackJsonp([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(318)))
 
 /***/ },
-/* 817 */
+/* 815 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -17818,7 +17615,7 @@ webpackJsonp([0],[
 
 	var _AltApp2 = _interopRequireDefault(_AltApp);
 
-	var _ItinerarySource = __webpack_require__(712);
+	var _ItinerarySource = __webpack_require__(686);
 
 	var _ItinerarySource2 = _interopRequireDefault(_ItinerarySource);
 
@@ -17852,6 +17649,7 @@ webpackJsonp([0],[
 	                    }
 	                    data.activelegIdentifier = params.legId;
 	                    data.key = params.key;
+	                    data.status = params.status;
 	                    data.uniqueIdentifier = params.uniqueIdentifier;
 	                    dispatch(data);
 	                }).catch(function (response) {
@@ -17863,6 +17661,11 @@ webpackJsonp([0],[
 	        key: 'changeActiveLeg',
 	        value: function changeActiveLeg(leg) {
 	            return leg;
+	        }
+	    }, {
+	        key: 'changeActiveLegById',
+	        value: function changeActiveLegById(legId) {
+	            return legId;
 	        }
 	    }, {
 	        key: 'resetStore',
@@ -17892,7 +17695,7 @@ webpackJsonp([0],[
 	module.exports = _AltApp2.default.createActions(ItineraryDetailActions);
 
 /***/ },
-/* 818 */
+/* 816 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -17903,7 +17706,7 @@ webpackJsonp([0],[
 
 	var _AltApp2 = _interopRequireDefault(_AltApp);
 
-	var _ItineraryDetailActions = __webpack_require__(817);
+	var _ItineraryDetailActions = __webpack_require__(815);
 
 	var _ItineraryDetailActions2 = _interopRequireDefault(_ItineraryDetailActions);
 
@@ -17915,7 +17718,7 @@ webpackJsonp([0],[
 
 	var _Helpers2 = _interopRequireDefault(_Helpers);
 
-	var _jslinq = __webpack_require__(711);
+	var _jslinq = __webpack_require__(685);
 
 	var _jslinq2 = _interopRequireDefault(_jslinq);
 
@@ -17946,11 +17749,13 @@ webpackJsonp([0],[
 	        value: function onLoadSingleItinerary(data) {
 	            var airPorts = _Cache2.default.getLocal('airports', true);
 	            var airCrafts = _Cache2.default.getLocal('aircrafts', true).aircraftTypeResponseDtoes.aircrafttype;
+
+	            this.isUpcomingOrPast = data.status;
 	            this.itineraryDetail = data.itinerary.itinerariesResponse.itinerary[0];
 	            this.itineraryDetail.orderKey = data.key;
 	            this.itineraryDetail.orderId = data.uniqueIdentifier;
 
-	            this.itineraryDetail.legs[0].leg.forEach(function (leg) {
+	            this.itineraryDetail.legs[0].leg.forEach(function (leg, i) {
 	                leg.departureAirport = (0, _jslinq2.default)(airPorts.listOfAirports.airport).where(function (e) {
 	                    return e.id[0] == leg.departureAirportId[0];
 	                }).toList()[0];
@@ -17959,18 +17764,20 @@ webpackJsonp([0],[
 	                    return e.id[0] == leg.arrivalAirportId[0];
 	                }).toList()[0];
 
-	                // if leg lies in 24 hour format OR request Aircraft is not set OR is equal to N/A
-	                // then use key aircraftTypeName to get aircraft details
-	                // else use key requestedAircraftTypeName to get aircraft details
-	                if (_Helpers2.default.satisfy24HoursCheck(leg) || !leg.hasOwnProperty('requestedAircraftTypeName') || leg.requestedAircraftTypeName[0] == 'N/A') {
-	                    leg.aircraft = (0, _jslinq2.default)(airCrafts).where(function (e) {
-	                        return e.code[0] == leg.aircraftTypeName[0] || e.displayName[0] == leg.aircraftTypeName[0] || e.name[0] == leg.aircraftTypeName[0];
-	                    }).toList()[0];
+	                leg.isPast = _Helpers2.default.isPast(leg);
+
+	                var aircraftValueToSearch = '';
+
+	                // in a leg there are 2 keys, aircraftTypeName and requestedAircraftTypeName, atleast one of these keys must have a valid data - preferrd is aircraftTypeName
+	                if (leg.hasOwnProperty('aircraftTypeName') && leg.aircraftTypeName[0] != 'null') {
+	                    aircraftValueToSearch = leg.aircraftTypeName[0];
 	                } else {
-	                    leg.aircraft = (0, _jslinq2.default)(airCrafts).where(function (e) {
-	                        return e.code[0] == leg.requestedAircraftTypeName[0] || e.displayName[0] == leg.requestedAircraftTypeName[0] || e.name[0] == leg.requestedAircraftTypeName[0];
-	                    }).toList()[0];
+	                    aircraftValueToSearch = leg.requestedAircraftTypeName[0];
 	                }
+
+	                leg.aircraft = (0, _jslinq2.default)(airCrafts).where(function (e) {
+	                    return e.code[0] == aircraftValueToSearch || e.displayName[0] == aircraftValueToSearch || e.name[0] == aircraftValueToSearch;
+	                }).toList()[0];
 
 	                leg.duration = _Helpers2.default.getFlightDuration(leg.departureAirport, leg.arrivalAirport, leg.aircraft);
 
@@ -17982,6 +17789,18 @@ webpackJsonp([0],[
 	                    leg.uniqueIdentifier = leg.flightLegExtIdentifier[0];
 	                }
 	            });
+
+	            //removing past legs if upcoming in url or vice versa
+	            ////whether detail page is only for past legs or upcoming legs
+	            if (this.isUpcomingOrPast == 'upcoming') {
+	                this.itineraryDetail.legs[0].leg = (0, _jslinq2.default)(this.itineraryDetail.legs[0].leg).where(function (e) {
+	                    return !e.isPast;
+	                }).toList();
+	            } else {
+	                this.itineraryDetail.legs[0].leg = (0, _jslinq2.default)(this.itineraryDetail.legs[0].leg).where(function (e) {
+	                    return e.isPast;
+	                }).toList();
+	            }
 
 	            this.getActiveLeg(data.activelegIdentifier);
 	        }
@@ -17998,6 +17817,12 @@ webpackJsonp([0],[
 	                    isMatch = e.legId[0] == legIdentifier;
 	                }
 
+	                //if(e.hasOwnProperty('legId')) {
+	                //    isMatch = e.legId[0] == legIdentifier;
+	                //}
+	                //else {
+	                //    isMatch = e.flightLegExtIdentifier[0] == legIdentifier;
+	                //}
 	                return isMatch;
 	            }).toList()[0];
 	        }
@@ -18005,6 +17830,14 @@ webpackJsonp([0],[
 	        key: 'onChangeActiveLeg',
 	        value: function onChangeActiveLeg(leg) {
 	            this.activeLeg = leg;
+	        }
+	    }, {
+	        key: 'onChangeActiveLegById',
+	        value: function onChangeActiveLegById(legId) {
+
+	            this.activeLeg = (0, _jslinq2.default)(this.itineraryDetail.legs[0].leg).firstOrDefault(function (e) {
+	                return e.uniqueIdentifier == legId;
+	            });
 	        }
 	    }, {
 	        key: 'onShowError',
@@ -18023,6 +17856,7 @@ webpackJsonp([0],[
 	            this.itineraryDetail = {};
 	            this.activeLeg = '';
 	            this.errorMessage = '';
+	            this.isUpcomingOrPast = '';
 	        }
 	    }, {
 	        key: 'onResetStore',
@@ -18079,7 +17913,7 @@ webpackJsonp([0],[
 	module.exports = _AltApp2.default.createStore(ItineraryDetailStore, 'ItineraryDetailStore');
 
 /***/ },
-/* 819 */
+/* 817 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -18090,11 +17924,11 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _googleMapReact = __webpack_require__(820);
+	var _googleMapReact = __webpack_require__(818);
 
 	var _googleMapReact2 = _interopRequireDefault(_googleMapReact);
 
-	var _MapPlace = __webpack_require__(907);
+	var _MapPlace = __webpack_require__(905);
 
 	var _MapPlace2 = _interopRequireDefault(_MapPlace);
 
@@ -18144,11 +17978,20 @@ webpackJsonp([0],[
 	        key: 'update',
 	        value: function update(geodesicPoly, markers) {
 	            var side = [];
+
 	            for (var i = 0; i < markers.length - 1; i++) {
 	                if (markers[i].leg == markers[i + 1].leg) {
 	                    var path = [new google.maps.LatLng(markers[i].lat, markers[i].lng), new google.maps.LatLng(markers[i + 1].lat, markers[i + 1].lng)];
 	                    geodesicPoly[i].setPath(path);
-	                    if (parseFloat(markers[i].lng) > parseFloat(markers[i + 1].lng)) {
+
+	                    // swap markers if user enter arrival first
+	                    if (markers && markers[0].type == 'to') {
+	                        var tmpVal = markers[0];
+	                        markers[0] = markers[1];
+	                        markers[1] = tmpVal;
+	                    }
+
+	                    if (parseFloat(markers[i].lng) > parseFloat(markers[i + 1].lng) && parseFloat(markers[i + 1].lng) > 0) {
 	                        side[i] = "left";
 	                        side[i + 1] = "left";
 	                        this.setState({
@@ -18245,6 +18088,8 @@ webpackJsonp([0],[
 	module.exports = SimpleMapPage;
 
 /***/ },
+/* 818 */,
+/* 819 */,
 /* 820 */,
 /* 821 */,
 /* 822 */,
@@ -18330,9 +18175,7 @@ webpackJsonp([0],[
 /* 902 */,
 /* 903 */,
 /* 904 */,
-/* 905 */,
-/* 906 */,
-/* 907 */
+/* 905 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -18347,25 +18190,25 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _function = __webpack_require__(823);
+	var _function = __webpack_require__(821);
 
 	var _function2 = _interopRequireDefault(_function);
 
-	var _MapStyle = __webpack_require__(908);
+	var _MapStyle = __webpack_require__(906);
 
-	var _pinArrLeft = __webpack_require__(909);
+	var _pinArrLeft = __webpack_require__(907);
 
 	var _pinArrLeft2 = _interopRequireDefault(_pinArrLeft);
 
-	var _pinDepLeft = __webpack_require__(910);
+	var _pinDepLeft = __webpack_require__(908);
 
 	var _pinDepLeft2 = _interopRequireDefault(_pinDepLeft);
 
-	var _pinArrRight = __webpack_require__(911);
+	var _pinArrRight = __webpack_require__(909);
 
 	var _pinArrRight2 = _interopRequireDefault(_pinArrRight);
 
-	var _pinDepRight = __webpack_require__(912);
+	var _pinDepRight = __webpack_require__(910);
 
 	var _pinDepRight2 = _interopRequireDefault(_pinDepRight);
 
@@ -18402,7 +18245,7 @@ webpackJsonp([0],[
 	                    img = _pinDepLeft2.default;
 	                }
 	            }
-	            console.log(this.props.side);
+	            // console.log(this.props.side);
 	            return _react2.default.createElement(
 	                'div',
 	                null,
@@ -18421,7 +18264,7 @@ webpackJsonp([0],[
 	exports.default = MyGreatPlace;
 
 /***/ },
-/* 908 */
+/* 906 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -18444,31 +18287,31 @@ webpackJsonp([0],[
 	exports.greatPlaceStyle = greatPlaceStyle;
 
 /***/ },
-/* 909 */
+/* 907 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/pin-arr-left.svg";
 
 /***/ },
-/* 910 */
+/* 908 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/pin-dep-left.svg";
 
 /***/ },
-/* 911 */
+/* 909 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/pin-arr-right.svg";
 
 /***/ },
-/* 912 */
+/* 910 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/pin-dep-right.svg";
 
 /***/ },
-/* 913 */
+/* 911 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {'use strict';
@@ -18481,7 +18324,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _RAFActions = __webpack_require__(708);
+	var _RAFActions = __webpack_require__(682);
 
 	var _RAFActions2 = _interopRequireDefault(_RAFActions);
 
@@ -18489,7 +18332,7 @@ webpackJsonp([0],[
 
 	var _moment2 = _interopRequireDefault(_moment);
 
-	var _jslinq = __webpack_require__(711);
+	var _jslinq = __webpack_require__(685);
 
 	var _jslinq2 = _interopRequireDefault(_jslinq);
 
@@ -18497,19 +18340,19 @@ webpackJsonp([0],[
 
 	var _Helpers2 = _interopRequireDefault(_Helpers);
 
-	var _User = __webpack_require__(599);
+	var _User = __webpack_require__(600);
 
 	var _User2 = _interopRequireDefault(_User);
 
-	var _ConfirmDialog = __webpack_require__(914);
+	var _ConfirmDialog = __webpack_require__(790);
 
 	var _ConfirmDialog2 = _interopRequireDefault(_ConfirmDialog);
 
-	var _Leg = __webpack_require__(916);
+	var _Leg = __webpack_require__(912);
 
 	var _Leg2 = _interopRequireDefault(_Leg);
 
-	var _ItineraryLegWeather = __webpack_require__(1212);
+	var _ItineraryLegWeather = __webpack_require__(1209);
 
 	var _ItineraryLegWeather2 = _interopRequireDefault(_ItineraryLegWeather);
 
@@ -18641,7 +18484,7 @@ webpackJsonp([0],[
 
 	            var passengersLbl = leg.passengerCount == 1 ? "Passenger" : "Passengers";
 
-	            var icon = __webpack_require__(1206)("./icon_" + leg.aircraftObj.code[0] + '.jpg');
+	            var icon = __webpack_require__(1203)("./icon_" + leg.aircraftObj.code[0] + '.jpg');
 
 	            var departDate = (0, _moment2.default)(leg.date + ' ' + leg.time + ' +0000', "MM/DD/YYYY HH:mm Z").utc().format('Do MMMM YYYY');
 
@@ -18654,12 +18497,12 @@ webpackJsonp([0],[
 	            var legTime = (0, _moment2.default)(leg.date + ' ' + leg.time + ' +0000', "MM/DD/YYYY HH:mm Z").utc();
 	            var currentTime = (0, _moment2.default)(new Date()).utc();
 
-	            var isEditableLeg = isOrderFromItinerary ? _Helpers2.default.isEditableLeg(leg) : false;
+	            var isEditableLeg = isOrderFromItinerary ? _Helpers2.default.isEditableLeg(leg) : true;
 	            legList.push(_react2.default.createElement(
 	              'li',
 	              { key: i, className: 'flight-leg edit-leg' },
 	              function () {
-	                return isOrderFromItinerary && isEditableLeg ? _react2.default.createElement('a', { 'data-guid': leg.guid, className: 'delete-leg', onClick: _this2.deleteLeg.bind(_this2) }) : '';
+	                return isEditableLeg ? _react2.default.createElement('a', { 'data-guid': leg.guid, className: 'delete-leg', onClick: _this2.deleteLeg.bind(_this2) }) : '';
 	              }(),
 	              _react2.default.createElement(
 	                'ul',
@@ -18671,7 +18514,7 @@ webpackJsonp([0],[
 	                    'a',
 	                    { className: 'planflight-tab', href: 'javascript:void(0);' },
 	                    function () {
-	                      return isOrderFromItinerary && isEditableLeg ? _react2.default.createElement('span', { className: 'edit', 'data-guid': leg.guid, 'data-tab': '0', onClick: _this2.editLeg.bind(_this2) }) : '';
+	                      return isEditableLeg ? _react2.default.createElement('span', { className: 'edit', 'data-guid': leg.guid, 'data-tab': '0', onClick: _this2.editLeg.bind(_this2) }) : '';
 	                    }(),
 	                    _react2.default.createElement(
 	                      'div',
@@ -18714,11 +18557,11 @@ webpackJsonp([0],[
 	                            return source != 'editItinerary' ? _react2.default.createElement(
 	                              'div',
 	                              { className: ' weather left' },
-	                              _react2.default.createElement('i', { className: 'weather-icon ' + leg.fromWeather.cssClass }),
+	                              _react2.default.createElement('i', { className: 'weather-icon ' + ((leg.fromWeather || {}).cssClass || '') }),
 	                              _react2.default.createElement(
 	                                'span',
 	                                { className: 'pls' },
-	                                leg.fromWeather.temp
+	                                (leg.fromWeather || {}).temp || ''
 	                              )
 	                            ) : _react2.default.createElement(_ItineraryLegWeather2.default, { dest: 'from', leg: leg, source: source });
 	                          }()
@@ -18754,11 +18597,11 @@ webpackJsonp([0],[
 	                            return source != 'editItinerary' ? _react2.default.createElement(
 	                              'div',
 	                              { className: ' weather right' },
-	                              _react2.default.createElement('i', { className: 'weather-icon ' + leg.toWeather.cssClass }),
+	                              _react2.default.createElement('i', { className: 'weather-icon ' + ((leg.toWeather || {}).cssClass || '') }),
 	                              _react2.default.createElement(
 	                                'span',
 	                                { className: 'pls' },
-	                                leg.toWeather.temp
+	                                (leg.toWeather || {}).temp || ''
 	                              )
 	                            ) : _react2.default.createElement(_ItineraryLegWeather2.default, { dest: 'to', leg: leg, source: source });
 	                          }()
@@ -18774,7 +18617,7 @@ webpackJsonp([0],[
 	                    'a',
 	                    { className: 'aircraft-tab', href: 'javascript:void(0);' },
 	                    function () {
-	                      return isOrderFromItinerary && isEditableLeg ? _react2.default.createElement('span', { className: 'edit', 'data-guid': leg.guid, 'data-tab': '1', onClick: _this2.editLeg.bind(_this2) }) : '';
+	                      return isEditableLeg ? _react2.default.createElement('span', { className: 'edit', 'data-guid': leg.guid, 'data-tab': '1', onClick: _this2.editLeg.bind(_this2) }) : '';
 	                    }(),
 	                    _react2.default.createElement(
 	                      'div',
@@ -18813,7 +18656,7 @@ webpackJsonp([0],[
 	                    'a',
 	                    { className: 'passenger-tab', href: 'javascript:void(0);' },
 	                    function () {
-	                      return isOrderFromItinerary && isEditableLeg ? _react2.default.createElement('span', { className: 'edit', 'data-guid': leg.guid, 'data-tab': '2', onClick: _this2.editLeg.bind(_this2) }) : '';
+	                      return isEditableLeg ? _react2.default.createElement('span', { className: 'edit', 'data-guid': leg.guid, 'data-tab': '2', onClick: _this2.editLeg.bind(_this2) }) : '';
 	                    }(),
 	                    _react2.default.createElement(
 	                      'div',
@@ -18869,116 +18712,7 @@ webpackJsonp([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(318)))
 
 /***/ },
-/* 914 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _dialog = __webpack_require__(915);
-
-	var _dialog2 = _interopRequireDefault(_dialog);
-
-	var _flatButton = __webpack_require__(688);
-
-	var _flatButton2 = _interopRequireDefault(_flatButton);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var ConfirmDialog = function (_React$Component) {
-	    _inherits(ConfirmDialog, _React$Component);
-
-	    function ConfirmDialog(props) {
-	        _classCallCheck(this, ConfirmDialog);
-
-	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ConfirmDialog).call(this, props));
-
-	        _this.actions = [_react2.default.createElement(_flatButton2.default, {
-	            label: _this.props.cancelLabel,
-	            secondary: true,
-	            onTouchTap: _this.props.handleReject || _this.handleClose.bind(_this)
-	        }), _react2.default.createElement(_flatButton2.default, {
-	            label: _this.props.confirmLabel,
-	            primary: true,
-	            keyboardFocused: true,
-	            onTouchTap: _this.props.handleConfirm || _this.handleOk.bind(_this)
-	        })];
-
-	        _this.state = {
-	            open: !!_this.props.nextLocationPath
-	        };
-	        return _this;
-	    }
-
-	    _createClass(ConfirmDialog, [{
-	        key: 'componentWillReceiveProps',
-	        value: function componentWillReceiveProps(nextProps, nextState) {
-	            if (Object.keys(nextState).length == 0 || nextState.open === this.state.open) {
-	                this.setState({
-	                    open: !!nextProps.nextLocationPath
-	                });
-	            }
-	        }
-	    }, {
-	        key: 'shouldComponentUpdate',
-	        value: function shouldComponentUpdate(nextProps, nextState) {
-	            return nextState.open !== this.state.open || nextProps.nextLocationPath !== this.props.nextLocationPath;
-	        }
-	    }, {
-	        key: 'handleClose',
-	        value: function handleClose() {
-	            if (this.props.onCancel) {
-	                this.props.onCancel();
-	            }
-	            this.setState({ open: false });
-	        }
-	    }, {
-	        key: 'handleOk',
-	        value: function handleOk() {
-	            if (this.props.nextLocationPath && this.props.onTransition) {
-	                this.props.onTransition(this.props.nextLocationPath);
-	            }
-	            this.setState({ open: false });
-	        }
-	    }, {
-	        key: 'render',
-	        value: function render() {
-	            return _react2.default.createElement(
-	                _dialog2.default,
-	                {
-	                    title: this.props.title,
-	                    actions: this.actions,
-	                    modal: false,
-	                    className: 'top-index',
-	                    open: this.state.open,
-	                    onRequestClose: this.props.handleReject || this.handleClose.bind(this)
-	                },
-	                this.props.content
-	            );
-	        }
-	    }]);
-
-	    return ConfirmDialog;
-	}(_react2.default.Component);
-
-	;
-
-	module.exports = ConfirmDialog;
-
-/***/ },
-/* 915 */,
-/* 916 */
+/* 912 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {'use strict';
@@ -18989,13 +18723,13 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _rcDatepicker = __webpack_require__(917);
+	var _rcDatepicker = __webpack_require__(913);
 
-	var _RAFActions = __webpack_require__(708);
+	var _RAFActions = __webpack_require__(682);
 
 	var _RAFActions2 = _interopRequireDefault(_RAFActions);
 
-	var _MarkerAction = __webpack_require__(814);
+	var _MarkerAction = __webpack_require__(812);
 
 	var _MarkerAction2 = _interopRequireDefault(_MarkerAction);
 
@@ -19007,27 +18741,27 @@ webpackJsonp([0],[
 
 	var _Helpers2 = _interopRequireDefault(_Helpers);
 
-	var _PassengerSelector = __webpack_require__(1069);
+	var _PassengerSelector = __webpack_require__(1065);
 
 	var _PassengerSelector2 = _interopRequireDefault(_PassengerSelector);
 
-	var _AirportSelector = __webpack_require__(1070);
+	var _AirportSelector = __webpack_require__(1066);
 
 	var _AirportSelector2 = _interopRequireDefault(_AirportSelector);
 
-	var _ConfirmDialog = __webpack_require__(914);
+	var _ConfirmDialog = __webpack_require__(790);
 
 	var _ConfirmDialog2 = _interopRequireDefault(_ConfirmDialog);
 
-	var _AircraftSelector = __webpack_require__(1105);
+	var _AircraftSelector = __webpack_require__(1101);
 
 	var _AircraftSelector2 = _interopRequireDefault(_AircraftSelector);
 
-	var _TimePickerRAF = __webpack_require__(1133);
+	var _TimePickerRAF = __webpack_require__(1130);
 
 	var _TimePickerRAF2 = _interopRequireDefault(_TimePickerRAF);
 
-	var _aircraft = __webpack_require__(1107);
+	var _aircraft = __webpack_require__(1103);
 
 	var _aircraft2 = _interopRequireDefault(_aircraft);
 
@@ -19271,7 +19005,7 @@ webpackJsonp([0],[
 	            var icon = null,
 	                aircraftname = null;
 	            if (this.props.leg.aircraftObj != null) {
-	                icon = __webpack_require__(1206)("./icon_" + this.props.leg.aircraftObj.code[0] + '.jpg');
+	                icon = __webpack_require__(1203)("./icon_" + this.props.leg.aircraftObj.code[0] + '.jpg');
 	                aircraftname = this.props.leg.aircraftObj.name[0];
 	            }
 
@@ -19342,21 +19076,21 @@ webpackJsonp([0],[
 	            var toWeather = leg.toWeather != null ? _react2.default.createElement(
 	                'span',
 	                { className: 'weather left' },
-	                _react2.default.createElement('i', { className: 'weather-icon ' + leg.toWeather.cssClass }),
+	                _react2.default.createElement('i', { className: 'weather-icon ' + ((leg.toWeather || {}).cssClass || '') }),
 	                _react2.default.createElement(
 	                    'span',
 	                    { className: 'pls raf-tab-weather-lbl' },
-	                    leg.toWeather.temp
+	                    (leg.toWeather || {}).temp || ''
 	                )
 	            ) : null;
 	            var fromWeather = leg.fromWeather != null ? _react2.default.createElement(
 	                'span',
 	                { className: 'weather left' },
-	                _react2.default.createElement('i', { className: 'weather-icon ' + leg.fromWeather.cssClass }),
+	                _react2.default.createElement('i', { className: 'weather-icon ' + ((leg.fromWeather || {}).cssClass || '') }),
 	                _react2.default.createElement(
 	                    'span',
 	                    { className: 'pls raf-tab-weather-lbl' },
-	                    leg.fromWeather.temp
+	                    (leg.fromWeather || {}).temp || ''
 	                )
 	            ) : null;
 
@@ -19523,7 +19257,9 @@ webpackJsonp([0],[
 	                                    returnFormat: 'DD/MM/YYYY',
 	                                    onChange: this.handleDateChange.bind(this),
 	                                    defaultValue: this.props.leg.defaultDate,
+	                                    value: this.props.leg.defaultDate,
 	                                    minDate: this.props.leg.minDate,
+	                                    maxDate: this.props.leg.maxDate,
 	                                    showOnInputClick: true,
 	                                    placeholder: 'DD MMM YYYY',
 	                                    style: { borderBottom: 'none !important', margin: 0 },
@@ -19690,6 +19426,10 @@ webpackJsonp([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(318)))
 
 /***/ },
+/* 913 */,
+/* 914 */,
+/* 915 */,
+/* 916 */,
 /* 917 */,
 /* 918 */,
 /* 919 */,
@@ -19838,11 +19578,7 @@ webpackJsonp([0],[
 /* 1062 */,
 /* 1063 */,
 /* 1064 */,
-/* 1065 */,
-/* 1066 */,
-/* 1067 */,
-/* 1068 */,
-/* 1069 */
+/* 1065 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -19970,7 +19706,7 @@ webpackJsonp([0],[
 	module.exports = PassengerSelector;
 
 /***/ },
-/* 1070 */
+/* 1066 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -19981,7 +19717,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactAutosuggest = __webpack_require__(1071);
+	var _reactAutosuggest = __webpack_require__(1067);
 
 	var _reactAutosuggest2 = _interopRequireDefault(_reactAutosuggest);
 
@@ -20223,15 +19959,15 @@ webpackJsonp([0],[
 	module.exports = AirportSelector;
 
 /***/ },
-/* 1071 */
+/* 1067 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	module.exports = __webpack_require__(1072).default;
+	module.exports = __webpack_require__(1068).default;
 
 /***/ },
-/* 1072 */
+/* 1068 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -20246,13 +19982,13 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _redux = __webpack_require__(1073);
+	var _redux = __webpack_require__(1069);
 
-	var _reducerAndActions = __webpack_require__(1086);
+	var _reducerAndActions = __webpack_require__(1082);
 
 	var _reducerAndActions2 = _interopRequireDefault(_reducerAndActions);
 
-	var _Autosuggest = __webpack_require__(1087);
+	var _Autosuggest = __webpack_require__(1083);
 
 	var _Autosuggest2 = _interopRequireDefault(_Autosuggest);
 
@@ -20421,7 +20157,7 @@ webpackJsonp([0],[
 	exports.default = AutosuggestContainer;
 
 /***/ },
-/* 1073 */
+/* 1069 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -20429,27 +20165,27 @@ webpackJsonp([0],[
 	exports.__esModule = true;
 	exports.compose = exports.applyMiddleware = exports.bindActionCreators = exports.combineReducers = exports.createStore = undefined;
 
-	var _createStore = __webpack_require__(1074);
+	var _createStore = __webpack_require__(1070);
 
 	var _createStore2 = _interopRequireDefault(_createStore);
 
-	var _combineReducers = __webpack_require__(1081);
+	var _combineReducers = __webpack_require__(1077);
 
 	var _combineReducers2 = _interopRequireDefault(_combineReducers);
 
-	var _bindActionCreators = __webpack_require__(1083);
+	var _bindActionCreators = __webpack_require__(1079);
 
 	var _bindActionCreators2 = _interopRequireDefault(_bindActionCreators);
 
-	var _applyMiddleware = __webpack_require__(1084);
+	var _applyMiddleware = __webpack_require__(1080);
 
 	var _applyMiddleware2 = _interopRequireDefault(_applyMiddleware);
 
-	var _compose = __webpack_require__(1085);
+	var _compose = __webpack_require__(1081);
 
 	var _compose2 = _interopRequireDefault(_compose);
 
-	var _warning = __webpack_require__(1082);
+	var _warning = __webpack_require__(1078);
 
 	var _warning2 = _interopRequireDefault(_warning);
 
@@ -20473,7 +20209,7 @@ webpackJsonp([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 1074 */
+/* 1070 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -20482,11 +20218,11 @@ webpackJsonp([0],[
 	exports.ActionTypes = undefined;
 	exports["default"] = createStore;
 
-	var _isPlainObject = __webpack_require__(1075);
+	var _isPlainObject = __webpack_require__(1071);
 
 	var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
 
-	var _symbolObservable = __webpack_require__(1079);
+	var _symbolObservable = __webpack_require__(1075);
 
 	var _symbolObservable2 = _interopRequireDefault(_symbolObservable);
 
@@ -20740,12 +20476,12 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 1075 */
+/* 1071 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var getPrototype = __webpack_require__(1076),
-	    isHostObject = __webpack_require__(1077),
-	    isObjectLike = __webpack_require__(1078);
+	var getPrototype = __webpack_require__(1072),
+	    isHostObject = __webpack_require__(1073),
+	    isObjectLike = __webpack_require__(1074);
 
 	/** `Object#toString` result references. */
 	var objectTag = '[object Object]';
@@ -20816,7 +20552,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1076 */
+/* 1072 */
 /***/ function(module, exports) {
 
 	/* Built-in method references for those with the same name as other `lodash` methods. */
@@ -20837,7 +20573,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1077 */
+/* 1073 */
 /***/ function(module, exports) {
 
 	/**
@@ -20863,7 +20599,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1078 */
+/* 1074 */
 /***/ function(module, exports) {
 
 	/**
@@ -20898,18 +20634,18 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1079 */
+/* 1075 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/* global window */
 	'use strict';
 
-	module.exports = __webpack_require__(1080)(global || window || this);
+	module.exports = __webpack_require__(1076)(global || window || this);
 
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 1080 */
+/* 1076 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -20934,7 +20670,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1081 */
+/* 1077 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -20942,13 +20678,13 @@ webpackJsonp([0],[
 	exports.__esModule = true;
 	exports["default"] = combineReducers;
 
-	var _createStore = __webpack_require__(1074);
+	var _createStore = __webpack_require__(1070);
 
-	var _isPlainObject = __webpack_require__(1075);
+	var _isPlainObject = __webpack_require__(1071);
 
 	var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
 
-	var _warning = __webpack_require__(1082);
+	var _warning = __webpack_require__(1078);
 
 	var _warning2 = _interopRequireDefault(_warning);
 
@@ -21067,7 +20803,7 @@ webpackJsonp([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 1082 */
+/* 1078 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -21097,7 +20833,7 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 1083 */
+/* 1079 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -21153,7 +20889,7 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 1084 */
+/* 1080 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21164,7 +20900,7 @@ webpackJsonp([0],[
 
 	exports["default"] = applyMiddleware;
 
-	var _compose = __webpack_require__(1085);
+	var _compose = __webpack_require__(1081);
 
 	var _compose2 = _interopRequireDefault(_compose);
 
@@ -21216,7 +20952,7 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 1085 */
+/* 1081 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -21261,7 +20997,7 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 1086 */
+/* 1082 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -21390,7 +21126,7 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 1087 */
+/* 1083 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21407,11 +21143,11 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactRedux = __webpack_require__(1088);
+	var _reactRedux = __webpack_require__(1084);
 
-	var _reducerAndActions = __webpack_require__(1086);
+	var _reducerAndActions = __webpack_require__(1082);
 
-	var _reactAutowhatever = __webpack_require__(1101);
+	var _reactAutowhatever = __webpack_require__(1097);
 
 	var _reactAutowhatever2 = _interopRequireDefault(_reactAutowhatever);
 
@@ -21836,7 +21572,7 @@ webpackJsonp([0],[
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Autosuggest);
 
 /***/ },
-/* 1088 */
+/* 1084 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21844,11 +21580,11 @@ webpackJsonp([0],[
 	exports.__esModule = true;
 	exports.connect = exports.Provider = undefined;
 
-	var _Provider = __webpack_require__(1089);
+	var _Provider = __webpack_require__(1085);
 
 	var _Provider2 = _interopRequireDefault(_Provider);
 
-	var _connect = __webpack_require__(1092);
+	var _connect = __webpack_require__(1088);
 
 	var _connect2 = _interopRequireDefault(_connect);
 
@@ -21858,7 +21594,7 @@ webpackJsonp([0],[
 	exports.connect = _connect2["default"];
 
 /***/ },
-/* 1089 */
+/* 1085 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -21868,11 +21604,11 @@ webpackJsonp([0],[
 
 	var _react = __webpack_require__(1);
 
-	var _storeShape = __webpack_require__(1090);
+	var _storeShape = __webpack_require__(1086);
 
 	var _storeShape2 = _interopRequireDefault(_storeShape);
 
-	var _warning = __webpack_require__(1091);
+	var _warning = __webpack_require__(1087);
 
 	var _warning2 = _interopRequireDefault(_warning);
 
@@ -21942,7 +21678,7 @@ webpackJsonp([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 1090 */
+/* 1086 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21958,7 +21694,7 @@ webpackJsonp([0],[
 	});
 
 /***/ },
-/* 1091 */
+/* 1087 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -21987,7 +21723,7 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 1092 */
+/* 1088 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -21999,31 +21735,31 @@ webpackJsonp([0],[
 
 	var _react = __webpack_require__(1);
 
-	var _storeShape = __webpack_require__(1090);
+	var _storeShape = __webpack_require__(1086);
 
 	var _storeShape2 = _interopRequireDefault(_storeShape);
 
-	var _shallowEqual = __webpack_require__(1093);
+	var _shallowEqual = __webpack_require__(1089);
 
 	var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 
-	var _wrapActionCreators = __webpack_require__(1094);
+	var _wrapActionCreators = __webpack_require__(1090);
 
 	var _wrapActionCreators2 = _interopRequireDefault(_wrapActionCreators);
 
-	var _warning = __webpack_require__(1091);
+	var _warning = __webpack_require__(1087);
 
 	var _warning2 = _interopRequireDefault(_warning);
 
-	var _isPlainObject = __webpack_require__(1095);
+	var _isPlainObject = __webpack_require__(1091);
 
 	var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
 
-	var _hoistNonReactStatics = __webpack_require__(1099);
+	var _hoistNonReactStatics = __webpack_require__(1095);
 
 	var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
-	var _invariant = __webpack_require__(1100);
+	var _invariant = __webpack_require__(1096);
 
 	var _invariant2 = _interopRequireDefault(_invariant);
 
@@ -22386,7 +22122,7 @@ webpackJsonp([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 1093 */
+/* 1089 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -22417,7 +22153,7 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 1094 */
+/* 1090 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22425,7 +22161,7 @@ webpackJsonp([0],[
 	exports.__esModule = true;
 	exports["default"] = wrapActionCreators;
 
-	var _redux = __webpack_require__(1073);
+	var _redux = __webpack_require__(1069);
 
 	function wrapActionCreators(actionCreators) {
 	  return function (dispatch) {
@@ -22434,12 +22170,12 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 1095 */
+/* 1091 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var getPrototype = __webpack_require__(1096),
-	    isHostObject = __webpack_require__(1097),
-	    isObjectLike = __webpack_require__(1098);
+	var getPrototype = __webpack_require__(1092),
+	    isHostObject = __webpack_require__(1093),
+	    isObjectLike = __webpack_require__(1094);
 
 	/** `Object#toString` result references. */
 	var objectTag = '[object Object]';
@@ -22510,7 +22246,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1096 */
+/* 1092 */
 /***/ function(module, exports) {
 
 	/* Built-in method references for those with the same name as other `lodash` methods. */
@@ -22531,7 +22267,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1097 */
+/* 1093 */
 /***/ function(module, exports) {
 
 	/**
@@ -22557,7 +22293,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1098 */
+/* 1094 */
 /***/ function(module, exports) {
 
 	/**
@@ -22592,7 +22328,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1099 */
+/* 1095 */
 /***/ function(module, exports) {
 
 	/**
@@ -22638,7 +22374,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1100 */
+/* 1096 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -22696,7 +22432,7 @@ webpackJsonp([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 1101 */
+/* 1097 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22715,11 +22451,11 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _sectionIterator = __webpack_require__(1102);
+	var _sectionIterator = __webpack_require__(1098);
 
 	var _sectionIterator2 = _interopRequireDefault(_sectionIterator);
 
-	var _reactThemeable = __webpack_require__(1103);
+	var _reactThemeable = __webpack_require__(1099);
 
 	var _reactThemeable2 = _interopRequireDefault(_reactThemeable);
 
@@ -23019,7 +22755,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1102 */
+/* 1098 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -23135,7 +22871,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1103 */
+/* 1099 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23148,7 +22884,7 @@ webpackJsonp([0],[
 
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) arr2[i] = arr[i]; return arr2; } else { return Array.from(arr); } }
 
-	var _objectAssign = __webpack_require__(1104);
+	var _objectAssign = __webpack_require__(1100);
 
 	var _objectAssign2 = _interopRequireDefault(_objectAssign);
 
@@ -23173,7 +22909,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1104 */
+/* 1100 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -23218,7 +22954,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1105 */
+/* 1101 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23229,7 +22965,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _jslinq = __webpack_require__(711);
+	var _jslinq = __webpack_require__(685);
 
 	var _jslinq2 = _interopRequireDefault(_jslinq);
 
@@ -23237,15 +22973,15 @@ webpackJsonp([0],[
 
 	var _Helpers2 = _interopRequireDefault(_Helpers);
 
-	var _numeral = __webpack_require__(1106);
+	var _numeral = __webpack_require__(1102);
 
 	var _numeral2 = _interopRequireDefault(_numeral);
 
-	var _RAFActions = __webpack_require__(708);
+	var _RAFActions = __webpack_require__(682);
 
 	var _RAFActions2 = _interopRequireDefault(_RAFActions);
 
-	var _aircraft = __webpack_require__(1107);
+	var _aircraft = __webpack_require__(1103);
 
 	var _aircraft2 = _interopRequireDefault(_aircraft);
 
@@ -23288,7 +23024,7 @@ webpackJsonp([0],[
 	      var flyingTime = '';
 	      var aircraftsData = this.props.aircrafts.map(function (a, i) {
 
-	        var icon = __webpack_require__(1108)("./" + a.code + '.png');
+	        var icon = __webpack_require__(1104)("./" + a.code + '.png');
 	        var selectedClass = a.code == compThis.props.leg.aircraft ? "aircraft-select selected" : "aircraft-select";
 
 	        var images = [],
@@ -23648,42 +23384,43 @@ webpackJsonp([0],[
 	module.exports = AircraftSelector;
 
 /***/ },
-/* 1106 */,
-/* 1107 */
+/* 1102 */,
+/* 1103 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/aircraft-360.svg";
 
 /***/ },
-/* 1108 */
+/* 1104 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./CL350.png": 1109,
-		"./CL605.png": 1110,
-		"./CL850.png": 1111,
-		"./GL5T.png": 1112,
-		"./GLEX.png": 1113,
-		"./aeroplanes-layout.png": 1114,
-		"./aircraft-image.png": 1115,
-		"./arrow-down.png": 1116,
-		"./arrow-up.png": 1117,
-		"./clou_sun.png": 1118,
-		"./cloud.png": 1119,
-		"./cloud_moon.png": 1120,
-		"./cloudslight-bg.png": 1121,
-		"./controls.png": 1122,
-		"./fog.png": 1123,
-		"./hail.png": 1124,
-		"./hurricane.png": 1125,
-		"./icon-catering-gray.png": 1126,
-		"./lightning.png": 1127,
-		"./moon.png": 1128,
-		"./profile.png": 600,
-		"./rain.png": 1129,
-		"./snow.png": 1130,
-		"./sun.png": 1131,
-		"./wind.png": 1132
+		"./CL350.png": 1105,
+		"./CL605.png": 1106,
+		"./CL850.png": 1107,
+		"./GL5T.png": 1108,
+		"./GLEX.png": 1109,
+		"./aeroplanes-layout.png": 1110,
+		"./aircraft-image.png": 1111,
+		"./arrow-down.png": 1112,
+		"./arrow-up.png": 1113,
+		"./clou_sun.png": 1114,
+		"./cloud.png": 1115,
+		"./cloud_moon.png": 1116,
+		"./cloudslight-bg.png": 1117,
+		"./controls.png": 1118,
+		"./fog.png": 1119,
+		"./hail.png": 1120,
+		"./hurricane.png": 1121,
+		"./icon-catering-gray.png": 1122,
+		"./lightning.png": 1123,
+		"./moon.png": 1124,
+		"./profile.png": 601,
+		"./rain.png": 1125,
+		"./snow.png": 1126,
+		"./sun.png": 1127,
+		"./vistajet_logo_splash.png": 1128,
+		"./wind.png": 1129
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -23696,155 +23433,161 @@ webpackJsonp([0],[
 	};
 	webpackContext.resolve = webpackContextResolve;
 	module.exports = webpackContext;
-	webpackContext.id = 1108;
+	webpackContext.id = 1104;
 
 
 /***/ },
-/* 1109 */
+/* 1105 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/CL350.png";
 
 /***/ },
-/* 1110 */
+/* 1106 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/CL605.png";
 
 /***/ },
-/* 1111 */
+/* 1107 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/CL850.png";
 
 /***/ },
-/* 1112 */
+/* 1108 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/GL5T.png";
 
 /***/ },
-/* 1113 */
+/* 1109 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/GLEX.png";
 
 /***/ },
-/* 1114 */
+/* 1110 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/aeroplanes-layout.png";
 
 /***/ },
-/* 1115 */
+/* 1111 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/aircraft-image.png";
 
 /***/ },
-/* 1116 */
+/* 1112 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/arrow-down.png";
 
 /***/ },
-/* 1117 */
+/* 1113 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/arrow-up.png";
 
 /***/ },
-/* 1118 */
+/* 1114 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/clou_sun.png";
 
 /***/ },
-/* 1119 */
+/* 1115 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/cloud.png";
 
 /***/ },
-/* 1120 */
+/* 1116 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/cloud_moon.png";
 
 /***/ },
-/* 1121 */
+/* 1117 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/cloudslight-bg.png";
 
 /***/ },
-/* 1122 */
+/* 1118 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/controls.png";
 
 /***/ },
-/* 1123 */
+/* 1119 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/fog.png";
 
 /***/ },
-/* 1124 */
+/* 1120 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/hail.png";
 
 /***/ },
-/* 1125 */
+/* 1121 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/hurricane.png";
 
 /***/ },
-/* 1126 */
+/* 1122 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/icon-catering-gray.png";
 
 /***/ },
-/* 1127 */
+/* 1123 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/lightning.png";
 
 /***/ },
-/* 1128 */
+/* 1124 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/moon.png";
 
 /***/ },
-/* 1129 */
+/* 1125 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/rain.png";
 
 /***/ },
-/* 1130 */
+/* 1126 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/snow.png";
 
 /***/ },
-/* 1131 */
+/* 1127 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/sun.png";
 
 /***/ },
-/* 1132 */
+/* 1128 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "images/vistajet_logo_splash.png";
+
+/***/ },
+/* 1129 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/wind.png";
 
 /***/ },
-/* 1133 */
+/* 1130 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23859,15 +23602,15 @@ webpackJsonp([0],[
 
 	var _gregorianCalendar2 = _interopRequireDefault(_gregorianCalendar);
 
-	var _rcTimePicker = __webpack_require__(1134);
+	var _rcTimePicker = __webpack_require__(1131);
 
 	var _rcTimePicker2 = _interopRequireDefault(_rcTimePicker);
 
-	var _en_US = __webpack_require__(1186);
+	var _en_US = __webpack_require__(1183);
 
 	var _en_US2 = _interopRequireDefault(_en_US);
 
-	__webpack_require__(1193);
+	__webpack_require__(1190);
 
 	var _Constants = __webpack_require__(316);
 
@@ -23875,19 +23618,19 @@ webpackJsonp([0],[
 
 	var _Helpers2 = _interopRequireDefault(_Helpers);
 
-	var _TimePicker = __webpack_require__(1194);
+	var _TimePicker = __webpack_require__(1191);
 
 	var _TimePicker2 = _interopRequireDefault(_TimePicker);
 
-	var _timePicker = __webpack_require__(1195);
+	var _timePicker = __webpack_require__(1192);
 
 	var _timePicker2 = _interopRequireDefault(_timePicker);
 
-	var _MuiThemeProvider = __webpack_require__(1205);
+	var _MuiThemeProvider = __webpack_require__(1202);
 
 	var _MuiThemeProvider2 = _interopRequireDefault(_MuiThemeProvider);
 
-	var _getMuiTheme = __webpack_require__(624);
+	var _getMuiTheme = __webpack_require__(625);
 
 	var _getMuiTheme2 = _interopRequireDefault(_getMuiTheme);
 
@@ -24062,7 +23805,7 @@ webpackJsonp([0],[
 	module.exports = TimePickerRAF;
 
 /***/ },
-/* 1134 */
+/* 1131 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24073,7 +23816,7 @@ webpackJsonp([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _TimePicker = __webpack_require__(1135);
+	var _TimePicker = __webpack_require__(1132);
 
 	var _TimePicker2 = _interopRequireDefault(_TimePicker);
 
@@ -24081,7 +23824,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1135 */
+/* 1132 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24096,23 +23839,23 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _rcTrigger = __webpack_require__(1136);
+	var _rcTrigger = __webpack_require__(1133);
 
 	var _rcTrigger2 = _interopRequireDefault(_rcTrigger);
 
-	var _modulePanel = __webpack_require__(1184);
+	var _modulePanel = __webpack_require__(1181);
 
 	var _modulePanel2 = _interopRequireDefault(_modulePanel);
 
-	var _utilPlacements = __webpack_require__(1191);
+	var _utilPlacements = __webpack_require__(1188);
 
 	var _utilPlacements2 = _interopRequireDefault(_utilPlacements);
 
-	var _mixinCommonMixin = __webpack_require__(1185);
+	var _mixinCommonMixin = __webpack_require__(1182);
 
 	var _mixinCommonMixin2 = _interopRequireDefault(_mixinCommonMixin);
 
-	var _utilIndex = __webpack_require__(1192);
+	var _utilIndex = __webpack_require__(1189);
 
 	function noop() {}
 
@@ -24378,15 +24121,15 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1136 */
+/* 1133 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	module.exports = __webpack_require__(1137);
+	module.exports = __webpack_require__(1134);
 
 /***/ },
-/* 1137 */
+/* 1134 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24407,13 +24150,13 @@ webpackJsonp([0],[
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _rcUtil = __webpack_require__(1138);
+	var _rcUtil = __webpack_require__(1135);
 
-	var _Popup = __webpack_require__(1160);
+	var _Popup = __webpack_require__(1157);
 
 	var _Popup2 = _interopRequireDefault(_Popup);
 
-	var _utils = __webpack_require__(1183);
+	var _utils = __webpack_require__(1180);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -24808,31 +24551,31 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1138 */
+/* 1135 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	module.exports = {
-	  guid: __webpack_require__(1139),
-	  classSet: __webpack_require__(1140),
-	  joinClasses: __webpack_require__(1143),
-	  KeyCode: __webpack_require__(1144),
-	  PureRenderMixin: __webpack_require__(1145),
-	  shallowEqual: __webpack_require__(1146),
-	  createChainedFunction: __webpack_require__(1151),
+	  guid: __webpack_require__(1136),
+	  classSet: __webpack_require__(1137),
+	  joinClasses: __webpack_require__(1140),
+	  KeyCode: __webpack_require__(1141),
+	  PureRenderMixin: __webpack_require__(1142),
+	  shallowEqual: __webpack_require__(1143),
+	  createChainedFunction: __webpack_require__(1148),
 	  Dom: {
-	    addEventListener: __webpack_require__(1152),
-	    contains: __webpack_require__(1157)
+	    addEventListener: __webpack_require__(1149),
+	    contains: __webpack_require__(1154)
 	  },
 	  Children: {
-	    toArray: __webpack_require__(1158),
-	    mapSelf: __webpack_require__(1159)
+	    toArray: __webpack_require__(1155),
+	    mapSelf: __webpack_require__(1156)
 	  }
 	};
 
 /***/ },
-/* 1139 */
+/* 1136 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -24843,18 +24586,18 @@ webpackJsonp([0],[
 	};
 
 /***/ },
-/* 1140 */
+/* 1137 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var deprecate = __webpack_require__(1141);
-	var classNames = __webpack_require__(1142);
+	var deprecate = __webpack_require__(1138);
+	var classNames = __webpack_require__(1139);
 
 	module.exports = deprecate(classNames, '`rcUtil.classSet()` is deprecated, use `classNames()` by `require(\'classnames\')` instead');
 
 /***/ },
-/* 1141 */
+/* 1138 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {
@@ -24928,7 +24671,7 @@ webpackJsonp([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 1142 */
+/* 1139 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -24982,18 +24725,18 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1143 */
+/* 1140 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var deprecate = __webpack_require__(1141);
-	var classNames = __webpack_require__(1142);
+	var deprecate = __webpack_require__(1138);
+	var classNames = __webpack_require__(1139);
 
 	module.exports = deprecate(classNames, '`rcUtil.joinClasses()` is deprecated, use `classNames()` by `require(\'classnames\')` instead');
 
 /***/ },
-/* 1144 */
+/* 1141 */
 /***/ function(module, exports) {
 
 	/**
@@ -25518,12 +25261,12 @@ webpackJsonp([0],[
 	module.exports = KeyCode;
 
 /***/ },
-/* 1145 */
+/* 1142 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var shallowEqual = __webpack_require__(1146);
+	var shallowEqual = __webpack_require__(1143);
 
 	/**
 	 * If your React component's render function is "pure", e.g. it will render the
@@ -25558,12 +25301,12 @@ webpackJsonp([0],[
 	module.exports = ReactComponentWithPureRenderMixin;
 
 /***/ },
-/* 1146 */
+/* 1143 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var fetchKeys = __webpack_require__(1147);
+	var fetchKeys = __webpack_require__(1144);
 
 	module.exports = function shallowEqual(objA, objB, compare, compareContext) {
 
@@ -25611,7 +25354,7 @@ webpackJsonp([0],[
 	};
 
 /***/ },
-/* 1147 */
+/* 1144 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -25622,9 +25365,9 @@ webpackJsonp([0],[
 	 * Copyright 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <https://lodash.com/license>
 	 */
-	var getNative = __webpack_require__(1148),
-	    isArguments = __webpack_require__(1149),
-	    isArray = __webpack_require__(1150);
+	var getNative = __webpack_require__(1145),
+	    isArguments = __webpack_require__(1146),
+	    isArray = __webpack_require__(1147);
 
 	/** Used to detect unsigned integer values. */
 	var reIsUint = /^\d+$/;
@@ -25853,7 +25596,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1148 */
+/* 1145 */
 /***/ function(module, exports) {
 
 	/**
@@ -25996,7 +25739,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1149 */
+/* 1146 */
 /***/ function(module, exports) {
 
 	/**
@@ -26245,7 +25988,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1150 */
+/* 1147 */
 /***/ function(module, exports) {
 
 	/**
@@ -26431,7 +26174,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1151 */
+/* 1148 */
 /***/ function(module, exports) {
 
 	/**
@@ -26458,7 +26201,7 @@ webpackJsonp([0],[
 	module.exports = createChainedFunction;
 
 /***/ },
-/* 1152 */
+/* 1149 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26470,7 +26213,7 @@ webpackJsonp([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _addDomEventListener = __webpack_require__(1153);
+	var _addDomEventListener = __webpack_require__(1150);
 
 	var _addDomEventListener2 = _interopRequireDefault(_addDomEventListener);
 
@@ -26489,7 +26232,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1153 */
+/* 1150 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26501,7 +26244,7 @@ webpackJsonp([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _EventObject = __webpack_require__(1154);
+	var _EventObject = __webpack_require__(1151);
 
 	var _EventObject2 = _interopRequireDefault(_EventObject);
 
@@ -26531,7 +26274,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1154 */
+/* 1151 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -26548,11 +26291,11 @@ webpackJsonp([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _EventBaseObject = __webpack_require__(1155);
+	var _EventBaseObject = __webpack_require__(1152);
 
 	var _EventBaseObject2 = _interopRequireDefault(_EventBaseObject);
 
-	var _objectAssign = __webpack_require__(1156);
+	var _objectAssign = __webpack_require__(1153);
 
 	var _objectAssign2 = _interopRequireDefault(_objectAssign);
 
@@ -26814,7 +26557,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1155 */
+/* 1152 */
 /***/ function(module, exports) {
 
 	/**
@@ -26882,7 +26625,7 @@ webpackJsonp([0],[
 	module.exports = exports["default"];
 
 /***/ },
-/* 1156 */
+/* 1153 */
 /***/ function(module, exports) {
 
 	/* eslint-disable no-unused-vars */
@@ -26927,7 +26670,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1157 */
+/* 1154 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -26945,7 +26688,7 @@ webpackJsonp([0],[
 	};
 
 /***/ },
-/* 1158 */
+/* 1155 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26961,7 +26704,7 @@ webpackJsonp([0],[
 	};
 
 /***/ },
-/* 1159 */
+/* 1156 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26978,7 +26721,7 @@ webpackJsonp([0],[
 	};
 
 /***/ },
-/* 1160 */
+/* 1157 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26997,19 +26740,19 @@ webpackJsonp([0],[
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _rcAlign = __webpack_require__(1161);
+	var _rcAlign = __webpack_require__(1158);
 
 	var _rcAlign2 = _interopRequireDefault(_rcAlign);
 
-	var _rcAnimate = __webpack_require__(1172);
+	var _rcAnimate = __webpack_require__(1169);
 
 	var _rcAnimate2 = _interopRequireDefault(_rcAnimate);
 
-	var _PopupInner = __webpack_require__(1181);
+	var _PopupInner = __webpack_require__(1178);
 
 	var _PopupInner2 = _interopRequireDefault(_PopupInner);
 
-	var _LazyRenderBox = __webpack_require__(1182);
+	var _LazyRenderBox = __webpack_require__(1179);
 
 	var _LazyRenderBox2 = _interopRequireDefault(_LazyRenderBox);
 
@@ -27202,7 +26945,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1161 */
+/* 1158 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// export this package's api
@@ -27214,7 +26957,7 @@ webpackJsonp([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _Align = __webpack_require__(1162);
+	var _Align = __webpack_require__(1159);
 
 	var _Align2 = _interopRequireDefault(_Align);
 
@@ -27222,7 +26965,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1162 */
+/* 1159 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27241,13 +26984,13 @@ webpackJsonp([0],[
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _domAlign = __webpack_require__(1163);
+	var _domAlign = __webpack_require__(1160);
 
 	var _domAlign2 = _interopRequireDefault(_domAlign);
 
-	var _rcUtil = __webpack_require__(1138);
+	var _rcUtil = __webpack_require__(1135);
 
-	var _isWindow = __webpack_require__(1171);
+	var _isWindow = __webpack_require__(1168);
 
 	var _isWindow2 = _interopRequireDefault(_isWindow);
 
@@ -27379,7 +27122,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1163 */
+/* 1160 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -27395,27 +27138,27 @@ webpackJsonp([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _utils = __webpack_require__(1164);
+	var _utils = __webpack_require__(1161);
 
 	var _utils2 = _interopRequireDefault(_utils);
 
-	var _getOffsetParent = __webpack_require__(1165);
+	var _getOffsetParent = __webpack_require__(1162);
 
 	var _getOffsetParent2 = _interopRequireDefault(_getOffsetParent);
 
-	var _getVisibleRectForElement = __webpack_require__(1166);
+	var _getVisibleRectForElement = __webpack_require__(1163);
 
 	var _getVisibleRectForElement2 = _interopRequireDefault(_getVisibleRectForElement);
 
-	var _adjustForViewport = __webpack_require__(1167);
+	var _adjustForViewport = __webpack_require__(1164);
 
 	var _adjustForViewport2 = _interopRequireDefault(_adjustForViewport);
 
-	var _getRegion = __webpack_require__(1168);
+	var _getRegion = __webpack_require__(1165);
 
 	var _getRegion2 = _interopRequireDefault(_getRegion);
 
-	var _getElFuturePos = __webpack_require__(1169);
+	var _getElFuturePos = __webpack_require__(1166);
 
 	var _getElFuturePos2 = _interopRequireDefault(_getElFuturePos);
 
@@ -27602,7 +27345,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1164 */
+/* 1161 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -28100,7 +27843,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1165 */
+/* 1162 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28111,7 +27854,7 @@ webpackJsonp([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _utils = __webpack_require__(1164);
+	var _utils = __webpack_require__(1161);
 
 	var _utils2 = _interopRequireDefault(_utils);
 
@@ -28158,7 +27901,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1166 */
+/* 1163 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28169,11 +27912,11 @@ webpackJsonp([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _utils = __webpack_require__(1164);
+	var _utils = __webpack_require__(1161);
 
 	var _utils2 = _interopRequireDefault(_utils);
 
-	var _getOffsetParent = __webpack_require__(1165);
+	var _getOffsetParent = __webpack_require__(1162);
 
 	var _getOffsetParent2 = _interopRequireDefault(_getOffsetParent);
 
@@ -28239,7 +27982,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1167 */
+/* 1164 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28250,7 +27993,7 @@ webpackJsonp([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _utils = __webpack_require__(1164);
+	var _utils = __webpack_require__(1161);
 
 	var _utils2 = _interopRequireDefault(_utils);
 
@@ -28299,7 +28042,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1168 */
+/* 1165 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28310,7 +28053,7 @@ webpackJsonp([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _utils = __webpack_require__(1164);
+	var _utils = __webpack_require__(1161);
 
 	var _utils2 = _interopRequireDefault(_utils);
 
@@ -28340,7 +28083,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1169 */
+/* 1166 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28351,7 +28094,7 @@ webpackJsonp([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _getAlignOffset = __webpack_require__(1170);
+	var _getAlignOffset = __webpack_require__(1167);
 
 	var _getAlignOffset2 = _interopRequireDefault(_getAlignOffset);
 
@@ -28381,7 +28124,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1170 */
+/* 1167 */
 /***/ function(module, exports) {
 
 	/**
@@ -28426,7 +28169,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1171 */
+/* 1168 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -28445,16 +28188,16 @@ webpackJsonp([0],[
 	module.exports = exports["default"];
 
 /***/ },
-/* 1172 */
+/* 1169 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// export this package's api
 	'use strict';
 
-	module.exports = __webpack_require__(1173);
+	module.exports = __webpack_require__(1170);
 
 /***/ },
-/* 1173 */
+/* 1170 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28471,13 +28214,13 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ChildrenUtils = __webpack_require__(1174);
+	var _ChildrenUtils = __webpack_require__(1171);
 
-	var _AnimateChild = __webpack_require__(1175);
+	var _AnimateChild = __webpack_require__(1172);
 
 	var _AnimateChild2 = _interopRequireDefault(_AnimateChild);
 
-	var _util = __webpack_require__(1180);
+	var _util = __webpack_require__(1177);
 
 	var _util2 = _interopRequireDefault(_util);
 
@@ -28784,7 +28527,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1174 */
+/* 1171 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28902,7 +28645,7 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 1175 */
+/* 1172 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28921,11 +28664,11 @@ webpackJsonp([0],[
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _cssAnimation = __webpack_require__(1176);
+	var _cssAnimation = __webpack_require__(1173);
 
 	var _cssAnimation2 = _interopRequireDefault(_cssAnimation);
 
-	var _util = __webpack_require__(1180);
+	var _util = __webpack_require__(1177);
 
 	var _util2 = _interopRequireDefault(_util);
 
@@ -29005,7 +28748,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1176 */
+/* 1173 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29014,11 +28757,11 @@ webpackJsonp([0],[
 	  value: true
 	});
 
-	var _Event = __webpack_require__(1177);
+	var _Event = __webpack_require__(1174);
 
 	var _Event2 = _interopRequireDefault(_Event);
 
-	var _componentClasses = __webpack_require__(1178);
+	var _componentClasses = __webpack_require__(1175);
 
 	var _componentClasses2 = _interopRequireDefault(_componentClasses);
 
@@ -29195,7 +28938,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1177 */
+/* 1174 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -29288,7 +29031,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1178 */
+/* 1175 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -29296,9 +29039,9 @@ webpackJsonp([0],[
 	 */
 
 	try {
-	  var index = __webpack_require__(1179);
+	  var index = __webpack_require__(1176);
 	} catch (err) {
-	  var index = __webpack_require__(1179);
+	  var index = __webpack_require__(1176);
 	}
 
 	/**
@@ -29485,7 +29228,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1179 */
+/* 1176 */
 /***/ function(module, exports) {
 
 	module.exports = function(arr, obj){
@@ -29497,7 +29240,7 @@ webpackJsonp([0],[
 	};
 
 /***/ },
-/* 1180 */
+/* 1177 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -29530,7 +29273,7 @@ webpackJsonp([0],[
 	module.exports = exports["default"];
 
 /***/ },
-/* 1181 */
+/* 1178 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29543,7 +29286,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _LazyRenderBox = __webpack_require__(1182);
+	var _LazyRenderBox = __webpack_require__(1179);
 
 	var _LazyRenderBox2 = _interopRequireDefault(_LazyRenderBox);
 
@@ -29587,7 +29330,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1182 */
+/* 1179 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29635,7 +29378,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1183 */
+/* 1180 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -29670,7 +29413,7 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 1184 */
+/* 1181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29685,15 +29428,15 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _mixinCommonMixin = __webpack_require__(1185);
+	var _mixinCommonMixin = __webpack_require__(1182);
 
 	var _mixinCommonMixin2 = _interopRequireDefault(_mixinCommonMixin);
 
-	var _Header = __webpack_require__(1187);
+	var _Header = __webpack_require__(1184);
 
 	var _Header2 = _interopRequireDefault(_Header);
 
-	var _Combobox = __webpack_require__(1189);
+	var _Combobox = __webpack_require__(1186);
 
 	var _Combobox2 = _interopRequireDefault(_Combobox);
 
@@ -29838,7 +29581,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1185 */
+/* 1182 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29851,7 +29594,7 @@ webpackJsonp([0],[
 
 	var _react = __webpack_require__(1);
 
-	var _localeEn_US = __webpack_require__(1186);
+	var _localeEn_US = __webpack_require__(1183);
 
 	var _localeEn_US2 = _interopRequireDefault(_localeEn_US);
 
@@ -29871,7 +29614,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1186 */
+/* 1183 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29898,7 +29641,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1187 */
+/* 1184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29913,7 +29656,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _utilSelection = __webpack_require__(1188);
+	var _utilSelection = __webpack_require__(1185);
 
 	var _utilSelection2 = _interopRequireDefault(_utilSelection);
 
@@ -30131,7 +29874,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1188 */
+/* 1185 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -30162,7 +29905,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1189 */
+/* 1186 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30177,7 +29920,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Select = __webpack_require__(1190);
+	var _Select = __webpack_require__(1187);
 
 	var _Select2 = _interopRequireDefault(_Select);
 
@@ -30343,7 +30086,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1190 */
+/* 1187 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30364,7 +30107,7 @@ webpackJsonp([0],[
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _classnames2 = __webpack_require__(1142);
+	var _classnames2 = __webpack_require__(1139);
 
 	var _classnames3 = _interopRequireDefault(_classnames2);
 
@@ -30481,7 +30224,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1191 */
+/* 1188 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -30527,7 +30270,7 @@ webpackJsonp([0],[
 	module.exports = exports['default'];
 
 /***/ },
-/* 1192 */
+/* 1189 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30551,13 +30294,13 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 1193 */
+/* 1190 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 1194 */
+/* 1191 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30574,15 +30317,15 @@ webpackJsonp([0],[
 
 	var _gregorianCalendar2 = _interopRequireDefault(_gregorianCalendar);
 
-	var _rcTimePicker = __webpack_require__(1134);
+	var _rcTimePicker = __webpack_require__(1131);
 
 	var _rcTimePicker2 = _interopRequireDefault(_rcTimePicker);
 
-	var _en_US = __webpack_require__(1186);
+	var _en_US = __webpack_require__(1183);
 
 	var _en_US2 = _interopRequireDefault(_en_US);
 
-	__webpack_require__(1193);
+	__webpack_require__(1190);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -30634,6 +30377,9 @@ webpackJsonp([0],[
 	module.exports = TimePicker;
 
 /***/ },
+/* 1192 */,
+/* 1193 */,
+/* 1194 */,
 /* 1195 */,
 /* 1196 */,
 /* 1197 */,
@@ -30641,10 +30387,7 @@ webpackJsonp([0],[
 /* 1199 */,
 /* 1200 */,
 /* 1201 */,
-/* 1202 */,
-/* 1203 */,
-/* 1204 */,
-/* 1205 */
+/* 1202 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30699,15 +30442,15 @@ webpackJsonp([0],[
 	exports.default = MuiThemeProvider;
 
 /***/ },
-/* 1206 */
+/* 1203 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./icon_CL350.jpg": 1207,
-		"./icon_CL605.jpg": 1208,
-		"./icon_CL850.jpg": 1209,
-		"./icon_GL5T.jpg": 1210,
-		"./icon_GLEX.jpg": 1211
+		"./icon_CL350.jpg": 1204,
+		"./icon_CL605.jpg": 1205,
+		"./icon_CL850.jpg": 1206,
+		"./icon_GL5T.jpg": 1207,
+		"./icon_GLEX.jpg": 1208
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -30720,41 +30463,41 @@ webpackJsonp([0],[
 	};
 	webpackContext.resolve = webpackContextResolve;
 	module.exports = webpackContext;
-	webpackContext.id = 1206;
+	webpackContext.id = 1203;
 
 
 /***/ },
-/* 1207 */
+/* 1204 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/icon_CL350.jpg";
 
 /***/ },
-/* 1208 */
+/* 1205 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/icon_CL605.jpg";
 
 /***/ },
-/* 1209 */
+/* 1206 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/icon_CL850.jpg";
 
 /***/ },
-/* 1210 */
+/* 1207 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/icon_GL5T.jpg";
 
 /***/ },
-/* 1211 */
+/* 1208 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/icon_GLEX.jpg";
 
 /***/ },
-/* 1212 */
+/* 1209 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30765,7 +30508,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ItinerarySource = __webpack_require__(712);
+	var _ItinerarySource = __webpack_require__(686);
 
 	var _ItinerarySource2 = _interopRequireDefault(_ItinerarySource);
 
@@ -30834,7 +30577,7 @@ webpackJsonp([0],[
 	module.exports = ItineraryLegWeather;
 
 /***/ },
-/* 1213 */
+/* 1210 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30849,25 +30592,25 @@ webpackJsonp([0],[
 
 	var _altContainer2 = _interopRequireDefault(_altContainer);
 
-	var _ItineraryActions = __webpack_require__(1214);
+	var _ItineraryActions = __webpack_require__(1211);
 
 	var _ItineraryActions2 = _interopRequireDefault(_ItineraryActions);
 
-	var _ItineraryStore = __webpack_require__(1215);
+	var _ItineraryStore = __webpack_require__(1212);
 
 	var _ItineraryStore2 = _interopRequireDefault(_ItineraryStore);
 
-	var _MyItineraries = __webpack_require__(1216);
+	var _MyItineraries = __webpack_require__(1213);
 
 	var _MyItineraries2 = _interopRequireDefault(_MyItineraries);
 
 	var _reactRouter = __webpack_require__(165);
 
-	var _CateringStore = __webpack_require__(1238);
+	var _CateringStore = __webpack_require__(1235);
 
 	var _CateringStore2 = _interopRequireDefault(_CateringStore);
 
-	var _ConfirmDialog = __webpack_require__(914);
+	var _ConfirmDialog = __webpack_require__(790);
 
 	var _ConfirmDialog2 = _interopRequireDefault(_ConfirmDialog);
 
@@ -30957,7 +30700,7 @@ webpackJsonp([0],[
 	module.exports = (0, _reactRouter.withRouter)(Itinerary);
 
 /***/ },
-/* 1214 */
+/* 1211 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30968,7 +30711,7 @@ webpackJsonp([0],[
 
 	var _AltApp2 = _interopRequireDefault(_AltApp);
 
-	var _ItinerarySource = __webpack_require__(712);
+	var _ItinerarySource = __webpack_require__(686);
 
 	var _ItinerarySource2 = _interopRequireDefault(_ItinerarySource);
 
@@ -30976,7 +30719,7 @@ webpackJsonp([0],[
 
 	var _Cache2 = _interopRequireDefault(_Cache);
 
-	var _jslinq = __webpack_require__(711);
+	var _jslinq = __webpack_require__(685);
 
 	var _jslinq2 = _interopRequireDefault(_jslinq);
 
@@ -31174,7 +30917,7 @@ webpackJsonp([0],[
 	module.exports = _AltApp2.default.createActions(ItineraryActions);
 
 /***/ },
-/* 1215 */
+/* 1212 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31185,7 +30928,7 @@ webpackJsonp([0],[
 
 	var _AltApp2 = _interopRequireDefault(_AltApp);
 
-	var _ItineraryActions = __webpack_require__(1214);
+	var _ItineraryActions = __webpack_require__(1211);
 
 	var _ItineraryActions2 = _interopRequireDefault(_ItineraryActions);
 
@@ -31201,7 +30944,7 @@ webpackJsonp([0],[
 
 	var _moment2 = _interopRequireDefault(_moment);
 
-	var _jslinq = __webpack_require__(711);
+	var _jslinq = __webpack_require__(685);
 
 	var _jslinq2 = _interopRequireDefault(_jslinq);
 
@@ -31232,6 +30975,7 @@ webpackJsonp([0],[
 	        value: function onClearData() {
 	            this.upcomingOrders = [];
 	            this.pastOrders = [];
+	            this.previewOrder = null;
 	        }
 
 	        /**
@@ -31349,7 +31093,7 @@ webpackJsonp([0],[
 	                        }).toList()[0];
 
 	                        /*
-	                        if(Helpers.satisfy24HoursCheck(leg) || !leg.hasOwnProperty('requestedAircraftTypeName') || leg.requestedAircraftTypeName[0] == 'N/A') {
+	                        if(Helpers.satisfy24HoursCheck(leg) && leg.aircraftTypeName[0] != 'null' && (!leg.hasOwnProperty('requestedAircraftTypeName') || leg.requestedAircraftTypeName[0] == 'N/A')) {
 	                            leg.aircraft = JsLinq(that.aircrafts).where(function(e){ return e.code[0] == leg.aircraftTypeName[0] || e.displayName[0] == leg.aircraftTypeName[0] || e.name[0] == leg.aircraftTypeName[0] }).toList()[0];
 	                        }
 	                        else {
@@ -31489,7 +31233,7 @@ webpackJsonp([0],[
 	module.exports = _AltApp2.default.createStore(ItineraryStore, 'ItineraryStore');
 
 /***/ },
-/* 1216 */
+/* 1213 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {'use strict';
@@ -31500,7 +31244,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ItineraryPreview = __webpack_require__(1217);
+	var _ItineraryPreview = __webpack_require__(1214);
 
 	var _ItineraryPreview2 = _interopRequireDefault(_ItineraryPreview);
 
@@ -31508,21 +31252,27 @@ webpackJsonp([0],[
 
 	var _Helpers2 = _interopRequireDefault(_Helpers);
 
-	var _refresh = __webpack_require__(1260);
+	var _refresh = __webpack_require__(1257);
 
 	var _refresh2 = _interopRequireDefault(_refresh);
 
-	var _ItineraryActions = __webpack_require__(1214);
+	var _ItineraryActions = __webpack_require__(1211);
 
 	var _ItineraryActions2 = _interopRequireDefault(_ItineraryActions);
 
-	var _ItineraryRow = __webpack_require__(1261);
+	var _ItineraryRow = __webpack_require__(1258);
 
 	var _ItineraryRow2 = _interopRequireDefault(_ItineraryRow);
 
-	var _floatingActionButton = __webpack_require__(1262);
+	var _floatingActionButton = __webpack_require__(1259);
 
 	var _floatingActionButton2 = _interopRequireDefault(_floatingActionButton);
+
+	var _Constants = __webpack_require__(316);
+
+	var _jslinq = __webpack_require__(685);
+
+	var _jslinq2 = _interopRequireDefault(_jslinq);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -31555,9 +31305,6 @@ webpackJsonp([0],[
 	            var shouldUpdate = propKeys.some(function (propKey) {
 	                return that.props[propKey] != nextProps[propKey];
 	            });
-	            if (shouldUpdate) {
-	                console.log('updating my itineraries');
-	            }
 	            return shouldUpdate;
 	        }
 	    }, {
@@ -31569,6 +31316,14 @@ webpackJsonp([0],[
 	                    class: 'error'
 	                });
 	            }
+	        }
+	    }, {
+	        key: 'componentWillMount',
+	        value: function componentWillMount() {
+	            var self = this;
+	            self.state = {};
+	            var time = _Constants.ITINERARY_REFRESH_INTERVAL_IN_MILLISECONDS;
+	            self.state.refreshInterval = setInterval(self.refresh, time);
 	        }
 	    }, {
 	        key: 'initializeTabs',
@@ -31610,9 +31365,53 @@ webpackJsonp([0],[
 	            this.initializeTabs();
 	        }
 	    }, {
+	        key: 'componentWillUnmount',
+	        value: function componentWillUnmount() {
+	            //console.log('unmount my itineraries');
+	            clearInterval(this.state.refreshInterval);
+	            _ItineraryActions2.default.clearData();
+	        }
+	    }, {
 	        key: 'closeError',
 	        value: function closeError() {
 	            _ItineraryActions2.default.closeAlert();
+	        }
+
+	        // This function will update Lead Passenger in the grid for a specific order
+
+	    }, {
+	        key: 'updateLeadPassenger',
+	        value: function updateLeadPassenger(orderIdentifier, passengers) {
+	            var searchedIn = 'upcoming';
+	            // first search in upcoming orders
+	            var selectedOrder = (0, _jslinq2.default)(this.props.upcomingOrders).where(function (order) {
+	                return order.orderIdentifier == orderIdentifier;
+	            }).toList()[0];
+
+	            if (!selectedOrder) {
+	                // if not found in upcoming then search in past
+	                var searchedIn = 'past';
+	            }
+
+	            // get lead passenger
+	            var passenger = (0, _jslinq2.default)(passengers).where(function (e) {
+	                return e.hasOwnProperty('leadPassenger') && (e.leadPassenger[0] == "true" || e.leadPassenger[0] == true);
+	            }).toList()[0];
+	            var leadPassengerText = '';
+
+	            if (!!passenger) {
+	                if (typeof passenger.firstName == 'string') {
+	                    // in case of add new passenger, it will come as string
+	                    leadPassengerText = passenger.firstName + " " + passenger.lastName;
+	                } else {
+	                    // firstname and lastname will come as a array
+	                    leadPassengerText = passenger.firstName[0] + " " + passenger.lastName[0];
+	                }
+	            } else {
+	                leadPassengerText = "No Lead Passenger";
+	            }
+
+	            this.refs[searchedIn + "_" + orderIdentifier].setState({ leadPassenger: leadPassengerText });
 	        }
 	    }, {
 	        key: 'render',
@@ -31633,11 +31432,13 @@ webpackJsonp([0],[
 
 	            upcoming = this.props.upcomingOrders.map(function (order) {
 	                return _react2.default.createElement(_ItineraryRow2.default, { order: order, previewOrderId: previewId,
-	                    dateFormat: that.props.dateFormat, key: order.orderIdentifier });
+	                    dateFormat: that.props.dateFormat, key: order.orderIdentifier,
+	                    showSnackMessage: that.props.showSnackMessage, ref: 'upcoming_' + order.orderIdentifier, updateLeadPassenger: _this2.updateLeadPassenger.bind(_this2) });
 	            });
 	            past = this.props.pastOrders.map(function (order) {
 	                return _react2.default.createElement(_ItineraryRow2.default, { order: order, previewOrderId: previewId,
-	                    dateFormat: that.props.dateFormat, key: order.orderIdentifier });
+	                    dateFormat: that.props.dateFormat, key: order.orderIdentifier,
+	                    showSnackMessage: that.props.showSnackMessage, ref: 'past_' + order.orderIdentifier, updateLeadPassenger: _this2.updateLeadPassenger.bind(_this2) });
 	            });
 	            return _react2.default.createElement(
 	                'div',
@@ -31749,7 +31550,7 @@ webpackJsonp([0],[
 	                        )
 	                    ),
 	                    function () {
-	                        return !_Helpers2.default.isMobileClient() ? _react2.default.createElement(_ItineraryPreview2.default, { showSnackMessage: _this2.props.showSnackMessage, order: _this2.props.previewOrder }) : null;
+	                        return !_Helpers2.default.isMobileClient() ? _react2.default.createElement(_ItineraryPreview2.default, { showSnackMessage: _this2.props.showSnackMessage, order: _this2.props.previewOrder, updateLeadPassenger: _this2.updateLeadPassenger.bind(_this2) }) : null;
 	                    }()
 	                )
 	            );
@@ -31763,7 +31564,7 @@ webpackJsonp([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(318)))
 
 /***/ },
-/* 1217 */
+/* 1214 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {'use strict';
@@ -31774,11 +31575,11 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ItineraryLeg = __webpack_require__(1218);
+	var _ItineraryLeg = __webpack_require__(1215);
 
 	var _ItineraryLeg2 = _interopRequireDefault(_ItineraryLeg);
 
-	var _ItinerarySource = __webpack_require__(712);
+	var _ItinerarySource = __webpack_require__(686);
 
 	var _ItinerarySource2 = _interopRequireDefault(_ItinerarySource);
 
@@ -31786,7 +31587,7 @@ webpackJsonp([0],[
 
 	var _Helpers2 = _interopRequireDefault(_Helpers);
 
-	var _jslinq = __webpack_require__(711);
+	var _jslinq = __webpack_require__(685);
 
 	var _jslinq2 = _interopRequireDefault(_jslinq);
 
@@ -31894,6 +31695,7 @@ webpackJsonp([0],[
 	          _this2.state.orderIdentifier = params.uniqueIdentifier;
 	          _this2.state.itineraryLegDetails = ((((data.itinerary.itinerariesResponse.itinerary || [])[0] || {}).legs || [])[0] || {}).leg;
 	          var airPorts = _Cache2.default.getLocal('airports', true);
+	          var airCrafts = _Cache2.default.getLocal('aircrafts', true).aircraftTypeResponseDtoes.aircrafttype;
 
 	          _this2.state.itineraryLegDetails.forEach(function (leg) {
 	            leg.departureAirport = (0, _jslinq2.default)(airPorts.listOfAirports.airport).where(function (e) {
@@ -31902,6 +31704,18 @@ webpackJsonp([0],[
 
 	            leg.arrivalAirport = (0, _jslinq2.default)(airPorts.listOfAirports.airport).where(function (e) {
 	              return e.id[0] == leg.arrivalAirportId[0];
+	            }).toList()[0];
+	            var aircraftValueToSearch = '';
+
+	            // in a leg there are 2 keys, aircraftTypeName and requestedAircraftTypeName, atleast one of these keys must have a valid data - preferrd is aircraftTypeName
+	            if (leg.hasOwnProperty('aircraftTypeName') && leg.aircraftTypeName[0] != 'null') {
+	              aircraftValueToSearch = leg.aircraftTypeName[0];
+	            } else {
+	              aircraftValueToSearch = leg.requestedAircraftTypeName[0];
+	            }
+
+	            leg.aircraft = (0, _jslinq2.default)(airCrafts).where(function (e) {
+	              return e.code[0] == aircraftValueToSearch || e.displayName[0] == aircraftValueToSearch || e.name[0] == aircraftValueToSearch;
 	            }).toList()[0];
 	          });
 	          _this2.setState(_this2.state);
@@ -31919,7 +31733,7 @@ webpackJsonp([0],[
 
 	      if (this.props.order) {
 	        this.props.order.legs.forEach(function (leg, i) {
-	          var icon = __webpack_require__(1108)("./" + leg.aircraft.code + '.png');
+	          var icon = __webpack_require__(1104)("./" + leg.aircraft.code + '.png');
 
 	          var state;
 	          var legDetail = {};
@@ -31949,9 +31763,10 @@ webpackJsonp([0],[
 
 	          var cateringState = !that.state.loadingDetail ? state : '';
 	          var editLink = '#/itineraries/itinerary-edit/' + that.props.order.orderKey + '/' + that.props.order.orderIdentifier + "/" + leg.uniqueIdentifier;
-	          var viewLink = '#/itineraries/itinerary-detail/' + that.props.order.orderKey + '/' + that.props.order.orderIdentifier + "/" + leg.uniqueIdentifier;
+	          var isPast = leg.isPast ? 'past' : 'upcoming';
+	          var viewLink = '#/itineraries/itinerary-detail/' + that.props.order.orderKey + '/' + that.props.order.orderIdentifier + '/' + leg.uniqueIdentifier + '/' + isPast;
 
-	          legs.push(_react2.default.createElement(_ItineraryLeg2.default, { showSnackMessage: that.props.showSnackMessage, leg: leg, legDetail: legDetail, icon: icon, cateringState: cateringState, editLink: editLink, viewLink: viewLink, key: leg.uniqueIdentifier }));
+	          legs.push(_react2.default.createElement(_ItineraryLeg2.default, { showSnackMessage: that.props.showSnackMessage, leg: leg, legDetail: legDetail, icon: icon, cateringState: cateringState, editLink: editLink, viewLink: viewLink, key: leg.uniqueIdentifier, updateLeadPassenger: that.props.updateLeadPassenger, orderIdentifier: that.props.order.orderIdentifier }));
 	        });
 
 	        // departure airport of first leg
@@ -31992,7 +31807,7 @@ webpackJsonp([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(318)))
 
 /***/ },
-/* 1218 */
+/* 1215 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32015,43 +31830,43 @@ webpackJsonp([0],[
 
 	var _Helpers2 = _interopRequireDefault(_Helpers);
 
-	var _ItineraryLegWeather = __webpack_require__(1212);
+	var _ItineraryLegWeather = __webpack_require__(1209);
 
 	var _ItineraryLegWeather2 = _interopRequireDefault(_ItineraryLegWeather);
 
-	var _ItineraryPreviewToggleIcon = __webpack_require__(1219);
+	var _ItineraryPreviewToggleIcon = __webpack_require__(1216);
 
 	var _ItineraryPreviewToggleIcon2 = _interopRequireDefault(_ItineraryPreviewToggleIcon);
 
-	var _DialogPopup = __webpack_require__(1220);
+	var _DialogPopup = __webpack_require__(1217);
 
 	var _DialogPopup2 = _interopRequireDefault(_DialogPopup);
 
-	var _PopupHeader = __webpack_require__(1222);
+	var _PopupHeader = __webpack_require__(1219);
 
 	var _PopupHeader2 = _interopRequireDefault(_PopupHeader);
 
-	var _TabSelector = __webpack_require__(1223);
+	var _TabSelector = __webpack_require__(1220);
 
 	var _TabSelector2 = _interopRequireDefault(_TabSelector);
 
-	var _MenuItemSelection = __webpack_require__(1237);
+	var _MenuItemSelection = __webpack_require__(1234);
 
 	var _MenuItemSelection2 = _interopRequireDefault(_MenuItemSelection);
 
-	var _CateringStore = __webpack_require__(1238);
+	var _CateringStore = __webpack_require__(1235);
 
 	var _CateringStore2 = _interopRequireDefault(_CateringStore);
 
-	var _CateringActions = __webpack_require__(1229);
+	var _CateringActions = __webpack_require__(1226);
 
 	var _CateringActions2 = _interopRequireDefault(_CateringActions);
 
-	var _ConfirmDialog = __webpack_require__(914);
+	var _ConfirmDialog = __webpack_require__(790);
 
 	var _ConfirmDialog2 = _interopRequireDefault(_ConfirmDialog);
 
-	var _PassengerPopup = __webpack_require__(1239);
+	var _PassengerPopup = __webpack_require__(1236);
 
 	var _PassengerPopup2 = _interopRequireDefault(_PassengerPopup);
 
@@ -32092,27 +31907,13 @@ webpackJsonp([0],[
 	      var that = this;
 	      var propKeys = ['icon', 'viewLink', 'showSnackMessage', 'leg', 'legDetail', 'cateringState'];
 	      var shouldUpdate = propKeys.some(function (propKey) {
-	        if (that.props[propKey] != nextProps[propKey]) {
-	          console.log(propKey);
-	        }
 	        return that.props[propKey] != nextProps[propKey];
 	      });
-	      var propsSgn = false;
-	      if (shouldUpdate) {
-	        propsSgn = true;
-	        console.log('updating itinerary leg - props');
-	      }
 	      if (!shouldUpdate) {
 	        var stateKeys = ['leg', 'legDetail', 'open', 'cateringState', 'openPassengerPopup'];
 	        shouldUpdate = stateKeys.some(function (stateKey) {
-	          if (that.state[stateKey] != nextState[stateKey]) {
-	            console.log(stateKey);
-	          }
 	          return that.state[stateKey] != nextState[stateKey];
 	        });
-	      }
-	      if (!propsSgn && shouldUpdate) {
-	        console.log('updating itinerary leg - state');
 	      }
 	      return shouldUpdate;
 	    }
@@ -32136,7 +31937,7 @@ webpackJsonp([0],[
 	  }, {
 	    key: 'handleAdd',
 	    value: function handleAdd() {
-	      this.setState({ open: false }); //make it true to enable
+	      this.setState({ open: true });
 	    }
 	  }, {
 	    key: 'handleConfirmCancel',
@@ -32160,11 +31961,15 @@ webpackJsonp([0],[
 	    key: 'handlePassengerClose',
 	    value: function handlePassengerClose() {
 	      this.setState({ openPassengerPopup: false });
+	      this.state.legDetail.passengersInfo = ((this.refs.passengerdialog || {}).state || {}).flightPassengers || []; //VW-1407
+	      this.props.updateLeadPassenger(this.props.orderIdentifier, this.state.legDetail.passengersInfo); //VW-1436
 	    }
 	  }, {
 	    key: 'handlePassengerOpen',
 	    value: function handlePassengerOpen() {
-	      this.setState({ openPassengerPopup: true });
+	      if (!this.props.leg.isPast) {
+	        this.setState({ openPassengerPopup: true });
+	      }
 	    }
 	  }, {
 	    key: 'changeTab',
@@ -32424,7 +32229,7 @@ webpackJsonp([0],[
 	module.exports = ItineraryLeg;
 
 /***/ },
-/* 1219 */
+/* 1216 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32483,7 +32288,7 @@ webpackJsonp([0],[
 	module.exports = ItineraryPreviewToggleIcon;
 
 /***/ },
-/* 1220 */
+/* 1217 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32498,15 +32303,15 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _dialog = __webpack_require__(915);
+	var _dialog = __webpack_require__(791);
 
 	var _dialog2 = _interopRequireDefault(_dialog);
 
-	var _flatButton = __webpack_require__(688);
+	var _flatButton = __webpack_require__(792);
 
 	var _flatButton2 = _interopRequireDefault(_flatButton);
 
-	var _raisedButton = __webpack_require__(1221);
+	var _raisedButton = __webpack_require__(1218);
 
 	var _raisedButton2 = _interopRequireDefault(_raisedButton);
 
@@ -32518,29 +32323,37 @@ webpackJsonp([0],[
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var DialogPopup = function (_React$Component) {
-	    _inherits(DialogPopup, _React$Component);
+	var DialogExampleScrollable = function (_React$Component) {
+	    _inherits(DialogExampleScrollable, _React$Component);
 
-	    function DialogPopup(props) {
-	        _classCallCheck(this, DialogPopup);
+	    function DialogExampleScrollable(props) {
+	        _classCallCheck(this, DialogExampleScrollable);
 
-	        return _possibleConstructorReturn(this, Object.getPrototypeOf(DialogPopup).call(this, props));
+	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(DialogExampleScrollable).call(this, props));
+
+	        _this.state = {
+	            open: false
+	        };
+
+	        _this.handleOpen = function () {
+	            _this.setState({ open: true });
+	        };
+
+	        _this.handleClose = function () {
+	            _this.setState({ open: false });
+	        };
+
+	        return _this;
 	    }
 
-	    _createClass(DialogPopup, [{
+	    _createClass(DialogExampleScrollable, [{
 	        key: 'shouldComponentUpdate',
 	        value: function shouldComponentUpdate(nextProps, nextState) {
 	            var that = this;
-	            var propKeys = ['title', 'open'];
+	            var propKeys = ['title', 'open', 'children'];
 	            var shouldUpdate = propKeys.some(function (propKey) {
-	                if (that.props[propKey] != nextProps[propKey]) {
-	                    console.log(propKey);
-	                }
 	                return that.props[propKey] != nextProps[propKey];
 	            });
-	            if (shouldUpdate) {
-	                console.log('updating dialog popup');
-	            }
 	            return shouldUpdate;
 	        }
 	    }, {
@@ -32558,8 +32371,10 @@ webpackJsonp([0],[
 	                        open: this.props.open,
 	                        onRequestClose: this.props.handleClose,
 	                        autoScrollBodyContent: true,
-	                        bodyStyle: { padding: '10px' },
-	                        className: 'dialog-control'
+	                        bodyStyle: { padding: '10px', overflow: 'hidden', height: "100%!important" },
+	                        className: 'dialog-control',
+	                        autoDetectWindowHeight: true,
+	                        bodyClassName: 'modal-body'
 	                    },
 	                    this.props.children
 	                )
@@ -32567,14 +32382,14 @@ webpackJsonp([0],[
 	        }
 	    }]);
 
-	    return DialogPopup;
+	    return DialogExampleScrollable;
 	}(_react2.default.Component);
 
-	exports.default = DialogPopup;
+	exports.default = DialogExampleScrollable;
 
 /***/ },
-/* 1221 */,
-/* 1222 */
+/* 1218 */,
+/* 1219 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32605,7 +32420,7 @@ webpackJsonp([0],[
 	    _createClass(PopupHeader, [{
 	        key: 'render',
 	        value: function render() {
-	            console.log('popup header');
+	            // console.log('popup header');
 	            var backButton = '';
 
 	            if (this.props.hasOwnProperty('showBackButton') && this.props.showBackButton) {
@@ -32614,7 +32429,7 @@ webpackJsonp([0],[
 	                    null,
 	                    _react2.default.createElement(
 	                        'button',
-	                        { type: 'button', onClick: this.props.handleBackButton.bind(this, this.props.backComponents) },
+	                        { className: 'btn--back left', type: 'button', onClick: this.props.handleBackButton },
 	                        'Back'
 	                    )
 	                );
@@ -32644,7 +32459,7 @@ webpackJsonp([0],[
 	module.exports = PopupHeader;
 
 /***/ },
-/* 1223 */
+/* 1220 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32657,17 +32472,17 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _tabs = __webpack_require__(1224);
+	var _tabs = __webpack_require__(1221);
 
-	var _CateringActions = __webpack_require__(1229);
+	var _CateringActions = __webpack_require__(1226);
 
 	var _CateringActions2 = _interopRequireDefault(_CateringActions);
 
-	var _ResturantList = __webpack_require__(1231);
+	var _ResturantList = __webpack_require__(1228);
 
 	var _ResturantList2 = _interopRequireDefault(_ResturantList);
 
-	var _CateringSummary = __webpack_require__(1236);
+	var _CateringSummary = __webpack_require__(1233);
 
 	var _CateringSummary2 = _interopRequireDefault(_CateringSummary);
 
@@ -32774,7 +32589,7 @@ webpackJsonp([0],[
 	        null,
 	        _react2.default.createElement(
 	          _tabs.Tabs,
-	          { className: 'tabs-fix', onChange: this.handleChange.bind(this), value: this.state.slideIndex },
+	          { className: 'tabs-fix tabs-control', onChange: this.handleChange.bind(this), value: this.state.slideIndex },
 	          tabsList
 	        )
 	      );
@@ -32787,7 +32602,7 @@ webpackJsonp([0],[
 	module.exports = TabSelector;
 
 /***/ },
-/* 1224 */
+/* 1221 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32797,11 +32612,11 @@ webpackJsonp([0],[
 	});
 	exports.Tabs = exports.Tab = undefined;
 
-	var _tab = __webpack_require__(1225);
+	var _tab = __webpack_require__(1222);
 
 	var _tab2 = _interopRequireDefault(_tab);
 
-	var _tabs = __webpack_require__(1226);
+	var _tabs = __webpack_require__(1223);
 
 	var _tabs2 = _interopRequireDefault(_tabs);
 
@@ -32815,11 +32630,11 @@ webpackJsonp([0],[
 	};
 
 /***/ },
+/* 1222 */,
+/* 1223 */,
+/* 1224 */,
 /* 1225 */,
-/* 1226 */,
-/* 1227 */,
-/* 1228 */,
-/* 1229 */
+/* 1226 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32830,7 +32645,7 @@ webpackJsonp([0],[
 
 	var _AltApp2 = _interopRequireDefault(_AltApp);
 
-	var _CateringSource = __webpack_require__(1230);
+	var _CateringSource = __webpack_require__(1227);
 
 	var _CateringSource2 = _interopRequireDefault(_CateringSource);
 
@@ -32930,7 +32745,7 @@ webpackJsonp([0],[
 	module.exports = _AltApp2.default.createActions(CateringActions);
 
 /***/ },
-/* 1230 */
+/* 1227 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32948,6 +32763,10 @@ webpackJsonp([0],[
 	var _Helpers = __webpack_require__(317);
 
 	var _Helpers2 = _interopRequireDefault(_Helpers);
+
+	var _LoginActions = __webpack_require__(266);
+
+	var _LoginActions2 = _interopRequireDefault(_LoginActions);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -32975,7 +32794,9 @@ webpackJsonp([0],[
 
 	      if (err != null) {
 	        //error occured
-	        if (err.timeout === _Constants.TIMEOUT) {
+	        if (err.status == 401) {
+	          _LoginActions2.default.afterLogout(true);
+	        } else if (err.timeout === _Constants.TIMEOUT) {
 	          reject({ message: _Messages.ERROR_MESSAGES['timeout'] });
 	        } else {
 	          reject({ message: _Messages.ERROR_MESSAGES['500'] });
@@ -33017,7 +32838,9 @@ webpackJsonp([0],[
 	      if (err != null) {
 	        //error occured
 	        delete cachedCateringProposal[flightId];
-	        if (err.timeout === _Constants.TIMEOUT) {
+	        if (err.status == 401) {
+	          _LoginActions2.default.afterLogout(true);
+	        } else if (err.timeout === _Constants.TIMEOUT) {
 	          reject({ message: _Messages.ERROR_MESSAGES['timeout'] });
 	        } else {
 	          reject({ message: _Messages.ERROR_MESSAGES['500'] });
@@ -33080,7 +32903,9 @@ webpackJsonp([0],[
 	      getCateringProposal(token, flightId);
 	      if (err != null) {
 	        //error occured
-	        if (err.timeout === _Constants.TIMEOUT) {
+	        if (err.status == 401) {
+	          _LoginActions2.default.afterLogout(true);
+	        } else if (err.timeout === _Constants.TIMEOUT) {
 	          reject({ message: _Messages.ERROR_MESSAGES['timeout'] });
 	        } else {
 	          reject({ message: _Messages.ERROR_MESSAGES['500'] });
@@ -33102,7 +32927,7 @@ webpackJsonp([0],[
 	module.exports = CateringSource;
 
 /***/ },
-/* 1231 */
+/* 1228 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -33113,11 +32938,11 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _CateringCategory = __webpack_require__(1232);
+	var _CateringCategory = __webpack_require__(1229);
 
 	var _CateringCategory2 = _interopRequireDefault(_CateringCategory);
 
-	var _circularProgress = __webpack_require__(1235);
+	var _circularProgress = __webpack_require__(1232);
 
 	var _circularProgress2 = _interopRequireDefault(_circularProgress);
 
@@ -33176,10 +33001,10 @@ webpackJsonp([0],[
 
 	        content.push(_react2.default.createElement(
 	          'details',
-	          { key: ((resturant || {}).serviceProviderId || [])[0] },
+	          { className: 'catering-details', key: ((resturant || {}).serviceProviderId || [])[0], open: content.length < 1 },
 	          _react2.default.createElement(
 	            'summary',
-	            null,
+	            { className: 'summary-details' },
 	            (resturant || {}).supplierDisplayName
 	          ),
 	          _react2.default.createElement(
@@ -33235,7 +33060,7 @@ webpackJsonp([0],[
 	module.exports = ResturantList;
 
 /***/ },
-/* 1232 */
+/* 1229 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -33246,7 +33071,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _MenuItem = __webpack_require__(1233);
+	var _MenuItem = __webpack_require__(1230);
 
 	var _MenuItem2 = _interopRequireDefault(_MenuItem);
 
@@ -33314,7 +33139,7 @@ webpackJsonp([0],[
 	module.exports = CateringCategory;
 
 /***/ },
-/* 1233 */
+/* 1230 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -33325,11 +33150,11 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _addCircleOutline = __webpack_require__(1234);
+	var _addCircleOutline = __webpack_require__(1231);
 
 	var _addCircleOutline2 = _interopRequireDefault(_addCircleOutline);
 
-	var _CateringActions = __webpack_require__(1229);
+	var _CateringActions = __webpack_require__(1226);
 
 	var _CateringActions2 = _interopRequireDefault(_CateringActions);
 
@@ -33425,7 +33250,7 @@ webpackJsonp([0],[
 	module.exports = MenuItem;
 
 /***/ },
-/* 1234 */
+/* 1231 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -33438,11 +33263,11 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _pure = __webpack_require__(749);
+	var _pure = __webpack_require__(714);
 
 	var _pure2 = _interopRequireDefault(_pure);
 
-	var _svgIcon = __webpack_require__(804);
+	var _svgIcon = __webpack_require__(769);
 
 	var _svgIcon2 = _interopRequireDefault(_svgIcon);
 
@@ -33461,8 +33286,8 @@ webpackJsonp([0],[
 	exports.default = ContentAddCircleOutline;
 
 /***/ },
-/* 1235 */,
-/* 1236 */
+/* 1232 */,
+/* 1233 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -33473,7 +33298,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _CateringActions = __webpack_require__(1229);
+	var _CateringActions = __webpack_require__(1226);
 
 	var _CateringActions2 = _interopRequireDefault(_CateringActions);
 
@@ -33505,6 +33330,7 @@ webpackJsonp([0],[
 	      passengers: props.passengers,
 	      isEditable: props.isEditable,
 	      editSelection: props.editSelection,
+	      stateDirty: props.stateDirty,
 	      selectedTab: props.selectedTab,
 	      enableReview: props.enableReview,
 	      handleClose: props.handleClose
@@ -33518,7 +33344,7 @@ webpackJsonp([0],[
 	      var _this2 = this;
 
 	      var stateUpdated = false;
-	      var keys = ['cateringSummary', 'itemWiseSummary', 'userWiseSummary', 'selectedTab', 'enableReview', 'legId', 'passengers', 'isEditable', 'editSelection', 'selectedTab'];
+	      var keys = ['cateringSummary', 'itemWiseSummary', 'userWiseSummary', 'selectedTab', 'enableReview', 'legId', 'passengers', 'isEditable', 'editSelection', 'selectedTab', 'stateDirty'];
 	      keys.forEach(function (key) {
 	        if (_this2.state[key] !== nextProps[key]) {
 	          _this2.state[key] = nextProps[key];
@@ -33652,7 +33478,7 @@ webpackJsonp([0],[
 	          if (this.state.editSelection && this.state.enableReview) {
 	            button = _react2.default.createElement(
 	              'button',
-	              { className: 'btn review-selection right', type: 'button', onClick: this.updateCateringSelection.bind(this) },
+	              { className: 'btn review-selection right', type: 'button', disabled: !this.state.stateDirty, onClick: this.updateCateringSelection.bind(this) },
 	              'Confirm Selection'
 	            );
 	          } else {
@@ -33688,7 +33514,7 @@ webpackJsonp([0],[
 	module.exports = CateringSummary;
 
 /***/ },
-/* 1237 */
+/* 1234 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -33699,7 +33525,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _CateringActions = __webpack_require__(1229);
+	var _CateringActions = __webpack_require__(1226);
 
 	var _CateringActions2 = _interopRequireDefault(_CateringActions);
 
@@ -33897,7 +33723,7 @@ webpackJsonp([0],[
 	module.exports = MenuItemSelection;
 
 /***/ },
-/* 1238 */
+/* 1235 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -33908,7 +33734,7 @@ webpackJsonp([0],[
 
 	var _AltApp2 = _interopRequireDefault(_AltApp);
 
-	var _CateringActions = __webpack_require__(1229);
+	var _CateringActions = __webpack_require__(1226);
 
 	var _CateringActions2 = _interopRequireDefault(_CateringActions);
 
@@ -33945,6 +33771,7 @@ webpackJsonp([0],[
 	      this.onChangeTab(0);
 	      this.showError = false;
 	      this.errorMessage = '';
+	      this.stateDirty = false;
 	    }
 	  }, {
 	    key: 'onShowError',
@@ -33972,6 +33799,7 @@ webpackJsonp([0],[
 	    key: 'onRemoveOrder',
 	    value: function onRemoveOrder(obj) {
 	      this.enableReview = true;
+	      this.stateDirty = true;
 	      delete this.itemWiseSummary[obj.flightMenuPriceId][obj.personId];
 	      delete this.userWiseSummary[obj.personId][obj.flightMenuPriceId];
 	    }
@@ -34063,6 +33891,7 @@ webpackJsonp([0],[
 	      var menuItemId = obj.menuItemId;
 	      var menuItemTitle = obj.menuItemTitle;
 	      var newItemWiseSummary = obj.selectedCatering;
+	      this.stateDirty = true;
 	      this.enableReview = true;
 	      this.editSelection = true;
 	      this.itemWiseSummary[menuItemId] = this.itemWiseSummary[menuItemId] || {};
@@ -34106,7 +33935,7 @@ webpackJsonp([0],[
 	module.exports = _AltApp2.default.createStore(CateringStore, 'CateringStore');
 
 /***/ },
-/* 1239 */
+/* 1236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -34117,27 +33946,27 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _PassengerSearch = __webpack_require__(1240);
+	var _PassengerSearch = __webpack_require__(1237);
 
 	var _PassengerSearch2 = _interopRequireDefault(_PassengerSearch);
 
-	var _PassengerTabs = __webpack_require__(1241);
+	var _PassengerTabs = __webpack_require__(1238);
 
 	var _PassengerTabs2 = _interopRequireDefault(_PassengerTabs);
 
-	var _PassengerSearchResult = __webpack_require__(1251);
+	var _PassengerSearchResult = __webpack_require__(1248);
 
 	var _PassengerSearchResult2 = _interopRequireDefault(_PassengerSearchResult);
 
-	var _PassengerForm = __webpack_require__(1253);
+	var _PassengerForm = __webpack_require__(1250);
 
 	var _PassengerForm2 = _interopRequireDefault(_PassengerForm);
 
-	var _PassportForm = __webpack_require__(1258);
+	var _PassportForm = __webpack_require__(1255);
 
 	var _PassportForm2 = _interopRequireDefault(_PassportForm);
 
-	var _PopupHeader = __webpack_require__(1222);
+	var _PopupHeader = __webpack_require__(1219);
 
 	var _PopupHeader2 = _interopRequireDefault(_PopupHeader);
 
@@ -34145,7 +33974,7 @@ webpackJsonp([0],[
 
 	var _Cache2 = _interopRequireDefault(_Cache);
 
-	var _jslinq = __webpack_require__(711);
+	var _jslinq = __webpack_require__(685);
 
 	var _jslinq2 = _interopRequireDefault(_jslinq);
 
@@ -34153,25 +33982,29 @@ webpackJsonp([0],[
 
 	var _Helpers2 = _interopRequireDefault(_Helpers);
 
-	var _reactAddonsUpdate = __webpack_require__(702);
+	var _reactAddonsUpdate = __webpack_require__(698);
 
 	var _reactAddonsUpdate2 = _interopRequireDefault(_reactAddonsUpdate);
 
-	var _ItineraryPassengerSource = __webpack_require__(1250);
+	var _ItineraryPassengerSource = __webpack_require__(1247);
 
 	var _ItineraryPassengerSource2 = _interopRequireDefault(_ItineraryPassengerSource);
 
-	var _UserSettingsSource = __webpack_require__(1259);
+	var _UserSettingsSource = __webpack_require__(1256);
 
 	var _UserSettingsSource2 = _interopRequireDefault(_UserSettingsSource);
 
-	var _User = __webpack_require__(599);
+	var _User = __webpack_require__(600);
 
 	var _User2 = _interopRequireDefault(_User);
 
-	var _ItineraryDetailActions = __webpack_require__(817);
+	var _ItineraryDetailActions = __webpack_require__(815);
 
 	var _ItineraryDetailActions2 = _interopRequireDefault(_ItineraryDetailActions);
+
+	var _moment = __webpack_require__(320);
+
+	var _moment2 = _interopRequireDefault(_moment);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -34188,6 +34021,11 @@ webpackJsonp([0],[
 	        _classCallCheck(this, PassengerPopup);
 
 	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(PassengerPopup).call(this, props));
+
+	        _this.enableBackBtn = ['passengerForm', 'passportForm'];
+	        _this.referrerManager = {};
+	        _this.tmpPAXFormData = null;
+
 
 	        var freqPax = _Cache2.default.getLocal('frequentPax', true).frequentPaxAirports;
 
@@ -34230,7 +34068,10 @@ webpackJsonp([0],[
 	            cachePassengers: cachePaxToSet,
 	            currentPassenger: {},
 	            isExistingPassenger: false,
-	            deletedPassengers: []
+	            deletedPassengers: [],
+	            disableConfirmBtn: props.activeLeg.hasOwnProperty('passengersInfo') && props.activeLeg.passengersInfo.length > 0 ? false : true,
+	            activeCmp: '',
+	            backBtnFlag: false
 	        };
 
 	        //setting my pax
@@ -34239,7 +34080,74 @@ webpackJsonp([0],[
 	        return _this;
 	    }
 
+	    // Enable header back btn on following components
+
+
+	    /*
+	     * referrerManager: to manage the navigation state of components
+	     */
+
+
 	    _createClass(PassengerPopup, [{
+	        key: 'setReferrer',
+
+
+	        // add/update state when user navigate to next state
+	        value: function setReferrer(nextCmp, activeCmps) {
+
+	            var tmpArr = [];
+	            for (var k in activeCmps) {
+	                if (activeCmps.hasOwnProperty(k) && activeCmps[k]) {
+	                    tmpArr.push(k);
+	                }
+	            }
+
+	            this.referrerManager[nextCmp] = tmpArr;
+	        }
+
+	        // get the parent state of current component
+
+	    }, {
+	        key: 'getReferrer',
+	        value: function getReferrer(currentCmp) {
+	            return this.referrerManager[currentCmp] || [];
+	        }
+
+	        /*
+	         * passengerFormManger: to store the unsaved data of passenger form temporary
+	         */
+
+	    }, {
+	        key: 'setTmpPAXFormData',
+
+
+	        // store unsaved changes when user navigates to add passport form
+	        value: function setTmpPAXFormData(obj) {
+	            this.tmpPAXFormData = this.state.activeCmp == "passengerForm" ? null : obj;
+	            // converting date format
+	            if (this.tmpPAXFormData && typeof this.tmpPAXFormData.dateOfBirth == "string") {
+	                this.tmpPAXFormData.dateOfBirth = new Date(this.tmpPAXFormData.dateOfBirth);
+	            }
+	        }
+
+	        // retrieve the unsaved changes when user navigates back to passenger form
+
+	    }, {
+	        key: 'getTmpPAXFormData',
+	        value: function getTmpPAXFormData() {
+	            return this.tmpPAXFormData || {
+	                imageUrl: null,
+	                imageFile: null,
+	                passengerFirstName: "",
+	                passengerLastName: "",
+	                dateOfBirth: undefined,
+	                genderId: "",
+	                email: "",
+	                phoneNumber: "",
+	                isSoftlyAdded: true
+	            };
+	        }
+	    }, {
 	        key: 'setMyPassenger',
 	        value: function setMyPassenger() {
 	            var _this2 = this;
@@ -34335,8 +34243,10 @@ webpackJsonp([0],[
 	        }
 	    }, {
 	        key: 'handleBackButton',
-	        value: function handleBackButton(componentsToRender) {
-	            this.handleRenderingChange(componentsToRender);
+	        value: function handleBackButton() {
+	            var referrerCmps = this.getReferrer(this.state.activeCmp);
+	            this.state.backBtnFlag = this.isShowBackBtn(referrerCmps);
+	            this.handleRenderingChange(referrerCmps);
 	        }
 	    }, {
 	        key: 'handleSearch',
@@ -34353,15 +34263,55 @@ webpackJsonp([0],[
 	            });
 	        }
 	    }, {
+	        key: 'isShowBackBtn',
+	        value: function isShowBackBtn(cmps) {
+	            var flag = false;
+
+	            if (Array.isArray(cmps)) {
+
+	                if (cmps.length > 1) {
+	                    flag = false;
+	                } else {
+	                    this.state.activeCmp = cmps[0];
+	                    flag = this.enableBackBtn.indexOf(cmps[0]) != -1;
+	                }
+	            } else {
+	                this.state.activeCmp = cmps;
+	                flag = this.enableBackBtn.indexOf(cmps) != -1;
+	            }
+
+	            return flag;
+	        }
+	    }, {
 	        key: 'addNewPassenger',
 	        value: function addNewPassenger() {
 	            this.state.isExistingPassenger = false;
-	            this.handleRenderingChange(['passengerForm']);
+	            this.state.disableConfirmBtn = false;
+	            this.state.activeCmp = 'passengerForm';
+	            this.state.backBtnFlag = this.isShowBackBtn(this.state.activeCmp);
+	            this.setReferrer(this.state.activeCmp, this.state.componentsToRender);
+	            this.handleRenderingChange([this.state.activeCmp]);
+	        }
+	    }, {
+	        key: 'formatDate',
+	        value: function formatDate(val) {
+	            if (val && val.dateOfBirth) {
+	                var t = (0, _moment2.default)(val.dateOfBirth).format('MM/DD/YYYY') + " 00:00";
+	                return (0, _moment2.default)(t + ' +0000', "MM/DD/YYYY HH:mm Z").utc().format();
+	            }
+
+	            return undefined;
 	        }
 	    }, {
 	        key: 'setCurrentPassenger',
 	        value: function setCurrentPassenger(passenger, dataAddpassport) {
+	            // resetting passenger form data
+	            this.tmpPAXFormData = null;
 	            passenger.passengerExtIdentifier = [_Helpers2.default.guid()];
+
+	            // converting date format
+	            passenger.dateOfBirth = this.formatDate(passenger);
+
 	            this.state.currentPassenger = passenger;
 	            var self = this;
 
@@ -34425,7 +34375,12 @@ webpackJsonp([0],[
 	                // add passport clicked from add new passenger form or onwards in that flow
 	                this.state.isExistingPassenger = false;
 	            }
-	            this.handleRenderingChange(['passportForm']);
+
+	            this.state.activeCmp = 'passportForm';
+	            this.state.backBtnFlag = this.isShowBackBtn(this.state.activeCmp);
+	            this.setReferrer(this.state.activeCmp, this.state.componentsToRender);
+
+	            this.handleRenderingChange([this.state.activeCmp]);
 	        }
 	    }, {
 	        key: 'addPassportToPassenger',
@@ -34467,7 +34422,7 @@ webpackJsonp([0],[
 	            paxToAdd = (0, _reactAddonsUpdate2.default)(paxToAdd, { $merge: pax }); // a deep copy
 
 	            if (pax.personId) {
-	                paxToAdd.passengerId = [pax.personId];
+	                paxToAdd.passengerId = pax.personId;
 	            }
 
 	            if (pax.passport) {
@@ -34521,7 +34476,7 @@ webpackJsonp([0],[
 	            });
 
 	            this.setMyPassenger();
-
+	            this.state.disableConfirmBtn = this.state.flightPassengers && this.state.flightPassengers.length > 0 ? false : true;
 	            this.handleRenderingChange(['passengerTabs', 'passengerSearch']);
 	        }
 
@@ -34542,7 +34497,7 @@ webpackJsonp([0],[
 	                    //add case
 
 	                    if (!(0, _jslinq2.default)(_this4.state.flightPassengers).any(function (e) {
-	                        return e.passengerId[0] == pax.passengerId[0];
+	                        return (e.passengerId || [])[0] == (pax.passengerId || [])[0] || (e.passengerExtIdentifier || [])[0] == (pax.passengerExtIdentifier || [])[0];
 	                    })) {
 
 	                        var paxToAdd = _this4.mapPaxKeys(pax);
@@ -34559,12 +34514,12 @@ webpackJsonp([0],[
 	                } else {
 	                    // delete
 	                    if ((0, _jslinq2.default)(_this4.state.flightPassengers).any(function (e) {
-	                        return e.passengerId[0] == pax.passengerId[0];
+	                        return (e.passengerId || [])[0] == (pax.passengerId || [])[0] || (e.passengerExtIdentifier || [])[0] == (pax.passengerExtIdentifier || [])[0];
 	                    })) {
 
 	                        _this4.state.flightPassengers.forEach(function (result, index) {
-	                            if (result.passengerId[0] == pax.passengerId[0]) {
-	                                //Remove from array
+	                            //Remove from array
+	                            if ((result.passengerId || [])[0] == (pax.passengerId || [])[0] || (result.passengerExtIdentifier || [])[0] == (pax.passengerExtIdentifier || [])[0]) {
 	                                self.state.flightPassengers.splice(index, 1);
 	                            }
 	                        });
@@ -34572,6 +34527,7 @@ webpackJsonp([0],[
 	                }
 	            });
 
+	            this.state.disableConfirmBtn = this.state.flightPassengers && this.state.flightPassengers.length > 0 ? false : true;
 	            this.handleRenderingChange(['passengerTabs', 'passengerSearch']);
 	        }
 	    }, {
@@ -34610,6 +34566,8 @@ webpackJsonp([0],[
 	                    _Cache2.default.saveLocal('frequentPax', dataForCache, true);
 	                    that.props.closePopup();
 	                });
+	            }).catch(function (error) {
+	                console.log(error);
 	            });
 	        }
 	    }, {
@@ -34661,7 +34619,7 @@ webpackJsonp([0],[
 	    }, {
 	        key: 'render',
 	        value: function render() {
-	            console.log('popup');
+	            // console.log('popup');
 	            var componentsToRender = this.state.componentsToRender;
 	            var content = [];
 
@@ -34680,29 +34638,31 @@ webpackJsonp([0],[
 	                    flightPassengers: this.state.flightPassengers, myPassengers: this.state.myPassengers,
 	                    addPassport: this.addPassport.bind(this), addMyPaxToFlight: this.addMyPaxToFlight.bind(this),
 	                    confirmPassengers: this.confirmPassengers.bind(this),
-	                    removePax: this.removePax.bind(this)
+	                    removePax: this.removePax.bind(this), disableConfirmBtn: this.state.disableConfirmBtn
 	                }));
 	            }
 
 	            if (componentsToRender.passengerForm) {
-	                content.push(_react2.default.createElement(_PassengerForm2.default, { key: _Helpers2.default.generateRandomKey(), handleBackButton: this.handleBackButton.bind(this),
-	                    closePopup: this.props.closePopup, updateFlightPassengers: this.updateFlightPassengers.bind(this),
-	                    addPassport: this.addPassport.bind(this), setCurrentPassenger: this.setCurrentPassenger.bind(this),
-	                    flightPassengers: this.state.flightPassengers, activeLeg: this.props.activeLeg
+	                content.push(_react2.default.createElement(_PassengerForm2.default, { key: _Helpers2.default.generateRandomKey(),
+	                    updateFlightPassengers: this.updateFlightPassengers.bind(this), addPassport: this.addPassport.bind(this),
+	                    setCurrentPassenger: this.setCurrentPassenger.bind(this),
+	                    flightPassengers: this.state.flightPassengers, activeLeg: this.props.activeLeg,
+	                    setUnsavedChanges: this.setTmpPAXFormData.bind(this), getUnsavedChanges: this.getTmpPAXFormData.bind(this)
 	                }));
 	            }
 
 	            if (componentsToRender.passportForm) {
-	                content.push(_react2.default.createElement(_PassportForm2.default, { key: _Helpers2.default.generateRandomKey(), closePopup: this.props.closePopup,
+	                content.push(_react2.default.createElement(_PassportForm2.default, { key: _Helpers2.default.generateRandomKey(),
 	                    addPassportToPassenger: this.addPassportToPassenger.bind(this),
 	                    updateFlightPassengers: this.updateFlightPassengers.bind(this),
-	                    isExistingPassenger: this.state.isExistingPassenger }));
+	                    isExistingPassenger: this.state.isExistingPassenger
+	                }));
 	            }
 
 	            return _react2.default.createElement(
 	                'div',
 	                null,
-	                _react2.default.createElement(_PopupHeader2.default, { heading: 'Passengers', closePopup: this.props.closePopup }),
+	                _react2.default.createElement(_PopupHeader2.default, { heading: 'Passengers', closePopup: this.props.closePopup, showBackButton: this.state.backBtnFlag, handleBackButton: this.handleBackButton.bind(this) }),
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'row mt-fixed' },
@@ -34718,7 +34678,7 @@ webpackJsonp([0],[
 	module.exports = PassengerPopup;
 
 /***/ },
-/* 1240 */
+/* 1237 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -34729,15 +34689,15 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _PassengerSearch = __webpack_require__(1240);
+	var _PassengerSearch = __webpack_require__(1237);
 
 	var _PassengerSearch2 = _interopRequireDefault(_PassengerSearch);
 
-	var _PassengerTabs = __webpack_require__(1241);
+	var _PassengerTabs = __webpack_require__(1238);
 
 	var _PassengerTabs2 = _interopRequireDefault(_PassengerTabs);
 
-	var _ItineraryPassengerSource = __webpack_require__(1250);
+	var _ItineraryPassengerSource = __webpack_require__(1247);
 
 	var _ItineraryPassengerSource2 = _interopRequireDefault(_ItineraryPassengerSource);
 
@@ -34788,7 +34748,7 @@ webpackJsonp([0],[
 	        value: function render() {
 	            var _this3 = this;
 
-	            console.log('search bar');
+	            // console.log('search bar');
 	            return _react2.default.createElement(
 	                'form',
 	                { onSubmit: this.handleSubmit.bind(this) },
@@ -34818,7 +34778,7 @@ webpackJsonp([0],[
 	module.exports = PassengerSearch;
 
 /***/ },
-/* 1241 */
+/* 1238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -34829,19 +34789,15 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _FlightPassenger = __webpack_require__(1242);
+	var _FlightPassenger = __webpack_require__(1239);
 
 	var _FlightPassenger2 = _interopRequireDefault(_FlightPassenger);
 
-	var _MyPassenger = __webpack_require__(1248);
+	var _MyPassenger = __webpack_require__(1245);
 
 	var _MyPassenger2 = _interopRequireDefault(_MyPassenger);
 
-	var _tabs = __webpack_require__(1224);
-
-	var _PassengerPopupFooter = __webpack_require__(1246);
-
-	var _PassengerPopupFooter2 = _interopRequireDefault(_PassengerPopupFooter);
+	var _tabs = __webpack_require__(1221);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -34869,13 +34825,13 @@ webpackJsonp([0],[
 	        key: 'render',
 	        value: function render() {
 
-	            console.log('pax tabs');
+	            // console.log('pax tabs');
 	            return _react2.default.createElement(
 	                'div',
 	                null,
 	                _react2.default.createElement(
 	                    _tabs.Tabs,
-	                    null,
+	                    { className: 'tabs-control' },
 	                    _react2.default.createElement(
 	                        _tabs.Tab,
 	                        { className: 'tab tab-fix', label: 'Flight Passengers' },
@@ -34886,7 +34842,8 @@ webpackJsonp([0],[
 	                                confirmPassengers: this.props.confirmPassengers.bind(this),
 	                                removePax: this.props.removePax.bind(this),
 	                                addPassport: this.props.addPassport,
-	                                addNewPassenger: this.props.addNewPassenger
+	                                addNewPassenger: this.props.addNewPassenger,
+	                                disableConfirmBtn: this.props.disableConfirmBtn
 	                            })
 	                        )
 	                    ),
@@ -34911,7 +34868,7 @@ webpackJsonp([0],[
 	module.exports = PassengerTabs;
 
 /***/ },
-/* 1242 */
+/* 1239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -34922,11 +34879,11 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _FlightPassengerRow = __webpack_require__(1243);
+	var _FlightPassengerRow = __webpack_require__(1240);
 
 	var _FlightPassengerRow2 = _interopRequireDefault(_FlightPassengerRow);
 
-	var _PassengerPopupFooter = __webpack_require__(1246);
+	var _PassengerPopupFooter = __webpack_require__(1243);
 
 	var _PassengerPopupFooter2 = _interopRequireDefault(_PassengerPopupFooter);
 
@@ -34961,13 +34918,17 @@ webpackJsonp([0],[
 	        value: function render() {
 	            var _this2 = this;
 
-	            console.log('in flight passenger');
+	            // console.log('in flight passenger');
 
 	            var flightPassengerRows = [];
 	            var that = this;
 
 	            this.props.flightPassengers.forEach(function (passenger, i) {
-	                flightPassengerRows.push(_react2.default.createElement(_FlightPassengerRow2.default, { key: i, removePax: that.props.removePax.bind(that), passenger: passenger, addPassport: that.props.addPassport }));
+	                if (passenger.leadPassenger && passenger.leadPassenger[0] == 'true') {
+	                    flightPassengerRows.unshift(_react2.default.createElement(_FlightPassengerRow2.default, { key: i, removePax: that.props.removePax.bind(that), passenger: passenger, addPassport: that.props.addPassport }));
+	                } else {
+	                    flightPassengerRows.push(_react2.default.createElement(_FlightPassengerRow2.default, { key: i, removePax: that.props.removePax.bind(that), passenger: passenger, addPassport: that.props.addPassport }));
+	                }
 	            });
 
 	            return _react2.default.createElement(
@@ -35015,11 +34976,11 @@ webpackJsonp([0],[
 	                            'div',
 	                            { className: 'col s12 m12 l12 alpha omega' },
 	                            function () {
-	                                return _this2.state.showLoader ? _react2.default.createElement('img', { src: __webpack_require__(1247) }) : null;
+	                                return _this2.state.showLoader ? _react2.default.createElement('img', { src: __webpack_require__(1244) }) : null;
 	                            }(),
 	                            _react2.default.createElement(
 	                                'button',
-	                                { disabled: this.state.showLoader, className: 'waves-effect waves-light btn', onClick: this.confirmPassengers.bind(this) },
+	                                { disabled: this.state.showLoader || this.props.disableConfirmBtn, className: 'waves-effect waves-light btn', onClick: this.confirmPassengers.bind(this) },
 	                                'Confirm Passengers'
 	                            )
 	                        )
@@ -35035,7 +34996,7 @@ webpackJsonp([0],[
 	module.exports = FlightPassenger;
 
 /***/ },
-/* 1243 */
+/* 1240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -35050,7 +35011,7 @@ webpackJsonp([0],[
 
 	var _moment2 = _interopRequireDefault(_moment);
 
-	var _PassportRow = __webpack_require__(1244);
+	var _PassportRow = __webpack_require__(1241);
 
 	var _PassportRow2 = _interopRequireDefault(_PassportRow);
 
@@ -35119,7 +35080,7 @@ webpackJsonp([0],[
 	        key: 'render',
 	        value: function render() {
 
-	            console.log('flight passenger row');
+	            // console.log('flight passenger row');
 	            var self = this;
 	            var passenger = this.state.passenger;
 	            var passportData = [];
@@ -35140,7 +35101,7 @@ webpackJsonp([0],[
 	                null,
 	                _react2.default.createElement(
 	                    'summary',
-	                    null,
+	                    { className: 'summary-details' },
 	                    _react2.default.createElement(
 	                        'span',
 	                        { className: 'pax-initial' },
@@ -35172,7 +35133,7 @@ webpackJsonp([0],[
 	module.exports = FlightPassengerRow;
 
 /***/ },
-/* 1244 */
+/* 1241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -35187,11 +35148,11 @@ webpackJsonp([0],[
 
 	var _moment2 = _interopRequireDefault(_moment);
 
-	var _jslinq = __webpack_require__(711);
+	var _jslinq = __webpack_require__(685);
 
 	var _jslinq2 = _interopRequireDefault(_jslinq);
 
-	var _Countries = __webpack_require__(1245);
+	var _Countries = __webpack_require__(1242);
 
 	var _Countries2 = _interopRequireDefault(_Countries);
 
@@ -35226,7 +35187,7 @@ webpackJsonp([0],[
 	        key: 'render',
 	        value: function render() {
 
-	            console.log('passport row');
+	            // console.log('passport row');
 	            var passport = this.props.passport;
 
 	            passport.countryObj = (0, _jslinq2.default)(_Countries2.default).where(function (e) {
@@ -35271,7 +35232,7 @@ webpackJsonp([0],[
 	module.exports = PassportRow;
 
 /***/ },
-/* 1245 */
+/* 1242 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -35281,7 +35242,7 @@ webpackJsonp([0],[
 	module.exports = CountriesList;
 
 /***/ },
-/* 1246 */
+/* 1243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -35326,13 +35287,13 @@ webpackJsonp([0],[
 	module.exports = PassengerPopupFooter;
 
 /***/ },
-/* 1247 */
+/* 1244 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/loading.gif";
 
 /***/ },
-/* 1248 */
+/* 1245 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -35343,11 +35304,11 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _MyPassengerRow = __webpack_require__(1249);
+	var _MyPassengerRow = __webpack_require__(1246);
 
 	var _MyPassengerRow2 = _interopRequireDefault(_MyPassengerRow);
 
-	var _PassengerPopupFooter = __webpack_require__(1246);
+	var _PassengerPopupFooter = __webpack_require__(1243);
 
 	var _PassengerPopupFooter2 = _interopRequireDefault(_PassengerPopupFooter);
 
@@ -35447,7 +35408,7 @@ webpackJsonp([0],[
 	module.exports = MyPassenger;
 
 /***/ },
-/* 1249 */
+/* 1246 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -35499,7 +35460,7 @@ webpackJsonp([0],[
 	        key: 'render',
 	        value: function render() {
 
-	            console.log('in my passenger row');
+	            // console.log('in my passenger row');
 	            var item = this.state.passenger;
 
 	            return _react2.default.createElement(
@@ -35521,7 +35482,7 @@ webpackJsonp([0],[
 	module.exports = MyPassengerRow;
 
 /***/ },
-/* 1250 */
+/* 1247 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {'use strict';
@@ -35540,17 +35501,21 @@ webpackJsonp([0],[
 
 	var _superagent2 = _interopRequireDefault(_superagent);
 
-	var _jslinq = __webpack_require__(711);
+	var _jslinq = __webpack_require__(685);
 
 	var _jslinq2 = _interopRequireDefault(_jslinq);
 
-	var _User = __webpack_require__(599);
+	var _User = __webpack_require__(600);
 
 	var _User2 = _interopRequireDefault(_User);
 
 	var _Helpers = __webpack_require__(317);
 
 	var _Helpers2 = _interopRequireDefault(_Helpers);
+
+	var _LoginActions = __webpack_require__(266);
+
+	var _LoginActions2 = _interopRequireDefault(_LoginActions);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -35566,7 +35531,9 @@ webpackJsonp([0],[
 
 	                if (err != null) {
 	                    //error occured
-	                    if (err.timeout === _Constants.TIMEOUT) {
+	                    if (err.status == 401) {
+	                        _LoginActions2.default.afterLogout(true);
+	                    } else if (err.timeout === _Constants.TIMEOUT) {
 	                        reject({ message: _Messages.ERROR_MESSAGES['timeout'] });
 	                    } else {
 	                        reject({ message: _Messages.ERROR_MESSAGES['500'] });
@@ -35678,7 +35645,8 @@ webpackJsonp([0],[
 
 	                if (passenger.hasOwnProperty('passports')) {
 	                    passenger.passports[0].passport.forEach(function (passport) {
-	                        passportsXml += passportXmlStructure.replace('{isDefault}', passport.isDefault).replace('{isActive}', true).replace('{passportNumber}', passport.passportNumber[0]).replace('{expiry}', passport.expiresOnDate ? passport.expiresOnDate[0] : "").replace('{isoPassportCountry}', passport.isoPassportCountry[0]).replace('{isoIssuingCountry}', passport.isoIssuedByCountry[0]).replace('{passportName}', passport.displayName[0]).replace('{isAdded}', passport.isAdded).replace('{isUpdated}', false).replace('{isDeleted}', false).replace('{isLegPassport}', passport.isLegPassport).replace('{passportImageUrl}', passport.imageUrl ? passport.imageUrl : "").replace('<id>{id}</id>', '');
+	                        var issuingCountry = (passport.isoIssuedByCountry || passport.isoPassportIssuedByCountry || [])[0] || '';
+	                        passportsXml += passportXmlStructure.replace('{isDefault}', passport.isDefault).replace('{isActive}', true).replace('{passportNumber}', passport.passportNumber[0]).replace('{expiry}', passport.expiresOnDate ? passport.expiresOnDate[0] : "").replace('{isoPassportCountry}', passport.isoPassportCountry[0]).replace('{isoIssuingCountry}', issuingCountry).replace('{passportName}', passport.displayName[0]).replace('{isAdded}', passport.isAdded).replace('{isUpdated}', false).replace('{isDeleted}', false).replace('{isLegPassport}', passport.isLegPassport).replace('{passportImageUrl}', passport.imageUrl ? passport.imageUrl : "").replace('<id>{id}</id>', '');
 	                    });
 	                }
 
@@ -35698,7 +35666,8 @@ webpackJsonp([0],[
 	                            temp = passportXmlStructure.replace('<id>{id}</id>', '');
 	                        }
 
-	                        passportsXml += temp.replace('{isDefault}', passport.isDefault).replace('{isActive}', passport.isActive).replace('{passportNumber}', passport.passportNumber[0]).replace('{expiry}', passport.expiresOnDate ? passport.expiresOnDate[0] : "").replace('{isoPassportCountry}', passport.isoPassportCountry ? passport.isoPassportCountry[0] : "").replace('{isoIssuingCountry}', passport.isoIssuedByCountry ? passport.isoIssuedByCountry[0] : "").replace('{passportName}', passport.displayName ? passport.displayName : "").replace('{passportImageUrl}', passport.imageUrl ? passport.imageUrl : "").replace('{isAdded}', passport.isAdded ? passport.isAdded : false).replace('{isUpdated}', true).replace('{isDeleted}', false).replace('{isLegPassport}', passport.isLegPassport ? passport.isLegPassport : false);
+	                        var issuingCountry = (passport.isoIssuedByCountry || passport.isoPassportIssuedByCountry || [])[0] || '';
+	                        passportsXml += temp.replace('{isDefault}', passport.isDefault).replace('{isActive}', passport.isActive).replace('{passportNumber}', passport.passportNumber[0]).replace('{expiry}', passport.expiresOnDate ? passport.expiresOnDate[0] : "").replace('{isoPassportCountry}', passport.isoPassportCountry ? passport.isoPassportCountry[0] : "").replace('{isoIssuingCountry}', issuingCountry).replace('{passportName}', passport.displayName ? passport.displayName : "").replace('{passportImageUrl}', passport.imageUrl ? passport.imageUrl : "").replace('{isAdded}', passport.isAdded ? passport.isAdded : false).replace('{isUpdated}', true).replace('{isDeleted}', false).replace('{isLegPassport}', passport.isLegPassport ? passport.isLegPassport : false);
 	                    });
 	                }
 
@@ -35721,7 +35690,9 @@ webpackJsonp([0],[
 
 	                if (err != null) {
 	                    //error occured
-	                    if (err.timeout === _Constants.TIMEOUT) {
+	                    if (err.status == 401) {
+	                        _LoginActions2.default.afterLogout(true);
+	                    } else if (err.timeout === _Constants.TIMEOUT) {
 	                        reject({ message: _Messages.ERROR_MESSAGES['timeout'] });
 	                    } else {
 	                        reject({ message: _Messages.ERROR_MESSAGES['500'] });
@@ -35773,7 +35744,7 @@ webpackJsonp([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(318)))
 
 /***/ },
-/* 1251 */
+/* 1248 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -35784,15 +35755,15 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _PassengerSearchResultRow = __webpack_require__(1252);
+	var _PassengerSearchResultRow = __webpack_require__(1249);
 
 	var _PassengerSearchResultRow2 = _interopRequireDefault(_PassengerSearchResultRow);
 
-	var _PassengerPopupFooter = __webpack_require__(1246);
+	var _PassengerPopupFooter = __webpack_require__(1243);
 
 	var _PassengerPopupFooter2 = _interopRequireDefault(_PassengerPopupFooter);
 
-	var _jslinq = __webpack_require__(711);
+	var _jslinq = __webpack_require__(685);
 
 	var _jslinq2 = _interopRequireDefault(_jslinq);
 
@@ -35822,9 +35793,11 @@ webpackJsonp([0],[
 	        key: 'markSelected',
 	        value: function markSelected(searchedPax, flightPax) {
 	            searchedPax.forEach(function (pax, i) {
-	                if ((0, _jslinq2.default)(flightPax).any(function (e) {
-	                    return e.passengerId[0] == pax.passengerId[0];
-	                })) {
+	                var flag = (0, _jslinq2.default)(flightPax).any(function (e) {
+	                    return (e.passengerId || [])[0] == (pax.passengerId || [])[0] || (e.passengerExtIdentifier || [])[0] == (pax.passengerExtIdentifier || [])[0];
+	                });
+
+	                if (flag) {
 	                    pax.selected = true;
 	                } else {
 	                    pax.selected = false;
@@ -35846,7 +35819,7 @@ webpackJsonp([0],[
 	    }, {
 	        key: 'render',
 	        value: function render() {
-	            console.log('pax search result');
+	            // console.log('pax search result');
 	            var searchRows = [];
 	            var self = this;
 	            if (this.state.paxList && this.state.paxList.length > 0) {
@@ -35923,7 +35896,7 @@ webpackJsonp([0],[
 	module.exports = PassengerSearchResult;
 
 /***/ },
-/* 1252 */
+/* 1249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -35970,7 +35943,7 @@ webpackJsonp([0],[
 	    }, {
 	        key: 'render',
 	        value: function render() {
-	            console.log('pax search result row');
+	            // console.log('pax search result row');
 	            var item = this.state.passenger;
 
 	            return _react2.default.createElement(
@@ -35987,7 +35960,7 @@ webpackJsonp([0],[
 	module.exports = PassengerSearchResultRow;
 
 /***/ },
-/* 1253 */
+/* 1250 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -35998,27 +35971,25 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _PopupHeader = __webpack_require__(1222);
-
-	var _PopupHeader2 = _interopRequireDefault(_PopupHeader);
-
-	var _rcDatepicker = __webpack_require__(917);
+	var _rcDatepicker = __webpack_require__(913);
 
 	var _moment = __webpack_require__(320);
 
 	var _moment2 = _interopRequireDefault(_moment);
 
-	var _PassengerPopupFooter = __webpack_require__(1246);
+	var _PassengerPopupFooter = __webpack_require__(1243);
 
 	var _PassengerPopupFooter2 = _interopRequireDefault(_PassengerPopupFooter);
 
-	var _PictureUpload = __webpack_require__(1254);
+	var _PictureUpload = __webpack_require__(1251);
 
 	var _PictureUpload2 = _interopRequireDefault(_PictureUpload);
 
-	var _Validator = __webpack_require__(1257);
+	var _Validator = __webpack_require__(1254);
 
 	var _Validator2 = _interopRequireDefault(_Validator);
+
+	var _Messages = __webpack_require__(588);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -36037,21 +36008,12 @@ webpackJsonp([0],[
 	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(PassengerForm).call(this, props));
 
 	        _this.state = {
-	            currentPassenger: {
-	                imageUrl: null,
-	                imageFile: null,
-	                passengerFirstName: "",
-	                passengerLastName: "",
-	                dateOfBirth: "",
-	                genderId: "",
-	                email: "",
-	                phoneNumber: "",
-	                isSoftlyAdded: true
-	            },
+	            currentPassenger: _this.props.getUnsavedChanges(),
 	            validationErrors: {
 	                passengerFirstName: "",
-	                phoneNumber: "",
-	                email: ""
+	                passengerLastName: "",
+	                passengerEmail: "",
+	                phoneNumber: ""
 	            },
 	            isFormValid: true,
 	            showLoader: false
@@ -36069,6 +36031,14 @@ webpackJsonp([0],[
 	        value: function onFieldInteraction(e) {
 	            this.state.currentPassenger[e.target.getAttribute('data-key')] = e.target.value;
 	        }
+
+	        // store unsaved changes in passengerFormManger
+
+	    }, {
+	        key: 'componentWillUnmount',
+	        value: function componentWillUnmount() {
+	            this.props.setUnsavedChanges(this.state.currentPassenger);
+	        }
 	    }, {
 	        key: 'handleSubmit',
 	        value: function handleSubmit(e) {
@@ -36082,24 +36052,35 @@ webpackJsonp([0],[
 	            this.state.isFormValid = true;
 	            this.state.validationErrors = {
 	                passengerFirstName: "",
-	                phoneNumber: "",
-	                email: ""
+	                passengerLastName: "",
+	                passengerEmail: "",
+	                phoneNumber: ""
 	            };
+	            var focusField;
 
 	            // form validations
 	            if (_Validator2.default.validRequired(this.state.currentPassenger.passengerFirstName)) {
 	                this.state.isFormValid = false;
+	                focusField = focusField || 'passengerFirstName';
 	                this.state.validationErrors.passengerFirstName = 'First name is required';
 	            }
 
-	            if (_Validator2.default.validRequired(this.state.currentPassenger.phoneNumber)) {
+	            if (_Validator2.default.validRequired(this.state.currentPassenger.passengerLastName)) {
 	                this.state.isFormValid = false;
-	                this.state.validationErrors.phoneNumber = 'Phone number is required';
+	                focusField = focusField || 'lastName';
+	                this.state.validationErrors.passengerLastName = 'Last name is required';
 	            }
 
-	            if (_Validator2.default.validRequired(this.state.currentPassenger.email)) {
+	            if (this.state.currentPassenger.email != "" && _Validator2.default.validEmail(this.state.currentPassenger.email)) {
 	                this.state.isFormValid = false;
-	                this.state.validationErrors.email = 'Email is required';
+	                focusField = focusField || 'email';
+	                this.state.validationErrors.passengerEmail = _Messages.ERROR_MESSAGES['emailIncorrect'];
+	            }
+
+	            if (this.state.currentPassenger.phoneNumber != "" && _Validator2.default.validPhoneNo(this.state.currentPassenger.phoneNumber)) {
+	                this.state.isFormValid = false;
+	                focusField = focusField || 'phoneNumber';
+	                this.state.validationErrors.phoneNumber = _Messages.ERROR_MESSAGES['phoneIncorrect'];
 	            }
 
 	            // if form is valid, then do further action
@@ -36108,6 +36089,9 @@ webpackJsonp([0],[
 	                this.props.setCurrentPassenger(this.state.currentPassenger, !!e.target.attributes['data-addpassport']);
 	            } else {
 	                this.forceUpdate();
+	                if (focusField) {
+	                    this.refs[focusField].focus();
+	                }
 	            }
 	        }
 	    }, {
@@ -36121,12 +36105,11 @@ webpackJsonp([0],[
 	        value: function render() {
 	            var _this2 = this;
 
-	            console.log('passenger form');
+	            // console.log('passenger form');
 	            var backComponents = ['passengerTabs', 'passengerSearch'];
 	            return _react2.default.createElement(
 	                'div',
 	                null,
-	                _react2.default.createElement(_PopupHeader2.default, { heading: 'Passenger', closePopup: this.props.closePopup }),
 	                _react2.default.createElement(
 	                    'form',
 	                    null,
@@ -36154,7 +36137,7 @@ webpackJsonp([0],[
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'col s12 m12 l12 input-field' },
-	                            _react2.default.createElement('input', { id: 'firstname', className: this.state.validationErrors.passengerFirstName.length > 0 ? "dialog-textarea invalid" : "dialog-textarea", placeholder: 'First Name', 'data-key': 'passengerFirstName', type: 'text', ref: 'firstName', onBlur: this.onFieldInteraction.bind(this) }),
+	                            _react2.default.createElement('input', { id: 'firstname', className: this.state.validationErrors.passengerFirstName.length > 0 ? "dialog-textarea invalid" : "dialog-textarea margin--zero", placeholder: 'First Name', defaultValue: this.state.currentPassenger.passengerFirstName, 'data-key': 'passengerFirstName', type: 'text', ref: 'passengerFirstName', onBlur: this.onFieldInteraction.bind(this) }),
 	                            _react2.default.createElement(
 	                                'label',
 	                                { className: 'active', htmlFor: 'firstname', ref: 'firstNameError', 'data-error': this.state.validationErrors.passengerFirstName },
@@ -36164,11 +36147,16 @@ webpackJsonp([0],[
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'row' },
+	                        { className: this.state.validationErrors.passengerLastName.length > 0 ? "errorOccur row" : "row" },
 	                        _react2.default.createElement(
 	                            'div',
-	                            { className: 'col s12 m12 l12' },
-	                            _react2.default.createElement('input', { className: 'dialog-textarea', placeholder: 'Last Name', 'data-key': 'passengerLastName', type: 'text', ref: 'lastName', onBlur: this.onFieldInteraction.bind(this) })
+	                            { className: 'col s12 m12 l12 input-field' },
+	                            _react2.default.createElement('input', { id: 'lastname', className: this.state.validationErrors.passengerLastName.length > 0 ? "dialog-textarea invalid" : "dialog-textarea", placeholder: 'Last Name', defaultValue: this.state.currentPassenger.passengerLastName, 'data-key': 'passengerLastName', type: 'text', ref: 'lastName', onBlur: this.onFieldInteraction.bind(this) }),
+	                            _react2.default.createElement(
+	                                'label',
+	                                { className: 'active', htmlFor: 'lastname', ref: 'lastNameError', 'data-error': this.state.validationErrors.passengerLastName },
+	                                ' '
+	                            )
 	                        )
 	                    ),
 	                    _react2.default.createElement(
@@ -36182,8 +36170,10 @@ webpackJsonp([0],[
 	                                displayFormat: 'DD MMM YYYY',
 	                                returnFormat: 'DD/MM/YYYY',
 	                                onChange: this.handleDateChange.bind(this),
-	                                defaultValue: (0, _moment2.default)().add(10, 'minutes').toDate(),
 	                                showOnInputClick: true,
+	                                defaultValue: this.state.currentPassenger.dateOfBirth,
+	                                minDate: (0, _moment2.default)('1-1-1900', 'DD-MM-YYYY').toDate(),
+	                                maxDate: (0, _moment2.default)().toDate(),
 	                                placeholder: 'Date of Birth',
 	                                style: { margin: 0 },
 	                                showInputButton: false,
@@ -36201,20 +36191,20 @@ webpackJsonp([0],[
 	                            { className: 'col s12 m12 l12' },
 	                            _react2.default.createElement(
 	                                'select',
-	                                { type: 'text', className: 'dialog-textarea', ref: 'gender', onChange: this.onFieldInteraction.bind(this), 'data-key': 'genderId' },
+	                                { type: 'text', className: 'dialog-textarea margin--zero', ref: 'gender', onChange: this.onFieldInteraction.bind(this), 'data-key': 'genderId' },
 	                                _react2.default.createElement(
 	                                    'option',
-	                                    { value: '', disabled: true, selected: true },
+	                                    { className: 'selected-disabled', value: '', disabled: true, selected: this.state.currentPassenger.genderId == "" },
 	                                    'Gender'
 	                                ),
 	                                _react2.default.createElement(
 	                                    'option',
-	                                    { value: '2' },
+	                                    { className: 'selected-disabled', value: '2', selected: this.state.currentPassenger.genderId == "2" },
 	                                    'Male'
 	                                ),
 	                                _react2.default.createElement(
 	                                    'option',
-	                                    { value: '3' },
+	                                    { className: 'selected-disabled', value: '3', selected: this.state.currentPassenger.genderId == "3" },
 	                                    'Female'
 	                                )
 	                            )
@@ -36222,14 +36212,14 @@ webpackJsonp([0],[
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: this.state.validationErrors.email.length > 0 ? "errorOccur row" : "row" },
+	                        { className: this.state.validationErrors.passengerEmail.length > 0 ? "errorOccur row" : "row" },
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'col s12 m12 l12 input-field' },
-	                            _react2.default.createElement('input', { id: 'email', className: 'dialog-textarea', className: this.state.validationErrors.email.length > 0 ? "dialog-textarea invalid" : "dialog-textarea", placeholder: 'Email', type: 'text', ref: 'email', 'data-key': 'email', onBlur: this.onFieldInteraction.bind(this) }),
+	                            _react2.default.createElement('input', { id: 'email', className: this.state.validationErrors.passengerEmail.length > 0 ? "dialog-textarea invalid" : "dialog-textarea margin--zero", placeholder: 'Email', type: 'text', ref: 'email', defaultValue: this.state.currentPassenger.email, 'data-key': 'email', onBlur: this.onFieldInteraction.bind(this) }),
 	                            _react2.default.createElement(
 	                                'label',
-	                                { className: 'active', htmlFor: 'email', ref: 'emailError', 'data-error': this.state.validationErrors.email },
+	                                { className: 'active', htmlFor: 'email', ref: 'emailError', 'data-error': this.state.validationErrors.passengerEmail },
 	                                ' '
 	                            )
 	                        )
@@ -36240,10 +36230,10 @@ webpackJsonp([0],[
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'col s12 m12 l12 input-field' },
-	                            _react2.default.createElement('input', { id: 'phoneNumber', className: 'dialog-textarea', className: this.state.validationErrors.phoneNumber.length > 0 ? "dialog-textarea invalid" : "dialog-textarea", placeholder: 'Phone Number', 'data-key': 'phoneNumber', type: 'text', ref: 'phoneNumber', onBlur: this.onFieldInteraction.bind(this) }),
+	                            _react2.default.createElement('input', { id: 'phoneNumber', className: this.state.validationErrors.phoneNumber.length > 0 ? "dialog-textarea invalid" : "dialog-textarea margin--zero", placeholder: 'Phone Number', type: 'text', ref: 'phoneNumber', defaultValue: this.state.currentPassenger.phoneNumber, 'data-key': 'phoneNumber', onBlur: this.onFieldInteraction.bind(this) }),
 	                            _react2.default.createElement(
 	                                'label',
-	                                { className: 'active', htmlFor: 'phoneNumber', ref: 'phoneNumberError', 'data-error': this.state.validationErrors.phoneNumber },
+	                                { className: 'active', htmlFor: 'phoneNumber', ref: 'phoneError', 'data-error': this.state.validationErrors.phoneNumber },
 	                                ' '
 	                            )
 	                        )
@@ -36272,7 +36262,7 @@ webpackJsonp([0],[
 	                            'div',
 	                            { className: 'col s12 m12 l12 alpha omega' },
 	                            function () {
-	                                return _this2.state.showLoader ? _react2.default.createElement('img', { src: __webpack_require__(1247) }) : null;
+	                                return _this2.state.showLoader ? _react2.default.createElement('img', { src: __webpack_require__(1244) }) : null;
 	                            }(),
 	                            _react2.default.createElement(
 	                                'button',
@@ -36292,7 +36282,7 @@ webpackJsonp([0],[
 	module.exports = PassengerForm;
 
 /***/ },
-/* 1254 */
+/* 1251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -36307,15 +36297,15 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _flatButton = __webpack_require__(688);
+	var _flatButton = __webpack_require__(792);
 
 	var _flatButton2 = _interopRequireDefault(_flatButton);
 
-	var _photoCamera = __webpack_require__(1255);
+	var _photoCamera = __webpack_require__(1252);
 
 	var _photoCamera2 = _interopRequireDefault(_photoCamera);
 
-	var _reactDropzone = __webpack_require__(1256);
+	var _reactDropzone = __webpack_require__(1253);
 
 	var _reactDropzone2 = _interopRequireDefault(_reactDropzone);
 
@@ -36357,7 +36347,7 @@ webpackJsonp([0],[
 	        value: function render() {
 	            var _this2 = this;
 
-	            console.log('picture upload');
+	            // console.log('picture upload');
 	            return _react2.default.createElement(
 	                'div',
 	                null,
@@ -36397,7 +36387,7 @@ webpackJsonp([0],[
 	exports.default = PictureUpload;
 
 /***/ },
-/* 1255 */
+/* 1252 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -36410,11 +36400,11 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _pure = __webpack_require__(749);
+	var _pure = __webpack_require__(714);
 
 	var _pure2 = _interopRequireDefault(_pure);
 
-	var _svgIcon = __webpack_require__(804);
+	var _svgIcon = __webpack_require__(769);
 
 	var _svgIcon2 = _interopRequireDefault(_svgIcon);
 
@@ -36434,7 +36424,7 @@ webpackJsonp([0],[
 	exports.default = ImagePhotoCamera;
 
 /***/ },
-/* 1256 */
+/* 1253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	(function webpackUniversalModuleDefinition(root, factory) {
@@ -36813,7 +36803,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=index.js.map
 
 /***/ },
-/* 1257 */
+/* 1254 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -36922,7 +36912,7 @@ webpackJsonp([0],[
 	module.exports = new Validator(); //singleton
 
 /***/ },
-/* 1258 */
+/* 1255 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -36933,37 +36923,33 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _PopupHeader = __webpack_require__(1222);
-
-	var _PopupHeader2 = _interopRequireDefault(_PopupHeader);
-
-	var _Countries = __webpack_require__(1245);
+	var _Countries = __webpack_require__(1242);
 
 	var _Countries2 = _interopRequireDefault(_Countries);
 
-	var _rcDatepicker = __webpack_require__(917);
+	var _rcDatepicker = __webpack_require__(913);
 
 	var _moment = __webpack_require__(320);
 
 	var _moment2 = _interopRequireDefault(_moment);
 
-	var _PassengerPopupFooter = __webpack_require__(1246);
+	var _PassengerPopupFooter = __webpack_require__(1243);
 
 	var _PassengerPopupFooter2 = _interopRequireDefault(_PassengerPopupFooter);
 
-	var _PictureUpload = __webpack_require__(1254);
+	var _PictureUpload = __webpack_require__(1251);
 
 	var _PictureUpload2 = _interopRequireDefault(_PictureUpload);
 
-	var _reactAddonsUpdate = __webpack_require__(702);
+	var _reactAddonsUpdate = __webpack_require__(698);
 
 	var _reactAddonsUpdate2 = _interopRequireDefault(_reactAddonsUpdate);
 
-	var _Validator = __webpack_require__(1257);
+	var _Validator = __webpack_require__(1254);
 
 	var _Validator2 = _interopRequireDefault(_Validator);
 
-	var _ItineraryPassengerSource = __webpack_require__(1250);
+	var _ItineraryPassengerSource = __webpack_require__(1247);
 
 	var _ItineraryPassengerSource2 = _interopRequireDefault(_ItineraryPassengerSource);
 
@@ -37032,15 +37018,18 @@ webpackJsonp([0],[
 	                expiresOnDate: ""
 	            };
 
+	            var focusField;
 	            // form validations
 	            if (_Validator2.default.validRequired(this.state.currentPassport.passportNumber[0])) {
 	                this.state.isFormValid = false;
+	                focusField = focusField || 'passportNumber';
 	                this.state.validationErrors.passportNumber = 'Passport Number is required';
 	            }
 
 	            // form validations
 	            if (_Validator2.default.onlyAlphaNumeric(this.state.currentPassport.passportNumber[0])) {
 	                this.state.isFormValid = false;
+	                focusField = focusField || 'passportNumber';
 	                this.state.validationErrors.passportNumber = 'Passport Number should contains only alpha numeric characters';
 	            }
 
@@ -37071,6 +37060,9 @@ webpackJsonp([0],[
 	                }
 	            } else {
 	                this.forceUpdate(); // doing it to show validation errors
+	                if (focusField) {
+	                    this.refs[focusField].focus();
+	                }
 	            }
 	        }
 	    }, {
@@ -37125,7 +37117,7 @@ webpackJsonp([0],[
 	        value: function render() {
 	            var _this3 = this;
 
-	            console.log('in passport form');
+	            // console.log('in passport form');
 	            var isExistingPassenger = this.props.isExistingPassenger;
 	            var countryOptions = [];
 
@@ -37140,7 +37132,6 @@ webpackJsonp([0],[
 	            return _react2.default.createElement(
 	                'div',
 	                null,
-	                _react2.default.createElement(_PopupHeader2.default, { heading: 'Passenger', closePopup: this.props.closePopup }),
 	                _react2.default.createElement(
 	                    'form',
 	                    null,
@@ -37226,7 +37217,7 @@ webpackJsonp([0],[
 	                        { className: this.state.validationErrors.expiresOnDate.length > 0 ? "errorOccur row" : "row" },
 	                        _react2.default.createElement(
 	                            'div',
-	                            { className: 'col s12 m12 l12 form-input date-picker   input-field' },
+	                            { className: 'col s12 m12 l12 form-input date-picker   input-field alignment--fix' },
 	                            _react2.default.createElement(_rcDatepicker.DatePickerInput, {
 	                                id: 'expiresOnDate',
 	                                displayFormat: 'DD MMM YYYY',
@@ -37253,7 +37244,7 @@ webpackJsonp([0],[
 	                    _PassengerPopupFooter2.default,
 	                    null,
 	                    function () {
-	                        return _this3.state.showLoader ? _react2.default.createElement('img', { src: __webpack_require__(1247) }) : null;
+	                        return _this3.state.showLoader ? _react2.default.createElement('img', { src: __webpack_require__(1244) }) : null;
 	                    }(),
 	                    function () {
 	                        return isExistingPassenger ? _react2.default.createElement(
@@ -37286,7 +37277,7 @@ webpackJsonp([0],[
 	module.exports = PassportForm;
 
 /***/ },
-/* 1259 */
+/* 1256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37308,6 +37299,10 @@ webpackJsonp([0],[
 	var _Cache = __webpack_require__(281);
 
 	var _Cache2 = _interopRequireDefault(_Cache);
+
+	var _LoginActions = __webpack_require__(266);
+
+	var _LoginActions2 = _interopRequireDefault(_LoginActions);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -37338,7 +37333,9 @@ webpackJsonp([0],[
 
 	                if (err != null) {
 	                    //error occured
-	                    if (err.timeout === _Constants.TIMEOUT) {
+	                    if (err.status == 401) {
+	                        _LoginActions2.default.afterLogout(true);
+	                    } else if (err.timeout === _Constants.TIMEOUT) {
 	                        reject({ message: _Messages.ERROR_MESSAGES['timeout'] });
 	                    } else {
 	                        reject({ message: _Messages.ERROR_MESSAGES['500'] });
@@ -37355,7 +37352,7 @@ webpackJsonp([0],[
 	module.exports = UserSettingsSource;
 
 /***/ },
-/* 1260 */
+/* 1257 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37368,11 +37365,11 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _pure = __webpack_require__(749);
+	var _pure = __webpack_require__(714);
 
 	var _pure2 = _interopRequireDefault(_pure);
 
-	var _svgIcon = __webpack_require__(804);
+	var _svgIcon = __webpack_require__(769);
 
 	var _svgIcon2 = _interopRequireDefault(_svgIcon);
 
@@ -37391,7 +37388,7 @@ webpackJsonp([0],[
 	exports.default = NavigationRefresh;
 
 /***/ },
-/* 1261 */
+/* 1258 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37406,7 +37403,7 @@ webpackJsonp([0],[
 
 	var _Helpers2 = _interopRequireDefault(_Helpers);
 
-	var _ItineraryActions = __webpack_require__(1214);
+	var _ItineraryActions = __webpack_require__(1211);
 
 	var _ItineraryActions2 = _interopRequireDefault(_ItineraryActions);
 
@@ -37414,7 +37411,7 @@ webpackJsonp([0],[
 
 	var _moment2 = _interopRequireDefault(_moment);
 
-	var _ItineraryPreview = __webpack_require__(1217);
+	var _ItineraryPreview = __webpack_require__(1214);
 
 	var _ItineraryPreview2 = _interopRequireDefault(_ItineraryPreview);
 
@@ -37460,9 +37457,6 @@ webpackJsonp([0],[
 	      });
 	      if (!shouldUpdate) {
 	        shouldUpdate = that.state != nextState;
-	      }
-	      if (shouldUpdate) {
-	        console.log('updating itinerary row');
 	      }
 	      return shouldUpdate;
 	    }
@@ -37561,7 +37555,7 @@ webpackJsonp([0],[
 	                _react2.default.createElement(
 	                  'div',
 	                  { className: 'viewItinerary' },
-	                  _react2.default.createElement(_ItineraryPreview2.default, { showSnackMessage: _this2.props.showSnackMessage, order: order })
+	                  _react2.default.createElement(_ItineraryPreview2.default, { showSnackMessage: _this2.props.showSnackMessage, order: order, updateLeadPassenger: _this2.props.updateLeadPassenger })
 	                )
 	              )
 	            ) : null;
@@ -37577,8 +37571,8 @@ webpackJsonp([0],[
 	module.exports = ItineraryRow;
 
 /***/ },
-/* 1262 */,
-/* 1263 */
+/* 1259 */,
+/* 1260 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37593,15 +37587,15 @@ webpackJsonp([0],[
 
 	var _altContainer2 = _interopRequireDefault(_altContainer);
 
-	var _SignupActions = __webpack_require__(1264);
+	var _SignupActions = __webpack_require__(1261);
 
 	var _SignupActions2 = _interopRequireDefault(_SignupActions);
 
-	var _Signup = __webpack_require__(1266);
+	var _Signup = __webpack_require__(1263);
 
 	var _Signup2 = _interopRequireDefault(_Signup);
 
-	var _SignupStore = __webpack_require__(1267);
+	var _SignupStore = __webpack_require__(1264);
 
 	var _SignupStore2 = _interopRequireDefault(_SignupStore);
 
@@ -37659,7 +37653,7 @@ webpackJsonp([0],[
 	module.exports = SignupForm;
 
 /***/ },
-/* 1264 */
+/* 1261 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37670,17 +37664,15 @@ webpackJsonp([0],[
 
 	var _AltApp2 = _interopRequireDefault(_AltApp);
 
-	var _SignupSource = __webpack_require__(1265);
+	var _SignupSource = __webpack_require__(1262);
 
 	var _SignupSource2 = _interopRequireDefault(_SignupSource);
 
 	var _Messages = __webpack_require__(588);
 
-	var _Validator = __webpack_require__(1257);
+	var _Validator = __webpack_require__(1254);
 
 	var _Validator2 = _interopRequireDefault(_Validator);
-
-	var _xml2js = __webpack_require__(434);
 
 	var _LoginActions = __webpack_require__(266);
 
@@ -38013,7 +38005,7 @@ webpackJsonp([0],[
 	module.exports = _AltApp2.default.createActions(SignupActions);
 
 /***/ },
-/* 1265 */
+/* 1262 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38032,6 +38024,10 @@ webpackJsonp([0],[
 
 	var _superagent2 = _interopRequireDefault(_superagent);
 
+	var _LoginActions = __webpack_require__(266);
+
+	var _LoginActions2 = _interopRequireDefault(_LoginActions);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var SignupSource = {
@@ -38046,7 +38042,9 @@ webpackJsonp([0],[
 
 	        if (err != null) {
 	          //error occured
-	          if (err.timeout === _Constants.TIMEOUT) {
+	          if (err.status == 401) {
+	            _LoginActions2.default.afterLogout(true);
+	          } else if (err.timeout === _Constants.TIMEOUT) {
 	            reject({ message: _Messages.ERROR_MESSAGES['timeout'] });
 	          } else {
 	            reject({ message: _Messages.ERROR_MESSAGES['500'] });
@@ -38079,7 +38077,9 @@ webpackJsonp([0],[
 
 	        if (err != null) {
 	          //error occured
-	          if (err.timeout === _Constants.TIMEOUT) {
+	          if (err.status == 401) {
+	            _LoginActions2.default.afterLogout(true);
+	          } else if (err.timeout === _Constants.TIMEOUT) {
 	            reject({ message: _Messages.ERROR_MESSAGES['timeout'] });
 	          } else {
 	            reject({ message: _Messages.ERROR_MESSAGES['500'] });
@@ -38106,7 +38106,9 @@ webpackJsonp([0],[
 
 	        if (err != null) {
 	          //error occured
-	          if (err.timeout === _Constants.TIMEOUT) {
+	          if (err.status == 401) {
+	            _LoginActions2.default.afterLogout(true);
+	          } else if (err.timeout === _Constants.TIMEOUT) {
 	            reject({ message: _Messages.ERROR_MESSAGES['timeout'] });
 	          } else {
 	            reject({ message: _Messages.ERROR_MESSAGES['500'] });
@@ -38124,7 +38126,7 @@ webpackJsonp([0],[
 	module.exports = SignupSource;
 
 /***/ },
-/* 1266 */
+/* 1263 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {'use strict';
@@ -38135,19 +38137,19 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _marked = __webpack_require__(596);
+	var _marked = __webpack_require__(597);
 
 	var _marked2 = _interopRequireDefault(_marked);
 
-	var _autoComplete = __webpack_require__(727);
+	var _autoComplete = __webpack_require__(687);
 
 	var _autoComplete2 = _interopRequireDefault(_autoComplete);
 
-	var _SignupActions = __webpack_require__(1264);
+	var _SignupActions = __webpack_require__(1261);
 
 	var _SignupActions2 = _interopRequireDefault(_SignupActions);
 
-	var _dialog = __webpack_require__(915);
+	var _dialog = __webpack_require__(791);
 
 	var _dialog2 = _interopRequireDefault(_dialog);
 
@@ -38547,7 +38549,7 @@ webpackJsonp([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(318)))
 
 /***/ },
-/* 1267 */
+/* 1264 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38562,7 +38564,7 @@ webpackJsonp([0],[
 
 	var _AltApp2 = _interopRequireDefault(_AltApp);
 
-	var _SignupActions = __webpack_require__(1264);
+	var _SignupActions = __webpack_require__(1261);
 
 	var _SignupActions2 = _interopRequireDefault(_SignupActions);
 
@@ -38570,15 +38572,15 @@ webpackJsonp([0],[
 
 	var _reactCookie2 = _interopRequireDefault(_reactCookie);
 
-	var _menuItem = __webpack_require__(742);
+	var _menuItem = __webpack_require__(706);
 
 	var _menuItem2 = _interopRequireDefault(_menuItem);
 
-	var _jslinq = __webpack_require__(711);
+	var _jslinq = __webpack_require__(685);
 
 	var _jslinq2 = _interopRequireDefault(_jslinq);
 
-	var _Countries = __webpack_require__(1245);
+	var _Countries = __webpack_require__(1242);
 
 	var _Countries2 = _interopRequireDefault(_Countries);
 
@@ -38868,7 +38870,7 @@ webpackJsonp([0],[
 	module.exports = _AltApp2.default.createStore(SignupStore, 'SignupStore');
 
 /***/ },
-/* 1268 */
+/* 1265 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38887,7 +38889,7 @@ webpackJsonp([0],[
 
 	var _Cache2 = _interopRequireDefault(_Cache);
 
-	var _jslinq = __webpack_require__(711);
+	var _jslinq = __webpack_require__(685);
 
 	var _jslinq2 = _interopRequireDefault(_jslinq);
 
@@ -38895,11 +38897,11 @@ webpackJsonp([0],[
 
 	var _Helpers2 = _interopRequireDefault(_Helpers);
 
-	var _User = __webpack_require__(599);
+	var _User = __webpack_require__(600);
 
 	var _User2 = _interopRequireDefault(_User);
 
-	var _Leg = __webpack_require__(916);
+	var _Leg = __webpack_require__(912);
 
 	var _Leg2 = _interopRequireDefault(_Leg);
 
@@ -39051,11 +39053,11 @@ webpackJsonp([0],[
 	                          _react2.default.createElement(
 	                            'span',
 	                            { className: 'weather left' },
-	                            _react2.default.createElement('i', { className: 'weather-icon ' + leg.fromWeather.cssClass }),
+	                            _react2.default.createElement('i', { className: 'weather-icon ' + ((leg.fromWeather || {}).cssClass || '') }),
 	                            _react2.default.createElement(
 	                              'span',
 	                              { className: 'pls raf-tab-weather-lbl' },
-	                              leg.fromWeather.temp
+	                              (leg.fromWeather || {}).temp || ''
 	                            )
 	                          )
 	                        ),
@@ -39089,11 +39091,11 @@ webpackJsonp([0],[
 	                          _react2.default.createElement(
 	                            'span',
 	                            { className: 'weather right' },
-	                            _react2.default.createElement('i', { className: 'weather-icon ' + leg.toWeather.cssClass }),
+	                            _react2.default.createElement('i', { className: 'weather-icon ' + ((leg.toWeather || {}).cssClass || '') }),
 	                            _react2.default.createElement(
 	                              'span',
 	                              { className: 'pls raf-tab-weather-lbl' },
-	                              leg.toWeather.temp
+	                              (leg.toWeather || {}).temp || ''
 	                            )
 	                          )
 	                        )
@@ -39233,7 +39235,7 @@ webpackJsonp([0],[
 	module.exports = OrderConfirm;
 
 /***/ },
-/* 1269 */
+/* 1266 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39244,15 +39246,15 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ItineraryDetail = __webpack_require__(1270);
+	var _ItineraryDetail = __webpack_require__(1267);
 
 	var _ItineraryDetail2 = _interopRequireDefault(_ItineraryDetail);
 
-	var _ItineraryDetailStore = __webpack_require__(818);
+	var _ItineraryDetailStore = __webpack_require__(816);
 
 	var _ItineraryDetailStore2 = _interopRequireDefault(_ItineraryDetailStore);
 
-	var _ItineraryDetailActions = __webpack_require__(817);
+	var _ItineraryDetailActions = __webpack_require__(815);
 
 	var _ItineraryDetailActions2 = _interopRequireDefault(_ItineraryDetailActions);
 
@@ -39262,11 +39264,11 @@ webpackJsonp([0],[
 
 	var _reactRouter = __webpack_require__(165);
 
-	var _CateringStore = __webpack_require__(1238);
+	var _CateringStore = __webpack_require__(1235);
 
 	var _CateringStore2 = _interopRequireDefault(_CateringStore);
 
-	var _ConfirmDialog = __webpack_require__(914);
+	var _ConfirmDialog = __webpack_require__(790);
 
 	var _ConfirmDialog2 = _interopRequireDefault(_ConfirmDialog);
 
@@ -39297,10 +39299,12 @@ webpackJsonp([0],[
 	        value: function componentDidMount() {
 	            this.context.router.setRouteLeaveHook(this.props.route, this.routerWillLeave.bind(this));
 	            document.title = 'Itinerary Details | VistaJet';
+
 	            _ItineraryDetailActions2.default.loadSingleItinerary({
 	                key: this.props.params.orderKey,
 	                uniqueIdentifier: this.props.params.orderId,
-	                legId: this.props.params.legId
+	                legId: this.props.params.legId,
+	                status: this.props.params.status
 	            });
 	        }
 	    }, {
@@ -39368,7 +39372,7 @@ webpackJsonp([0],[
 	module.exports = (0, _reactRouter.withRouter)(ItineraryDetailPage);
 
 /***/ },
-/* 1270 */
+/* 1267 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39379,47 +39383,47 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _NavHeader = __webpack_require__(1271);
+	var _NavHeader = __webpack_require__(1268);
 
 	var _NavHeader2 = _interopRequireDefault(_NavHeader);
 
-	var _FlightDetails = __webpack_require__(1272);
+	var _FlightDetails = __webpack_require__(1269);
 
 	var _FlightDetails2 = _interopRequireDefault(_FlightDetails);
 
-	var _CateringSelection = __webpack_require__(1275);
+	var _CateringSelection = __webpack_require__(1272);
 
 	var _CateringSelection2 = _interopRequireDefault(_CateringSelection);
 
-	var _GroundTransport = __webpack_require__(1279);
+	var _GroundTransport = __webpack_require__(1276);
 
 	var _GroundTransport2 = _interopRequireDefault(_GroundTransport);
 
-	var _Crew = __webpack_require__(1283);
+	var _Crew = __webpack_require__(1281);
 
 	var _Crew2 = _interopRequireDefault(_Crew);
 
-	var _Passenger = __webpack_require__(1285);
+	var _Passenger = __webpack_require__(1283);
 
 	var _Passenger2 = _interopRequireDefault(_Passenger);
 
-	var _FBO = __webpack_require__(1287);
+	var _FBO = __webpack_require__(1285);
 
 	var _FBO2 = _interopRequireDefault(_FBO);
 
-	var _OtherServices = __webpack_require__(1289);
+	var _OtherServices = __webpack_require__(1287);
 
 	var _OtherServices2 = _interopRequireDefault(_OtherServices);
 
-	var _Weather = __webpack_require__(1292);
+	var _Weather = __webpack_require__(1291);
 
 	var _Weather2 = _interopRequireDefault(_Weather);
 
-	var _OperationalNotes = __webpack_require__(1294);
+	var _OperationalNotes = __webpack_require__(1293);
 
 	var _OperationalNotes2 = _interopRequireDefault(_OperationalNotes);
 
-	var _MapForm = __webpack_require__(815);
+	var _MapForm = __webpack_require__(813);
 
 	var _MapForm2 = _interopRequireDefault(_MapForm);
 
@@ -39467,7 +39471,7 @@ webpackJsonp([0],[
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'container' },
-	                    _react2.default.createElement(_NavHeader2.default, { order: this.props.itineraryDetail, activeLeg: this.props.activeLeg }),
+	                    _react2.default.createElement(_NavHeader2.default, { order: this.props.itineraryDetail, upcomingOrPast: this.props.isUpcomingOrPast, activeLeg: this.props.activeLeg }),
 	                    _react2.default.createElement(
 	                        'div',
 	                        { className: 'bgcolordark' },
@@ -39495,9 +39499,9 @@ webpackJsonp([0],[
 	                                _react2.default.createElement(_Crew2.default, { activeLeg: this.props.activeLeg }),
 	                                _react2.default.createElement(_Passenger2.default, { activeLeg: this.props.activeLeg }),
 	                                _react2.default.createElement(_FBO2.default, { activeLeg: this.props.activeLeg }),
-	                                _react2.default.createElement(_CateringSelection2.default, { showSnackMessage: this.props.showSnackMessage, activeLeg: this.props.activeLeg }),
-	                                _react2.default.createElement(_GroundTransport2.default, { activeLeg: this.props.activeLeg }),
-	                                _react2.default.createElement(_OtherServices2.default, { activeLeg: this.props.activeLeg }),
+	                                _react2.default.createElement(_CateringSelection2.default, { activeLeg: this.props.activeLeg, showSnackMessage: this.props.showSnackMessage }),
+	                                _react2.default.createElement(_GroundTransport2.default, { activeLeg: this.props.activeLeg, upcomingOrPast: this.props.isUpcomingOrPast }),
+	                                _react2.default.createElement(_OtherServices2.default, { activeLeg: this.props.activeLeg, upcomingOrPast: this.props.isUpcomingOrPast }),
 	                                _react2.default.createElement(_Weather2.default, { activeLeg: this.props.activeLeg }),
 	                                _react2.default.createElement(_OperationalNotes2.default, null)
 	                            )
@@ -39514,7 +39518,7 @@ webpackJsonp([0],[
 	module.exports = ItineraryDetail;
 
 /***/ },
-/* 1271 */
+/* 1268 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39529,7 +39533,7 @@ webpackJsonp([0],[
 
 	var _Helpers2 = _interopRequireDefault(_Helpers);
 
-	var _ItineraryDetailActions = __webpack_require__(817);
+	var _ItineraryDetailActions = __webpack_require__(815);
 
 	var _ItineraryDetailActions2 = _interopRequireDefault(_ItineraryDetailActions);
 
@@ -39576,18 +39580,18 @@ webpackJsonp([0],[
 	                var orderLink = '#/itineraries/itinerary-detail/' + this.props.order.orderKey + '/' + this.props.order.orderId + "/";
 	                for (var i = 0; i < legs.length; i++) {
 	                    var key = 'uniqueIdentifier';
-	                    var link = orderLink + legs[i][key];
+	                    var link = orderLink + legs[i][key] + '/' + this.props.upcomingOrPast;
 	                    pointerClass = legs[i][key] == this.props.activeLeg[key] ? "activeleg-pointer" : null;
-	                    legLinks.push(_react2.default.createElement('a', { href: link, key: legs[i][key], className: pointerClass, onClick: this.showLeg.bind(this, legs[i]) }));
+	                    legLinks.push(_react2.default.createElement('a', { href: link, key: legs[i][key], className: pointerClass }));
 
-	                    if (legs[i][key] == this.props.activeLeg[key]) {
+	                    if (legs[i].uniqueIdentifier == this.props.activeLeg.uniqueIdentifier) {
 	                        if (legs[i - 1]) {
 	                            prev.leg = legs[i - 1];
-	                            prev.prevLink = orderLink + legs[i - 1][key];
+	                            prev.prevLink = orderLink + legs[i - 1].uniqueIdentifier + '/' + this.props.upcomingOrPast;
 	                        }
 	                        if (legs[i + 1]) {
 	                            next.leg = legs[i + 1];
-	                            next.nextLink = orderLink + legs[i + 1][key];
+	                            next.nextLink = orderLink + legs[i + 1].uniqueIdentifier + '/' + this.props.upcomingOrPast;
 	                        }
 	                    }
 	                };
@@ -39628,13 +39632,13 @@ webpackJsonp([0],[
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'col s6 m6 l6 center-align' },
-	                            legLinks.length > 1 && prev.prevLink != null ? _react2.default.createElement('a', { className: 'PrevLink', href: prev.prevLink, onClick: this.showLeg.bind(this, prev.leg) }) : _react2.default.createElement('span', { className: 'PrevLink Disable' }),
+	                            legLinks.length > 1 && prev.prevLink != null ? _react2.default.createElement('a', { className: 'PrevLink', href: prev.prevLink }) : _react2.default.createElement('span', { className: 'PrevLink Disable' }),
 	                            _react2.default.createElement(
 	                                'h4',
 	                                { className: 'flightConn' },
 	                                headerText
 	                            ),
-	                            legLinks.length > 1 && next.nextLink != null ? _react2.default.createElement('a', { className: 'nxtLink', href: next.nextLink, onClick: this.showLeg.bind(this, next.leg) }) : _react2.default.createElement('span', { className: 'nxtLink Disable' }),
+	                            legLinks.length > 1 && next.nextLink != null ? _react2.default.createElement('a', { className: 'nxtLink', href: next.nextLink }) : _react2.default.createElement('span', { className: 'nxtLink Disable' }),
 	                            _react2.default.createElement(
 	                                'div',
 	                                { className: 'carousel-itineraries center' },
@@ -39658,7 +39662,7 @@ webpackJsonp([0],[
 	module.exports = NavHeader;
 
 /***/ },
-/* 1272 */
+/* 1269 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39669,11 +39673,11 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _navHeader = __webpack_require__(1273);
+	var _navHeader = __webpack_require__(1270);
 
 	var _navHeader2 = _interopRequireDefault(_navHeader);
 
-	var _Flight = __webpack_require__(1274);
+	var _Flight = __webpack_require__(1271);
 
 	var _Flight2 = _interopRequireDefault(_Flight);
 
@@ -39685,7 +39689,7 @@ webpackJsonp([0],[
 
 	var _Helpers2 = _interopRequireDefault(_Helpers);
 
-	var _ItineraryDetailActions = __webpack_require__(817);
+	var _ItineraryDetailActions = __webpack_require__(815);
 
 	var _ItineraryDetailActions2 = _interopRequireDefault(_ItineraryDetailActions);
 
@@ -39710,7 +39714,7 @@ webpackJsonp([0],[
 	        key: 'render',
 	        value: function render() {
 
-	            var icon = this.props.activeLeg ? __webpack_require__(1108)("./" + this.props.activeLeg.aircraft.code + '.png') : _navHeader2.default;
+	            var icon = this.props.activeLeg ? __webpack_require__(1104)("./" + this.props.activeLeg.aircraft.code + '.png') : _navHeader2.default;
 	            var aircraftText = this.props.activeLeg ? this.props.activeLeg.aircraft.displayName : "";
 	            var operatorInfo = '';
 	            //TODO: Move below variable in constants
@@ -39787,7 +39791,7 @@ webpackJsonp([0],[
 	                        'li',
 	                        null,
 	                        _react2.default.createElement(
-	                            'p',
+	                            'span',
 	                            null,
 	                            operatorInfo
 	                        ),
@@ -39823,13 +39827,13 @@ webpackJsonp([0],[
 	module.exports = FlightDetails;
 
 /***/ },
-/* 1273 */
+/* 1270 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "images/nav-header.jpg";
 
 /***/ },
-/* 1274 */
+/* 1271 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39911,7 +39915,7 @@ webpackJsonp([0],[
 	module.exports = Flight;
 
 /***/ },
-/* 1275 */
+/* 1272 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39926,37 +39930,37 @@ webpackJsonp([0],[
 
 	var _altContainer2 = _interopRequireDefault(_altContainer);
 
-	var _CateringStore = __webpack_require__(1238);
+	var _CateringStore = __webpack_require__(1235);
 
 	var _CateringStore2 = _interopRequireDefault(_CateringStore);
 
-	var _CateringActions = __webpack_require__(1229);
+	var _CateringActions = __webpack_require__(1226);
 
 	var _CateringActions2 = _interopRequireDefault(_CateringActions);
 
-	var _DetailBox = __webpack_require__(1276);
+	var _DetailBox = __webpack_require__(1273);
 
 	var _DetailBox2 = _interopRequireDefault(_DetailBox);
 
-	var _DialogPopup = __webpack_require__(1220);
+	var _DialogPopup = __webpack_require__(1217);
 
 	var _DialogPopup2 = _interopRequireDefault(_DialogPopup);
 
-	var _PopupHeader = __webpack_require__(1222);
+	var _PopupHeader = __webpack_require__(1219);
 
 	var _PopupHeader2 = _interopRequireDefault(_PopupHeader);
 
-	var _CateringDetail = __webpack_require__(1278);
+	var _CateringDetail = __webpack_require__(1275);
 
 	var _CateringDetail2 = _interopRequireDefault(_CateringDetail);
 
 	var _Messages = __webpack_require__(588);
 
-	var _TabSelector = __webpack_require__(1223);
+	var _TabSelector = __webpack_require__(1220);
 
 	var _TabSelector2 = _interopRequireDefault(_TabSelector);
 
-	var _MenuItemSelection = __webpack_require__(1237);
+	var _MenuItemSelection = __webpack_require__(1234);
 
 	var _MenuItemSelection2 = _interopRequireDefault(_MenuItemSelection);
 
@@ -39964,7 +39968,7 @@ webpackJsonp([0],[
 
 	var _Helpers2 = _interopRequireDefault(_Helpers);
 
-	var _ConfirmDialog = __webpack_require__(914);
+	var _ConfirmDialog = __webpack_require__(790);
 
 	var _ConfirmDialog2 = _interopRequireDefault(_ConfirmDialog);
 
@@ -39993,7 +39997,7 @@ webpackJsonp([0],[
 	    _createClass(CateringSelection, [{
 	        key: 'handleAdd',
 	        value: function handleAdd() {
-	            this.setState({ open: false }); //make it true to enable
+	            this.setState({ open: true });
 	        }
 	    }, {
 	        key: 'handleConfirmCancel',
@@ -40021,7 +40025,7 @@ webpackJsonp([0],[
 	    }, {
 	        key: 'render',
 	        value: function render() {
-	            var cateringDetail = _Messages.CATERING_NOT_FOUND;
+	            var cateringDetail = _Helpers2.default.isPast(this.props.activeLeg) ? _Messages.CATERING_NOT_AVAILABLE : _Messages.CATERING_NOT_FOUND;
 	            var data = "Add Catering is Selected";
 	            var self = this;
 	            var disableDialog = true;
@@ -40071,7 +40075,7 @@ webpackJsonp([0],[
 	module.exports = CateringSelection;
 
 /***/ },
-/* 1276 */
+/* 1273 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40082,7 +40086,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Title = __webpack_require__(1277);
+	var _Title = __webpack_require__(1274);
 
 	var _Title2 = _interopRequireDefault(_Title);
 
@@ -40125,10 +40129,10 @@ webpackJsonp([0],[
 	module.exports = DetailBox;
 
 /***/ },
-/* 1277 */
+/* 1274 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -40154,18 +40158,18 @@ webpackJsonp([0],[
 	    }
 
 	    _createClass(Title, [{
-	        key: "render",
+	        key: 'render',
 	        value: function render() {
 	            return _react2.default.createElement(
-	                "div",
-	                { className: "iview-title" },
-	                _react2.default.createElement("i", { className: this.props.iconClass }),
+	                'div',
+	                { className: 'iview-title' },
+	                _react2.default.createElement('i', { className: this.props.iconClass }),
 	                _react2.default.createElement(
-	                    "h4",
+	                    'h4',
 	                    null,
 	                    this.props.title
 	                ),
-	                !this.props.disableDialog && this.props.handleAdd ? _react2.default.createElement("a", { onClick: this.props.handleAdd, className: "icon-plus" }) : null
+	                !this.props.disableDialog && this.props.handleAdd ? _react2.default.createElement('a', { onClick: this.props.handleAdd, className: this.props.titleIcon ? this.props.titleIcon : 'icon-plus' }) : null
 	            );
 	        }
 	    }]);
@@ -40176,7 +40180,7 @@ webpackJsonp([0],[
 	module.exports = Title;
 
 /***/ },
-/* 1278 */
+/* 1275 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40266,7 +40270,7 @@ webpackJsonp([0],[
 	                        statusToShow = _react2.default.createElement(
 	                            'span',
 	                            null,
-	                            _Messages.CATERING_NOT_FOUND
+	                            _Messages.CATERING_NOT_AVAILABLE
 	                        );
 	                    } else {
 	                        statusToShow = _react2.default.createElement(
@@ -40292,7 +40296,7 @@ webpackJsonp([0],[
 	module.exports = CateringDetail;
 
 /***/ },
-/* 1279 */
+/* 1276 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40303,29 +40307,33 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _DetailBox = __webpack_require__(1276);
+	var _DetailBox = __webpack_require__(1273);
 
 	var _DetailBox2 = _interopRequireDefault(_DetailBox);
 
-	var _GroundTransportDetail = __webpack_require__(1280);
+	var _GroundTransportDetail = __webpack_require__(1277);
 
 	var _GroundTransportDetail2 = _interopRequireDefault(_GroundTransportDetail);
 
-	var _GroundTransportForm = __webpack_require__(1281);
+	var _GroundTransportForm = __webpack_require__(1278);
 
 	var _GroundTransportForm2 = _interopRequireDefault(_GroundTransportForm);
 
+	var _GroundTransportView = __webpack_require__(1280);
+
+	var _GroundTransportView2 = _interopRequireDefault(_GroundTransportView);
+
 	var _Messages = __webpack_require__(588);
 
-	var _DialogPopup = __webpack_require__(1220);
+	var _DialogPopup = __webpack_require__(1217);
 
 	var _DialogPopup2 = _interopRequireDefault(_DialogPopup);
 
-	var _ItineraryServicesSource = __webpack_require__(1282);
+	var _ItineraryServicesSource = __webpack_require__(1279);
 
 	var _ItineraryServicesSource2 = _interopRequireDefault(_ItineraryServicesSource);
 
-	var _ItineraryDetailActions = __webpack_require__(817);
+	var _ItineraryDetailActions = __webpack_require__(815);
 
 	var _ItineraryDetailActions2 = _interopRequireDefault(_ItineraryDetailActions);
 
@@ -40364,7 +40372,8 @@ webpackJsonp([0],[
 	                    transportServiceTitle: [formState.serviceTypeName],
 	                    transportServiceStatus: ['Unconfirmed'], //by default
 	                    onDeparture: [formState.onDeparture.toString()],
-	                    notes: [formState.instructions]
+	                    notes: [formState.instructions],
+	                    transportPictureUrl: formState.transportPictureUrl
 	                };
 	                var payload = {
 	                    serviceTypeId: formState.serviceTypeId,
@@ -40395,7 +40404,9 @@ webpackJsonp([0],[
 
 	        _this.state = {
 	            transports: [],
-	            open: false
+	            transportView: null,
+	            open: false,
+	            openView: false
 	        };
 	        return _this;
 	    }
@@ -40403,7 +40414,17 @@ webpackJsonp([0],[
 	    _createClass(GroundTransport, [{
 	        key: 'handleAdd',
 	        value: function handleAdd() {
-	            this.setState({ open: false }); //make it true to enable
+	            this.setState({ open: true });
+	        }
+	    }, {
+	        key: 'handleGroundTransportViewOpen',
+	        value: function handleGroundTransportViewOpen(transport) {
+	            this.setState({ openView: true, transportView: transport.transport });
+	        }
+	    }, {
+	        key: 'handleGroundTransportViewClose',
+	        value: function handleGroundTransportViewClose() {
+	            this.setState({ openView: false });
 	        }
 	    }, {
 	        key: 'componentWillReceiveProps',
@@ -40422,21 +40443,26 @@ webpackJsonp([0],[
 	            var transportRows = [];
 
 	            if (this.state.transports.length > 0) {
-
+	                var that = this;
 	                this.state.transports.forEach(function (transport, i) {
-	                    transportRows.push(_react2.default.createElement(_GroundTransportDetail2.default, { key: i, transport: transport }));
+	                    transportRows.push(_react2.default.createElement(_GroundTransportDetail2.default, { key: i, transport: transport, handleOpen: that.handleGroundTransportViewOpen.bind(that) }));
 	                });
 	            } else {
 	                transportRows.push(_Messages.GROUND_TRANSPORT_NOT_FOUND);
 	            }
 	            return _react2.default.createElement(
 	                _DetailBox2.default,
-	                { title: 'Ground Transportation', ref: 'ground', iconClass: 'icon-GroundTransport', handleAdd: this.handleAdd.bind(this) },
+	                { disableDialog: this.props.activeLeg.isPast, title: 'Ground Transportation', ref: 'ground', iconClass: 'icon-GroundTransport', handleAdd: this.handleAdd.bind(this) },
 	                transportRows,
 	                _react2.default.createElement(
 	                    _DialogPopup2.default,
 	                    { open: this.state.open, ref: 'dialog', handleClose: this.handleGroundTransportClose },
 	                    _react2.default.createElement(_GroundTransportForm2.default, { ref: 'transportform', submitText: 'Request Ground Transport', activeLeg: this.props.activeLeg, closePopup: this.handleGroundTransportClose })
+	                ),
+	                _react2.default.createElement(
+	                    _DialogPopup2.default,
+	                    { open: this.state.openView, ref: 'dialog', handleClose: this.handleGroundTransportViewClose.bind(this) },
+	                    _react2.default.createElement(_GroundTransportView2.default, { ref: 'transportview', submitText: 'View Ground Transport', transportView: this.state.transportView, activeLeg: this.props.activeLeg, closePopup: this.handleGroundTransportViewClose.bind(this) })
 	                )
 	            );
 	        }
@@ -40448,7 +40474,7 @@ webpackJsonp([0],[
 	module.exports = GroundTransport;
 
 /***/ },
-/* 1280 */
+/* 1277 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40480,12 +40506,17 @@ webpackJsonp([0],[
 	    }
 
 	    _createClass(GroundTransportDetail, [{
+	        key: 'handleOpen',
+	        value: function handleOpen() {
+	            this.props.handleOpen({ 'transport': this.state });
+	        }
+	    }, {
 	        key: 'render',
 	        value: function render() {
 	            var transport = this.state;
 	            return _react2.default.createElement(
 	                'ul',
-	                { className: 'OtherServices' },
+	                { className: 'OtherServices', onClick: this.handleOpen.bind(this) },
 	                _react2.default.createElement(
 	                    'li',
 	                    null,
@@ -40498,11 +40529,7 @@ webpackJsonp([0],[
 	                            'span',
 	                            { className: 'on-request' },
 	                            'On Request'
-	                        ) : _react2.default.createElement(
-	                            'span',
-	                            { className: 'confirm' },
-	                            'Confirmed'
-	                        )
+	                        ) : null
 	                    )
 	                )
 	            );
@@ -40515,7 +40542,7 @@ webpackJsonp([0],[
 	module.exports = GroundTransportDetail;
 
 /***/ },
-/* 1281 */
+/* 1278 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40526,17 +40553,21 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ItineraryServicesSource = __webpack_require__(1282);
+	var _ItineraryServicesSource = __webpack_require__(1279);
 
 	var _ItineraryServicesSource2 = _interopRequireDefault(_ItineraryServicesSource);
 
-	var _PopupHeader = __webpack_require__(1222);
+	var _PopupHeader = __webpack_require__(1219);
 
 	var _PopupHeader2 = _interopRequireDefault(_PopupHeader);
 
 	var _Helpers = __webpack_require__(317);
 
 	var _Helpers2 = _interopRequireDefault(_Helpers);
+
+	var _jslinq = __webpack_require__(685);
+
+	var _jslinq2 = _interopRequireDefault(_jslinq);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -40558,10 +40589,12 @@ webpackJsonp([0],[
 	            services: [],
 	            serviceTypeId: null,
 	            serviceTypeName: '',
-	            instructions: 'test',
+	            instructions: '',
 	            onDeparture: true,
 	            activeFlag: _Helpers2.default.getFlagClass(props.activeLeg.departureAirport),
-	            showLoader: true
+	            showLoader: true,
+	            disabledBtn: true,
+	            transportPictureUrl: null
 	        };
 
 	        return _this;
@@ -40582,12 +40615,14 @@ webpackJsonp([0],[
 	    }, {
 	        key: 'onServiceChange',
 	        value: function onServiceChange(e) {
+	            if (e.target.value == '') this.setState({ disabledBtn: true });else this.setState({ disabledBtn: false });
 	            var serviceTypeId = e.target.value;
 	            this.setState({ serviceTypeId: serviceTypeId });
-	            var serviceTypeName = JsLinq(this.state.services).where(function (e) {
+	            var serviceTypeName = (0, _jslinq2.default)(this.state.services).where(function (e) {
 	                return e.id[0] == serviceTypeId;
 	            }).toList()[0];
-	            this.setState({ serviceTypeName: serviceTypeName.name[0] });
+	            this.setState({ serviceTypeName: serviceTypeName.hasOwnProperty('externalName') ? serviceTypeName.externalName[0] : serviceTypeName.name[0],
+	                transportPictureUrl: serviceTypeName.iconUrl[0] });
 	        }
 	    }, {
 	        key: 'onInstructionChange',
@@ -40603,11 +40638,11 @@ webpackJsonp([0],[
 	                _this2.setState({
 	                    services: data.services.serviceTypes.serviceTypes[0].serviceType,
 	                    serviceTypeId: data.services.serviceTypes.serviceTypes[0].serviceType[0].id[0], // take first one
-	                    serviceTypeName: data.services.serviceTypes.serviceTypes[0].serviceType[0].name[0], // take first one
+	                    serviceTypeName: data.services.serviceTypes.serviceTypes[0].serviceType[0].externalName ? data.services.serviceTypes.serviceTypes[0].serviceType[0].externalName[0] : data.services.serviceTypes.serviceTypes[0].serviceType[0].name[0], // take first one
 	                    showLoader: false
 	                });
 	            }).catch(function (res) {
-	                _this2.setState({ showLoader: false, serviceTypeId: '', services: [{ id: [''], name: ['Service not available'] }] });
+	                _this2.setState({ showLoader: false, disabledBtn: true, serviceTypeId: '', services: [{ id: [''], name: ['Service not available'] }] });
 	            });;
 	        }
 	    }, {
@@ -40638,7 +40673,7 @@ webpackJsonp([0],[
 	                    servicesOptions.push(_react2.default.createElement(
 	                        'option',
 	                        { key: service.id[0], value: service.id[0] },
-	                        service.name[0]
+	                        service.hasOwnProperty('externalName') ? service.externalName[0] : service.name[0]
 	                    ));
 	                });
 	            }
@@ -40679,7 +40714,12 @@ webpackJsonp([0],[
 	                                { className: 'col s12 m12 l12 alpha omega border-fix' },
 	                                _react2.default.createElement(
 	                                    'select',
-	                                    { className: 'dialog-select indent-fix', onChange: that.onServiceChange.bind(that) },
+	                                    { className: 'dialog-select indent-fix', disabled: this.state.showLoader, onChange: that.onServiceChange.bind(that) },
+	                                    _react2.default.createElement(
+	                                        'option',
+	                                        { value: '', disabled: true, selected: true },
+	                                        'Available Ground Transport'
+	                                    ),
 	                                    servicesOptions
 	                                )
 	                            )
@@ -40701,11 +40741,11 @@ webpackJsonp([0],[
 	                            'div',
 	                            { className: 'col s12 m12 l12' },
 	                            function () {
-	                                return _this3.state.showLoader ? _react2.default.createElement('img', { src: __webpack_require__(1247) }) : null;
+	                                return _this3.state.showLoader ? _react2.default.createElement('img', { src: __webpack_require__(1244) }) : null;
 	                            }(),
 	                            _react2.default.createElement(
 	                                'button',
-	                                { primary: 'true', disabled: this.state.showLoader, className: 'btn btn-request-gt', onClick: this.props.closePopup, type: 'button' },
+	                                { primary: 'true', disabled: this.state.showLoader || this.state.disabledBtn, className: 'btn btn-request-gt', onClick: this.props.closePopup, type: 'button' },
 	                                this.props.submitText
 	                            )
 	                        )
@@ -40721,7 +40761,7 @@ webpackJsonp([0],[
 	module.exports = GroundTransportForm;
 
 /***/ },
-/* 1282 */
+/* 1279 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40744,9 +40784,13 @@ webpackJsonp([0],[
 
 	var _superagent2 = _interopRequireDefault(_superagent);
 
-	var _jslinq = __webpack_require__(711);
+	var _jslinq = __webpack_require__(685);
 
 	var _jslinq2 = _interopRequireDefault(_jslinq);
+
+	var _LoginActions = __webpack_require__(266);
+
+	var _LoginActions2 = _interopRequireDefault(_LoginActions);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -40775,7 +40819,9 @@ webpackJsonp([0],[
 
 	                if (err != null) {
 	                    //error occured
-	                    if (err.timeout === _Constants.TIMEOUT) {
+	                    if (err.status == 401) {
+	                        _LoginActions2.default.afterLogout(true);
+	                    } else if (err.timeout === _Constants.TIMEOUT) {
 	                        reject({ message: _Messages.ERROR_MESSAGES['timeout'] });
 	                    } else {
 	                        reject({ message: _Messages.ERROR_MESSAGES['500'] });
@@ -40812,7 +40858,9 @@ webpackJsonp([0],[
 
 	                if (err != null) {
 	                    //error occured
-	                    if (err.timeout === _Constants.TIMEOUT) {
+	                    if (err.status == 401) {
+	                        _LoginActions2.default.afterLogout(true);
+	                    } else if (err.timeout === _Constants.TIMEOUT) {
 	                        reject({ message: _Messages.ERROR_MESSAGES['timeout'] });
 	                    } else {
 	                        reject({ message: _Messages.ERROR_MESSAGES['500'] });
@@ -40829,7 +40877,7 @@ webpackJsonp([0],[
 	module.exports = ItineraryServicesSource;
 
 /***/ },
-/* 1283 */
+/* 1280 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40840,11 +40888,156 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _DetailBox = __webpack_require__(1276);
+	var _PopupHeader = __webpack_require__(1219);
+
+	var _PopupHeader2 = _interopRequireDefault(_PopupHeader);
+
+	var _Helpers = __webpack_require__(317);
+
+	var _Helpers2 = _interopRequireDefault(_Helpers);
+
+	var _vistajet_logo_splash = __webpack_require__(1128);
+
+	var _vistajet_logo_splash2 = _interopRequireDefault(_vistajet_logo_splash);
+
+	var _superagent = __webpack_require__(589);
+
+	var _superagent2 = _interopRequireDefault(_superagent);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var GroundTransportView = function (_React$Component) {
+	    _inherits(GroundTransportView, _React$Component);
+
+	    function GroundTransportView(props) {
+	        _classCallCheck(this, GroundTransportView);
+
+	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(GroundTransportView).call(this, props));
+
+	        _this.state = { imageUrl: _vistajet_logo_splash2.default };
+	        return _this;
+	    }
+
+	    _createClass(GroundTransportView, [{
+	        key: 'componentWillMount',
+	        value: function componentWillMount() {
+
+	            //testing if image is successfully downloading only then show it else show default image
+	            var self = this;
+	            if (this.props.transportView.transportPictureUrl) {
+	                _superagent2.default.get(this.props.transportView.transportPictureUrl).end(function (err, res) {
+
+	                    if (err == null) {
+	                        // no error in downloading image
+	                        self.setState({ imageUrl: self.props.transportView.transportPictureUrl });
+	                    }
+	                });
+	            }
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+
+	            console.log('ground transport view');
+
+	            var airportObj = '';
+	            var gtObj = this.props.transportView || {};
+
+	            if ((gtObj.onDeparture || [])[0] == "true") {
+	                airportObj = this.props.activeLeg.departureAirport;
+	            } else {
+	                airportObj = this.props.activeLeg.arrivalAirport;
+	            }
+
+	            var airportName = ((airportObj || {}).itineraryAirportName || [])[0];
+
+	            return _react2.default.createElement(
+	                'div',
+	                null,
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'row' },
+	                    _react2.default.createElement(_PopupHeader2.default, { heading: 'View Ground Transport', closePopup: this.props.closePopup })
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'row center-align padding-top-15' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'col s12 m12 l12' },
+	                        _react2.default.createElement('i', { className: "flag-style flag-icon " + _Helpers2.default.getFlagClass(airportObj) }),
+	                        _react2.default.createElement(
+	                            'span',
+	                            { className: 'gt-airport' },
+	                            airportName
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'row' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'col s7 m8 l9 left-align' },
+	                        _react2.default.createElement('img', { className: 'img-cntrl-gt', src: this.state.imageUrl }),
+	                        '  ',
+	                        (gtObj.transportServiceTitle || [])[0]
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'col s5 m4 l3 right-align' },
+	                        _react2.default.createElement(
+	                            'span',
+	                            { className: 'on-request' },
+	                            (gtObj.transportServiceStatus || [])[0].toLowerCase() != 'confirmed' ? _react2.default.createElement(
+	                                'span',
+	                                { className: 'on-request' },
+	                                'On Request'
+	                            ) : null
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'row' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'col s12 m12 l12 gt-os-noteview' },
+	                        (gtObj.notes || [])[0]
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return GroundTransportView;
+	}(_react2.default.Component);
+
+	module.exports = GroundTransportView;
+
+/***/ },
+/* 1281 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _DetailBox = __webpack_require__(1273);
 
 	var _DetailBox2 = _interopRequireDefault(_DetailBox);
 
-	var _CrewDetail = __webpack_require__(1284);
+	var _CrewDetail = __webpack_require__(1282);
 
 	var _CrewDetail2 = _interopRequireDefault(_CrewDetail);
 
@@ -40904,7 +41097,7 @@ webpackJsonp([0],[
 	module.exports = Crew;
 
 /***/ },
-/* 1284 */
+/* 1282 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -40963,7 +41156,7 @@ webpackJsonp([0],[
 	module.exports = CrewDetail;
 
 /***/ },
-/* 1285 */
+/* 1283 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40974,21 +41167,21 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _DetailBox = __webpack_require__(1276);
+	var _DetailBox = __webpack_require__(1273);
 
 	var _DetailBox2 = _interopRequireDefault(_DetailBox);
 
-	var _PassengerDetail = __webpack_require__(1286);
+	var _PassengerDetail = __webpack_require__(1284);
 
 	var _PassengerDetail2 = _interopRequireDefault(_PassengerDetail);
 
-	var _DialogPopup = __webpack_require__(1220);
+	var _DialogPopup = __webpack_require__(1217);
 
 	var _DialogPopup2 = _interopRequireDefault(_DialogPopup);
 
 	var _Messages = __webpack_require__(588);
 
-	var _PassengerPopup = __webpack_require__(1239);
+	var _PassengerPopup = __webpack_require__(1236);
 
 	var _PassengerPopup2 = _interopRequireDefault(_PassengerPopup);
 
@@ -41033,7 +41226,6 @@ webpackJsonp([0],[
 	            var title = "Passenger";
 	            var data = "Add Passenger is Selected";
 	            var passengerRows = [];
-	            var passengersToBeAnnounced = 0;
 	            var that = this;
 
 	            if (that.props.activeLeg.hasOwnProperty('passengersInfo')) {
@@ -41044,25 +41236,19 @@ webpackJsonp([0],[
 	                        // I need to add class noBorder to the last fbo row
 	                        borderClass = 'noBorder';
 	                    }
-	                    passengerRows.push(_react2.default.createElement(_PassengerDetail2.default, { key: _Helpers2.default.guid(), passenger: passenger, borderClass: borderClass }));
-	                });
-	            }
 
-	            if (this.props.activeLeg.hasOwnProperty('numberOfPassenger')) {
-	                passengersToBeAnnounced = parseInt(this.props.activeLeg.numberOfPassenger[0]) - parseInt(passengerRows.length);
+	                    if (passenger.leadPassenger && passenger.leadPassenger[0] == 'true') {
+	                        passengerRows.unshift(_react2.default.createElement(_PassengerDetail2.default, { key: _Helpers2.default.guid(), passenger: passenger, borderClass: borderClass }));
+	                    } else {
+	                        passengerRows.push(_react2.default.createElement(_PassengerDetail2.default, { key: _Helpers2.default.guid(), passenger: passenger, borderClass: borderClass }));
+	                    }
+	                });
 	            }
 
 	            return _react2.default.createElement(
 	                _DetailBox2.default,
-	                { title: 'Passengers', iconClass: 'icon-Passengers', handleAdd: this.handleAdd.bind(this) },
+	                { title: 'Passengers', disableDialog: this.props.activeLeg.isPast, iconClass: 'icon-Passengers', titleIcon: 'icon-passenger-action', handleAdd: this.handleAdd.bind(this) },
 	                passengerRows,
-	                function () {
-	                    return passengersToBeAnnounced ? _react2.default.createElement(
-	                        'div',
-	                        { className: 'light-gray pad5' },
-	                        passengersToBeAnnounced + ' passengers to be announced'
-	                    ) : null;
-	                }(),
 	                _react2.default.createElement(
 	                    _DialogPopup2.default,
 	                    { open: this.state.open, ref: 'dialog', handleClose: this.handlePassengerClose },
@@ -41078,7 +41264,7 @@ webpackJsonp([0],[
 	module.exports = Passenger;
 
 /***/ },
-/* 1286 */
+/* 1284 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41134,12 +41320,6 @@ webpackJsonp([0],[
 	                    passportData.push(_react2.default.createElement(
 	                        'p',
 	                        { key: _Helpers2.default.guid() },
-	                        ' Nationality : ',
-	                        activePassports[0].passportCountry
-	                    ));
-	                    passportData.push(_react2.default.createElement(
-	                        'p',
-	                        { key: _Helpers2.default.guid() },
 	                        ' Passport Number : ',
 	                        activePassports[0].passportNumber
 	                    ));
@@ -41152,17 +41332,23 @@ webpackJsonp([0],[
 	                }
 	            }
 
+	            var dateOfBirth = '-';
+	            if ((passenger || {}).dateOfBirth) {
+	                dateOfBirth = typeof passenger.dateOfBirth === 'string' ? passenger.dateOfBirth : passenger.dateOfBirth[0];
+	                dateOfBirth = _moment2.default.utc(dateOfBirth).format('D-MMM-YY');
+	            }
+
 	            return _react2.default.createElement(
 	                'details',
 	                { className: borderClass },
 	                _react2.default.createElement(
 	                    'summary',
-	                    null,
+	                    { className: 'Passenger--accordion' },
 	                    passenger.passengerFirstName + ' ' + passenger.passengerLastName,
 	                    _react2.default.createElement(
 	                        'span',
 	                        { className: 'LeadPassenger' },
-	                        passenger.leadPassenger && passenger.leadPassenger[0] == 'true' ? "(Lead Passenger)" : ""
+	                        passenger.leadPassenger && (passenger.leadPassenger[0] == 'true' || passenger.leadPassenger[0] == true) ? "(Lead Passenger)" : ""
 	                    ),
 	                    ' ',
 	                    passenger.isApproved[0] != 'true' ? _react2.default.createElement(
@@ -41175,6 +41361,12 @@ webpackJsonp([0],[
 	                        'Confirmed'
 	                    )
 	                ),
+	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    ' Date of Birth : ',
+	                    dateOfBirth
+	                ),
 	                passportData
 	            );
 	        }
@@ -41186,7 +41378,7 @@ webpackJsonp([0],[
 	module.exports = PassengerDetail;
 
 /***/ },
-/* 1287 */
+/* 1285 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41197,11 +41389,11 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _DetailBox = __webpack_require__(1276);
+	var _DetailBox = __webpack_require__(1273);
 
 	var _DetailBox2 = _interopRequireDefault(_DetailBox);
 
-	var _FBORow = __webpack_require__(1288);
+	var _FBORow = __webpack_require__(1286);
 
 	var _FBORow2 = _interopRequireDefault(_FBORow);
 
@@ -41267,7 +41459,7 @@ webpackJsonp([0],[
 	module.exports = FBO;
 
 /***/ },
-/* 1288 */
+/* 1286 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41282,7 +41474,7 @@ webpackJsonp([0],[
 
 	var _Cache2 = _interopRequireDefault(_Cache);
 
-	var _jslinq = __webpack_require__(711);
+	var _jslinq = __webpack_require__(685);
 
 	var _jslinq2 = _interopRequireDefault(_jslinq);
 
@@ -41381,7 +41573,7 @@ webpackJsonp([0],[
 	module.exports = FBORow;
 
 /***/ },
-/* 1289 */
+/* 1287 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41392,29 +41584,33 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _DetailBox = __webpack_require__(1276);
+	var _DetailBox = __webpack_require__(1273);
 
 	var _DetailBox2 = _interopRequireDefault(_DetailBox);
 
-	var _OtherServicesDetail = __webpack_require__(1290);
+	var _OtherServicesDetail = __webpack_require__(1288);
 
 	var _OtherServicesDetail2 = _interopRequireDefault(_OtherServicesDetail);
 
+	var _OtherServicesView = __webpack_require__(1289);
+
+	var _OtherServicesView2 = _interopRequireDefault(_OtherServicesView);
+
 	var _Messages = __webpack_require__(588);
 
-	var _DialogPopup = __webpack_require__(1220);
+	var _DialogPopup = __webpack_require__(1217);
 
 	var _DialogPopup2 = _interopRequireDefault(_DialogPopup);
 
-	var _OtherServicesForm = __webpack_require__(1291);
+	var _OtherServicesForm = __webpack_require__(1290);
 
 	var _OtherServicesForm2 = _interopRequireDefault(_OtherServicesForm);
 
-	var _ItineraryServicesSource = __webpack_require__(1282);
+	var _ItineraryServicesSource = __webpack_require__(1279);
 
 	var _ItineraryServicesSource2 = _interopRequireDefault(_ItineraryServicesSource);
 
-	var _ItineraryDetailActions = __webpack_require__(817);
+	var _ItineraryDetailActions = __webpack_require__(815);
 
 	var _ItineraryDetailActions2 = _interopRequireDefault(_ItineraryDetailActions);
 
@@ -41452,7 +41648,8 @@ webpackJsonp([0],[
 	                    title: [formState.serviceTypeName],
 	                    status: ['Unconfirmed'], //by default
 	                    onDeparture: [formState.onDeparture.toString()],
-	                    notes: [formState.instructions]
+	                    notes: [formState.instructions],
+	                    pictureUrl: formState.pictureUrl
 	                };
 	                var payload = {
 	                    serviceTypeId: formState.serviceTypeId,
@@ -41488,7 +41685,9 @@ webpackJsonp([0],[
 
 	        _this.state = {
 	            otherServices: [],
-	            open: false
+	            otherServicesView: null,
+	            open: false,
+	            openView: false
 	        };
 	        return _this;
 	    }
@@ -41496,7 +41695,17 @@ webpackJsonp([0],[
 	    _createClass(OtherServices, [{
 	        key: 'handleAdd',
 	        value: function handleAdd() {
-	            this.setState({ open: false }); //make it true to enable
+	            this.setState({ open: true }); //make it true to enable
+	        }
+	    }, {
+	        key: 'handleOtherServicesViewOpen',
+	        value: function handleOtherServicesViewOpen(otherService) {
+	            this.setState({ openView: true, otherServiceView: otherService.otherService });
+	        }
+	    }, {
+	        key: 'handleOtherServicesViewClose',
+	        value: function handleOtherServicesViewClose() {
+	            this.setState({ openView: false });
 	        }
 	    }, {
 	        key: 'componentWillReceiveProps',
@@ -41513,9 +41722,9 @@ webpackJsonp([0],[
 	            var otherServicesRows = [];
 
 	            if (this.state.otherServices.length > 0) {
-
+	                var that = this;
 	                this.state.otherServices.forEach(function (service, i) {
-	                    otherServicesRows.push(_react2.default.createElement(_OtherServicesDetail2.default, { key: i, service: service }));
+	                    otherServicesRows.push(_react2.default.createElement(_OtherServicesDetail2.default, { key: i, service: service, handleOpen: that.handleOtherServicesViewOpen.bind(that) }));
 	                });
 	            } else {
 	                otherServicesRows.push(_Messages.OTHER_SERVICES_NOT_FOUND);
@@ -41523,12 +41732,17 @@ webpackJsonp([0],[
 
 	            return _react2.default.createElement(
 	                _DetailBox2.default,
-	                { title: 'Other Services', iconClass: 'icon-OtherServices', handleAdd: this.handleAdd.bind(this) },
+	                { disableDialog: this.props.activeLeg.isPast, title: 'Other Services', iconClass: 'icon-OtherServices', handleAdd: this.handleAdd.bind(this) },
 	                otherServicesRows,
 	                _react2.default.createElement(
 	                    _DialogPopup2.default,
 	                    { open: this.state.open, ref: 'dialog', handleClose: this.handleOtherServicesClose },
 	                    _react2.default.createElement(_OtherServicesForm2.default, { ref: 'otherServicesForm', activeLeg: this.props.activeLeg, submitText: 'Request Other Service', closePopup: this.handleOtherServicesClose })
+	                ),
+	                _react2.default.createElement(
+	                    _DialogPopup2.default,
+	                    { open: this.state.openView, ref: 'dialog', handleClose: this.handleOtherServicesViewClose.bind(this) },
+	                    _react2.default.createElement(_OtherServicesView2.default, { ref: 'otherServicesview', submitText: 'View Other Service', otherServiceView: this.state.otherServiceView, activeLeg: this.props.activeLeg, closePopup: this.handleOtherServicesViewClose.bind(this) })
 	                )
 	            );
 	        }
@@ -41540,7 +41754,7 @@ webpackJsonp([0],[
 	module.exports = OtherServices;
 
 /***/ },
-/* 1290 */
+/* 1288 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41572,12 +41786,17 @@ webpackJsonp([0],[
 	    }
 
 	    _createClass(OtherServicesDetail, [{
+	        key: 'handleOpen',
+	        value: function handleOpen() {
+	            this.props.handleOpen({ 'otherService': this.state });
+	        }
+	    }, {
 	        key: 'render',
 	        value: function render() {
 	            var service = this.state;
 	            return _react2.default.createElement(
 	                'ul',
-	                { className: 'OtherServices' },
+	                { className: 'OtherServices', onClick: this.handleOpen.bind(this) },
 	                _react2.default.createElement(
 	                    'li',
 	                    null,
@@ -41590,11 +41809,7 @@ webpackJsonp([0],[
 	                            'span',
 	                            { className: 'on-request' },
 	                            'On Request'
-	                        ) : _react2.default.createElement(
-	                            'span',
-	                            { className: 'confirm' },
-	                            'Confirmed'
-	                        )
+	                        ) : null
 	                    )
 	                )
 	            );
@@ -41607,7 +41822,7 @@ webpackJsonp([0],[
 	module.exports = OtherServicesDetail;
 
 /***/ },
-/* 1291 */
+/* 1289 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41618,11 +41833,153 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ItineraryServicesSource = __webpack_require__(1282);
+	var _PopupHeader = __webpack_require__(1219);
+
+	var _PopupHeader2 = _interopRequireDefault(_PopupHeader);
+
+	var _Helpers = __webpack_require__(317);
+
+	var _Helpers2 = _interopRequireDefault(_Helpers);
+
+	var _vistajet_logo_splash = __webpack_require__(1128);
+
+	var _vistajet_logo_splash2 = _interopRequireDefault(_vistajet_logo_splash);
+
+	var _superagent = __webpack_require__(589);
+
+	var _superagent2 = _interopRequireDefault(_superagent);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var OtherServicesView = function (_React$Component) {
+	    _inherits(OtherServicesView, _React$Component);
+
+	    function OtherServicesView(props) {
+	        _classCallCheck(this, OtherServicesView);
+
+	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(OtherServicesView).call(this, props));
+
+	        _this.state = { imageUrl: _vistajet_logo_splash2.default };
+	        return _this;
+	    }
+
+	    _createClass(OtherServicesView, [{
+	        key: 'componentWillMount',
+	        value: function componentWillMount() {
+	            //testing if image is successfully downloading only then show it else show default image
+	            var self = this;
+	            if (this.props.otherServiceView.pictureUrl) {
+	                _superagent2.default.get(this.props.otherServiceView.pictureUrl).end(function (err, res) {
+
+	                    if (err == null) {
+	                        // no error in downloading image
+	                        self.setState({ imageUrl: self.props.otherServiceView.pictureUrl });
+	                    }
+	                });
+	            }
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+
+	            // console.log('other service view');
+	            var airportObj = '';
+	            var osObj = this.props.otherServiceView || {};
+
+	            if ((osObj.onDeparture || [])[0] == "true") {
+	                airportObj = this.props.activeLeg.departureAirport;
+	            } else {
+	                airportObj = this.props.activeLeg.arrivalAirport;
+	            }
+	            var airportName = ((airportObj || {}).itineraryAirportName || [])[0];
+
+	            return _react2.default.createElement(
+	                'div',
+	                null,
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'row' },
+	                    _react2.default.createElement(_PopupHeader2.default, { heading: 'View Other Services', closePopup: this.props.closePopup })
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'row center-align padding-top-15' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'col s12 m12 l12' },
+	                        _react2.default.createElement('i', { className: "flag-style flag-icon " + _Helpers2.default.getFlagClass(airportObj) }),
+	                        _react2.default.createElement(
+	                            'span',
+	                            { className: 'gt-airport' },
+	                            airportName
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'row' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'col s7 m8 l9 left-align' },
+	                        _react2.default.createElement('img', { className: 'img-cntrl-os', src: this.state.imageUrl }),
+	                        '  ',
+	                        (osObj.title || [])[0]
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'col s5 m4 l3 right-align' },
+	                        _react2.default.createElement(
+	                            'span',
+	                            { className: 'on-request' },
+	                            (osObj.status || [])[0].toLowerCase() != 'confirmed' ? _react2.default.createElement(
+	                                'span',
+	                                { className: 'on-request' },
+	                                'On Request'
+	                            ) : null
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'row' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'col s12 m12 l12 gt-os-noteview' },
+	                        (osObj.notes || [])[0]
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return OtherServicesView;
+	}(_react2.default.Component);
+
+	module.exports = OtherServicesView;
+
+/***/ },
+/* 1290 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _ItineraryServicesSource = __webpack_require__(1279);
 
 	var _ItineraryServicesSource2 = _interopRequireDefault(_ItineraryServicesSource);
 
-	var _jslinq = __webpack_require__(711);
+	var _jslinq = __webpack_require__(685);
 
 	var _jslinq2 = _interopRequireDefault(_jslinq);
 
@@ -41630,7 +41987,7 @@ webpackJsonp([0],[
 
 	var _Helpers2 = _interopRequireDefault(_Helpers);
 
-	var _PopupHeader = __webpack_require__(1222);
+	var _PopupHeader = __webpack_require__(1219);
 
 	var _PopupHeader2 = _interopRequireDefault(_PopupHeader);
 
@@ -41657,7 +42014,9 @@ webpackJsonp([0],[
 	            instructions: '',
 	            onDeparture: true,
 	            activeFlag: _Helpers2.default.getFlagClass(props.activeLeg.departureAirport),
-	            showLoader: true
+	            showLoader: true,
+	            disabledBtn: true,
+	            pictureUrl: null
 	        };
 	        return _this;
 	    }
@@ -41677,12 +42036,14 @@ webpackJsonp([0],[
 	    }, {
 	        key: 'onServiceChange',
 	        value: function onServiceChange(e) {
+	            if (e.target.value == '') this.setState({ disabledBtn: true });else this.setState({ disabledBtn: false });
 	            var serviceTypeId = e.target.value;
 	            this.setState({ serviceTypeId: serviceTypeId });
 	            var serviceTypeName = (0, _jslinq2.default)(this.state.services).where(function (e) {
 	                return e.id[0] == serviceTypeId;
 	            }).toList()[0];
-	            this.setState({ serviceTypeName: serviceTypeName.name[0] });
+	            this.setState({ serviceTypeName: serviceTypeName.hasOwnProperty('externalName') ? serviceTypeName.externalName[0] : serviceTypeName.name[0],
+	                pictureUrl: serviceTypeName.iconUrl[0] });
 	        }
 	    }, {
 	        key: 'onInstructionChange',
@@ -41698,11 +42059,11 @@ webpackJsonp([0],[
 	                _this2.setState({
 	                    services: data.services.serviceTypes.serviceTypes[0].serviceType,
 	                    serviceTypeId: data.services.serviceTypes.serviceTypes[0].serviceType[0].id[0], // take first one
-	                    serviceTypeName: data.services.serviceTypes.serviceTypes[0].serviceType[0].name[0], // take first one
+	                    serviceTypeName: data.services.serviceTypes.serviceTypes[0].serviceType[0].externalName ? data.services.serviceTypes.serviceTypes[0].serviceType[0].externalName[0] : data.services.serviceTypes.serviceTypes[0].serviceType[0].name[0], // take first one
 	                    showLoader: false
 	                });
 	            }).catch(function (res) {
-	                _this2.setState({ showLoader: false, serviceTypeId: '', services: [{ id: [''], name: ['Service not available'] }] });
+	                _this2.setState({ showLoader: false, disabledBtn: true, serviceTypeId: '', services: [{ id: [''], name: ['Service not available'] }] });
 	            });
 	        }
 	    }, {
@@ -41729,12 +42090,11 @@ webpackJsonp([0],[
 
 	            if (this.state.services.length) {
 	                var availableServices = this.state.services;
-
 	                availableServices.forEach(function (service) {
 	                    servicesOptions.push(_react2.default.createElement(
 	                        'option',
 	                        { key: service.id[0], value: service.id[0] },
-	                        service.name[0]
+	                        service.hasOwnProperty('externalName') ? service.externalName[0] : service.name[0]
 	                    ));
 	                });
 	            }
@@ -41776,6 +42136,11 @@ webpackJsonp([0],[
 	                                _react2.default.createElement(
 	                                    'select',
 	                                    { className: 'dialog-select indent-fix', disabled: this.state.showLoader, onChange: that.onServiceChange.bind(that) },
+	                                    _react2.default.createElement(
+	                                        'option',
+	                                        { value: '', disabled: true, selected: true },
+	                                        'Available Other Services'
+	                                    ),
 	                                    servicesOptions
 	                                )
 	                            )
@@ -41797,11 +42162,11 @@ webpackJsonp([0],[
 	                            'div',
 	                            { className: 'col s12 m12 l12' },
 	                            function () {
-	                                return _this3.state.showLoader ? _react2.default.createElement('img', { src: __webpack_require__(1247) }) : null;
+	                                return _this3.state.showLoader ? _react2.default.createElement('img', { src: __webpack_require__(1244) }) : null;
 	                            }(),
 	                            _react2.default.createElement(
 	                                'button',
-	                                { primary: 'true', disabled: this.state.showLoader, className: 'btn btn-request-gt', onClick: this.props.closePopup, type: 'button' },
+	                                { primary: 'true', disabled: this.state.showLoader || this.state.disabledBtn, className: 'btn btn-request-gt', onClick: this.props.closePopup, type: 'button' },
 	                                this.props.submitText
 	                            )
 	                        )
@@ -41817,7 +42182,7 @@ webpackJsonp([0],[
 	module.exports = OtherServicesForm;
 
 /***/ },
-/* 1292 */
+/* 1291 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41828,23 +42193,23 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _DetailBox = __webpack_require__(1276);
+	var _DetailBox = __webpack_require__(1273);
 
 	var _DetailBox2 = _interopRequireDefault(_DetailBox);
 
-	var _PopupHeader = __webpack_require__(1222);
+	var _PopupHeader = __webpack_require__(1219);
 
 	var _PopupHeader2 = _interopRequireDefault(_PopupHeader);
 
-	var _WeatherDetail = __webpack_require__(1293);
+	var _WeatherDetail = __webpack_require__(1292);
 
 	var _WeatherDetail2 = _interopRequireDefault(_WeatherDetail);
 
-	var _DialogPopup = __webpack_require__(1220);
+	var _DialogPopup = __webpack_require__(1217);
 
 	var _DialogPopup2 = _interopRequireDefault(_DialogPopup);
 
-	var _ItinerarySource = __webpack_require__(712);
+	var _ItinerarySource = __webpack_require__(686);
 
 	var _ItinerarySource2 = _interopRequireDefault(_ItinerarySource);
 
@@ -41967,9 +42332,8 @@ webpackJsonp([0],[
 	                    }
 	                });
 	                var indexOfCurrent = 0;
-	                var currentLocalDate = new Date();
 	                hourly.some(function (hr, hrIndex) {
-	                    if (hr.hour == currentLocalDate.getHours()) {
+	                    if (hr.hour == d.getHours()) {
 	                        indexOfCurrent = hrIndex;
 	                        return true;
 	                    }
@@ -42002,57 +42366,13 @@ webpackJsonp([0],[
 	                        )
 	                    );
 	                });
-	                var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-	                var daily = [];
-	                var currenttime = leg.data.currently.time;
-	                leg.data.daily.data.forEach(function (d) {
-	                    if (!!d.icon) {
-	                        var day = { day: '', temp: '', icon: '', css: '' };
-	                        var date = _Helpers2.default.getUtcDateObj(currenttime * 1000);
-	                        day.day = days[date.getDay()]; //(date.getHours() > 12) ? (date.getHours() - 12) + "PM" : (date.getHours()) + "AM";
-	                        css = _Constants.WEATHER_ICONS[d.icon];
-	                        if (css == undefined) {
-	                            css = 'sun';
-	                        }
-	                        day.css = css;
-	                        day.icon = d.icon;
-	                        day.temp = self.state.isScaleC ? ((parseInt(d.temperatureMax) - 32) * 5 / 9).toFixed(1) : parseInt(d.temperatureMax).toFixed(1);
-	                        daily.push(day);
-	                    }
-	                });
-	                daily = daily.splice(0, 5);
-	                var dailyWeather = daily.map(function (item) {
-	                    return _react2.default.createElement(
-	                        'ul',
-	                        { className: 'row margin-zero', key: Math.random() },
-	                        _react2.default.createElement(
-	                            'li',
-	                            { className: 'col s4 center-align' },
-	                            item.day
-	                        ),
-	                        _react2.default.createElement(
-	                            'li',
-	                            { className: 'col s4 center-align weather-hourly-detail' },
-	                            _react2.default.createElement(
-	                                'i',
-	                                { className: "weather-icon " + item.css },
-	                                ' '
-	                            )
-	                        ),
-	                        _react2.default.createElement(
-	                            'li',
-	                            { className: 'col s4 center-align' },
-	                            item.temp
-	                        )
-	                    );
-	                });
 	                var fahrenheitClass = this.state.isScaleC ? "inline-btn fahrnheight " : "inline-btn fahrnheight active";
 	                var CelsiusClass = this.state.isScaleC ? "inline-btn celcius  active" : "inline-btn celcius  ";
 	            }
 
 	            return _react2.default.createElement(
 	                _DetailBox2.default,
-	                { title: 'weather', iconClass: 'icon-Weather', handleAdd: this.handleOpen.bind(this) },
+	                { title: 'weather', iconClass: 'icon-Weather', titleIcon: 'icon-see-weather-action', handleAdd: this.handleOpen.bind(this) },
 	                weatherDetail,
 	                _react2.default.createElement(
 	                    _DialogPopup2.default,
@@ -42122,11 +42442,6 @@ webpackJsonp([0],[
 	                        'div',
 	                        { className: 'row weather-style' },
 	                        hourlyWeather
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'daily-weather' },
-	                        dailyWeather
 	                    )
 	                )
 	            );
@@ -42139,7 +42454,7 @@ webpackJsonp([0],[
 	module.exports = Weather;
 
 /***/ },
-/* 1293 */
+/* 1292 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42150,7 +42465,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ItinerarySource = __webpack_require__(712);
+	var _ItinerarySource = __webpack_require__(686);
 
 	var _ItinerarySource2 = _interopRequireDefault(_ItinerarySource);
 
@@ -42196,10 +42511,9 @@ webpackJsonp([0],[
 
 	            var leg = this.props.leg;
 	            if (!!this.props.fromWeather) {
-	                var d = _Helpers2.default.getUtcDateObj(this.props.leg.arrivalAirportTimeLocal[0]);
+	                var d = new Date(leg.arrivalAirportTimeLocal[0]);
 	                var day = d.toDateString();
 	            }
-
 	            return _react2.default.createElement(
 	                'div',
 	                null,
@@ -42221,7 +42535,7 @@ webpackJsonp([0],[
 	                            _react2.default.createElement('span', { className: '' }),
 	                            _react2.default.createElement(
 	                                'i',
-	                                { className: "weather-icon " + _this2.props.fromWeather.cssClass },
+	                                { className: "weather-icon " + ((_this2.props.fromWeather || {}).cssClass || '') },
 	                                ' '
 	                            ),
 	                            _react2.default.createElement(
@@ -42252,7 +42566,7 @@ webpackJsonp([0],[
 	module.exports = WeatherDetail;
 
 /***/ },
-/* 1294 */
+/* 1293 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42263,7 +42577,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _DetailBox = __webpack_require__(1276);
+	var _DetailBox = __webpack_require__(1273);
 
 	var _DetailBox2 = _interopRequireDefault(_DetailBox);
 
@@ -42314,74 +42628,7 @@ webpackJsonp([0],[
 	module.exports = OperationalNotes;
 
 /***/ },
-/* 1295 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _ItineraryActions = __webpack_require__(1214);
-
-	var _ItineraryActions2 = _interopRequireDefault(_ItineraryActions);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var EditItinerary = function (_React$Component) {
-	    _inherits(EditItinerary, _React$Component);
-
-	    function EditItinerary() {
-	        _classCallCheck(this, EditItinerary);
-
-	        return _possibleConstructorReturn(this, Object.getPrototypeOf(EditItinerary).apply(this, arguments));
-	    }
-
-	    _createClass(EditItinerary, [{
-	        key: 'componentWillMount',
-	        value: function componentWillMount() {
-	            document.title = 'Edit Itineraries | VistaJet';
-
-	            //loading required data
-	            _ItineraryActions2.default.loadSingleItinerary({ key: this.props.params.orderKey, uniqueIdentifier: this.props.params.orderId });
-	        }
-	    }, {
-	        key: 'render',
-	        value: function render() {
-	            return _react2.default.createElement(
-	                'div',
-	                { className: 'container-fluid' },
-	                _react2.default.createElement(
-	                    'h3',
-	                    null,
-	                    ' Edit Itninerary  ',
-	                    this.props.params.orderKey,
-	                    ' ',
-	                    this.props.params.orderId,
-	                    ' ',
-	                    this.props.params.legId,
-	                    ' '
-	                )
-	            );
-	        }
-	    }]);
-
-	    return EditItinerary;
-	}(_react2.default.Component);
-
-	module.exports = EditItinerary;
-
-/***/ },
-/* 1296 */
+/* 1294 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42400,15 +42647,15 @@ webpackJsonp([0],[
 
 	var _altContainer2 = _interopRequireDefault(_altContainer);
 
-	var _TermsConditionsStore = __webpack_require__(1297);
+	var _TermsConditionsStore = __webpack_require__(1295);
 
 	var _TermsConditionsStore2 = _interopRequireDefault(_TermsConditionsStore);
 
-	var _TermsConditions = __webpack_require__(1300);
+	var _TermsConditions = __webpack_require__(1298);
 
 	var _TermsConditions2 = _interopRequireDefault(_TermsConditions);
 
-	var _TermsConditionsActions = __webpack_require__(1298);
+	var _TermsConditionsActions = __webpack_require__(1296);
 
 	var _TermsConditionsActions2 = _interopRequireDefault(_TermsConditionsActions);
 
@@ -42453,7 +42700,7 @@ webpackJsonp([0],[
 	exports.default = TermsConditionsPage;
 
 /***/ },
-/* 1297 */
+/* 1295 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42468,7 +42715,7 @@ webpackJsonp([0],[
 
 	var _AltApp2 = _interopRequireDefault(_AltApp);
 
-	var _TermsConditionsActions = __webpack_require__(1298);
+	var _TermsConditionsActions = __webpack_require__(1296);
 
 	var _TermsConditionsActions2 = _interopRequireDefault(_TermsConditionsActions);
 
@@ -42499,7 +42746,7 @@ webpackJsonp([0],[
 	exports.default = _AltApp2.default.createStore(TermsConditionsStore, 'TermsConditionsStore');
 
 /***/ },
-/* 1298 */
+/* 1296 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42522,7 +42769,7 @@ webpackJsonp([0],[
 
 	var _Helpers2 = _interopRequireDefault(_Helpers);
 
-	var _TermsConditionsSource = __webpack_require__(1299);
+	var _TermsConditionsSource = __webpack_require__(1297);
 
 	var _TermsConditionsSource2 = _interopRequireDefault(_TermsConditionsSource);
 
@@ -42566,7 +42813,7 @@ webpackJsonp([0],[
 	exports.default = _AltApp2.default.createActions(TermsConditionsActions);
 
 /***/ },
-/* 1299 */
+/* 1297 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42615,7 +42862,7 @@ webpackJsonp([0],[
 	exports.default = TermsConditionsSource;
 
 /***/ },
-/* 1300 */
+/* 1298 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42630,11 +42877,11 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _cardText = __webpack_require__(1301);
+	var _cardText = __webpack_require__(1299);
 
 	var _cardText2 = _interopRequireDefault(_cardText);
 
-	var _card = __webpack_require__(1302);
+	var _card = __webpack_require__(1300);
 
 	var _card2 = _interopRequireDefault(_card);
 
@@ -42743,12 +42990,12 @@ webpackJsonp([0],[
 	exports.default = TermsConditions;
 
 /***/ },
+/* 1299 */,
+/* 1300 */,
 /* 1301 */,
 /* 1302 */,
 /* 1303 */,
-/* 1304 */,
-/* 1305 */,
-/* 1306 */
+/* 1304 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42765,15 +43012,15 @@ webpackJsonp([0],[
 
 	var _reactRouter = __webpack_require__(165);
 
-	var _MyAccountActions = __webpack_require__(681);
+	var _MyAccountActions = __webpack_require__(795);
 
 	var _MyAccountActions2 = _interopRequireDefault(_MyAccountActions);
 
-	var _vjTheme = __webpack_require__(1307);
+	var _vjTheme = __webpack_require__(1305);
 
 	var _vjTheme2 = _interopRequireDefault(_vjTheme);
 
-	var _getMuiTheme = __webpack_require__(624);
+	var _getMuiTheme = __webpack_require__(625);
 
 	var _getMuiTheme2 = _interopRequireDefault(_getMuiTheme);
 
@@ -42877,7 +43124,7 @@ webpackJsonp([0],[
 	exports.default = MyAccountPage;
 
 /***/ },
-/* 1307 */
+/* 1305 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42886,9 +43133,9 @@ webpackJsonp([0],[
 	  value: true
 	});
 
-	var _colors = __webpack_require__(634);
+	var _colors = __webpack_require__(635);
 
-	var _colorManipulator = __webpack_require__(631);
+	var _colorManipulator = __webpack_require__(632);
 
 	var _colorManipulator2 = _interopRequireDefault(_colorManipulator);
 
@@ -42945,7 +43192,7 @@ webpackJsonp([0],[
 	};
 
 /***/ },
-/* 1308 */
+/* 1306 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42964,15 +43211,15 @@ webpackJsonp([0],[
 
 	var _altContainer2 = _interopRequireDefault(_altContainer);
 
-	var _AccountBalanceSection = __webpack_require__(1309);
+	var _AccountBalanceSection = __webpack_require__(1307);
 
 	var _AccountBalanceSection2 = _interopRequireDefault(_AccountBalanceSection);
 
-	var _AccountBalanceStore = __webpack_require__(1373);
+	var _AccountBalanceStore = __webpack_require__(1371);
 
 	var _AccountBalanceStore2 = _interopRequireDefault(_AccountBalanceStore);
 
-	var _AccountBalanceActions = __webpack_require__(1374);
+	var _AccountBalanceActions = __webpack_require__(1372);
 
 	var _AccountBalanceActions2 = _interopRequireDefault(_AccountBalanceActions);
 
@@ -43020,7 +43267,7 @@ webpackJsonp([0],[
 	exports.default = AccountBalancePage;
 
 /***/ },
-/* 1309 */
+/* 1307 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {'use strict';
@@ -43035,19 +43282,19 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _iconButton = __webpack_require__(806);
+	var _iconButton = __webpack_require__(783);
 
 	var _iconButton2 = _interopRequireDefault(_iconButton);
 
-	var _FleetDetail = __webpack_require__(1310);
+	var _FleetDetail = __webpack_require__(1308);
 
 	var _FleetDetail2 = _interopRequireDefault(_FleetDetail);
 
-	var _airplanemodeActive = __webpack_require__(1372);
+	var _airplanemodeActive = __webpack_require__(1370);
 
 	var _airplanemodeActive2 = _interopRequireDefault(_airplanemodeActive);
 
-	var _snackbar = __webpack_require__(685);
+	var _snackbar = __webpack_require__(799);
 
 	var _snackbar2 = _interopRequireDefault(_snackbar);
 
@@ -43204,7 +43451,7 @@ webpackJsonp([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(318)))
 
 /***/ },
-/* 1310 */
+/* 1308 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {'use strict';
@@ -43219,43 +43466,43 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _launch = __webpack_require__(1311);
+	var _launch = __webpack_require__(1309);
 
 	var _launch2 = _interopRequireDefault(_launch);
 
-	var _fileDownload = __webpack_require__(1312);
+	var _fileDownload = __webpack_require__(1310);
 
 	var _fileDownload2 = _interopRequireDefault(_fileDownload);
 
-	var _arrowUpward = __webpack_require__(1313);
+	var _arrowUpward = __webpack_require__(1311);
 
 	var _arrowUpward2 = _interopRequireDefault(_arrowUpward);
 
-	var _addCircle = __webpack_require__(1314);
+	var _addCircle = __webpack_require__(1312);
 
 	var _addCircle2 = _interopRequireDefault(_addCircle);
 
-	var _paper = __webpack_require__(675);
+	var _paper = __webpack_require__(676);
 
 	var _paper2 = _interopRequireDefault(_paper);
 
-	var _raisedButton = __webpack_require__(1221);
+	var _raisedButton = __webpack_require__(1218);
 
 	var _raisedButton2 = _interopRequireDefault(_raisedButton);
 
-	var _iconButton = __webpack_require__(806);
+	var _iconButton = __webpack_require__(783);
 
 	var _iconButton2 = _interopRequireDefault(_iconButton);
 
-	var _snackbar = __webpack_require__(685);
+	var _snackbar = __webpack_require__(799);
 
 	var _snackbar2 = _interopRequireDefault(_snackbar);
 
-	var _reactD = __webpack_require__(1315);
+	var _reactD = __webpack_require__(1313);
 
 	var _reactD2 = _interopRequireDefault(_reactD);
 
-	var _LoadingIcon = __webpack_require__(1371);
+	var _LoadingIcon = __webpack_require__(1369);
 
 	var _LoadingIcon2 = _interopRequireDefault(_LoadingIcon);
 
@@ -43562,7 +43809,7 @@ webpackJsonp([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(318)))
 
 /***/ },
-/* 1311 */
+/* 1309 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43575,11 +43822,11 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _pure = __webpack_require__(749);
+	var _pure = __webpack_require__(714);
 
 	var _pure2 = _interopRequireDefault(_pure);
 
-	var _svgIcon = __webpack_require__(804);
+	var _svgIcon = __webpack_require__(769);
 
 	var _svgIcon2 = _interopRequireDefault(_svgIcon);
 
@@ -43598,7 +43845,7 @@ webpackJsonp([0],[
 	exports.default = ActionLaunch;
 
 /***/ },
-/* 1312 */
+/* 1310 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43611,11 +43858,11 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _pure = __webpack_require__(749);
+	var _pure = __webpack_require__(714);
 
 	var _pure2 = _interopRequireDefault(_pure);
 
-	var _svgIcon = __webpack_require__(804);
+	var _svgIcon = __webpack_require__(769);
 
 	var _svgIcon2 = _interopRequireDefault(_svgIcon);
 
@@ -43634,7 +43881,7 @@ webpackJsonp([0],[
 	exports.default = FileFileDownload;
 
 /***/ },
-/* 1313 */
+/* 1311 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43647,11 +43894,11 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _pure = __webpack_require__(749);
+	var _pure = __webpack_require__(714);
 
 	var _pure2 = _interopRequireDefault(_pure);
 
-	var _svgIcon = __webpack_require__(804);
+	var _svgIcon = __webpack_require__(769);
 
 	var _svgIcon2 = _interopRequireDefault(_svgIcon);
 
@@ -43670,7 +43917,7 @@ webpackJsonp([0],[
 	exports.default = NavigationArrowUpward;
 
 /***/ },
-/* 1314 */
+/* 1312 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43683,11 +43930,11 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _pure = __webpack_require__(749);
+	var _pure = __webpack_require__(714);
 
 	var _pure2 = _interopRequireDefault(_pure);
 
-	var _svgIcon = __webpack_require__(804);
+	var _svgIcon = __webpack_require__(769);
 
 	var _svgIcon2 = _interopRequireDefault(_svgIcon);
 
@@ -43706,40 +43953,40 @@ webpackJsonp([0],[
 	exports.default = ContentAddCircle;
 
 /***/ },
-/* 1315 */
+/* 1313 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports.BarChart = __webpack_require__(1316).BarChart;
-	exports.LineChart = __webpack_require__(1339).LineChart;
-	exports.PieChart = __webpack_require__(1345).PieChart;
-	exports.AreaChart = __webpack_require__(1350).AreaChart;
-	exports.Treemap = __webpack_require__(1355).Treemap;
-	exports.ScatterChart = __webpack_require__(1360).ScatterChart;
-	exports.CandlestickChart = __webpack_require__(1365).CandlestickChart;
+	exports.BarChart = __webpack_require__(1314).BarChart;
+	exports.LineChart = __webpack_require__(1337).LineChart;
+	exports.PieChart = __webpack_require__(1343).PieChart;
+	exports.AreaChart = __webpack_require__(1348).AreaChart;
+	exports.Treemap = __webpack_require__(1353).Treemap;
+	exports.ScatterChart = __webpack_require__(1358).ScatterChart;
+	exports.CandlestickChart = __webpack_require__(1363).CandlestickChart;
 
 
 
 /***/ },
-/* 1316 */
+/* 1314 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	exports.BarChart = __webpack_require__(1317);
+	exports.BarChart = __webpack_require__(1315);
 
 
 /***/ },
-/* 1317 */
+/* 1315 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var d3 = __webpack_require__(1318);
-	var DataSeries = __webpack_require__(1319);
-	var utils = __webpack_require__(1322);
+	var d3 = __webpack_require__(1316);
+	var DataSeries = __webpack_require__(1317);
+	var utils = __webpack_require__(1320);
 
-	var $__0=      __webpack_require__(1323),Chart=$__0.Chart,XAxis=$__0.XAxis,YAxis=$__0.YAxis;
-	var $__1=     __webpack_require__(1332),CartesianChartPropsMixin=$__1.CartesianChartPropsMixin,ViewBoxMixin=$__1.ViewBoxMixin;
+	var $__0=      __webpack_require__(1321),Chart=$__0.Chart,XAxis=$__0.XAxis,YAxis=$__0.YAxis;
+	var $__1=     __webpack_require__(1330),CartesianChartPropsMixin=$__1.CartesianChartPropsMixin,ViewBoxMixin=$__1.ViewBoxMixin;
 
 	module.exports = React.createClass({
 
@@ -43895,7 +44142,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1318 */
+/* 1316 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;!function() {
@@ -53454,14 +53701,14 @@ webpackJsonp([0],[
 	}();
 
 /***/ },
-/* 1319 */
+/* 1317 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var d3 = __webpack_require__(1318);
-	var BarContainer = __webpack_require__(1320);
+	var d3 = __webpack_require__(1316);
+	var BarContainer = __webpack_require__(1318);
 
 	module.exports = React.createClass({
 
@@ -53508,14 +53755,14 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1320 */
+/* 1318 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var Bar = __webpack_require__(1321);
-	var shade = __webpack_require__(1322).shade;
+	var Bar = __webpack_require__(1319);
+	var shade = __webpack_require__(1320).shade;
 
 	module.exports = React.createClass({displayName: "exports",
 
@@ -53566,7 +53813,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1321 */
+/* 1319 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -53606,10 +53853,10 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1322 */
+/* 1320 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var d3 = __webpack_require__(1318);
+	var d3 = __webpack_require__(1316);
 
 
 	exports.calculateScales = function(chartWidth, chartHeight, xValues, yValues)  {
@@ -53764,38 +54011,38 @@ webpackJsonp([0],[
 
 
 /***/ },
+/* 1321 */
+/***/ function(module, exports, __webpack_require__) {
+
+	
+	exports.XAxis = __webpack_require__(1322).XAxis;
+	exports.YAxis = __webpack_require__(1322).YAxis;
+	exports.Chart = __webpack_require__(1328).Chart;
+	exports.LegendChart = __webpack_require__(1328).LegendChart;
+	exports.Legend = __webpack_require__(1335);
+	exports.Voronoi = __webpack_require__(1336);
+
+
+/***/ },
+/* 1322 */
+/***/ function(module, exports, __webpack_require__) {
+
+	
+	exports.XAxis = __webpack_require__(1323);
+	exports.YAxis = __webpack_require__(1327);
+
+
+/***/ },
 /* 1323 */
-/***/ function(module, exports, __webpack_require__) {
-
-	
-	exports.XAxis = __webpack_require__(1324).XAxis;
-	exports.YAxis = __webpack_require__(1324).YAxis;
-	exports.Chart = __webpack_require__(1330).Chart;
-	exports.LegendChart = __webpack_require__(1330).LegendChart;
-	exports.Legend = __webpack_require__(1337);
-	exports.Voronoi = __webpack_require__(1338);
-
-
-/***/ },
-/* 1324 */
-/***/ function(module, exports, __webpack_require__) {
-
-	
-	exports.XAxis = __webpack_require__(1325);
-	exports.YAxis = __webpack_require__(1329);
-
-
-/***/ },
-/* 1325 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var d3 = __webpack_require__(1318);
-	var AxisTicks = __webpack_require__(1326);
-	var AxisLine = __webpack_require__(1327);
-	var Label = __webpack_require__(1328);
+	var d3 = __webpack_require__(1316);
+	var AxisTicks = __webpack_require__(1324);
+	var AxisLine = __webpack_require__(1325);
+	var Label = __webpack_require__(1326);
 
 	module.exports = React.createClass({
 
@@ -53894,13 +54141,13 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1326 */
+/* 1324 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var d3 = __webpack_require__(1318);
+	var d3 = __webpack_require__(1316);
 
 	module.exports = React.createClass({
 
@@ -54089,13 +54336,13 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1327 */
+/* 1325 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var d3 = __webpack_require__(1318);
+	var d3 = __webpack_require__(1316);
 
 	module.exports = React.createClass({
 
@@ -54165,7 +54412,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1328 */
+/* 1326 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -54259,16 +54506,16 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1329 */
+/* 1327 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var d3 = __webpack_require__(1318);
-	var AxisTicks = __webpack_require__(1326);
-	var AxisLine = __webpack_require__(1327);
-	var Label = __webpack_require__(1328);
+	var d3 = __webpack_require__(1316);
+	var AxisTicks = __webpack_require__(1324);
+	var AxisLine = __webpack_require__(1325);
+	var Label = __webpack_require__(1326);
 
 	module.exports = React.createClass({
 
@@ -54372,23 +54619,23 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1330 */
+/* 1328 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	exports.BasicChart = __webpack_require__(1331);
-	exports.Chart = __webpack_require__(1335);
-	exports.LegendChart = __webpack_require__(1336);
+	exports.BasicChart = __webpack_require__(1329);
+	exports.Chart = __webpack_require__(1333);
+	exports.LegendChart = __webpack_require__(1334);
 
 
 /***/ },
-/* 1331 */
+/* 1329 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var mixins = __webpack_require__(1332);
+	var mixins = __webpack_require__(1330);
 
 	module.exports = React.createClass({
 
@@ -54459,22 +54706,22 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1332 */
+/* 1330 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	exports.CartesianChartPropsMixin = __webpack_require__(1333);
-	exports.ViewBoxMixin = __webpack_require__(1334);
+	exports.CartesianChartPropsMixin = __webpack_require__(1331);
+	exports.ViewBoxMixin = __webpack_require__(1332);
 
 
 /***/ },
-/* 1333 */
+/* 1331 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var d3 = __webpack_require__(1318);
+	var d3 = __webpack_require__(1316);
 
 	module.exports =  {
 
@@ -54538,7 +54785,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1334 */
+/* 1332 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
@@ -54580,14 +54827,14 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1335 */
+/* 1333 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var LegendChart = __webpack_require__(1336);
-	var BasicChart = __webpack_require__(1331);
+	var LegendChart = __webpack_require__(1334);
+	var BasicChart = __webpack_require__(1329);
 
 	module.exports = React.createClass({
 
@@ -54632,14 +54879,14 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1336 */
+/* 1334 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var Legend = __webpack_require__(1337);
-	var d3 = __webpack_require__(1318);
+	var Legend = __webpack_require__(1335);
+	var d3 = __webpack_require__(1316);
 
 	module.exports = React.createClass({
 
@@ -54748,13 +54995,13 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1337 */
+/* 1335 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var d3 = __webpack_require__(1318);
+	var d3 = __webpack_require__(1316);
 
 	module.exports = React.createClass({
 
@@ -54841,13 +55088,13 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1338 */
+/* 1336 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var d3 = __webpack_require__(1318);
+	var d3 = __webpack_require__(1316);
 
 	var Polygon = React.createClass({displayName: "Polygon",
 
@@ -54908,25 +55155,25 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1339 */
+/* 1337 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	exports.LineChart = __webpack_require__(1340);
+	exports.LineChart = __webpack_require__(1338);
 
 
 /***/ },
-/* 1340 */
+/* 1338 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var d3 = __webpack_require__(1318);
-	var $__0=      __webpack_require__(1323),Chart=$__0.Chart,XAxis=$__0.XAxis,YAxis=$__0.YAxis;
-	var DataSeries = __webpack_require__(1341);
-	var utils = __webpack_require__(1322);
-	var $__1=     __webpack_require__(1332),CartesianChartPropsMixin=$__1.CartesianChartPropsMixin,ViewBoxMixin=$__1.ViewBoxMixin;
+	var d3 = __webpack_require__(1316);
+	var $__0=      __webpack_require__(1321),Chart=$__0.Chart,XAxis=$__0.XAxis,YAxis=$__0.YAxis;
+	var DataSeries = __webpack_require__(1339);
+	var utils = __webpack_require__(1320);
+	var $__1=     __webpack_require__(1330),CartesianChartPropsMixin=$__1.CartesianChartPropsMixin,ViewBoxMixin=$__1.ViewBoxMixin;
 
 	module.exports = React.createClass({
 
@@ -55059,15 +55306,15 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1341 */
+/* 1339 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var d3 = __webpack_require__(1318);
-	var VoronoiCircleContainer = __webpack_require__(1342);
-	var Line = __webpack_require__(1344);
+	var d3 = __webpack_require__(1316);
+	var VoronoiCircleContainer = __webpack_require__(1340);
+	var Line = __webpack_require__(1342);
 
 	module.exports = React.createClass({
 
@@ -55172,15 +55419,15 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1342 */
+/* 1340 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var d3 = __webpack_require__(1318);
-	var shade = __webpack_require__(1322).shade;
-	var VoronoiCircle = __webpack_require__(1343);
+	var d3 = __webpack_require__(1316);
+	var shade = __webpack_require__(1320).shade;
+	var VoronoiCircle = __webpack_require__(1341);
 
 	module.exports = React.createClass({
 
@@ -55253,13 +55500,13 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1343 */
+/* 1341 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var d3 = __webpack_require__(1318);
+	var d3 = __webpack_require__(1316);
 
 	module.exports = React.createClass({
 
@@ -55297,7 +55544,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1344 */
+/* 1342 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -55344,23 +55591,23 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1345 */
+/* 1343 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	exports.PieChart = __webpack_require__(1346);
+	exports.PieChart = __webpack_require__(1344);
 
 
 /***/ },
-/* 1346 */
+/* 1344 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var d3 = __webpack_require__(1318);
+	var d3 = __webpack_require__(1316);
 	var React = __webpack_require__(1);
-	var DataSeries = __webpack_require__(1347);
-	var Chart = __webpack_require__(1323).Chart;
+	var DataSeries = __webpack_require__(1345);
+	var Chart = __webpack_require__(1321).Chart;
 
 	module.exports = React.createClass({
 
@@ -55437,14 +55684,14 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1347 */
+/* 1345 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var d3 = __webpack_require__(1318);
-	var ArcContainer = __webpack_require__(1348);
+	var d3 = __webpack_require__(1316);
+	var ArcContainer = __webpack_require__(1346);
 
 
 	module.exports = React.createClass({
@@ -55516,14 +55763,14 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1348 */
+/* 1346 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var shade = __webpack_require__(1322).shade;
-	var Arc = __webpack_require__(1349);
+	var shade = __webpack_require__(1320).shade;
+	var Arc = __webpack_require__(1347);
 
 	module.exports = React.createClass({
 
@@ -55570,13 +55817,13 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1349 */
+/* 1347 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var d3 = __webpack_require__(1318);
+	var d3 = __webpack_require__(1316);
 
 
 	module.exports = React.createClass({
@@ -55692,24 +55939,24 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1350 */
+/* 1348 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	exports.AreaChart = __webpack_require__(1351);
+	exports.AreaChart = __webpack_require__(1349);
 
 
 /***/ },
-/* 1351 */
+/* 1349 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var d3 = __webpack_require__(1318);
-	var DataSeries = __webpack_require__(1352);
-	var $__0=      __webpack_require__(1323),Chart=$__0.Chart,XAxis=$__0.XAxis,YAxis=$__0.YAxis;
-	var $__1=     __webpack_require__(1332),CartesianChartPropsMixin=$__1.CartesianChartPropsMixin,ViewBoxMixin=$__1.ViewBoxMixin;
+	var d3 = __webpack_require__(1316);
+	var DataSeries = __webpack_require__(1350);
+	var $__0=      __webpack_require__(1321),Chart=$__0.Chart,XAxis=$__0.XAxis,YAxis=$__0.YAxis;
+	var $__1=     __webpack_require__(1330),CartesianChartPropsMixin=$__1.CartesianChartPropsMixin,ViewBoxMixin=$__1.ViewBoxMixin;
 
 	module.exports = React.createClass({
 
@@ -55872,14 +56119,14 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1352 */
+/* 1350 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var d3 = __webpack_require__(1318);
-	var AreaContainer = __webpack_require__(1353);
+	var d3 = __webpack_require__(1316);
+	var AreaContainer = __webpack_require__(1351);
 
 	module.exports = React.createClass({
 
@@ -55921,15 +56168,15 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1353 */
+/* 1351 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var d3 = __webpack_require__(1318);
-	var shade = __webpack_require__(1322).shade;
-	var Area = __webpack_require__(1354);
+	var d3 = __webpack_require__(1316);
+	var shade = __webpack_require__(1320).shade;
+	var Area = __webpack_require__(1352);
 
 	module.exports = React.createClass({
 
@@ -55990,7 +56237,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1354 */
+/* 1352 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -56029,23 +56276,23 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1355 */
+/* 1353 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	exports.Treemap = __webpack_require__(1356);
+	exports.Treemap = __webpack_require__(1354);
 
 
 /***/ },
-/* 1356 */
+/* 1354 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var d3 = __webpack_require__(1318);
+	var d3 = __webpack_require__(1316);
 	var React = __webpack_require__(1);
-	var Chart = __webpack_require__(1323).Chart;
-	var DataSeries = __webpack_require__(1357);
+	var Chart = __webpack_require__(1321).Chart;
+	var DataSeries = __webpack_require__(1355);
 
 	module.exports = React.createClass({
 
@@ -56111,14 +56358,14 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1357 */
+/* 1355 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var d3 = __webpack_require__(1318);
-	var CellContainer = __webpack_require__(1358);
+	var d3 = __webpack_require__(1316);
+	var CellContainer = __webpack_require__(1356);
 
 
 	module.exports = React.createClass({
@@ -56182,14 +56429,14 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1358 */
+/* 1356 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var shade = __webpack_require__(1322).shade;
-	var Cell = __webpack_require__(1359);
+	var shade = __webpack_require__(1320).shade;
+	var Cell = __webpack_require__(1357);
 
 
 	module.exports = React.createClass({
@@ -56238,13 +56485,13 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1359 */
+/* 1357 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var d3 = __webpack_require__(1318);
+	var d3 = __webpack_require__(1316);
 
 
 	module.exports = React.createClass({
@@ -56296,25 +56543,25 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1360 */
+/* 1358 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	exports.ScatterChart = __webpack_require__(1361);
+	exports.ScatterChart = __webpack_require__(1359);
 
 
 /***/ },
-/* 1361 */
+/* 1359 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var d3 = __webpack_require__(1318);
-	var $__0=      __webpack_require__(1323),Chart=$__0.Chart,XAxis=$__0.XAxis,YAxis=$__0.YAxis;
-	var DataSeries = __webpack_require__(1362);
-	var utils = __webpack_require__(1322);
-	var $__1=     __webpack_require__(1332),CartesianChartPropsMixin=$__1.CartesianChartPropsMixin,ViewBoxMixin=$__1.ViewBoxMixin;
+	var d3 = __webpack_require__(1316);
+	var $__0=      __webpack_require__(1321),Chart=$__0.Chart,XAxis=$__0.XAxis,YAxis=$__0.YAxis;
+	var DataSeries = __webpack_require__(1360);
+	var utils = __webpack_require__(1320);
+	var $__1=     __webpack_require__(1330),CartesianChartPropsMixin=$__1.CartesianChartPropsMixin,ViewBoxMixin=$__1.ViewBoxMixin;
 
 	module.exports = React.createClass({
 
@@ -56458,14 +56705,14 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1362 */
+/* 1360 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var d3 = __webpack_require__(1318);
-	var VoronoiCircleContainer = __webpack_require__(1363);
+	var d3 = __webpack_require__(1316);
+	var VoronoiCircleContainer = __webpack_require__(1361);
 
 	module.exports = React.createClass({
 
@@ -56549,15 +56796,15 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1363 */
+/* 1361 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var d3 = __webpack_require__(1318);
-	var shade = __webpack_require__(1322).shade;
-	var VoronoiCircle = __webpack_require__(1364);
+	var d3 = __webpack_require__(1316);
+	var shade = __webpack_require__(1320).shade;
+	var VoronoiCircle = __webpack_require__(1362);
 
 	module.exports = React.createClass({
 
@@ -56653,13 +56900,13 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1364 */
+/* 1362 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var d3 = __webpack_require__(1318);
+	var d3 = __webpack_require__(1316);
 
 	module.exports = React.createClass({
 
@@ -56711,24 +56958,24 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1365 */
+/* 1363 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	exports.CandlestickChart = __webpack_require__(1366);
+	exports.CandlestickChart = __webpack_require__(1364);
 
 
 /***/ },
-/* 1366 */
+/* 1364 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var d3 = __webpack_require__(1318);
-	var utils = __webpack_require__(1322);
-	var DataSeries = __webpack_require__(1367);
-	var $__0=      __webpack_require__(1323),Chart=$__0.Chart,XAxis=$__0.XAxis,YAxis=$__0.YAxis;
+	var d3 = __webpack_require__(1316);
+	var utils = __webpack_require__(1320);
+	var DataSeries = __webpack_require__(1365);
+	var $__0=      __webpack_require__(1321),Chart=$__0.Chart,XAxis=$__0.XAxis,YAxis=$__0.YAxis;
 
 	module.exports = React.createClass({
 
@@ -56874,15 +57121,15 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1367 */
+/* 1365 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var d3 = __webpack_require__(1318);
-	var utils = __webpack_require__(1322);
-	var CandlestickContainer = __webpack_require__(1368);
+	var d3 = __webpack_require__(1316);
+	var utils = __webpack_require__(1320);
+	var CandlestickContainer = __webpack_require__(1366);
 
 
 	module.exports = React.createClass({
@@ -56946,16 +57193,16 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1368 */
+/* 1366 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var d3 = __webpack_require__(1318);
-	var utils = __webpack_require__(1322);
-	var Candle = __webpack_require__(1369);
-	var Wick = __webpack_require__(1370);
+	var d3 = __webpack_require__(1316);
+	var utils = __webpack_require__(1320);
+	var Candle = __webpack_require__(1367);
+	var Wick = __webpack_require__(1368);
 
 	module.exports = React.createClass({
 
@@ -57041,7 +57288,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1369 */
+/* 1367 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -57092,7 +57339,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1370 */
+/* 1368 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -57138,7 +57385,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1371 */
+/* 1369 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -57210,7 +57457,7 @@ webpackJsonp([0],[
 	exports.default = LoadingIcon;
 
 /***/ },
-/* 1372 */
+/* 1370 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -57223,11 +57470,11 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _pure = __webpack_require__(749);
+	var _pure = __webpack_require__(714);
 
 	var _pure2 = _interopRequireDefault(_pure);
 
-	var _svgIcon = __webpack_require__(804);
+	var _svgIcon = __webpack_require__(769);
 
 	var _svgIcon2 = _interopRequireDefault(_svgIcon);
 
@@ -57247,7 +57494,7 @@ webpackJsonp([0],[
 	exports.default = DeviceAirplanemodeActive;
 
 /***/ },
-/* 1373 */
+/* 1371 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -57258,13 +57505,13 @@ webpackJsonp([0],[
 
 	var _AltApp2 = _interopRequireDefault(_AltApp);
 
-	var _AccountBalanceActions = __webpack_require__(1374);
+	var _AccountBalanceActions = __webpack_require__(1372);
 
 	var _AccountBalanceActions2 = _interopRequireDefault(_AccountBalanceActions);
 
 	var _Constants = __webpack_require__(316);
 
-	var _immutable = __webpack_require__(1377);
+	var _immutable = __webpack_require__(1375);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -57367,7 +57614,7 @@ webpackJsonp([0],[
 	module.exports = _AltApp2.default.createStore(AccountBalanceStore, 'AccountBalanceStore');
 
 /***/ },
-/* 1374 */
+/* 1372 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -57382,7 +57629,7 @@ webpackJsonp([0],[
 
 	var _AltApp2 = _interopRequireDefault(_AltApp);
 
-	var _AccountBalanceSource = __webpack_require__(1375);
+	var _AccountBalanceSource = __webpack_require__(1373);
 
 	var _AccountBalanceSource2 = _interopRequireDefault(_AccountBalanceSource);
 
@@ -57463,7 +57710,7 @@ webpackJsonp([0],[
 	exports.default = _AltApp2.default.createActions(AccountBalanceActions);
 
 /***/ },
-/* 1375 */
+/* 1373 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -57476,7 +57723,7 @@ webpackJsonp([0],[
 
 	var _superagent2 = _interopRequireDefault(_superagent);
 
-	var _sourceUtils = __webpack_require__(1376);
+	var _sourceUtils = __webpack_require__(1374);
 
 	var _Parsers = __webpack_require__(433);
 
@@ -57538,7 +57785,7 @@ webpackJsonp([0],[
 	exports.default = AccountBalanceSource;
 
 /***/ },
-/* 1376 */
+/* 1374 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -57562,6 +57809,8 @@ webpackJsonp([0],[
 
 	    switch (res.statusCode) {
 	        case 401:
+	            User.logout();
+	            window.location.hash = 'login';
 	            return {
 	                code: 401,
 	                text: 'Sorry, something went wrong, try to logout and login again',
@@ -57590,7 +57839,7 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 1377 */
+/* 1375 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -62574,7 +62823,7 @@ webpackJsonp([0],[
 	}));
 
 /***/ },
-/* 1378 */
+/* 1376 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -62593,11 +62842,11 @@ webpackJsonp([0],[
 
 	var _altContainer2 = _interopRequireDefault(_altContainer);
 
-	var _dialog = __webpack_require__(915);
+	var _dialog = __webpack_require__(791);
 
 	var _dialog2 = _interopRequireDefault(_dialog);
 
-	var _flatButton = __webpack_require__(688);
+	var _flatButton = __webpack_require__(792);
 
 	var _flatButton2 = _interopRequireDefault(_flatButton);
 
@@ -62605,15 +62854,15 @@ webpackJsonp([0],[
 
 	var _LoginActions2 = _interopRequireDefault(_LoginActions);
 
-	var _PersonalDetailsSection = __webpack_require__(1379);
+	var _PersonalDetailsSection = __webpack_require__(1377);
 
 	var _PersonalDetailsSection2 = _interopRequireDefault(_PersonalDetailsSection);
 
-	var _PersonalDetailsStore = __webpack_require__(680);
+	var _PersonalDetailsStore = __webpack_require__(794);
 
 	var _PersonalDetailsStore2 = _interopRequireDefault(_PersonalDetailsStore);
 
-	var _MyAccountActions = __webpack_require__(681);
+	var _MyAccountActions = __webpack_require__(795);
 
 	var _MyAccountActions2 = _interopRequireDefault(_MyAccountActions);
 
@@ -62772,7 +63021,8 @@ webpackJsonp([0],[
 	            onSave: this.handleSave,
 	            clearEditMessage: this.clearEditMessage,
 	            onDataChanged: this.handleDataChanged,
-	            onPictureChanged: this.handlePictureChanged
+	            onPictureChanged: this.handlePictureChanged,
+	            onLogout: this.handleLogout
 	          }),
 	          _react2.default.createElement(PersonalDetailsAttention, {
 	            onCancel: this.handleCancel,
@@ -62794,7 +63044,7 @@ webpackJsonp([0],[
 	exports.default = PersonalDetailsPage;
 
 /***/ },
-/* 1379 */
+/* 1377 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -62809,15 +63059,15 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _SnackbarMessage = __webpack_require__(1380);
+	var _SnackbarMessage = __webpack_require__(1378);
 
 	var _SnackbarMessage2 = _interopRequireDefault(_SnackbarMessage);
 
-	var _PersonalDetailsForm = __webpack_require__(1381);
+	var _PersonalDetailsForm = __webpack_require__(1379);
 
 	var _PersonalDetailsForm2 = _interopRequireDefault(_PersonalDetailsForm);
 
-	var _ProfilePicture = __webpack_require__(1396);
+	var _ProfilePicture = __webpack_require__(1394);
 
 	var _ProfilePicture2 = _interopRequireDefault(_ProfilePicture);
 
@@ -62924,7 +63174,7 @@ webpackJsonp([0],[
 	        ),
 	        _react2.default.createElement(_ProfilePicture2.default, {
 	          profilePicture: this.state.uploadPicture || this.state.picture || this.props.personalDetails.imageURL,
-	          name: this.props.personalDetails.passengerFirstName,
+	          name: this.props.personalDetails.passengerFirstName || '',
 	          editMode: this.state.editMode,
 	          cropOpen: this.state.cropOpen,
 	          onPictureUploaded: this.handleUploadPicture,
@@ -62938,7 +63188,8 @@ webpackJsonp([0],[
 	          onCancel: this.handleCancel,
 	          editMode: this.state.editMode,
 	          cropOpen: this.state.cropOpen,
-	          onDataChanged: this.props.onDataChanged
+	          onDataChanged: this.props.onDataChanged,
+	          onLogout: this.props.onLogout
 	        }),
 	        _react2.default.createElement(_SnackbarMessage2.default, {
 	          message: {
@@ -62957,7 +63208,7 @@ webpackJsonp([0],[
 	exports.default = PersonalDetailsSection;
 
 /***/ },
-/* 1380 */
+/* 1378 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -62974,7 +63225,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _snackbar = __webpack_require__(685);
+	var _snackbar = __webpack_require__(799);
 
 	var _snackbar2 = _interopRequireDefault(_snackbar);
 
@@ -63041,7 +63292,7 @@ webpackJsonp([0],[
 	exports.default = SnackbarMessage;
 
 /***/ },
-/* 1381 */
+/* 1379 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -63058,31 +63309,31 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _function = __webpack_require__(823);
+	var _function = __webpack_require__(821);
 
 	var _function2 = _interopRequireDefault(_function);
 
-	var _flatButton = __webpack_require__(688);
+	var _flatButton = __webpack_require__(792);
 
 	var _flatButton2 = _interopRequireDefault(_flatButton);
 
-	var _raisedButton = __webpack_require__(1221);
+	var _raisedButton = __webpack_require__(1218);
 
 	var _raisedButton2 = _interopRequireDefault(_raisedButton);
 
-	var _modeEdit = __webpack_require__(1382);
+	var _modeEdit = __webpack_require__(1380);
 
 	var _modeEdit2 = _interopRequireDefault(_modeEdit);
 
-	var _save = __webpack_require__(1383);
+	var _save = __webpack_require__(1381);
 
 	var _save2 = _interopRequireDefault(_save);
 
-	var _cancel = __webpack_require__(1384);
+	var _cancel = __webpack_require__(1382);
 
 	var _cancel2 = _interopRequireDefault(_cancel);
 
-	var _snackbar = __webpack_require__(685);
+	var _snackbar = __webpack_require__(799);
 
 	var _snackbar2 = _interopRequireDefault(_snackbar);
 
@@ -63090,15 +63341,15 @@ webpackJsonp([0],[
 
 	var _moment2 = _interopRequireDefault(_moment);
 
-	var _TextField = __webpack_require__(1385);
+	var _TextField = __webpack_require__(1383);
 
 	var _TextField2 = _interopRequireDefault(_TextField);
 
-	var _DatePicker = __webpack_require__(1386);
+	var _DatePicker = __webpack_require__(1384);
 
 	var _DatePicker2 = _interopRequireDefault(_DatePicker);
 
-	var _IntlTelphoneInput = __webpack_require__(1392);
+	var _IntlTelphoneInput = __webpack_require__(1390);
 
 	var _IntlTelphoneInput2 = _interopRequireDefault(_IntlTelphoneInput);
 
@@ -63159,16 +63410,17 @@ webpackJsonp([0],[
 	      _this.setState({ passengerEmail: value }, _this.handleFormChange);
 	    };
 
-	    var _props$personalDetail = props.personalDetails;
-	    var passengerDob = _props$personalDetail.passengerDob;
+	    var personalDetails = props.personalDetails;
 
-	    var other = _objectWithoutProperties(_props$personalDetail, ['passengerDob']);
-
-	    _this.state = _extends({
+	    _this.state = {
 	      errors: {},
 	      isValidPhoneNumber: true,
-	      passengerDob: formatDate(passengerDob)
-	    }, other);
+	      passengerFirstName: personalDetails.passengerFirstName,
+	      passengerLastName: personalDetails.passengerLastName,
+	      passengerDob: personalDetails.passengerDob ? formatDate(personalDetails.passengerDob) : null,
+	      phoneNumber: personalDetails.phoneNumber,
+	      passengerEmail: personalDetails.passengerEmail
+	    };
 	    return _this;
 	  }
 
@@ -63188,10 +63440,10 @@ webpackJsonp([0],[
 	      var passengerDob = _state.passengerDob;
 
 
-	      passengerFirstName = passengerFirstName.trim();
-	      passengerLastName = passengerLastName.trim();
-	      passengerEmail = passengerEmail.trim();
-	      phoneNumber = phoneNumber.trim();
+	      passengerFirstName = passengerFirstName && passengerFirstName.trim();
+	      passengerLastName = passengerLastName && passengerLastName.trim();
+	      passengerEmail = passengerEmail && passengerEmail.trim();
+	      phoneNumber = phoneNumber && phoneNumber.trim();
 
 	      var errors = {};
 
@@ -63222,7 +63474,7 @@ webpackJsonp([0],[
 	      // whether has no errors
 	      if (!Object.keys(errors).length) {
 	        this.props.onSave({
-	          passengerId: this.state.passengerId,
+	          passengerId: this.props.personalDetails.passengerId,
 	          oldPhoneNumber: this.props.personalDetails.phoneNumber,
 	          passengerFirstName: passengerFirstName,
 	          passengerLastName: passengerLastName,
@@ -63241,10 +63493,10 @@ webpackJsonp([0],[
 	    key: 'handleCancel',
 	    value: function handleCancel() {
 	      this.props.onCancel();
-	      var _props$personalDetail2 = this.props.personalDetails;
-	      var passengerDob = _props$personalDetail2.passengerDob;
+	      var _props$personalDetail = this.props.personalDetails;
+	      var passengerDob = _props$personalDetail.passengerDob;
 
-	      var other = _objectWithoutProperties(_props$personalDetail2, ['passengerDob']);
+	      var other = _objectWithoutProperties(_props$personalDetail, ['passengerDob']);
 
 	      this.setState(_extends({
 	        errors: {},
@@ -63265,13 +63517,14 @@ webpackJsonp([0],[
 
 	      var errors = this.state.errors;
 	      var isEditing = this.props.editMode;
+	      var isEditable = !(this.props.personalDetails.passengerId && this.props.personalDetails.phoneNumber);
 
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'row', style: { marginBottom: '170' } },
+	        { className: 'row', style: { marginBottom: '170', maxWidth: '500px' } },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col l4 m6 s12 offset-m3 offset-l4' },
+	          { className: 'col l12 m12 s12' },
 	          _react2.default.createElement(_TextField2.default, {
 	            id: 'first-name',
 	            floatingLabelText: 'First Name',
@@ -63339,13 +63592,39 @@ webpackJsonp([0],[
 	            { className: 'row' },
 	            _react2.default.createElement(
 	              'div',
-	              { className: 'col l4 m6 offset-m3 s12 offset-l4 center' },
+	              { className: 'col l12 m12 s12 center' },
 	              _react2.default.createElement(_flatButton2.default, {
 	                label: 'Edit',
 	                onTouchTap: function onTouchTap(e) {
 	                  return _this2.props.onEdit();
 	                },
-	                icon: _react2.default.createElement(_modeEdit2.default, null)
+	                icon: _react2.default.createElement(_modeEdit2.default, null),
+	                disabled: isEditable
+	              })
+	            ),
+	            isEditable && _react2.default.createElement(
+	              'div',
+	              {
+	                className: 'col l12 m12 s12 center',
+	                style: {
+	                  fontFamily: 'caslon',
+	                  color: '#646464',
+	                  marginTop: '5px'
+	                }
+	              },
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                'We just updated the website. To enable edition please login again. '
+	              ),
+	              _react2.default.createElement(_flatButton2.default, {
+	                label: 'LOGOUT',
+	                onTouchTap: function onTouchTap(e) {
+	                  _this2.props.onLogout();
+	                },
+	                style: {
+	                  color: '#C60C30'
+	                }
 	              })
 	            )
 	          )
@@ -63360,7 +63639,7 @@ webpackJsonp([0],[
 	exports.default = PersonalDetailsForm;
 
 /***/ },
-/* 1382 */
+/* 1380 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -63373,11 +63652,11 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _pure = __webpack_require__(749);
+	var _pure = __webpack_require__(714);
 
 	var _pure2 = _interopRequireDefault(_pure);
 
-	var _svgIcon = __webpack_require__(804);
+	var _svgIcon = __webpack_require__(769);
 
 	var _svgIcon2 = _interopRequireDefault(_svgIcon);
 
@@ -63396,7 +63675,7 @@ webpackJsonp([0],[
 	exports.default = EditorModeEdit;
 
 /***/ },
-/* 1383 */
+/* 1381 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -63409,11 +63688,11 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _pure = __webpack_require__(749);
+	var _pure = __webpack_require__(714);
 
 	var _pure2 = _interopRequireDefault(_pure);
 
-	var _svgIcon = __webpack_require__(804);
+	var _svgIcon = __webpack_require__(769);
 
 	var _svgIcon2 = _interopRequireDefault(_svgIcon);
 
@@ -63432,7 +63711,7 @@ webpackJsonp([0],[
 	exports.default = ContentSave;
 
 /***/ },
-/* 1384 */
+/* 1382 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -63445,11 +63724,11 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _pure = __webpack_require__(749);
+	var _pure = __webpack_require__(714);
 
 	var _pure2 = _interopRequireDefault(_pure);
 
-	var _svgIcon = __webpack_require__(804);
+	var _svgIcon = __webpack_require__(769);
 
 	var _svgIcon2 = _interopRequireDefault(_svgIcon);
 
@@ -63468,7 +63747,7 @@ webpackJsonp([0],[
 	exports.default = NavigationCancel;
 
 /***/ },
-/* 1385 */
+/* 1383 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -63485,11 +63764,11 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _textField = __webpack_require__(728);
+	var _textField = __webpack_require__(688);
 
 	var _textField2 = _interopRequireDefault(_textField);
 
-	var _muiThemeable = __webpack_require__(741);
+	var _muiThemeable = __webpack_require__(705);
 
 	var _muiThemeable2 = _interopRequireDefault(_muiThemeable);
 
@@ -63623,7 +63902,7 @@ webpackJsonp([0],[
 	exports.default = (0, _muiThemeable2.default)()(TextField);
 
 /***/ },
-/* 1386 */
+/* 1384 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -63644,33 +63923,33 @@ webpackJsonp([0],[
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _muiThemeable = __webpack_require__(741);
+	var _muiThemeable = __webpack_require__(705);
 
 	var _muiThemeable2 = _interopRequireDefault(_muiThemeable);
 
-	var _iconButton = __webpack_require__(806);
+	var _iconButton = __webpack_require__(783);
 
 	var _iconButton2 = _interopRequireDefault(_iconButton);
 
-	var _event = __webpack_require__(1387);
+	var _event = __webpack_require__(1385);
 
 	var _event2 = _interopRequireDefault(_event);
 
-	var _clear = __webpack_require__(1388);
+	var _clear = __webpack_require__(1386);
 
 	var _clear2 = _interopRequireDefault(_clear);
 
-	var _rcDatepicker = __webpack_require__(917);
+	var _rcDatepicker = __webpack_require__(913);
 
-	var _FloatingLabel = __webpack_require__(1389);
+	var _FloatingLabel = __webpack_require__(1387);
 
 	var _FloatingLabel2 = _interopRequireDefault(_FloatingLabel);
 
-	var _UnderlineField = __webpack_require__(1390);
+	var _UnderlineField = __webpack_require__(1388);
 
 	var _UnderlineField2 = _interopRequireDefault(_UnderlineField);
 
-	var _ErrorText = __webpack_require__(1391);
+	var _ErrorText = __webpack_require__(1389);
 
 	var _ErrorText2 = _interopRequireDefault(_ErrorText);
 
@@ -63844,7 +64123,7 @@ webpackJsonp([0],[
 	exports.default = (0, _muiThemeable2.default)()(DatePicker);
 
 /***/ },
-/* 1387 */
+/* 1385 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -63857,11 +64136,11 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _pure = __webpack_require__(749);
+	var _pure = __webpack_require__(714);
 
 	var _pure2 = _interopRequireDefault(_pure);
 
-	var _svgIcon = __webpack_require__(804);
+	var _svgIcon = __webpack_require__(769);
 
 	var _svgIcon2 = _interopRequireDefault(_svgIcon);
 
@@ -63880,7 +64159,7 @@ webpackJsonp([0],[
 	exports.default = ActionEvent;
 
 /***/ },
-/* 1388 */
+/* 1386 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -63893,11 +64172,11 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _pure = __webpack_require__(749);
+	var _pure = __webpack_require__(714);
 
 	var _pure2 = _interopRequireDefault(_pure);
 
-	var _svgIcon = __webpack_require__(804);
+	var _svgIcon = __webpack_require__(769);
 
 	var _svgIcon2 = _interopRequireDefault(_svgIcon);
 
@@ -63916,7 +64195,7 @@ webpackJsonp([0],[
 	exports.default = ContentClear;
 
 /***/ },
-/* 1389 */
+/* 1387 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -63929,7 +64208,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _muiThemeable = __webpack_require__(741);
+	var _muiThemeable = __webpack_require__(705);
 
 	var _muiThemeable2 = _interopRequireDefault(_muiThemeable);
 
@@ -63991,7 +64270,7 @@ webpackJsonp([0],[
 	exports.default = (0, _muiThemeable2.default)()(FloatingLabel);
 
 /***/ },
-/* 1390 */
+/* 1388 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -64004,7 +64283,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _muiThemeable = __webpack_require__(741);
+	var _muiThemeable = __webpack_require__(705);
 
 	var _muiThemeable2 = _interopRequireDefault(_muiThemeable);
 
@@ -64063,7 +64342,7 @@ webpackJsonp([0],[
 	exports.default = (0, _muiThemeable2.default)()(UnderlineField);
 
 /***/ },
-/* 1391 */
+/* 1389 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -64076,7 +64355,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _muiThemeable = __webpack_require__(741);
+	var _muiThemeable = __webpack_require__(705);
 
 	var _muiThemeable2 = _interopRequireDefault(_muiThemeable);
 
@@ -64114,7 +64393,7 @@ webpackJsonp([0],[
 	exports.default = (0, _muiThemeable2.default)()(ErrorText);
 
 /***/ },
-/* 1392 */
+/* 1390 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {'use strict';
@@ -64135,23 +64414,23 @@ webpackJsonp([0],[
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _reactIntlTelInput = __webpack_require__(1393);
+	var _reactIntlTelInput = __webpack_require__(1391);
 
 	var _reactIntlTelInput2 = _interopRequireDefault(_reactIntlTelInput);
 
-	__webpack_require__(1394);
+	__webpack_require__(1392);
 
-	__webpack_require__(1395);
+	__webpack_require__(1393);
 
-	var _FloatingLabel = __webpack_require__(1389);
+	var _FloatingLabel = __webpack_require__(1387);
 
 	var _FloatingLabel2 = _interopRequireDefault(_FloatingLabel);
 
-	var _UnderlineField = __webpack_require__(1390);
+	var _UnderlineField = __webpack_require__(1388);
 
 	var _UnderlineField2 = _interopRequireDefault(_UnderlineField);
 
-	var _ErrorText = __webpack_require__(1391);
+	var _ErrorText = __webpack_require__(1389);
 
 	var _ErrorText2 = _interopRequireDefault(_ErrorText);
 
@@ -64337,7 +64616,7 @@ webpackJsonp([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(318)))
 
 /***/ },
-/* 1393 */
+/* 1391 */
 /***/ function(module, exports, __webpack_require__) {
 
 	!function(e,t){ true?module.exports=t(__webpack_require__(1),__webpack_require__(158)):"function"==typeof define&&define.amd?define(["react","react-dom"],t):"object"==typeof exports?exports.IntlTelInput=t(require("react"),require("react-dom")):e.IntlTelInput=t(e.React,e.ReactDOM)}(this,function(e,t){return function(e){function t(i){if(n[i])return n[i].exports;var o=n[i]={exports:{},id:i,loaded:!1};return e[i].call(o.exports,o,o.exports,t),o.loaded=!0,o.exports}var n={};return t.m=e,t.c=n,t.p="./",t(0)}([function(e,t,n){e.exports=n(10)},function(t,n){t.exports=e},function(e,t,n){"use strict";function i(e){return e&&e.__esModule?e:{"default":e}}Object.defineProperty(t,"__esModule",{value:!0});var o="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol?"symbol":typeof e},r=n(4),a=i(r);t["default"]={arraysEqual:function(e,t){if(e===t)return!0;if(null===e||null===t)return!1;if(e.length!==t.length)return!1;for(var n=0;n<e.length;++n)if(e[n]!==t[n])return!1;return!0},shallowEquals:function(e,t){if(e===t)return!0;for(var n in e)if(e[n]!==t[n]){if(!Array.isArray(e[n])||!Array.isArray(t[n]))return!1;if(!this.arraysEqual(e[n],t[n]))return!1}for(var i in t)if(e.hasOwnProperty(i)===!1)return!1;return!0},trim:function(e){var t=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;return e?e.replace(t,""):""},isNumeric:function(e){return e-parseFloat(e)>=0},retrieveLiIndex:function(e){if(!e)return-1;for(var t=e.parentNode.childNodes,n=0,i=0,o=t.length;o>i;i++){if(t[i]===e)return n;1===t[i].nodeType&&"li"===t[i].tagName.toLowerCase()&&n++}return-1},getNumeric:function(e){return e.replace(/\D/g,"")},getClean:function(e){var t="+"===e.charAt(0)?"+":"";return t+this.getNumeric(e)},startsWith:function(e,t){return e.substr(0,t.length).toUpperCase()===t},isWindow:function(e){return null!==e&&e===e.window},getWindow:function(e){return this.isWindow(e)?e:9===e.nodeType&&e.defaultView},offset:function(e){var t=void 0,n=void 0,i={top:0,left:0},r=e&&e.ownerDocument;return t=r.documentElement,"undefined"!==o(e.getBoundingClientRect)&&(i=e.getBoundingClientRect()),n=this.getWindow(r),{top:i.top+n.pageYOffset-t.clientTop,left:i.left+n.pageXOffset-t.clientLeft}},getOuterHeight:function(e){return e.offsetHeight+parseFloat(window.getComputedStyle(e).getPropertyValue("margin-top"))+parseFloat(window.getComputedStyle(e).getPropertyValue("margin-bottom"))},getCountryData:function(e,t,n){for(var i=a["default"].getCountries(),o=0,r=i.length;r>o;o++)if(i[o].iso2===e)return i[o];return t?null:("function"==typeof n&&n(e),{})},hasClass:function(e,t){return e.classList?e.classList.contains(t):!!e.className.match(new RegExp("(\\s|^)"+t+"(\\s|$)"))},addClass:function(e,t){e.classList?e.classList.add(t):this.hasClass(e,t)||(e.className+=" "+t)},removeClass:function(e,t){if(e.classList)e.classList.remove(t);else if(this.hasClass(e,t)){var n=new RegExp("(\\s|^)"+t+"(\\s|$)");e.className=e.className.replace(n," ")}},getDigitsOnRight:function(e,t){for(var n=0,i=t,o=e.length;o>i;i++)this.isNumeric(e.charAt(i))&&n++;return n},getCursorFromLeftChar:function(e,t,n){for(var i=t;i>0;i--){var o=e.charAt(i-1);if(this.isNumeric(o)||e.substr(i-2,2)===n)return i}return 0},getCursorFromDigitsOnRight:function(e,t){for(var n=e.length-1;n>=0;n--)if(this.isNumeric(e.charAt(n))&&0===--t)return n;return 0}}},function(e,t,n){var i,o;/*!
@@ -64349,19 +64628,19 @@ webpackJsonp([0],[
 	var a=(0,d.findDOMNode)(this.refs.telInput).getAttribute("maxlength");a&&r.length>a&&(r=r.substr(0,a))}else r=e;this.setState({countryList:{showDropdown:!1,highlightedCountry:this.state.countryList.highlightedCountry},telInput:{value:r,disabled:this.state.telInput.disabled,readonly:this.state.telInput.readonly,offsetTop:this.state.telInput.offsetTop,outerHeight:this.state.telInput.outerHeight}})}},{key:"selectFlag",value:function(e){var t=this,n=arguments.length<=1||void 0===arguments[1]?!0:arguments[1];this.selectedCountryData=e?v["default"].getCountryData(e,!1,this.props.noCountryDataHandler):{},this.setState({countryList:{showDropdown:!1,highlightedCountry:this.state.countryList.highlightedCountry},countryCode:e},function(){if(t.updatePlaceholder(),t.selectedCountryData.dialCode&&t.updateDialCode(t.selectedCountryData.dialCode,!0),n&&((0,d.findDOMNode)(t.refs.telInput).focus(),t.isGoodBrowser)){var i=t.state.telInput.value.length;(0,d.findDOMNode)(t.refs.telInput).setSelectionRange(i,i)}if("function"==typeof t.props.onSelectFlag&&t.props.onSelectFlag(t.selectedCountryData),e&&"auto"!==e){var o=(0,d.findDOMNode)(t.refs.flagDropDown).querySelector('.country-list [data-country-code="'+e+'"]:not(.preferred)'),r=v["default"].retrieveLiIndex(o);t.setState({countryList:{showDropdown:!1,highlightedCountry:r}})}})}},{key:"ensurePlus",value:function(){if(!this.props.nationalMode){var e=this.state.telInput.value,t=(0,d.findDOMNode)(this.refs.telInput);if("+"!==e.charAt(0)){var n=this.isGoodBrowser?t.selectionStart+1:0;this.setState({telInput:{value:"+"+e,disabled:this.state.telInput.disabled,readonly:this.state.telInput.readonly,offsetTop:this.state.telInput.offsetTop,outerHeight:this.state.telInput.outerHeight}}),this.isGoodBrowser&&t.setSelectionRange(n,n)}}}},{key:"handleDocumentKeyDown",value:function(e){var t=this,n=void 0;e.preventDefault(),e.which===this.keys.UP||e.which===this.keys.DOWN?this.handleUpDownKey(e.which):e.which===this.keys.ENTER?this.handleEnterKey():e.which===this.keys.ESC?this.setState({countryList:{showDropdown:!1,highlightedCountry:this.state.countryList.highlightedCountry}}):(e.which>=this.keys.A&&e.which<=this.keys.Z||e.which===this.keys.SPACE)&&(n&&clearTimeout(n),this.query||(this.query=""),this.query+=String.fromCharCode(e.which),this.searchForCountry(this.query),n=setTimeout(function(){t.query=""},1e3))}},{key:"handleDocumentClick",value:function(){this.setState({countryList:{showDropdown:!1,highlightedCountry:this.state.countryList.highlightedCountry}})}},{key:"searchForCountry",value:function(e){for(var t=0,n=this.countries.length;n>t;t++)if(v["default"].startsWith(this.countries[t].name,e)){var i=(0,d.findDOMNode)(this.refs.flagDropDown).querySelector('.country-list [data-country-code="'+this.countries[t].iso2+'"]:not(.preferred)'),o=v["default"].retrieveLiIndex(i);this.setState({countryList:{showDropdown:!0,highlightedCountry:o}}),this.scrollTo(i,!0);break}}},{key:"handleEnterKey",value:function(){var e=this,t=(0,d.findDOMNode)(this.refs.flagDropDown).querySelectorAll(".highlight")[0];if(t){var n=v["default"].retrieveLiIndex(t),i=t.getAttribute("data-country-code");this.setState({countryList:{showDropdown:!1,highlightedCountry:n},countryCode:i},function(){e.selectFlag(e.state.countryCode)})}}},{key:"toggleDropdown",value:function(e){this.setState({countryList:{showDropdown:!!e,highlightedCountry:this.state.countryList.highlightedCountry}})}},{key:"handleUpDownKey",value:function(e){var t=(0,d.findDOMNode)(this.refs.flagDropDown).querySelectorAll(".highlight")[0],n=t?t.previousElementSibling:void 0,i=t?t.nextElementSibling:void 0,o=e===this.keys.UP?n:i;if(o){o.getAttribute("class").indexOf("divider")>-1&&(o=e===this.keys.UP?o.previousElementSibling:o.nextElementSibling),this.scrollTo(o);var r=v["default"].retrieveLiIndex(o);this.setState({countryList:{showDropdown:!0,highlightedCountry:r}})}}},{key:"handleInputChange",value:function(e){this.setState({telInput:{value:e.target.value,disabled:this.state.telInput.disabled,readonly:this.state.telInput.readonly,offsetTop:this.state.telInput.offsetTop,outerHeight:this.state.telInput.outerHeight}})}},{key:"changeHighlightCountry",value:function(e,t){this.setState({countryList:{showDropdown:e,highlightedCountry:t}})}},{key:"render",value:function(){var e=this.props.css[0],t=this.props.css[1];return this.state.countryList.showDropdown&&(e+=" expanded"),u["default"].createElement("div",{className:e},u["default"].createElement(f["default"],{ref:"flagDropDown",clickSelectedFlag:this.clickSelectedFlag,selectFlag:this.selectFlag,countryCode:this.state.countryCode,isMobile:this.isMobile,handleSelectedFlagKeydown:this.handleSelectedFlagKeydown,changeHighlightCountry:this.changeHighlightCountry,countries:this.countries,showDropdown:this.state.countryList.showDropdown,inputTop:this.state.telInput.offsetTop,inputOuterHeight:this.state.telInput.outerHeight,preferredCountries:this.preferredCountries,highlightedCountry:this.state.countryList.highlightedCountry}),u["default"].createElement(g["default"],{ref:"telInput",handleKeyUp:this.handleKeyUp,handleKeyPress:this.handleKeyPress,handleInputChange:this.handleInputChange,className:t,disabled:this.state.telInput.disabled,readonly:this.state.telInput.readonly,fieldName:this.props.fieldName,fieldId:this.props.fieldId,value:this.state.telInput.value}))}}]),t}(l.Component);w.defaultProps={css:["intl-tel-input",""],fieldName:"",fieldId:"",value:"",countriesData:null,allowExtensions:!1,autoFormat:!0,autoPlaceholder:!0,preprocessPlaceholder:null,autoHideDialCode:!0,defaultCountry:"",geoIpLookup:null,nationalMode:!0,numberType:"MOBILE",onlyCountries:[],preferredCountries:["us","gb"],utilsScript:"",onPhoneNumberChange:null,onSelectFlag:null,fallbackFlagInUnkownNanp:!0},w.propTypes={css:l.PropTypes.arrayOf(l.PropTypes.string),fieldName:l.PropTypes.string,fieldId:l.PropTypes.string,value:l.PropTypes.string,countriesData:l.PropTypes.arrayOf(l.PropTypes.array),allowExtensions:l.PropTypes.bool,autoFormat:l.PropTypes.bool,autoPlaceholder:l.PropTypes.bool,preprocessPlaceholder:l.PropTypes.func,autoHideDialCode:l.PropTypes.bool,defaultCountry:l.PropTypes.string,geoIpLookup:l.PropTypes.func,nationalMode:l.PropTypes.bool,numberType:l.PropTypes.string,noCountryDataHandler:l.PropTypes.func,onlyCountries:l.PropTypes.arrayOf(l.PropTypes.string),preferredCountries:l.PropTypes.arrayOf(l.PropTypes.string),utilsScript:l.PropTypes.string,onPhoneNumberChange:l.PropTypes.func,onSelectFlag:l.PropTypes.func,disabled:l.PropTypes.bool,fallbackFlagInUnkownNanp:l.PropTypes.bool},t["default"]=w},function(e,t){!function(t){function n(e){var t=v[e]={};return h(e.split(/\s+/),function(e){t[e]=!0}),t}var i={},o=Array.prototype,r=Object.prototype,a=r.hasOwnProperty,s=r.toString,l=o.forEach,u=o.indexOf,d=o.slice,h=function(e,t,n){var o,r,s;if(e)if(l&&e.forEach===l)e.forEach(t,n);else if(e.length===+e.length){for(r=0,s=e.length;s>r;r++)if(r in e&&t.call(n,e[r],r,e)===i)return}else for(o in e)if(a.call(e,o)&&t.call(n,e[o],o,e)===i)return},c=function(e){return!!(e&&e.constructor&&e.call&&e.apply)},p=function(e){return h(d.call(arguments,1),function(t){var n;for(n in t)void 0!==t[n]&&(e[n]=t[n])}),e},f=function(e,t,n){var i;if(t){if(u)return u.call(t,e,n);for(i=t.length,n=n?0>n?Math.max(0,i+n):n:0;i>n;n++)if(n in t&&t[n]===e)return n}return-1},y={};h("Boolean Number String Function Array Date RegExp Object".split(" "),function(e,t){y["[object "+e+"]"]=e.toLowerCase()});var g=function(e){return null==e?String(e):y[s.call(e)]||"object"},m={},v={};m.Callbacks=function(e){e="string"==typeof e?v[e]||n(e):p({},e);var t,i,o,r,a,s,l=[],u=!e.once&&[],d=function(n){for(t=e.memory&&n,i=!0,s=r||0,r=0,a=l.length,o=!0;l&&a>s;s++)if(l[s].apply(n[0],n[1])===!1&&e.stopOnFalse){t=!1;break}o=!1,l&&(u?u.length&&d(u.shift()):t?l=[]:c.disable())},c={add:function(){if(l){var n=l.length;!function i(t){h(t,function(t){var n=g(t);"function"===n?e.unique&&c.has(t)||l.push(t):t&&t.length&&"string"!==n&&i(t)})}(arguments),o?a=l.length:t&&(r=n,d(t))}return this},remove:function(){return l&&h(arguments,function(e){for(var t;(t=f(e,l,t))>-1;)l.splice(t,1),o&&(a>=t&&a--,s>=t&&s--)}),this},has:function(e){return f(e,l)>-1},empty:function(){return l=[],this},disable:function(){return l=u=t=void 0,this},disabled:function(){return!l},lock:function(){return u=void 0,t||c.disable(),this},locked:function(){return!u},fireWith:function(e,t){return t=t||[],t=[e,t.slice?t.slice():t],!l||i&&!u||(o?u.push(t):d(t)),this},fire:function(){return c.fireWith(this,arguments),this},fired:function(){return!!i}};return c},m.Deferred=function(e){var t=[["resolve","done",m.Callbacks("once memory"),"resolved"],["reject","fail",m.Callbacks("once memory"),"rejected"],["notify","progress",m.Callbacks("memory")]],n="pending",i={state:function(){return n},always:function(){return o.done(arguments).fail(arguments),this},then:function(){var e=arguments;return m.Deferred(function(n){h(t,function(t,i){var r=t[0],a=e[i];o[t[1]](c(a)?function(){var e;try{e=a.apply(this,arguments)}catch(t){return void n.reject(t)}e&&c(e.promise)?e.promise().done(n.resolve).fail(n.reject).progress(n.notify):n["notify"!==r?"resolveWith":r+"With"](this===o?n:this,[e])}:n[r])}),e=null}).promise()},promise:function(e){return null!=e?p(e,i):i}},o={};return i.pipe=i.then,h(t,function(e,r){var a=e[2],s=e[3];i[e[1]]=a.add,s&&a.add(function(){n=s},t[1^r][2].disable,t[2][2].lock),o[e[0]]=a.fire,o[e[0]+"With"]=a.fireWith}),i.promise(o),e&&e.call(o,o),o},m.when=function(e){var t,n,i,o=0,r="array"===g(e)&&1===arguments.length?e:d.call(arguments),a=r.length,s=1!==a||e&&c(e.promise)?a:0,l=1===s?e:m.Deferred(),u=function(e,n,i){return function(o){n[e]=this,i[e]=arguments.length>1?d.call(arguments):o,i===t?l.notifyWith(n,i):--s||l.resolveWith(n,i)}};if(a>1)for(t=new Array(a),n=new Array(a),i=new Array(a);a>o;o++)r[o]&&c(r[o].promise)?r[o].promise().done(u(o,i,r)).fail(l.reject).progress(u(o,n,t)):--s;return s||l.resolveWith(i,r),l.promise()},"undefined"!=typeof e&&e.exports?e.exports=m:"undefined"!=typeof t._?t._.mixin(m):t._=m}(this)}])});
 
 /***/ },
-/* 1394 */
+/* 1392 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "libphonenumber.js";
 
 /***/ },
-/* 1395 */
+/* 1393 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 1396 */
+/* 1394 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -64376,15 +64655,15 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _PictureCrop = __webpack_require__(1397);
+	var _PictureCrop = __webpack_require__(1395);
 
 	var _PictureCrop2 = _interopRequireDefault(_PictureCrop);
 
-	var _PictureUpload = __webpack_require__(1403);
+	var _PictureUpload = __webpack_require__(1401);
 
 	var _PictureUpload2 = _interopRequireDefault(_PictureUpload);
 
-	var _ProfileAvatar = __webpack_require__(1404);
+	var _ProfileAvatar = __webpack_require__(1402);
 
 	var _ProfileAvatar2 = _interopRequireDefault(_ProfileAvatar);
 
@@ -64400,7 +64679,7 @@ webpackJsonp([0],[
 	  marginLeft: 'auto',
 	  marginRight: 'auto',
 	  marginTop: '20px',
-	  width: '400px'
+	  maxWidth: '500px'
 	};
 
 	var ProfilePicture = function (_Component) {
@@ -64463,7 +64742,7 @@ webpackJsonp([0],[
 	exports.default = ProfilePicture;
 
 /***/ },
-/* 1397 */
+/* 1395 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -64478,31 +64757,31 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactImageCrop = __webpack_require__(1398);
+	var _reactImageCrop = __webpack_require__(1396);
 
 	var _reactImageCrop2 = _interopRequireDefault(_reactImageCrop);
 
-	var _ImageCropSource = __webpack_require__(1401);
+	var _ImageCropSource = __webpack_require__(1399);
 
 	var _ImageCropSource2 = _interopRequireDefault(_ImageCropSource);
 
-	var _flatButton = __webpack_require__(688);
+	var _flatButton = __webpack_require__(792);
 
 	var _flatButton2 = _interopRequireDefault(_flatButton);
 
-	var _raisedButton = __webpack_require__(1221);
+	var _raisedButton = __webpack_require__(1218);
 
 	var _raisedButton2 = _interopRequireDefault(_raisedButton);
 
-	var _snackbar = __webpack_require__(685);
+	var _snackbar = __webpack_require__(799);
 
 	var _snackbar2 = _interopRequireDefault(_snackbar);
 
-	var _cropFree = __webpack_require__(1402);
+	var _cropFree = __webpack_require__(1400);
 
 	var _cropFree2 = _interopRequireDefault(_cropFree);
 
-	var _cancel = __webpack_require__(1384);
+	var _cancel = __webpack_require__(1382);
 
 	var _cancel2 = _interopRequireDefault(_cancel);
 
@@ -64628,13 +64907,13 @@ webpackJsonp([0],[
 	exports.default = ProfileCrop;
 
 /***/ },
-/* 1398 */
+/* 1396 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(1399);
+	module.exports = __webpack_require__(1397);
 
 /***/ },
-/* 1399 */
+/* 1397 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -64649,7 +64928,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _objectAssign = __webpack_require__(1400);
+	var _objectAssign = __webpack_require__(1398);
 
 	var _objectAssign2 = _interopRequireDefault(_objectAssign);
 
@@ -65349,7 +65628,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1400 */
+/* 1398 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -65438,7 +65717,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1401 */
+/* 1399 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -65528,7 +65807,7 @@ webpackJsonp([0],[
 	exports.default = ImageCropSource;
 
 /***/ },
-/* 1402 */
+/* 1400 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -65541,11 +65820,11 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _pure = __webpack_require__(749);
+	var _pure = __webpack_require__(714);
 
 	var _pure2 = _interopRequireDefault(_pure);
 
-	var _svgIcon = __webpack_require__(804);
+	var _svgIcon = __webpack_require__(769);
 
 	var _svgIcon2 = _interopRequireDefault(_svgIcon);
 
@@ -65564,7 +65843,7 @@ webpackJsonp([0],[
 	exports.default = ImageCropFree;
 
 /***/ },
-/* 1403 */
+/* 1401 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -65579,15 +65858,15 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _flatButton = __webpack_require__(688);
+	var _flatButton = __webpack_require__(792);
 
 	var _flatButton2 = _interopRequireDefault(_flatButton);
 
-	var _photoCamera = __webpack_require__(1255);
+	var _photoCamera = __webpack_require__(1252);
 
 	var _photoCamera2 = _interopRequireDefault(_photoCamera);
 
-	var _reactDropzone = __webpack_require__(1256);
+	var _reactDropzone = __webpack_require__(1253);
 
 	var _reactDropzone2 = _interopRequireDefault(_reactDropzone);
 
@@ -65661,7 +65940,7 @@ webpackJsonp([0],[
 	exports.default = PictureUpload;
 
 /***/ },
-/* 1404 */
+/* 1402 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -65678,7 +65957,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _avatar = __webpack_require__(1405);
+	var _avatar = __webpack_require__(1403);
 
 	var _avatar2 = _interopRequireDefault(_avatar);
 
@@ -65733,8 +66012,8 @@ webpackJsonp([0],[
 	exports.default = ProfileAvatar;
 
 /***/ },
-/* 1405 */,
-/* 1406 */
+/* 1403 */,
+/* 1404 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -65753,21 +66032,37 @@ webpackJsonp([0],[
 
 	var _altContainer2 = _interopRequireDefault(_altContainer);
 
-	var _SnackbarMessage = __webpack_require__(1380);
+	var _dialog = __webpack_require__(791);
+
+	var _dialog2 = _interopRequireDefault(_dialog);
+
+	var _raisedButton = __webpack_require__(1218);
+
+	var _raisedButton2 = _interopRequireDefault(_raisedButton);
+
+	var _SnackbarMessage = __webpack_require__(1378);
 
 	var _SnackbarMessage2 = _interopRequireDefault(_SnackbarMessage);
 
-	var _PassportContentStore = __webpack_require__(1407);
+	var _PassportContentStore = __webpack_require__(1405);
 
 	var _PassportContentStore2 = _interopRequireDefault(_PassportContentStore);
 
-	var _PassportServerActions = __webpack_require__(1410);
+	var _PersonalDetailsStore = __webpack_require__(794);
+
+	var _PersonalDetailsStore2 = _interopRequireDefault(_PersonalDetailsStore);
+
+	var _PassportServerActions = __webpack_require__(1408);
 
 	var _PassportServerActions2 = _interopRequireDefault(_PassportServerActions);
 
-	var _PassportViewActions = __webpack_require__(1408);
+	var _PassportViewActions = __webpack_require__(1406);
 
 	var _PassportViewActions2 = _interopRequireDefault(_PassportViewActions);
+
+	var _LoginActions = __webpack_require__(266);
+
+	var _LoginActions2 = _interopRequireDefault(_LoginActions);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -65781,9 +66076,22 @@ webpackJsonp([0],[
 	  _inherits(PassportPage, _Component);
 
 	  function PassportPage() {
+	    var _Object$getPrototypeO;
+
+	    var _temp, _this, _ret;
+
 	    _classCallCheck(this, PassportPage);
 
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(PassportPage).apply(this, arguments));
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+
+	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_Object$getPrototypeO = Object.getPrototypeOf(PassportPage)).call.apply(_Object$getPrototypeO, [this].concat(args))), _this), _this.state = {
+	      open: false
+	    }, _this.handleLogout = function () {
+	      _this.setState({ open: false });
+	      _LoginActions2.default.logout();
+	    }, _temp), _possibleConstructorReturn(_this, _ret);
 	  }
 
 	  _createClass(PassportPage, [{
@@ -65791,6 +66099,9 @@ webpackJsonp([0],[
 	    value: function componentDidMount() {
 	      if (!_PassportContentStore2.default.getState().passportContent) {
 	        _PassportServerActions2.default.fetchPassports();
+	      }
+	      if (!_PersonalDetailsStore2.default.getState().personalDetails.passengerId) {
+	        this.setState({ open: true });
 	      }
 	    }
 	  }, {
@@ -65820,6 +66131,23 @@ webpackJsonp([0],[
 	          _react2.default.createElement(_SnackbarMessage2.default, {
 	            onRequestClose: this.clearMessage
 	          })
+	        ),
+	        _react2.default.createElement(
+	          _dialog2.default,
+	          {
+	            title: 'We just updated the website',
+	            open: this.state.open,
+	            modal: true,
+	            actions: [_react2.default.createElement(_raisedButton2.default, {
+	              label: 'LOGOUT',
+	              onTouchTap: this.handleLogout,
+	              primary: true
+	            })],
+	            contentStyle: {
+	              maxWidth: '500px'
+	            }
+	          },
+	          'To enable edition please login again.'
 	        )
 	      );
 	    }
@@ -65831,7 +66159,7 @@ webpackJsonp([0],[
 	exports.default = PassportPage;
 
 /***/ },
-/* 1407 */
+/* 1405 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -65846,17 +66174,17 @@ webpackJsonp([0],[
 
 	var _AltApp2 = _interopRequireDefault(_AltApp);
 
-	var _immutable = __webpack_require__(1377);
+	var _immutable = __webpack_require__(1375);
 
 	var _LoginActions = __webpack_require__(266);
 
 	var _LoginActions2 = _interopRequireDefault(_LoginActions);
 
-	var _PassportViewActions = __webpack_require__(1408);
+	var _PassportViewActions = __webpack_require__(1406);
 
 	var _PassportViewActions2 = _interopRequireDefault(_PassportViewActions);
 
-	var _PassportListStore = __webpack_require__(1409);
+	var _PassportListStore = __webpack_require__(1407);
 
 	var _PassportListStore2 = _interopRequireDefault(_PassportListStore);
 
@@ -65940,7 +66268,7 @@ webpackJsonp([0],[
 	exports.default = _AltApp2.default.createStore(PassportContentStore, 'PassportContentStore');
 
 /***/ },
-/* 1408 */
+/* 1406 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -65982,7 +66310,7 @@ webpackJsonp([0],[
 	exports.default = _AltApp2.default.createActions(PassportViewActions);
 
 /***/ },
-/* 1409 */
+/* 1407 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -65997,17 +66325,17 @@ webpackJsonp([0],[
 
 	var _AltApp2 = _interopRequireDefault(_AltApp);
 
-	var _immutable = __webpack_require__(1377);
+	var _immutable = __webpack_require__(1375);
 
 	var _LoginActions = __webpack_require__(266);
 
 	var _LoginActions2 = _interopRequireDefault(_LoginActions);
 
-	var _PassportViewActions = __webpack_require__(1408);
+	var _PassportViewActions = __webpack_require__(1406);
 
 	var _PassportViewActions2 = _interopRequireDefault(_PassportViewActions);
 
-	var _PassportContentStore = __webpack_require__(1407);
+	var _PassportContentStore = __webpack_require__(1405);
 
 	var _PassportContentStore2 = _interopRequireDefault(_PassportContentStore);
 
@@ -66067,7 +66395,7 @@ webpackJsonp([0],[
 	exports.default = _AltApp2.default.createStore(PassportListStore, 'PassportListStore');
 
 /***/ },
-/* 1410 */
+/* 1408 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -66084,11 +66412,11 @@ webpackJsonp([0],[
 
 	var _reactRouter = __webpack_require__(165);
 
-	var _PassportSource = __webpack_require__(1411);
+	var _PassportSource = __webpack_require__(1409);
 
 	var _PassportSource2 = _interopRequireDefault(_PassportSource);
 
-	var _PassportViewActions = __webpack_require__(1408);
+	var _PassportViewActions = __webpack_require__(1406);
 
 	var _PassportViewActions2 = _interopRequireDefault(_PassportViewActions);
 
@@ -66184,7 +66512,7 @@ webpackJsonp([0],[
 	exports.default = _AltApp2.default.createActions(PassportServerActions);
 
 /***/ },
-/* 1411 */
+/* 1409 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -66197,7 +66525,7 @@ webpackJsonp([0],[
 
 	var _superagent2 = _interopRequireDefault(_superagent);
 
-	var _User = __webpack_require__(599);
+	var _User = __webpack_require__(600);
 
 	var _User2 = _interopRequireDefault(_User);
 
@@ -66205,9 +66533,13 @@ webpackJsonp([0],[
 
 	var _Cache2 = _interopRequireDefault(_Cache);
 
-	var _sourceUtils = __webpack_require__(1376);
+	var _sourceUtils = __webpack_require__(1374);
 
 	var _Constants = __webpack_require__(316);
+
+	var _normalizePassport = __webpack_require__(595);
+
+	var _normalizePassport2 = _interopRequireDefault(_normalizePassport);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -66228,7 +66560,12 @@ webpackJsonp([0],[
 
 	function normalizePassports(passportsData) {
 	  if (passportsData) {
-	    if (!passportsData.length) {
+	    if (passportsData.length) {
+	      var id = passportsData[0].id;
+	      if (id && Array.isArray(id)) {
+	        passportsData = passportsData.map(_normalizePassport2.default);
+	      }
+	    } else {
 	      passportsData = [passportsData];
 	    }
 
@@ -66377,7 +66714,7 @@ webpackJsonp([0],[
 	exports.default = PassportSource;
 
 /***/ },
-/* 1412 */
+/* 1410 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -66392,7 +66729,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _PassportListContainer = __webpack_require__(1413);
+	var _PassportListContainer = __webpack_require__(1411);
 
 	var _PassportListContainer2 = _interopRequireDefault(_PassportListContainer);
 
@@ -66426,7 +66763,7 @@ webpackJsonp([0],[
 	exports.default = PassportListPage;
 
 /***/ },
-/* 1413 */
+/* 1411 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -66445,19 +66782,19 @@ webpackJsonp([0],[
 
 	var _altContainer2 = _interopRequireDefault(_altContainer);
 
-	var _PassportServerActions = __webpack_require__(1410);
+	var _PassportServerActions = __webpack_require__(1408);
 
 	var _PassportServerActions2 = _interopRequireDefault(_PassportServerActions);
 
-	var _PassportListStore = __webpack_require__(1409);
+	var _PassportListStore = __webpack_require__(1407);
 
 	var _PassportListStore2 = _interopRequireDefault(_PassportListStore);
 
-	var _PassportContentStore = __webpack_require__(1407);
+	var _PassportContentStore = __webpack_require__(1405);
 
 	var _PassportContentStore2 = _interopRequireDefault(_PassportContentStore);
 
-	var _PassportListSection = __webpack_require__(1414);
+	var _PassportListSection = __webpack_require__(1412);
 
 	var _PassportListSection2 = _interopRequireDefault(_PassportListSection);
 
@@ -66503,7 +66840,7 @@ webpackJsonp([0],[
 	exports.default = PassportListContainer;
 
 /***/ },
-/* 1414 */
+/* 1412 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -66518,7 +66855,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _PassportList = __webpack_require__(1415);
+	var _PassportList = __webpack_require__(1413);
 
 	var _PassportList2 = _interopRequireDefault(_PassportList);
 
@@ -66556,7 +66893,7 @@ webpackJsonp([0],[
 	exports.default = PassportListSection;
 
 /***/ },
-/* 1415 */
+/* 1413 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -66571,15 +66908,15 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _addCircle = __webpack_require__(1314);
+	var _addCircle = __webpack_require__(1312);
 
 	var _addCircle2 = _interopRequireDefault(_addCircle);
 
-	var _PassportListItem = __webpack_require__(1416);
+	var _PassportListItem = __webpack_require__(1414);
 
 	var _PassportListItem2 = _interopRequireDefault(_PassportListItem);
 
-	var _Button = __webpack_require__(1419);
+	var _Button = __webpack_require__(1417);
 
 	var _Button2 = _interopRequireDefault(_Button);
 
@@ -66671,7 +67008,7 @@ webpackJsonp([0],[
 	exports.default = PassportList;
 
 /***/ },
-/* 1416 */
+/* 1414 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -66690,11 +67027,11 @@ webpackJsonp([0],[
 
 	var _moment2 = _interopRequireDefault(_moment);
 
-	var _CountryFlag = __webpack_require__(1417);
+	var _CountryFlag = __webpack_require__(1415);
 
 	var _CountryFlag2 = _interopRequireDefault(_CountryFlag);
 
-	var _Button = __webpack_require__(1419);
+	var _Button = __webpack_require__(1417);
 
 	var _Button2 = _interopRequireDefault(_Button);
 
@@ -66841,7 +67178,7 @@ webpackJsonp([0],[
 	exports.default = PassportListItem;
 
 /***/ },
-/* 1417 */
+/* 1415 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -66854,7 +67191,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _CountrySource = __webpack_require__(1418);
+	var _CountrySource = __webpack_require__(1416);
 
 	var _CountrySource2 = _interopRequireDefault(_CountrySource);
 
@@ -66893,7 +67230,7 @@ webpackJsonp([0],[
 	exports.default = CountryFlag;
 
 /***/ },
-/* 1418 */
+/* 1416 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -66910,7 +67247,7 @@ webpackJsonp([0],[
 	};
 
 /***/ },
-/* 1419 */
+/* 1417 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -66923,7 +67260,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _muiThemeable = __webpack_require__(741);
+	var _muiThemeable = __webpack_require__(705);
 
 	var _muiThemeable2 = _interopRequireDefault(_muiThemeable);
 
@@ -66993,7 +67330,7 @@ webpackJsonp([0],[
 	exports.default = (0, _muiThemeable2.default)()(Button);
 
 /***/ },
-/* 1420 */
+/* 1418 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -67008,7 +67345,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _PassportFormContainer = __webpack_require__(1421);
+	var _PassportFormContainer = __webpack_require__(1419);
 
 	var _PassportFormContainer2 = _interopRequireDefault(_PassportFormContainer);
 
@@ -67042,7 +67379,7 @@ webpackJsonp([0],[
 	exports.default = PassportFormPage;
 
 /***/ },
-/* 1421 */
+/* 1419 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -67061,23 +67398,23 @@ webpackJsonp([0],[
 
 	var _altContainer2 = _interopRequireDefault(_altContainer);
 
-	var _PassportServerActions = __webpack_require__(1410);
+	var _PassportServerActions = __webpack_require__(1408);
 
 	var _PassportServerActions2 = _interopRequireDefault(_PassportServerActions);
 
-	var _PassportListStore = __webpack_require__(1409);
+	var _PassportListStore = __webpack_require__(1407);
 
 	var _PassportListStore2 = _interopRequireDefault(_PassportListStore);
 
-	var _PassportContentStore = __webpack_require__(1407);
+	var _PassportContentStore = __webpack_require__(1405);
 
 	var _PassportContentStore2 = _interopRequireDefault(_PassportContentStore);
 
-	var _PassportViewActions = __webpack_require__(1408);
+	var _PassportViewActions = __webpack_require__(1406);
 
 	var _PassportViewActions2 = _interopRequireDefault(_PassportViewActions);
 
-	var _PassportFormSection = __webpack_require__(1422);
+	var _PassportFormSection = __webpack_require__(1420);
 
 	var _PassportFormSection2 = _interopRequireDefault(_PassportFormSection);
 
@@ -67154,7 +67491,7 @@ webpackJsonp([0],[
 	exports.default = PassportFormContainer;
 
 /***/ },
-/* 1422 */
+/* 1420 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -67169,7 +67506,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _PassportForm = __webpack_require__(1423);
+	var _PassportForm = __webpack_require__(1421);
 
 	var _PassportForm2 = _interopRequireDefault(_PassportForm);
 
@@ -67203,7 +67540,7 @@ webpackJsonp([0],[
 	exports.default = PassportFormSection;
 
 /***/ },
-/* 1423 */
+/* 1421 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -67220,7 +67557,7 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactAddonsLinkedStateMixin = __webpack_require__(1424);
+	var _reactAddonsLinkedStateMixin = __webpack_require__(1422);
 
 	var _reactAddonsLinkedStateMixin2 = _interopRequireDefault(_reactAddonsLinkedStateMixin);
 
@@ -67228,43 +67565,43 @@ webpackJsonp([0],[
 
 	var _moment2 = _interopRequireDefault(_moment);
 
-	var _autoComplete = __webpack_require__(727);
+	var _autoComplete = __webpack_require__(687);
 
 	var _autoComplete2 = _interopRequireDefault(_autoComplete);
 
-	var _menuItem = __webpack_require__(742);
+	var _menuItem = __webpack_require__(706);
 
 	var _menuItem2 = _interopRequireDefault(_menuItem);
 
-	var _dialog = __webpack_require__(915);
+	var _dialog = __webpack_require__(791);
 
 	var _dialog2 = _interopRequireDefault(_dialog);
 
-	var _CountrySource = __webpack_require__(1418);
+	var _CountrySource = __webpack_require__(1416);
 
 	var _CountrySource2 = _interopRequireDefault(_CountrySource);
 
-	var _AutoComplete = __webpack_require__(1425);
+	var _AutoComplete = __webpack_require__(1423);
 
 	var _AutoComplete2 = _interopRequireDefault(_AutoComplete);
 
-	var _Button = __webpack_require__(1419);
+	var _Button = __webpack_require__(1417);
 
 	var _Button2 = _interopRequireDefault(_Button);
 
-	var _Checkbox = __webpack_require__(1426);
+	var _Checkbox = __webpack_require__(1424);
 
 	var _Checkbox2 = _interopRequireDefault(_Checkbox);
 
-	var _DatePicker = __webpack_require__(1386);
+	var _DatePicker = __webpack_require__(1384);
 
 	var _DatePicker2 = _interopRequireDefault(_DatePicker);
 
-	var _TextField = __webpack_require__(1385);
+	var _TextField = __webpack_require__(1383);
 
 	var _TextField2 = _interopRequireDefault(_TextField);
 
-	var _CountryFlag = __webpack_require__(1417);
+	var _CountryFlag = __webpack_require__(1415);
 
 	var _CountryFlag2 = _interopRequireDefault(_CountryFlag);
 
@@ -67337,11 +67674,14 @@ webpackJsonp([0],[
 
 	    _this.handleDelete = function () {
 	      _this.handleCloseModal();
+	      var exiresOnDate = _this.state.expiresOnDate;
+	      exiresOnDate = exiresOnDate.add(exiresOnDate.utcOffset(), 'minutes').utc().format();
+
 	      _this.props.deletePassport({
 	        id: _this.state.id,
 	        passportNumber: _this.state.passportNumber,
 	        displayName: _this.state.displayName,
-	        expiresOnDate: _this.state.expiresOnDate.utc().format(),
+	        expiresOnDate: exiresOnDate,
 	        isoPassportCountry: _this.state.isoPassportCountry,
 	        isoIssuedByCountry: _this.state.isoIssuedByCountry,
 	        isDefault: _this.state.isDefault,
@@ -67393,11 +67733,14 @@ webpackJsonp([0],[
 	    };
 
 	    _this.handleSave = function (existingPassport) {
+	      var exiresOnDate = _this.state.expiresOnDate;
+	      exiresOnDate = exiresOnDate.add(exiresOnDate.utcOffset(), 'minutes').utc().format();
+
 	      var passport = {
 	        id: _this.state.id,
 	        passportNumber: _this.state.passportNumber,
 	        displayName: _this.state.displayName,
-	        expiresOnDate: _this.state.expiresOnDate.format(),
+	        expiresOnDate: exiresOnDate,
 	        isoPassportCountry: _this.state.isoPassportCountry,
 	        isoIssuedByCountry: _this.state.isoIssuedByCountry,
 	        isDefault: existingPassport && existingPassport.isDefault ? existingPassport.isDefault : _this.state.isDefault,
@@ -67683,13 +68026,13 @@ webpackJsonp([0],[
 	exports.default = PassportForm;
 
 /***/ },
-/* 1424 */
+/* 1422 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(922);
+	module.exports = __webpack_require__(918);
 
 /***/ },
-/* 1425 */
+/* 1423 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -67706,11 +68049,11 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _autoComplete = __webpack_require__(727);
+	var _autoComplete = __webpack_require__(687);
 
 	var _autoComplete2 = _interopRequireDefault(_autoComplete);
 
-	var _muiThemeable = __webpack_require__(741);
+	var _muiThemeable = __webpack_require__(705);
 
 	var _muiThemeable2 = _interopRequireDefault(_muiThemeable);
 
@@ -67895,7 +68238,7 @@ webpackJsonp([0],[
 	exports.default = (0, _muiThemeable2.default)()(AutoComplete);
 
 /***/ },
-/* 1426 */
+/* 1424 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -67949,7 +68292,7 @@ webpackJsonp([0],[
 	exports.default = Checkbox;
 
 /***/ },
-/* 1427 */
+/* 1425 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -67964,11 +68307,11 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ChangePassword = __webpack_require__(1428);
+	var _ChangePassword = __webpack_require__(1426);
 
 	var _ChangePassword2 = _interopRequireDefault(_ChangePassword);
 
-	var _MyAccountSource = __webpack_require__(682);
+	var _MyAccountSource = __webpack_require__(796);
 
 	var _MyAccountSource2 = _interopRequireDefault(_MyAccountSource);
 
@@ -68006,8 +68349,10 @@ webpackJsonp([0],[
 	                if (data.success == 'true') {
 	                    _this.setState({
 	                        message: "Your password has been changed."
-
 	                    });
+	                    setTimeout(function () {
+	                        window.location.hash = 'dashboard';
+	                    }, 2000);
 	                } else {
 	                    _this.setState({
 	                        message: "An error has occurred"
@@ -68037,7 +68382,7 @@ webpackJsonp([0],[
 	exports.default = ChangePasswordPage;
 
 /***/ },
-/* 1428 */
+/* 1426 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -68052,15 +68397,15 @@ webpackJsonp([0],[
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _TextField = __webpack_require__(1385);
+	var _TextField = __webpack_require__(1383);
 
 	var _TextField2 = _interopRequireDefault(_TextField);
 
-	var _snackbar = __webpack_require__(685);
+	var _snackbar = __webpack_require__(799);
 
 	var _snackbar2 = _interopRequireDefault(_snackbar);
 
-	var _reactAddonsLinkedStateMixin = __webpack_require__(1424);
+	var _reactAddonsLinkedStateMixin = __webpack_require__(1422);
 
 	var _reactAddonsLinkedStateMixin2 = _interopRequireDefault(_reactAddonsLinkedStateMixin);
 
@@ -68100,7 +68445,6 @@ webpackJsonp([0],[
 	            errors: {}
 	        }, _this.handleSubmit = function (e) {
 	            e.preventDefault();
-
 	            var oldPass = _this.state.oldPass;
 	            var newPass = _this.state.newPass;
 	            var repeatPass = _this.state.repeatPass;
@@ -68251,6 +68595,18 @@ webpackJsonp([0],[
 	exports.default = ChangePassword;
 
 /***/ },
+/* 1427 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 1428 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
 /* 1429 */
 /***/ function(module, exports) {
 
@@ -68294,29 +68650,17 @@ webpackJsonp([0],[
 
 /***/ },
 /* 1436 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 1437 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 1438 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;var __WEBPACK_AMD_DEFINE_RESULT__;var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_LOCAL_MODULE_0__;var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(jQuery, $, __webpack_provided_window_dot_jQuery) {if("undefined"==typeof jQuery){var jQuery;jQuery= true?$=__webpack_require__(1439):$}jQuery.easing.jswing=jQuery.easing.swing,jQuery.extend(jQuery.easing,{def:"easeOutQuad",swing:function(a,b,c,d,e){return jQuery.easing[jQuery.easing.def](a,b,c,d,e)},easeInQuad:function(a,b,c,d,e){return d*(b/=e)*b+c},easeOutQuad:function(a,b,c,d,e){return-d*(b/=e)*(b-2)+c},easeInOutQuad:function(a,b,c,d,e){return(b/=e/2)<1?d/2*b*b+c:-d/2*(--b*(b-2)-1)+c},easeInCubic:function(a,b,c,d,e){return d*(b/=e)*b*b+c},easeOutCubic:function(a,b,c,d,e){return d*((b=b/e-1)*b*b+1)+c},easeInOutCubic:function(a,b,c,d,e){return(b/=e/2)<1?d/2*b*b*b+c:d/2*((b-=2)*b*b+2)+c},easeInQuart:function(a,b,c,d,e){return d*(b/=e)*b*b*b+c},easeOutQuart:function(a,b,c,d,e){return-d*((b=b/e-1)*b*b*b-1)+c},easeInOutQuart:function(a,b,c,d,e){return(b/=e/2)<1?d/2*b*b*b*b+c:-d/2*((b-=2)*b*b*b-2)+c},easeInQuint:function(a,b,c,d,e){return d*(b/=e)*b*b*b*b+c},easeOutQuint:function(a,b,c,d,e){return d*((b=b/e-1)*b*b*b*b+1)+c},easeInOutQuint:function(a,b,c,d,e){return(b/=e/2)<1?d/2*b*b*b*b*b+c:d/2*((b-=2)*b*b*b*b+2)+c},easeInSine:function(a,b,c,d,e){return-d*Math.cos(b/e*(Math.PI/2))+d+c},easeOutSine:function(a,b,c,d,e){return d*Math.sin(b/e*(Math.PI/2))+c},easeInOutSine:function(a,b,c,d,e){return-d/2*(Math.cos(Math.PI*b/e)-1)+c},easeInExpo:function(a,b,c,d,e){return 0==b?c:d*Math.pow(2,10*(b/e-1))+c},easeOutExpo:function(a,b,c,d,e){return b==e?c+d:d*(-Math.pow(2,-10*b/e)+1)+c},easeInOutExpo:function(a,b,c,d,e){return 0==b?c:b==e?c+d:(b/=e/2)<1?d/2*Math.pow(2,10*(b-1))+c:d/2*(-Math.pow(2,-10*--b)+2)+c},easeInCirc:function(a,b,c,d,e){return-d*(Math.sqrt(1-(b/=e)*b)-1)+c},easeOutCirc:function(a,b,c,d,e){return d*Math.sqrt(1-(b=b/e-1)*b)+c},easeInOutCirc:function(a,b,c,d,e){return(b/=e/2)<1?-d/2*(Math.sqrt(1-b*b)-1)+c:d/2*(Math.sqrt(1-(b-=2)*b)+1)+c},easeInElastic:function(a,b,c,d,e){var f=1.70158,g=0,h=d;if(0==b)return c;if(1==(b/=e))return c+d;if(g||(g=.3*e),h<Math.abs(d)){h=d;var f=g/4}else var f=g/(2*Math.PI)*Math.asin(d/h);return-(h*Math.pow(2,10*(b-=1))*Math.sin((b*e-f)*(2*Math.PI)/g))+c},easeOutElastic:function(a,b,c,d,e){var f=1.70158,g=0,h=d;if(0==b)return c;if(1==(b/=e))return c+d;if(g||(g=.3*e),h<Math.abs(d)){h=d;var f=g/4}else var f=g/(2*Math.PI)*Math.asin(d/h);return h*Math.pow(2,-10*b)*Math.sin((b*e-f)*(2*Math.PI)/g)+d+c},easeInOutElastic:function(a,b,c,d,e){var f=1.70158,g=0,h=d;if(0==b)return c;if(2==(b/=e/2))return c+d;if(g||(g=e*(.3*1.5)),h<Math.abs(d)){h=d;var f=g/4}else var f=g/(2*Math.PI)*Math.asin(d/h);return 1>b?-.5*(h*Math.pow(2,10*(b-=1))*Math.sin((b*e-f)*(2*Math.PI)/g))+c:h*Math.pow(2,-10*(b-=1))*Math.sin((b*e-f)*(2*Math.PI)/g)*.5+d+c},easeInBack:function(a,b,c,d,e,f){return void 0==f&&(f=1.70158),d*(b/=e)*b*((f+1)*b-f)+c},easeOutBack:function(a,b,c,d,e,f){return void 0==f&&(f=1.70158),d*((b=b/e-1)*b*((f+1)*b+f)+1)+c},easeInOutBack:function(a,b,c,d,e,f){return void 0==f&&(f=1.70158),(b/=e/2)<1?d/2*(b*b*(((f*=1.525)+1)*b-f))+c:d/2*((b-=2)*b*(((f*=1.525)+1)*b+f)+2)+c},easeInBounce:function(a,b,c,d,e){return d-jQuery.easing.easeOutBounce(a,e-b,0,d,e)+c},easeOutBounce:function(a,b,c,d,e){return(b/=e)<1/2.75?d*(7.5625*b*b)+c:2/2.75>b?d*(7.5625*(b-=1.5/2.75)*b+.75)+c:2.5/2.75>b?d*(7.5625*(b-=2.25/2.75)*b+.9375)+c:d*(7.5625*(b-=2.625/2.75)*b+.984375)+c},easeInOutBounce:function(a,b,c,d,e){return e/2>b?.5*jQuery.easing.easeInBounce(a,2*b,0,d,e)+c:.5*jQuery.easing.easeOutBounce(a,2*b-e,0,d,e)+.5*d+c}}),jQuery.extend(jQuery.easing,{easeInOutMaterial:function(a,b,c,d,e){return(b/=e/2)<1?d/2*b*b+c:d/4*((b-=2)*b*b+2)+c}}),jQuery.Velocity?console.log("Velocity is already loaded. You may be needlessly importing Velocity again; note that Materialize includes Velocity."):(!function(a){function b(a){var b=a.length,d=c.type(a);return"function"===d||c.isWindow(a)?!1:1===a.nodeType&&b?!0:"array"===d||0===b||"number"==typeof b&&b>0&&b-1 in a}if(!__webpack_provided_window_dot_jQuery){var c=function(a,b){return new c.fn.init(a,b)};c.isWindow=function(a){return null!=a&&a==a.window},c.type=function(a){return null==a?a+"":"object"==typeof a||"function"==typeof a?e[g.call(a)]||"object":typeof a},c.isArray=Array.isArray||function(a){return"array"===c.type(a)},c.isPlainObject=function(a){var b;if(!a||"object"!==c.type(a)||a.nodeType||c.isWindow(a))return!1;try{if(a.constructor&&!f.call(a,"constructor")&&!f.call(a.constructor.prototype,"isPrototypeOf"))return!1}catch(d){return!1}for(b in a);return void 0===b||f.call(a,b)},c.each=function(a,c,d){var e,f=0,g=a.length,h=b(a);if(d){if(h)for(;g>f&&(e=c.apply(a[f],d),e!==!1);f++);else for(f in a)if(e=c.apply(a[f],d),e===!1)break}else if(h)for(;g>f&&(e=c.call(a[f],f,a[f]),e!==!1);f++);else for(f in a)if(e=c.call(a[f],f,a[f]),e===!1)break;return a},c.data=function(a,b,e){if(void 0===e){var f=a[c.expando],g=f&&d[f];if(void 0===b)return g;if(g&&b in g)return g[b]}else if(void 0!==b){var f=a[c.expando]||(a[c.expando]=++c.uuid);return d[f]=d[f]||{},d[f][b]=e,e}},c.removeData=function(a,b){var e=a[c.expando],f=e&&d[e];f&&c.each(b,function(a,b){delete f[b]})},c.extend=function(){var a,b,d,e,f,g,h=arguments[0]||{},i=1,j=arguments.length,k=!1;for("boolean"==typeof h&&(k=h,h=arguments[i]||{},i++),"object"!=typeof h&&"function"!==c.type(h)&&(h={}),i===j&&(h=this,i--);j>i;i++)if(null!=(f=arguments[i]))for(e in f)a=h[e],d=f[e],h!==d&&(k&&d&&(c.isPlainObject(d)||(b=c.isArray(d)))?(b?(b=!1,g=a&&c.isArray(a)?a:[]):g=a&&c.isPlainObject(a)?a:{},h[e]=c.extend(k,g,d)):void 0!==d&&(h[e]=d));return h},c.queue=function(a,d,e){function f(a,c){var d=c||[];return null!=a&&(b(Object(a))?!function(a,b){for(var c=+b.length,d=0,e=a.length;c>d;)a[e++]=b[d++];if(c!==c)for(;void 0!==b[d];)a[e++]=b[d++];return a.length=e,a}(d,"string"==typeof a?[a]:a):[].push.call(d,a)),d}if(a){d=(d||"fx")+"queue";var g=c.data(a,d);return e?(!g||c.isArray(e)?g=c.data(a,d,f(e)):g.push(e),g):g||[]}},c.dequeue=function(a,b){c.each(a.nodeType?[a]:a,function(a,d){b=b||"fx";var e=c.queue(d,b),f=e.shift();"inprogress"===f&&(f=e.shift()),f&&("fx"===b&&e.unshift("inprogress"),f.call(d,function(){c.dequeue(d,b)}))})},c.fn=c.prototype={init:function(a){if(a.nodeType)return this[0]=a,this;throw new Error("Not a DOM node.")},offset:function(){var b=this[0].getBoundingClientRect?this[0].getBoundingClientRect():{top:0,left:0};return{top:b.top+(a.pageYOffset||document.scrollTop||0)-(document.clientTop||0),left:b.left+(a.pageXOffset||document.scrollLeft||0)-(document.clientLeft||0)}},position:function(){function a(){for(var a=this.offsetParent||document;a&&"html"===!a.nodeType.toLowerCase&&"static"===a.style.position;)a=a.offsetParent;return a||document}var b=this[0],a=a.apply(b),d=this.offset(),e=/^(?:body|html)$/i.test(a.nodeName)?{top:0,left:0}:c(a).offset();return d.top-=parseFloat(b.style.marginTop)||0,d.left-=parseFloat(b.style.marginLeft)||0,a.style&&(e.top+=parseFloat(a.style.borderTopWidth)||0,e.left+=parseFloat(a.style.borderLeftWidth)||0),{top:d.top-e.top,left:d.left-e.left}}};var d={};c.expando="velocity"+(new Date).getTime(),c.uuid=0;for(var e={},f=e.hasOwnProperty,g=e.toString,h="Boolean Number String Function Array Date RegExp Object Error".split(" "),i=0;i<h.length;i++)e["[object "+h[i]+"]"]=h[i].toLowerCase();c.fn.init.prototype=c.fn,a.Velocity={Utilities:c}}}(window),function(a){"object"==typeof module&&"object"==typeof module.exports?module.exports=a(): true?!(__WEBPACK_AMD_DEFINE_FACTORY__ = (a), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)):a()}(function(){return function(a,b,c,d){function e(a){for(var b=-1,c=a?a.length:0,d=[];++b<c;){var e=a[b];e&&d.push(e)}return d}function f(a){return p.isWrapped(a)?a=[].slice.call(a):p.isNode(a)&&(a=[a]),a}function g(a){var b=m.data(a,"velocity");return null===b?d:b}function h(a){return function(b){return Math.round(b*a)*(1/a)}}function i(a,c,d,e){function f(a,b){return 1-3*b+3*a}function g(a,b){return 3*b-6*a}function h(a){return 3*a}function i(a,b,c){return((f(b,c)*a+g(b,c))*a+h(b))*a}function j(a,b,c){return 3*f(b,c)*a*a+2*g(b,c)*a+h(b)}function k(b,c){for(var e=0;p>e;++e){var f=j(c,a,d);if(0===f)return c;var g=i(c,a,d)-b;c-=g/f}return c}function l(){for(var b=0;t>b;++b)x[b]=i(b*u,a,d)}function m(b,c,e){var f,g,h=0;do g=c+(e-c)/2,f=i(g,a,d)-b,f>0?e=g:c=g;while(Math.abs(f)>r&&++h<s);return g}function n(b){for(var c=0,e=1,f=t-1;e!=f&&x[e]<=b;++e)c+=u;--e;var g=(b-x[e])/(x[e+1]-x[e]),h=c+g*u,i=j(h,a,d);return i>=q?k(b,h):0==i?h:m(b,c,c+u)}function o(){y=!0,(a!=c||d!=e)&&l()}var p=4,q=.001,r=1e-7,s=10,t=11,u=1/(t-1),v="Float32Array"in b;if(4!==arguments.length)return!1;for(var w=0;4>w;++w)if("number"!=typeof arguments[w]||isNaN(arguments[w])||!isFinite(arguments[w]))return!1;a=Math.min(a,1),d=Math.min(d,1),a=Math.max(a,0),d=Math.max(d,0);var x=v?new Float32Array(t):new Array(t),y=!1,z=function(b){return y||o(),a===c&&d===e?b:0===b?0:1===b?1:i(n(b),c,e)};z.getControlPoints=function(){return[{x:a,y:c},{x:d,y:e}]};var A="generateBezier("+[a,c,d,e]+")";return z.toString=function(){return A},z}function j(a,b){var c=a;return p.isString(a)?t.Easings[a]||(c=!1):c=p.isArray(a)&&1===a.length?h.apply(null,a):p.isArray(a)&&2===a.length?u.apply(null,a.concat([b])):p.isArray(a)&&4===a.length?i.apply(null,a):!1,c===!1&&(c=t.Easings[t.defaults.easing]?t.defaults.easing:s),c}function k(a){if(a){var b=(new Date).getTime(),c=t.State.calls.length;c>1e4&&(t.State.calls=e(t.State.calls));for(var f=0;c>f;f++)if(t.State.calls[f]){var h=t.State.calls[f],i=h[0],j=h[2],n=h[3],o=!!n,q=null;n||(n=t.State.calls[f][3]=b-16);for(var r=Math.min((b-n)/j.duration,1),s=0,u=i.length;u>s;s++){var w=i[s],y=w.element;if(g(y)){var z=!1;if(j.display!==d&&null!==j.display&&"none"!==j.display){if("flex"===j.display){var A=["-webkit-box","-moz-box","-ms-flexbox","-webkit-flex"];m.each(A,function(a,b){v.setPropertyValue(y,"display",b)})}v.setPropertyValue(y,"display",j.display)}j.visibility!==d&&"hidden"!==j.visibility&&v.setPropertyValue(y,"visibility",j.visibility);for(var B in w)if("element"!==B){var C,D=w[B],E=p.isString(D.easing)?t.Easings[D.easing]:D.easing;if(1===r)C=D.endValue;else{var F=D.endValue-D.startValue;if(C=D.startValue+F*E(r,j,F),!o&&C===D.currentValue)continue}if(D.currentValue=C,"tween"===B)q=C;else{if(v.Hooks.registered[B]){var G=v.Hooks.getRoot(B),H=g(y).rootPropertyValueCache[G];H&&(D.rootPropertyValue=H)}var I=v.setPropertyValue(y,B,D.currentValue+(0===parseFloat(C)?"":D.unitType),D.rootPropertyValue,D.scrollData);v.Hooks.registered[B]&&(g(y).rootPropertyValueCache[G]=v.Normalizations.registered[G]?v.Normalizations.registered[G]("extract",null,I[1]):I[1]),"transform"===I[0]&&(z=!0)}}j.mobileHA&&g(y).transformCache.translate3d===d&&(g(y).transformCache.translate3d="(0px, 0px, 0px)",z=!0),z&&v.flushTransformCache(y)}}j.display!==d&&"none"!==j.display&&(t.State.calls[f][2].display=!1),j.visibility!==d&&"hidden"!==j.visibility&&(t.State.calls[f][2].visibility=!1),j.progress&&j.progress.call(h[1],h[1],r,Math.max(0,n+j.duration-b),n,q),1===r&&l(f)}}t.State.isTicking&&x(k)}function l(a,b){if(!t.State.calls[a])return!1;for(var c=t.State.calls[a][0],e=t.State.calls[a][1],f=t.State.calls[a][2],h=t.State.calls[a][4],i=!1,j=0,k=c.length;k>j;j++){var l=c[j].element;if(b||f.loop||("none"===f.display&&v.setPropertyValue(l,"display",f.display),"hidden"===f.visibility&&v.setPropertyValue(l,"visibility",f.visibility)),f.loop!==!0&&(m.queue(l)[1]===d||!/\.velocityQueueEntryFlag/i.test(m.queue(l)[1]))&&g(l)){g(l).isAnimating=!1,g(l).rootPropertyValueCache={};var n=!1;m.each(v.Lists.transforms3D,function(a,b){var c=/^scale/.test(b)?1:0,e=g(l).transformCache[b];g(l).transformCache[b]!==d&&new RegExp("^\\("+c+"[^.]").test(e)&&(n=!0,delete g(l).transformCache[b])}),f.mobileHA&&(n=!0,delete g(l).transformCache.translate3d),n&&v.flushTransformCache(l),v.Values.removeClass(l,"velocity-animating")}if(!b&&f.complete&&!f.loop&&j===k-1)try{f.complete.call(e,e)}catch(o){setTimeout(function(){throw o},1)}h&&f.loop!==!0&&h(e),g(l)&&f.loop===!0&&!b&&(m.each(g(l).tweensContainer,function(a,b){/^rotate/.test(a)&&360===parseFloat(b.endValue)&&(b.endValue=0,b.startValue=360),/^backgroundPosition/.test(a)&&100===parseFloat(b.endValue)&&"%"===b.unitType&&(b.endValue=0,b.startValue=100)}),t(l,"reverse",{loop:!0,delay:f.delay})),f.queue!==!1&&m.dequeue(l,f.queue)}t.State.calls[a]=!1;for(var p=0,q=t.State.calls.length;q>p;p++)if(t.State.calls[p]!==!1){i=!0;break}i===!1&&(t.State.isTicking=!1,delete t.State.calls,t.State.calls=[])}var m,n=function(){if(c.documentMode)return c.documentMode;for(var a=7;a>4;a--){var b=c.createElement("div");if(b.innerHTML="<!--[if IE "+a+"]><span></span><![endif]-->",b.getElementsByTagName("span").length)return b=null,a}return d}(),o=function(){var a=0;return b.webkitRequestAnimationFrame||b.mozRequestAnimationFrame||function(b){var c,d=(new Date).getTime();return c=Math.max(0,16-(d-a)),a=d+c,setTimeout(function(){b(d+c)},c)}}(),p={isString:function(a){return"string"==typeof a},isArray:Array.isArray||function(a){return"[object Array]"===Object.prototype.toString.call(a)},isFunction:function(a){return"[object Function]"===Object.prototype.toString.call(a)},isNode:function(a){return a&&a.nodeType},isNodeList:function(a){return"object"==typeof a&&/^\[object (HTMLCollection|NodeList|Object)\]$/.test(Object.prototype.toString.call(a))&&a.length!==d&&(0===a.length||"object"==typeof a[0]&&a[0].nodeType>0)},isWrapped:function(a){return a&&(a.jquery||b.Zepto&&b.Zepto.zepto.isZ(a))},isSVG:function(a){return b.SVGElement&&a instanceof b.SVGElement},isEmptyObject:function(a){for(var b in a)return!1;return!0}},q=!1;if(a.fn&&a.fn.jquery?(m=a,q=!0):m=b.Velocity.Utilities,8>=n&&!q)throw new Error("Velocity: IE8 and below require jQuery to be loaded before Velocity.");if(7>=n)return void(jQuery.fn.velocity=jQuery.fn.animate);var r=400,s="swing",t={State:{isMobile:/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),isAndroid:/Android/i.test(navigator.userAgent),isGingerbread:/Android 2\.3\.[3-7]/i.test(navigator.userAgent),isChrome:b.chrome,isFirefox:/Firefox/i.test(navigator.userAgent),prefixElement:c.createElement("div"),prefixMatches:{},scrollAnchor:null,scrollPropertyLeft:null,scrollPropertyTop:null,isTicking:!1,calls:[]},CSS:{},Utilities:m,Redirects:{},Easings:{},Promise:b.Promise,defaults:{queue:"",duration:r,easing:s,begin:d,complete:d,progress:d,display:d,visibility:d,loop:!1,delay:!1,mobileHA:!0,_cacheValues:!0},init:function(a){m.data(a,"velocity",{isSVG:p.isSVG(a),isAnimating:!1,computedStyle:null,tweensContainer:null,rootPropertyValueCache:{},transformCache:{}})},hook:null,mock:!1,version:{major:1,minor:2,patch:2},debug:!1};b.pageYOffset!==d?(t.State.scrollAnchor=b,t.State.scrollPropertyLeft="pageXOffset",t.State.scrollPropertyTop="pageYOffset"):(t.State.scrollAnchor=c.documentElement||c.body.parentNode||c.body,t.State.scrollPropertyLeft="scrollLeft",t.State.scrollPropertyTop="scrollTop");var u=function(){function a(a){return-a.tension*a.x-a.friction*a.v}function b(b,c,d){var e={x:b.x+d.dx*c,v:b.v+d.dv*c,tension:b.tension,friction:b.friction};return{dx:e.v,dv:a(e)}}function c(c,d){var e={dx:c.v,dv:a(c)},f=b(c,.5*d,e),g=b(c,.5*d,f),h=b(c,d,g),i=1/6*(e.dx+2*(f.dx+g.dx)+h.dx),j=1/6*(e.dv+2*(f.dv+g.dv)+h.dv);return c.x=c.x+i*d,c.v=c.v+j*d,c}return function d(a,b,e){var f,g,h,i={x:-1,v:0,tension:null,friction:null},j=[0],k=0,l=1e-4,m=.016;for(a=parseFloat(a)||500,b=parseFloat(b)||20,e=e||null,i.tension=a,i.friction=b,f=null!==e,f?(k=d(a,b),g=k/e*m):g=m;h=c(h||i,g),j.push(1+h.x),k+=16,Math.abs(h.x)>l&&Math.abs(h.v)>l;);return f?function(a){return j[a*(j.length-1)|0]}:k}}();t.Easings={linear:function(a){return a},swing:function(a){return.5-Math.cos(a*Math.PI)/2},spring:function(a){return 1-Math.cos(4.5*a*Math.PI)*Math.exp(6*-a)}},m.each([["ease",[.25,.1,.25,1]],["ease-in",[.42,0,1,1]],["ease-out",[0,0,.58,1]],["ease-in-out",[.42,0,.58,1]],["easeInSine",[.47,0,.745,.715]],["easeOutSine",[.39,.575,.565,1]],["easeInOutSine",[.445,.05,.55,.95]],["easeInQuad",[.55,.085,.68,.53]],["easeOutQuad",[.25,.46,.45,.94]],["easeInOutQuad",[.455,.03,.515,.955]],["easeInCubic",[.55,.055,.675,.19]],["easeOutCubic",[.215,.61,.355,1]],["easeInOutCubic",[.645,.045,.355,1]],["easeInQuart",[.895,.03,.685,.22]],["easeOutQuart",[.165,.84,.44,1]],["easeInOutQuart",[.77,0,.175,1]],["easeInQuint",[.755,.05,.855,.06]],["easeOutQuint",[.23,1,.32,1]],["easeInOutQuint",[.86,0,.07,1]],["easeInExpo",[.95,.05,.795,.035]],["easeOutExpo",[.19,1,.22,1]],["easeInOutExpo",[1,0,0,1]],["easeInCirc",[.6,.04,.98,.335]],["easeOutCirc",[.075,.82,.165,1]],["easeInOutCirc",[.785,.135,.15,.86]]],function(a,b){t.Easings[b[0]]=i.apply(null,b[1])});var v=t.CSS={RegEx:{isHex:/^#([A-f\d]{3}){1,2}$/i,valueUnwrap:/^[A-z]+\((.*)\)$/i,wrappedValueAlreadyExtracted:/[0-9.]+ [0-9.]+ [0-9.]+( [0-9.]+)?/,valueSplit:/([A-z]+\(.+\))|(([A-z0-9#-.]+?)(?=\s|$))/gi},Lists:{colors:["fill","stroke","stopColor","color","backgroundColor","borderColor","borderTopColor","borderRightColor","borderBottomColor","borderLeftColor","outlineColor"],transformsBase:["translateX","translateY","scale","scaleX","scaleY","skewX","skewY","rotateZ"],transforms3D:["transformPerspective","translateZ","scaleZ","rotateX","rotateY"]},Hooks:{templates:{textShadow:["Color X Y Blur","black 0px 0px 0px"],boxShadow:["Color X Y Blur Spread","black 0px 0px 0px 0px"],clip:["Top Right Bottom Left","0px 0px 0px 0px"],backgroundPosition:["X Y","0% 0%"],transformOrigin:["X Y Z","50% 50% 0px"],perspectiveOrigin:["X Y","50% 50%"]},registered:{},register:function(){for(var a=0;a<v.Lists.colors.length;a++){var b="color"===v.Lists.colors[a]?"0 0 0 1":"255 255 255 1";v.Hooks.templates[v.Lists.colors[a]]=["Red Green Blue Alpha",b]}var c,d,e;if(n)for(c in v.Hooks.templates){d=v.Hooks.templates[c],e=d[0].split(" ");var f=d[1].match(v.RegEx.valueSplit);"Color"===e[0]&&(e.push(e.shift()),f.push(f.shift()),v.Hooks.templates[c]=[e.join(" "),f.join(" ")])}for(c in v.Hooks.templates){d=v.Hooks.templates[c],e=d[0].split(" ");for(var a in e){var g=c+e[a],h=a;v.Hooks.registered[g]=[c,h]}}},getRoot:function(a){var b=v.Hooks.registered[a];return b?b[0]:a},cleanRootPropertyValue:function(a,b){return v.RegEx.valueUnwrap.test(b)&&(b=b.match(v.RegEx.valueUnwrap)[1]),v.Values.isCSSNullValue(b)&&(b=v.Hooks.templates[a][1]),b},extractValue:function(a,b){var c=v.Hooks.registered[a];if(c){var d=c[0],e=c[1];return b=v.Hooks.cleanRootPropertyValue(d,b),b.toString().match(v.RegEx.valueSplit)[e]}return b},injectValue:function(a,b,c){var d=v.Hooks.registered[a];if(d){var e,f,g=d[0],h=d[1];return c=v.Hooks.cleanRootPropertyValue(g,c),e=c.toString().match(v.RegEx.valueSplit),e[h]=b,f=e.join(" ")}return c}},Normalizations:{registered:{clip:function(a,b,c){switch(a){case"name":return"clip";case"extract":var d;return v.RegEx.wrappedValueAlreadyExtracted.test(c)?d=c:(d=c.toString().match(v.RegEx.valueUnwrap),d=d?d[1].replace(/,(\s+)?/g," "):c),d;case"inject":return"rect("+c+")"}},blur:function(a,b,c){switch(a){case"name":return t.State.isFirefox?"filter":"-webkit-filter";case"extract":var d=parseFloat(c);if(!d&&0!==d){var e=c.toString().match(/blur\(([0-9]+[A-z]+)\)/i);d=e?e[1]:0}return d;case"inject":return parseFloat(c)?"blur("+c+")":"none"}},opacity:function(a,b,c){if(8>=n)switch(a){case"name":return"filter";case"extract":var d=c.toString().match(/alpha\(opacity=(.*)\)/i);return c=d?d[1]/100:1;case"inject":return b.style.zoom=1,parseFloat(c)>=1?"":"alpha(opacity="+parseInt(100*parseFloat(c),10)+")"}else switch(a){case"name":return"opacity";case"extract":return c;case"inject":return c}}},register:function(){9>=n||t.State.isGingerbread||(v.Lists.transformsBase=v.Lists.transformsBase.concat(v.Lists.transforms3D));for(var a=0;a<v.Lists.transformsBase.length;a++)!function(){var b=v.Lists.transformsBase[a];v.Normalizations.registered[b]=function(a,c,e){switch(a){case"name":return"transform";case"extract":return g(c)===d||g(c).transformCache[b]===d?/^scale/i.test(b)?1:0:g(c).transformCache[b].replace(/[()]/g,"");case"inject":var f=!1;switch(b.substr(0,b.length-1)){case"translate":f=!/(%|px|em|rem|vw|vh|\d)$/i.test(e);break;case"scal":case"scale":t.State.isAndroid&&g(c).transformCache[b]===d&&1>e&&(e=1),f=!/(\d)$/i.test(e);break;case"skew":f=!/(deg|\d)$/i.test(e);break;case"rotate":f=!/(deg|\d)$/i.test(e)}return f||(g(c).transformCache[b]="("+e+")"),g(c).transformCache[b]}}}();for(var a=0;a<v.Lists.colors.length;a++)!function(){var b=v.Lists.colors[a];v.Normalizations.registered[b]=function(a,c,e){switch(a){case"name":return b;case"extract":var f;if(v.RegEx.wrappedValueAlreadyExtracted.test(e))f=e;else{var g,h={black:"rgb(0, 0, 0)",blue:"rgb(0, 0, 255)",gray:"rgb(128, 128, 128)",green:"rgb(0, 128, 0)",red:"rgb(255, 0, 0)",white:"rgb(255, 255, 255)"};/^[A-z]+$/i.test(e)?g=h[e]!==d?h[e]:h.black:v.RegEx.isHex.test(e)?g="rgb("+v.Values.hexToRgb(e).join(" ")+")":/^rgba?\(/i.test(e)||(g=h.black),f=(g||e).toString().match(v.RegEx.valueUnwrap)[1].replace(/,(\s+)?/g," ")}return 8>=n||3!==f.split(" ").length||(f+=" 1"),f;case"inject":return 8>=n?4===e.split(" ").length&&(e=e.split(/\s+/).slice(0,3).join(" ")):3===e.split(" ").length&&(e+=" 1"),(8>=n?"rgb":"rgba")+"("+e.replace(/\s+/g,",").replace(/\.(\d)+(?=,)/g,"")+")"}}}()}},Names:{camelCase:function(a){return a.replace(/-(\w)/g,function(a,b){return b.toUpperCase()})},SVGAttribute:function(a){var b="width|height|x|y|cx|cy|r|rx|ry|x1|x2|y1|y2";return(n||t.State.isAndroid&&!t.State.isChrome)&&(b+="|transform"),new RegExp("^("+b+")$","i").test(a)},prefixCheck:function(a){if(t.State.prefixMatches[a])return[t.State.prefixMatches[a],!0];for(var b=["","Webkit","Moz","ms","O"],c=0,d=b.length;d>c;c++){var e;if(e=0===c?a:b[c]+a.replace(/^\w/,function(a){return a.toUpperCase()}),p.isString(t.State.prefixElement.style[e]))return t.State.prefixMatches[a]=e,[e,!0]}return[a,!1]}},Values:{hexToRgb:function(a){var b,c=/^#?([a-f\d])([a-f\d])([a-f\d])$/i,d=/^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i;return a=a.replace(c,function(a,b,c,d){return b+b+c+c+d+d}),b=d.exec(a),b?[parseInt(b[1],16),parseInt(b[2],16),parseInt(b[3],16)]:[0,0,0]},isCSSNullValue:function(a){return 0==a||/^(none|auto|transparent|(rgba\(0, ?0, ?0, ?0\)))$/i.test(a)},getUnitType:function(a){return/^(rotate|skew)/i.test(a)?"deg":/(^(scale|scaleX|scaleY|scaleZ|alpha|flexGrow|flexHeight|zIndex|fontWeight)$)|((opacity|red|green|blue|alpha)$)/i.test(a)?"":"px"},getDisplayType:function(a){var b=a&&a.tagName.toString().toLowerCase();return/^(b|big|i|small|tt|abbr|acronym|cite|code|dfn|em|kbd|strong|samp|var|a|bdo|br|img|map|object|q|script|span|sub|sup|button|input|label|select|textarea)$/i.test(b)?"inline":/^(li)$/i.test(b)?"list-item":/^(tr)$/i.test(b)?"table-row":/^(table)$/i.test(b)?"table":/^(tbody)$/i.test(b)?"table-row-group":"block"},addClass:function(a,b){a.classList?a.classList.add(b):a.className+=(a.className.length?" ":"")+b},removeClass:function(a,b){a.classList?a.classList.remove(b):a.className=a.className.toString().replace(new RegExp("(^|\\s)"+b.split(" ").join("|")+"(\\s|$)","gi")," ")}},getPropertyValue:function(a,c,e,f){function h(a,c){function e(){j&&v.setPropertyValue(a,"display","none")}var i=0;if(8>=n)i=m.css(a,c);else{var j=!1;if(/^(width|height)$/.test(c)&&0===v.getPropertyValue(a,"display")&&(j=!0,v.setPropertyValue(a,"display",v.Values.getDisplayType(a))),!f){if("height"===c&&"border-box"!==v.getPropertyValue(a,"boxSizing").toString().toLowerCase()){var k=a.offsetHeight-(parseFloat(v.getPropertyValue(a,"borderTopWidth"))||0)-(parseFloat(v.getPropertyValue(a,"borderBottomWidth"))||0)-(parseFloat(v.getPropertyValue(a,"paddingTop"))||0)-(parseFloat(v.getPropertyValue(a,"paddingBottom"))||0);return e(),k}if("width"===c&&"border-box"!==v.getPropertyValue(a,"boxSizing").toString().toLowerCase()){var l=a.offsetWidth-(parseFloat(v.getPropertyValue(a,"borderLeftWidth"))||0)-(parseFloat(v.getPropertyValue(a,"borderRightWidth"))||0)-(parseFloat(v.getPropertyValue(a,"paddingLeft"))||0)-(parseFloat(v.getPropertyValue(a,"paddingRight"))||0);return e(),l}}var o;o=g(a)===d?b.getComputedStyle(a,null):g(a).computedStyle?g(a).computedStyle:g(a).computedStyle=b.getComputedStyle(a,null),"borderColor"===c&&(c="borderTopColor"),i=9===n&&"filter"===c?o.getPropertyValue(c):o[c],(""===i||null===i)&&(i=a.style[c]),e()}if("auto"===i&&/^(top|right|bottom|left)$/i.test(c)){var p=h(a,"position");("fixed"===p||"absolute"===p&&/top|left/i.test(c))&&(i=m(a).position()[c]+"px")}return i}var i;if(v.Hooks.registered[c]){var j=c,k=v.Hooks.getRoot(j);e===d&&(e=v.getPropertyValue(a,v.Names.prefixCheck(k)[0])),v.Normalizations.registered[k]&&(e=v.Normalizations.registered[k]("extract",a,e)),i=v.Hooks.extractValue(j,e)}else if(v.Normalizations.registered[c]){var l,o;l=v.Normalizations.registered[c]("name",a),"transform"!==l&&(o=h(a,v.Names.prefixCheck(l)[0]),v.Values.isCSSNullValue(o)&&v.Hooks.templates[c]&&(o=v.Hooks.templates[c][1])),i=v.Normalizations.registered[c]("extract",a,o)}if(!/^[\d-]/.test(i))if(g(a)&&g(a).isSVG&&v.Names.SVGAttribute(c))if(/^(height|width)$/i.test(c))try{i=a.getBBox()[c]}catch(p){i=0}else i=a.getAttribute(c);else i=h(a,v.Names.prefixCheck(c)[0]);return v.Values.isCSSNullValue(i)&&(i=0),t.debug>=2&&console.log("Get "+c+": "+i),i},setPropertyValue:function(a,c,d,e,f){var h=c;if("scroll"===c)f.container?f.container["scroll"+f.direction]=d:"Left"===f.direction?b.scrollTo(d,f.alternateValue):b.scrollTo(f.alternateValue,d);else if(v.Normalizations.registered[c]&&"transform"===v.Normalizations.registered[c]("name",a))v.Normalizations.registered[c]("inject",a,d),h="transform",d=g(a).transformCache[c];else{if(v.Hooks.registered[c]){var i=c,j=v.Hooks.getRoot(c);e=e||v.getPropertyValue(a,j),d=v.Hooks.injectValue(i,d,e),c=j}if(v.Normalizations.registered[c]&&(d=v.Normalizations.registered[c]("inject",a,d),c=v.Normalizations.registered[c]("name",a)),h=v.Names.prefixCheck(c)[0],8>=n)try{a.style[h]=d}catch(k){t.debug&&console.log("Browser does not support ["+d+"] for ["+h+"]")}else g(a)&&g(a).isSVG&&v.Names.SVGAttribute(c)?a.setAttribute(c,d):a.style[h]=d;t.debug>=2&&console.log("Set "+c+" ("+h+"): "+d)}return[h,d]},flushTransformCache:function(a){function b(b){return parseFloat(v.getPropertyValue(a,b))}var c="";if((n||t.State.isAndroid&&!t.State.isChrome)&&g(a).isSVG){var d={translate:[b("translateX"),b("translateY")],skewX:[b("skewX")],skewY:[b("skewY")],scale:1!==b("scale")?[b("scale"),b("scale")]:[b("scaleX"),b("scaleY")],rotate:[b("rotateZ"),0,0]};m.each(g(a).transformCache,function(a){/^translate/i.test(a)?a="translate":/^scale/i.test(a)?a="scale":/^rotate/i.test(a)&&(a="rotate"),d[a]&&(c+=a+"("+d[a].join(" ")+") ",delete d[a])})}else{var e,f;m.each(g(a).transformCache,function(b){return e=g(a).transformCache[b],"transformPerspective"===b?(f=e,!0):(9===n&&"rotateZ"===b&&(b="rotate"),void(c+=b+e+" "))}),f&&(c="perspective"+f+" "+c)}v.setPropertyValue(a,"transform",c)}};v.Hooks.register(),v.Normalizations.register(),t.hook=function(a,b,c){var e=d;return a=f(a),m.each(a,function(a,f){if(g(f)===d&&t.init(f),c===d)e===d&&(e=t.CSS.getPropertyValue(f,b));else{var h=t.CSS.setPropertyValue(f,b,c);"transform"===h[0]&&t.CSS.flushTransformCache(f),e=h}}),e};var w=function(){function a(){return h?B.promise||null:i}function e(){function a(a){function l(a,b){var c=d,e=d,g=d;return p.isArray(a)?(c=a[0],!p.isArray(a[1])&&/^[\d-]/.test(a[1])||p.isFunction(a[1])||v.RegEx.isHex.test(a[1])?g=a[1]:(p.isString(a[1])&&!v.RegEx.isHex.test(a[1])||p.isArray(a[1]))&&(e=b?a[1]:j(a[1],h.duration),a[2]!==d&&(g=a[2]))):c=a,b||(e=e||h.easing),p.isFunction(c)&&(c=c.call(f,y,x)),p.isFunction(g)&&(g=g.call(f,y,x)),[c||0,e,g]}function n(a,b){var c,d;return d=(b||"0").toString().toLowerCase().replace(/[%A-z]+$/,function(a){return c=a,""}),c||(c=v.Values.getUnitType(a)),[d,c]}function r(){var a={myParent:f.parentNode||c.body,position:v.getPropertyValue(f,"position"),fontSize:v.getPropertyValue(f,"fontSize")},d=a.position===I.lastPosition&&a.myParent===I.lastParent,e=a.fontSize===I.lastFontSize;I.lastParent=a.myParent,I.lastPosition=a.position,I.lastFontSize=a.fontSize;var h=100,i={};if(e&&d)i.emToPx=I.lastEmToPx,i.percentToPxWidth=I.lastPercentToPxWidth,i.percentToPxHeight=I.lastPercentToPxHeight;else{var j=g(f).isSVG?c.createElementNS("http://www.w3.org/2000/svg","rect"):c.createElement("div");t.init(j),a.myParent.appendChild(j),m.each(["overflow","overflowX","overflowY"],function(a,b){t.CSS.setPropertyValue(j,b,"hidden")}),t.CSS.setPropertyValue(j,"position",a.position),t.CSS.setPropertyValue(j,"fontSize",a.fontSize),t.CSS.setPropertyValue(j,"boxSizing","content-box"),m.each(["minWidth","maxWidth","width","minHeight","maxHeight","height"],function(a,b){t.CSS.setPropertyValue(j,b,h+"%")}),t.CSS.setPropertyValue(j,"paddingLeft",h+"em"),i.percentToPxWidth=I.lastPercentToPxWidth=(parseFloat(v.getPropertyValue(j,"width",null,!0))||1)/h,i.percentToPxHeight=I.lastPercentToPxHeight=(parseFloat(v.getPropertyValue(j,"height",null,!0))||1)/h,i.emToPx=I.lastEmToPx=(parseFloat(v.getPropertyValue(j,"paddingLeft"))||1)/h,a.myParent.removeChild(j)}return null===I.remToPx&&(I.remToPx=parseFloat(v.getPropertyValue(c.body,"fontSize"))||16),null===I.vwToPx&&(I.vwToPx=parseFloat(b.innerWidth)/100,I.vhToPx=parseFloat(b.innerHeight)/100),i.remToPx=I.remToPx,i.vwToPx=I.vwToPx,i.vhToPx=I.vhToPx,t.debug>=1&&console.log("Unit ratios: "+JSON.stringify(i),f),i}if(h.begin&&0===y)try{h.begin.call(o,o)}catch(u){setTimeout(function(){throw u},1)}if("scroll"===C){var w,z,A,D=/^x$/i.test(h.axis)?"Left":"Top",E=parseFloat(h.offset)||0;h.container?p.isWrapped(h.container)||p.isNode(h.container)?(h.container=h.container[0]||h.container,w=h.container["scroll"+D],A=w+m(f).position()[D.toLowerCase()]+E):h.container=null:(w=t.State.scrollAnchor[t.State["scrollProperty"+D]],z=t.State.scrollAnchor[t.State["scrollProperty"+("Left"===D?"Top":"Left")]],A=m(f).offset()[D.toLowerCase()]+E),i={scroll:{rootPropertyValue:!1,startValue:w,currentValue:w,endValue:A,unitType:"",easing:h.easing,scrollData:{container:h.container,direction:D,alternateValue:z}},element:f},t.debug&&console.log("tweensContainer (scroll): ",i.scroll,f)}else if("reverse"===C){if(!g(f).tweensContainer)return void m.dequeue(f,h.queue);"none"===g(f).opts.display&&(g(f).opts.display="auto"),"hidden"===g(f).opts.visibility&&(g(f).opts.visibility="visible"),g(f).opts.loop=!1,g(f).opts.begin=null,g(f).opts.complete=null,s.easing||delete h.easing,s.duration||delete h.duration,h=m.extend({},g(f).opts,h);var F=m.extend(!0,{},g(f).tweensContainer);for(var G in F)if("element"!==G){var H=F[G].startValue;F[G].startValue=F[G].currentValue=F[G].endValue,F[G].endValue=H,p.isEmptyObject(s)||(F[G].easing=h.easing),t.debug&&console.log("reverse tweensContainer ("+G+"): "+JSON.stringify(F[G]),f)}i=F}else if("start"===C){var F;g(f).tweensContainer&&g(f).isAnimating===!0&&(F=g(f).tweensContainer),m.each(q,function(a,b){if(RegExp("^"+v.Lists.colors.join("$|^")+"$").test(a)){var c=l(b,!0),e=c[0],f=c[1],g=c[2];if(v.RegEx.isHex.test(e)){for(var h=["Red","Green","Blue"],i=v.Values.hexToRgb(e),j=g?v.Values.hexToRgb(g):d,k=0;k<h.length;k++){var m=[i[k]];f&&m.push(f),j!==d&&m.push(j[k]),q[a+h[k]]=m}delete q[a]}}});for(var K in q){var L=l(q[K]),M=L[0],N=L[1],O=L[2];K=v.Names.camelCase(K);var P=v.Hooks.getRoot(K),Q=!1;if(g(f).isSVG||"tween"===P||v.Names.prefixCheck(P)[1]!==!1||v.Normalizations.registered[P]!==d){(h.display!==d&&null!==h.display&&"none"!==h.display||h.visibility!==d&&"hidden"!==h.visibility)&&/opacity|filter/.test(K)&&!O&&0!==M&&(O=0),h._cacheValues&&F&&F[K]?(O===d&&(O=F[K].endValue+F[K].unitType),Q=g(f).rootPropertyValueCache[P]):v.Hooks.registered[K]?O===d?(Q=v.getPropertyValue(f,P),O=v.getPropertyValue(f,K,Q)):Q=v.Hooks.templates[P][1]:O===d&&(O=v.getPropertyValue(f,K));var R,S,T,U=!1;if(R=n(K,O),O=R[0],T=R[1],R=n(K,M),M=R[0].replace(/^([+-\/*])=/,function(a,b){return U=b,""}),S=R[1],O=parseFloat(O)||0,M=parseFloat(M)||0,"%"===S&&(/^(fontSize|lineHeight)$/.test(K)?(M/=100,S="em"):/^scale/.test(K)?(M/=100,S=""):/(Red|Green|Blue)$/i.test(K)&&(M=M/100*255,S="")),/[\/*]/.test(U))S=T;else if(T!==S&&0!==O)if(0===M)S=T;else{e=e||r();var V=/margin|padding|left|right|width|text|word|letter/i.test(K)||/X$/.test(K)||"x"===K?"x":"y";
-	switch(T){case"%":O*="x"===V?e.percentToPxWidth:e.percentToPxHeight;break;case"px":break;default:O*=e[T+"ToPx"]}switch(S){case"%":O*=1/("x"===V?e.percentToPxWidth:e.percentToPxHeight);break;case"px":break;default:O*=1/e[S+"ToPx"]}}switch(U){case"+":M=O+M;break;case"-":M=O-M;break;case"*":M=O*M;break;case"/":M=O/M}i[K]={rootPropertyValue:Q,startValue:O,currentValue:O,endValue:M,unitType:S,easing:N},t.debug&&console.log("tweensContainer ("+K+"): "+JSON.stringify(i[K]),f)}else t.debug&&console.log("Skipping ["+P+"] due to a lack of browser support.")}i.element=f}i.element&&(v.Values.addClass(f,"velocity-animating"),J.push(i),""===h.queue&&(g(f).tweensContainer=i,g(f).opts=h),g(f).isAnimating=!0,y===x-1?(t.State.calls.push([J,o,h,null,B.resolver]),t.State.isTicking===!1&&(t.State.isTicking=!0,k())):y++)}var e,f=this,h=m.extend({},t.defaults,s),i={};switch(g(f)===d&&t.init(f),parseFloat(h.delay)&&h.queue!==!1&&m.queue(f,h.queue,function(a){t.velocityQueueEntryFlag=!0,g(f).delayTimer={setTimeout:setTimeout(a,parseFloat(h.delay)),next:a}}),h.duration.toString().toLowerCase()){case"fast":h.duration=200;break;case"normal":h.duration=r;break;case"slow":h.duration=600;break;default:h.duration=parseFloat(h.duration)||1}t.mock!==!1&&(t.mock===!0?h.duration=h.delay=1:(h.duration*=parseFloat(t.mock)||1,h.delay*=parseFloat(t.mock)||1)),h.easing=j(h.easing,h.duration),h.begin&&!p.isFunction(h.begin)&&(h.begin=null),h.progress&&!p.isFunction(h.progress)&&(h.progress=null),h.complete&&!p.isFunction(h.complete)&&(h.complete=null),h.display!==d&&null!==h.display&&(h.display=h.display.toString().toLowerCase(),"auto"===h.display&&(h.display=t.CSS.Values.getDisplayType(f))),h.visibility!==d&&null!==h.visibility&&(h.visibility=h.visibility.toString().toLowerCase()),h.mobileHA=h.mobileHA&&t.State.isMobile&&!t.State.isGingerbread,h.queue===!1?h.delay?setTimeout(a,h.delay):a():m.queue(f,h.queue,function(b,c){return c===!0?(B.promise&&B.resolver(o),!0):(t.velocityQueueEntryFlag=!0,void a(b))}),""!==h.queue&&"fx"!==h.queue||"inprogress"===m.queue(f)[0]||m.dequeue(f)}var h,i,n,o,q,s,u=arguments[0]&&(arguments[0].p||m.isPlainObject(arguments[0].properties)&&!arguments[0].properties.names||p.isString(arguments[0].properties));if(p.isWrapped(this)?(h=!1,n=0,o=this,i=this):(h=!0,n=1,o=u?arguments[0].elements||arguments[0].e:arguments[0]),o=f(o)){u?(q=arguments[0].properties||arguments[0].p,s=arguments[0].options||arguments[0].o):(q=arguments[n],s=arguments[n+1]);var x=o.length,y=0;if(!/^(stop|finish)$/i.test(q)&&!m.isPlainObject(s)){var z=n+1;s={};for(var A=z;A<arguments.length;A++)p.isArray(arguments[A])||!/^(fast|normal|slow)$/i.test(arguments[A])&&!/^\d/.test(arguments[A])?p.isString(arguments[A])||p.isArray(arguments[A])?s.easing=arguments[A]:p.isFunction(arguments[A])&&(s.complete=arguments[A]):s.duration=arguments[A]}var B={promise:null,resolver:null,rejecter:null};h&&t.Promise&&(B.promise=new t.Promise(function(a,b){B.resolver=a,B.rejecter=b}));var C;switch(q){case"scroll":C="scroll";break;case"reverse":C="reverse";break;case"finish":case"stop":m.each(o,function(a,b){g(b)&&g(b).delayTimer&&(clearTimeout(g(b).delayTimer.setTimeout),g(b).delayTimer.next&&g(b).delayTimer.next(),delete g(b).delayTimer)});var D=[];return m.each(t.State.calls,function(a,b){b&&m.each(b[1],function(c,e){var f=s===d?"":s;return f===!0||b[2].queue===f||s===d&&b[2].queue===!1?void m.each(o,function(c,d){d===e&&((s===!0||p.isString(s))&&(m.each(m.queue(d,p.isString(s)?s:""),function(a,b){p.isFunction(b)&&b(null,!0)}),m.queue(d,p.isString(s)?s:"",[])),"stop"===q?(g(d)&&g(d).tweensContainer&&f!==!1&&m.each(g(d).tweensContainer,function(a,b){b.endValue=b.currentValue}),D.push(a)):"finish"===q&&(b[2].duration=1))}):!0})}),"stop"===q&&(m.each(D,function(a,b){l(b,!0)}),B.promise&&B.resolver(o)),a();default:if(!m.isPlainObject(q)||p.isEmptyObject(q)){if(p.isString(q)&&t.Redirects[q]){var E=m.extend({},s),F=E.duration,G=E.delay||0;return E.backwards===!0&&(o=m.extend(!0,[],o).reverse()),m.each(o,function(a,b){parseFloat(E.stagger)?E.delay=G+parseFloat(E.stagger)*a:p.isFunction(E.stagger)&&(E.delay=G+E.stagger.call(b,a,x)),E.drag&&(E.duration=parseFloat(F)||(/^(callout|transition)/.test(q)?1e3:r),E.duration=Math.max(E.duration*(E.backwards?1-a/x:(a+1)/x),.75*E.duration,200)),t.Redirects[q].call(b,b,E||{},a,x,o,B.promise?B:d)}),a()}var H="Velocity: First argument ("+q+") was not a property map, a known action, or a registered redirect. Aborting.";return B.promise?B.rejecter(new Error(H)):console.log(H),a()}C="start"}var I={lastParent:null,lastPosition:null,lastFontSize:null,lastPercentToPxWidth:null,lastPercentToPxHeight:null,lastEmToPx:null,remToPx:null,vwToPx:null,vhToPx:null},J=[];m.each(o,function(a,b){p.isNode(b)&&e.call(b)});var K,E=m.extend({},t.defaults,s);if(E.loop=parseInt(E.loop),K=2*E.loop-1,E.loop)for(var L=0;K>L;L++){var M={delay:E.delay,progress:E.progress};L===K-1&&(M.display=E.display,M.visibility=E.visibility,M.complete=E.complete),w(o,"reverse",M)}return a()}};t=m.extend(w,t),t.animate=w;var x=b.requestAnimationFrame||o;return t.State.isMobile||c.hidden===d||c.addEventListener("visibilitychange",function(){c.hidden?(x=function(a){return setTimeout(function(){a(!0)},16)},k()):x=b.requestAnimationFrame||o}),a.Velocity=t,a!==b&&(a.fn.velocity=w,a.fn.velocity.defaults=t.defaults),m.each(["Down","Up"],function(a,b){t.Redirects["slide"+b]=function(a,c,e,f,g,h){var i=m.extend({},c),j=i.begin,k=i.complete,l={height:"",marginTop:"",marginBottom:"",paddingTop:"",paddingBottom:""},n={};i.display===d&&(i.display="Down"===b?"inline"===t.CSS.Values.getDisplayType(a)?"inline-block":"block":"none"),i.begin=function(){j&&j.call(g,g);for(var c in l){n[c]=a.style[c];var d=t.CSS.getPropertyValue(a,c);l[c]="Down"===b?[d,0]:[0,d]}n.overflow=a.style.overflow,a.style.overflow="hidden"},i.complete=function(){for(var b in n)a.style[b]=n[b];k&&k.call(g,g),h&&h.resolver(g)},t(a,l,i)}}),m.each(["In","Out"],function(a,b){t.Redirects["fade"+b]=function(a,c,e,f,g,h){var i=m.extend({},c),j={opacity:"In"===b?1:0},k=i.complete;i.complete=e!==f-1?i.begin=null:function(){k&&k.call(g,g),h&&h.resolver(g)},i.display===d&&(i.display="In"===b?"auto":"none"),t(this,j,i)}}),t}(__webpack_provided_window_dot_jQuery||window.Zepto||window,window,document)})),!function(a,b,c,d){"use strict";function e(a,b,c){return setTimeout(k(a,c),b)}function f(a,b,c){return Array.isArray(a)?(g(a,c[b],c),!0):!1}function g(a,b,c){var e;if(a)if(a.forEach)a.forEach(b,c);else if(a.length!==d)for(e=0;e<a.length;)b.call(c,a[e],e,a),e++;else for(e in a)a.hasOwnProperty(e)&&b.call(c,a[e],e,a)}function h(a,b,c){for(var e=Object.keys(b),f=0;f<e.length;)(!c||c&&a[e[f]]===d)&&(a[e[f]]=b[e[f]]),f++;return a}function i(a,b){return h(a,b,!0)}function j(a,b,c){var d,e=b.prototype;d=a.prototype=Object.create(e),d.constructor=a,d._super=e,c&&h(d,c)}function k(a,b){return function(){return a.apply(b,arguments)}}function l(a,b){return typeof a==ka?a.apply(b?b[0]||d:d,b):a}function m(a,b){return a===d?b:a}function n(a,b,c){g(r(b),function(b){a.addEventListener(b,c,!1)})}function o(a,b,c){g(r(b),function(b){a.removeEventListener(b,c,!1)})}function p(a,b){for(;a;){if(a==b)return!0;a=a.parentNode}return!1}function q(a,b){return a.indexOf(b)>-1}function r(a){return a.trim().split(/\s+/g)}function s(a,b,c){if(a.indexOf&&!c)return a.indexOf(b);for(var d=0;d<a.length;){if(c&&a[d][c]==b||!c&&a[d]===b)return d;d++}return-1}function t(a){return Array.prototype.slice.call(a,0)}function u(a,b,c){for(var d=[],e=[],f=0;f<a.length;){var g=b?a[f][b]:a[f];s(e,g)<0&&d.push(a[f]),e[f]=g,f++}return c&&(d=b?d.sort(function(a,c){return a[b]>c[b]}):d.sort()),d}function v(a,b){for(var c,e,f=b[0].toUpperCase()+b.slice(1),g=0;g<ia.length;){if(c=ia[g],e=c?c+f:b,e in a)return e;g++}return d}function w(){return oa++}function x(a){var b=a.ownerDocument;return b.defaultView||b.parentWindow}function y(a,b){var c=this;this.manager=a,this.callback=b,this.element=a.element,this.target=a.options.inputTarget,this.domHandler=function(b){l(a.options.enable,[a])&&c.handler(b)},this.init()}function z(a){var b,c=a.options.inputClass;return new(b=c?c:ra?N:sa?Q:qa?S:M)(a,A)}function A(a,b,c){var d=c.pointers.length,e=c.changedPointers.length,f=b&ya&&0===d-e,g=b&(Aa|Ba)&&0===d-e;c.isFirst=!!f,c.isFinal=!!g,f&&(a.session={}),c.eventType=b,B(a,c),a.emit("hammer.input",c),a.recognize(c),a.session.prevInput=c}function B(a,b){var c=a.session,d=b.pointers,e=d.length;c.firstInput||(c.firstInput=E(b)),e>1&&!c.firstMultiple?c.firstMultiple=E(b):1===e&&(c.firstMultiple=!1);var f=c.firstInput,g=c.firstMultiple,h=g?g.center:f.center,i=b.center=F(d);b.timeStamp=na(),b.deltaTime=b.timeStamp-f.timeStamp,b.angle=J(h,i),b.distance=I(h,i),C(c,b),b.offsetDirection=H(b.deltaX,b.deltaY),b.scale=g?L(g.pointers,d):1,b.rotation=g?K(g.pointers,d):0,D(c,b);var j=a.element;p(b.srcEvent.target,j)&&(j=b.srcEvent.target),b.target=j}function C(a,b){var c=b.center,d=a.offsetDelta||{},e=a.prevDelta||{},f=a.prevInput||{};(b.eventType===ya||f.eventType===Aa)&&(e=a.prevDelta={x:f.deltaX||0,y:f.deltaY||0},d=a.offsetDelta={x:c.x,y:c.y}),b.deltaX=e.x+(c.x-d.x),b.deltaY=e.y+(c.y-d.y)}function D(a,b){var c,e,f,g,h=a.lastInterval||b,i=b.timeStamp-h.timeStamp;if(b.eventType!=Ba&&(i>xa||h.velocity===d)){var j=h.deltaX-b.deltaX,k=h.deltaY-b.deltaY,l=G(i,j,k);e=l.x,f=l.y,c=ma(l.x)>ma(l.y)?l.x:l.y,g=H(j,k),a.lastInterval=b}else c=h.velocity,e=h.velocityX,f=h.velocityY,g=h.direction;b.velocity=c,b.velocityX=e,b.velocityY=f,b.direction=g}function E(a){for(var b=[],c=0;c<a.pointers.length;)b[c]={clientX:la(a.pointers[c].clientX),clientY:la(a.pointers[c].clientY)},c++;return{timeStamp:na(),pointers:b,center:F(b),deltaX:a.deltaX,deltaY:a.deltaY}}function F(a){var b=a.length;if(1===b)return{x:la(a[0].clientX),y:la(a[0].clientY)};for(var c=0,d=0,e=0;b>e;)c+=a[e].clientX,d+=a[e].clientY,e++;return{x:la(c/b),y:la(d/b)}}function G(a,b,c){return{x:b/a||0,y:c/a||0}}function H(a,b){return a===b?Ca:ma(a)>=ma(b)?a>0?Da:Ea:b>0?Fa:Ga}function I(a,b,c){c||(c=Ka);var d=b[c[0]]-a[c[0]],e=b[c[1]]-a[c[1]];return Math.sqrt(d*d+e*e)}function J(a,b,c){c||(c=Ka);var d=b[c[0]]-a[c[0]],e=b[c[1]]-a[c[1]];return 180*Math.atan2(e,d)/Math.PI}function K(a,b){return J(b[1],b[0],La)-J(a[1],a[0],La)}function L(a,b){return I(b[0],b[1],La)/I(a[0],a[1],La)}function M(){this.evEl=Na,this.evWin=Oa,this.allow=!0,this.pressed=!1,y.apply(this,arguments)}function N(){this.evEl=Ra,this.evWin=Sa,y.apply(this,arguments),this.store=this.manager.session.pointerEvents=[]}function O(){this.evTarget=Ua,this.evWin=Va,this.started=!1,y.apply(this,arguments)}function P(a,b){var c=t(a.touches),d=t(a.changedTouches);return b&(Aa|Ba)&&(c=u(c.concat(d),"identifier",!0)),[c,d]}function Q(){this.evTarget=Xa,this.targetIds={},y.apply(this,arguments)}function R(a,b){var c=t(a.touches),d=this.targetIds;if(b&(ya|za)&&1===c.length)return d[c[0].identifier]=!0,[c,c];var e,f,g=t(a.changedTouches),h=[],i=this.target;if(f=c.filter(function(a){return p(a.target,i)}),b===ya)for(e=0;e<f.length;)d[f[e].identifier]=!0,e++;for(e=0;e<g.length;)d[g[e].identifier]&&h.push(g[e]),b&(Aa|Ba)&&delete d[g[e].identifier],e++;return h.length?[u(f.concat(h),"identifier",!0),h]:void 0}function S(){y.apply(this,arguments);var a=k(this.handler,this);this.touch=new Q(this.manager,a),this.mouse=new M(this.manager,a)}function T(a,b){this.manager=a,this.set(b)}function U(a){if(q(a,bb))return bb;var b=q(a,cb),c=q(a,db);return b&&c?cb+" "+db:b||c?b?cb:db:q(a,ab)?ab:_a}function V(a){this.id=w(),this.manager=null,this.options=i(a||{},this.defaults),this.options.enable=m(this.options.enable,!0),this.state=eb,this.simultaneous={},this.requireFail=[]}function W(a){return a&jb?"cancel":a&hb?"end":a&gb?"move":a&fb?"start":""}function X(a){return a==Ga?"down":a==Fa?"up":a==Da?"left":a==Ea?"right":""}function Y(a,b){var c=b.manager;return c?c.get(a):a}function Z(){V.apply(this,arguments)}function $(){Z.apply(this,arguments),this.pX=null,this.pY=null}function _(){Z.apply(this,arguments)}function aa(){V.apply(this,arguments),this._timer=null,this._input=null}function ba(){Z.apply(this,arguments)}function ca(){Z.apply(this,arguments)}function da(){V.apply(this,arguments),this.pTime=!1,this.pCenter=!1,this._timer=null,this._input=null,this.count=0}function ea(a,b){return b=b||{},b.recognizers=m(b.recognizers,ea.defaults.preset),new fa(a,b)}function fa(a,b){b=b||{},this.options=i(b,ea.defaults),this.options.inputTarget=this.options.inputTarget||a,this.handlers={},this.session={},this.recognizers=[],this.element=a,this.input=z(this),this.touchAction=new T(this,this.options.touchAction),ga(this,!0),g(b.recognizers,function(a){var b=this.add(new a[0](a[1]));a[2]&&b.recognizeWith(a[2]),a[3]&&b.requireFailure(a[3])},this)}function ga(a,b){var c=a.element;g(a.options.cssProps,function(a,d){c.style[v(c.style,d)]=b?a:""})}function ha(a,c){var d=b.createEvent("Event");d.initEvent(a,!0,!0),d.gesture=c,c.target.dispatchEvent(d)}var ia=["","webkit","moz","MS","ms","o"],ja=b.createElement("div"),ka="function",la=Math.round,ma=Math.abs,na=Date.now,oa=1,pa=/mobile|tablet|ip(ad|hone|od)|android/i,qa="ontouchstart"in a,ra=v(a,"PointerEvent")!==d,sa=qa&&pa.test(navigator.userAgent),ta="touch",ua="pen",va="mouse",wa="kinect",xa=25,ya=1,za=2,Aa=4,Ba=8,Ca=1,Da=2,Ea=4,Fa=8,Ga=16,Ha=Da|Ea,Ia=Fa|Ga,Ja=Ha|Ia,Ka=["x","y"],La=["clientX","clientY"];y.prototype={handler:function(){},init:function(){this.evEl&&n(this.element,this.evEl,this.domHandler),this.evTarget&&n(this.target,this.evTarget,this.domHandler),this.evWin&&n(x(this.element),this.evWin,this.domHandler)},destroy:function(){this.evEl&&o(this.element,this.evEl,this.domHandler),this.evTarget&&o(this.target,this.evTarget,this.domHandler),this.evWin&&o(x(this.element),this.evWin,this.domHandler)}};var Ma={mousedown:ya,mousemove:za,mouseup:Aa},Na="mousedown",Oa="mousemove mouseup";j(M,y,{handler:function(a){var b=Ma[a.type];b&ya&&0===a.button&&(this.pressed=!0),b&za&&1!==a.which&&(b=Aa),this.pressed&&this.allow&&(b&Aa&&(this.pressed=!1),this.callback(this.manager,b,{pointers:[a],changedPointers:[a],pointerType:va,srcEvent:a}))}});var Pa={pointerdown:ya,pointermove:za,pointerup:Aa,pointercancel:Ba,pointerout:Ba},Qa={2:ta,3:ua,4:va,5:wa},Ra="pointerdown",Sa="pointermove pointerup pointercancel";a.MSPointerEvent&&(Ra="MSPointerDown",Sa="MSPointerMove MSPointerUp MSPointerCancel"),j(N,y,{handler:function(a){var b=this.store,c=!1,d=a.type.toLowerCase().replace("ms",""),e=Pa[d],f=Qa[a.pointerType]||a.pointerType,g=f==ta,h=s(b,a.pointerId,"pointerId");e&ya&&(0===a.button||g)?0>h&&(b.push(a),h=b.length-1):e&(Aa|Ba)&&(c=!0),0>h||(b[h]=a,this.callback(this.manager,e,{pointers:b,changedPointers:[a],pointerType:f,srcEvent:a}),c&&b.splice(h,1))}});var Ta={touchstart:ya,touchmove:za,touchend:Aa,touchcancel:Ba},Ua="touchstart",Va="touchstart touchmove touchend touchcancel";j(O,y,{handler:function(a){var b=Ta[a.type];if(b===ya&&(this.started=!0),this.started){var c=P.call(this,a,b);b&(Aa|Ba)&&0===c[0].length-c[1].length&&(this.started=!1),this.callback(this.manager,b,{pointers:c[0],changedPointers:c[1],pointerType:ta,srcEvent:a})}}});var Wa={touchstart:ya,touchmove:za,touchend:Aa,touchcancel:Ba},Xa="touchstart touchmove touchend touchcancel";j(Q,y,{handler:function(a){var b=Wa[a.type],c=R.call(this,a,b);c&&this.callback(this.manager,b,{pointers:c[0],changedPointers:c[1],pointerType:ta,srcEvent:a})}}),j(S,y,{handler:function(a,b,c){var d=c.pointerType==ta,e=c.pointerType==va;if(d)this.mouse.allow=!1;else if(e&&!this.mouse.allow)return;b&(Aa|Ba)&&(this.mouse.allow=!0),this.callback(a,b,c)},destroy:function(){this.touch.destroy(),this.mouse.destroy()}});var Ya=v(ja.style,"touchAction"),Za=Ya!==d,$a="compute",_a="auto",ab="manipulation",bb="none",cb="pan-x",db="pan-y";T.prototype={set:function(a){a==$a&&(a=this.compute()),Za&&(this.manager.element.style[Ya]=a),this.actions=a.toLowerCase().trim()},update:function(){this.set(this.manager.options.touchAction)},compute:function(){var a=[];return g(this.manager.recognizers,function(b){l(b.options.enable,[b])&&(a=a.concat(b.getTouchAction()))}),U(a.join(" "))},preventDefaults:function(a){if(!Za){var b=a.srcEvent,c=a.offsetDirection;if(this.manager.session.prevented)return void b.preventDefault();var d=this.actions,e=q(d,bb),f=q(d,db),g=q(d,cb);return e||f&&c&Ha||g&&c&Ia?this.preventSrc(b):void 0}},preventSrc:function(a){this.manager.session.prevented=!0,a.preventDefault()}};var eb=1,fb=2,gb=4,hb=8,ib=hb,jb=16,kb=32;V.prototype={defaults:{},set:function(a){return h(this.options,a),this.manager&&this.manager.touchAction.update(),this},recognizeWith:function(a){if(f(a,"recognizeWith",this))return this;var b=this.simultaneous;return a=Y(a,this),b[a.id]||(b[a.id]=a,a.recognizeWith(this)),this},dropRecognizeWith:function(a){return f(a,"dropRecognizeWith",this)?this:(a=Y(a,this),delete this.simultaneous[a.id],this)},requireFailure:function(a){if(f(a,"requireFailure",this))return this;var b=this.requireFail;return a=Y(a,this),-1===s(b,a)&&(b.push(a),a.requireFailure(this)),this},dropRequireFailure:function(a){if(f(a,"dropRequireFailure",this))return this;a=Y(a,this);var b=s(this.requireFail,a);return b>-1&&this.requireFail.splice(b,1),this},hasRequireFailures:function(){return this.requireFail.length>0},canRecognizeWith:function(a){return!!this.simultaneous[a.id]},emit:function(a){function b(b){c.manager.emit(c.options.event+(b?W(d):""),a)}var c=this,d=this.state;hb>d&&b(!0),b(),d>=hb&&b(!0)},tryEmit:function(a){return this.canEmit()?this.emit(a):void(this.state=kb)},canEmit:function(){for(var a=0;a<this.requireFail.length;){if(!(this.requireFail[a].state&(kb|eb)))return!1;a++}return!0},recognize:function(a){var b=h({},a);return l(this.options.enable,[this,b])?(this.state&(ib|jb|kb)&&(this.state=eb),this.state=this.process(b),void(this.state&(fb|gb|hb|jb)&&this.tryEmit(b))):(this.reset(),void(this.state=kb))},process:function(){},getTouchAction:function(){},reset:function(){}},j(Z,V,{defaults:{pointers:1},attrTest:function(a){var b=this.options.pointers;return 0===b||a.pointers.length===b},process:function(a){var b=this.state,c=a.eventType,d=b&(fb|gb),e=this.attrTest(a);return d&&(c&Ba||!e)?b|jb:d||e?c&Aa?b|hb:b&fb?b|gb:fb:kb}}),j($,Z,{defaults:{event:"pan",threshold:10,pointers:1,direction:Ja},getTouchAction:function(){var a=this.options.direction,b=[];return a&Ha&&b.push(db),a&Ia&&b.push(cb),b},directionTest:function(a){var b=this.options,c=!0,d=a.distance,e=a.direction,f=a.deltaX,g=a.deltaY;return e&b.direction||(b.direction&Ha?(e=0===f?Ca:0>f?Da:Ea,c=f!=this.pX,d=Math.abs(a.deltaX)):(e=0===g?Ca:0>g?Fa:Ga,c=g!=this.pY,d=Math.abs(a.deltaY))),a.direction=e,c&&d>b.threshold&&e&b.direction},attrTest:function(a){return Z.prototype.attrTest.call(this,a)&&(this.state&fb||!(this.state&fb)&&this.directionTest(a))},emit:function(a){this.pX=a.deltaX,this.pY=a.deltaY;var b=X(a.direction);b&&this.manager.emit(this.options.event+b,a),this._super.emit.call(this,a)}}),j(_,Z,{defaults:{event:"pinch",threshold:0,pointers:2},getTouchAction:function(){return[bb]},attrTest:function(a){return this._super.attrTest.call(this,a)&&(Math.abs(a.scale-1)>this.options.threshold||this.state&fb)},emit:function(a){if(this._super.emit.call(this,a),1!==a.scale){var b=a.scale<1?"in":"out";this.manager.emit(this.options.event+b,a)}}}),j(aa,V,{defaults:{event:"press",pointers:1,time:500,threshold:5},getTouchAction:function(){return[_a]},process:function(a){var b=this.options,c=a.pointers.length===b.pointers,d=a.distance<b.threshold,f=a.deltaTime>b.time;if(this._input=a,!d||!c||a.eventType&(Aa|Ba)&&!f)this.reset();else if(a.eventType&ya)this.reset(),this._timer=e(function(){this.state=ib,this.tryEmit()},b.time,this);else if(a.eventType&Aa)return ib;return kb},reset:function(){clearTimeout(this._timer)},emit:function(a){this.state===ib&&(a&&a.eventType&Aa?this.manager.emit(this.options.event+"up",a):(this._input.timeStamp=na(),this.manager.emit(this.options.event,this._input)))}}),j(ba,Z,{defaults:{event:"rotate",threshold:0,pointers:2},getTouchAction:function(){return[bb]},attrTest:function(a){return this._super.attrTest.call(this,a)&&(Math.abs(a.rotation)>this.options.threshold||this.state&fb)}}),j(ca,Z,{defaults:{event:"swipe",threshold:10,velocity:.65,direction:Ha|Ia,pointers:1},getTouchAction:function(){return $.prototype.getTouchAction.call(this)},attrTest:function(a){var b,c=this.options.direction;return c&(Ha|Ia)?b=a.velocity:c&Ha?b=a.velocityX:c&Ia&&(b=a.velocityY),this._super.attrTest.call(this,a)&&c&a.direction&&a.distance>this.options.threshold&&ma(b)>this.options.velocity&&a.eventType&Aa},emit:function(a){var b=X(a.direction);b&&this.manager.emit(this.options.event+b,a),this.manager.emit(this.options.event,a)}}),j(da,V,{defaults:{event:"tap",pointers:1,taps:1,interval:300,time:250,threshold:2,posThreshold:10},getTouchAction:function(){return[ab]},process:function(a){var b=this.options,c=a.pointers.length===b.pointers,d=a.distance<b.threshold,f=a.deltaTime<b.time;if(this.reset(),a.eventType&ya&&0===this.count)return this.failTimeout();if(d&&f&&c){if(a.eventType!=Aa)return this.failTimeout();var g=this.pTime?a.timeStamp-this.pTime<b.interval:!0,h=!this.pCenter||I(this.pCenter,a.center)<b.posThreshold;this.pTime=a.timeStamp,this.pCenter=a.center,h&&g?this.count+=1:this.count=1,this._input=a;var i=this.count%b.taps;if(0===i)return this.hasRequireFailures()?(this._timer=e(function(){this.state=ib,this.tryEmit()},b.interval,this),fb):ib}return kb},failTimeout:function(){return this._timer=e(function(){this.state=kb},this.options.interval,this),kb},reset:function(){clearTimeout(this._timer)},emit:function(){this.state==ib&&(this._input.tapCount=this.count,this.manager.emit(this.options.event,this._input))}}),ea.VERSION="2.0.4",ea.defaults={domEvents:!1,touchAction:$a,enable:!0,inputTarget:null,inputClass:null,preset:[[ba,{enable:!1}],[_,{enable:!1},["rotate"]],[ca,{direction:Ha}],[$,{direction:Ha},["swipe"]],[da],[da,{event:"doubletap",taps:2},["tap"]],[aa]],cssProps:{userSelect:"default",touchSelect:"none",touchCallout:"none",contentZooming:"none",userDrag:"none",tapHighlightColor:"rgba(0,0,0,0)"}};var lb=1,mb=2;fa.prototype={set:function(a){return h(this.options,a),a.touchAction&&this.touchAction.update(),a.inputTarget&&(this.input.destroy(),this.input.target=a.inputTarget,this.input.init()),this},stop:function(a){this.session.stopped=a?mb:lb},recognize:function(a){var b=this.session;if(!b.stopped){this.touchAction.preventDefaults(a);var c,d=this.recognizers,e=b.curRecognizer;(!e||e&&e.state&ib)&&(e=b.curRecognizer=null);for(var f=0;f<d.length;)c=d[f],b.stopped===mb||e&&c!=e&&!c.canRecognizeWith(e)?c.reset():c.recognize(a),!e&&c.state&(fb|gb|hb)&&(e=b.curRecognizer=c),f++}},get:function(a){if(a instanceof V)return a;for(var b=this.recognizers,c=0;c<b.length;c++)if(b[c].options.event==a)return b[c];return null},add:function(a){if(f(a,"add",this))return this;var b=this.get(a.options.event);return b&&this.remove(b),this.recognizers.push(a),a.manager=this,this.touchAction.update(),a},remove:function(a){if(f(a,"remove",this))return this;var b=this.recognizers;return a=this.get(a),b.splice(s(b,a),1),this.touchAction.update(),this},on:function(a,b){var c=this.handlers;return g(r(a),function(a){c[a]=c[a]||[],c[a].push(b)}),this},off:function(a,b){var c=this.handlers;return g(r(a),function(a){b?c[a].splice(s(c[a],b),1):delete c[a]}),this},emit:function(a,b){this.options.domEvents&&ha(a,b);var c=this.handlers[a]&&this.handlers[a].slice();if(c&&c.length){b.type=a,b.preventDefault=function(){b.srcEvent.preventDefault()};for(var d=0;d<c.length;)c[d](b),d++}},destroy:function(){this.element&&ga(this,!1),this.handlers={},this.session={},this.input.destroy(),this.element=null}},h(ea,{INPUT_START:ya,INPUT_MOVE:za,INPUT_END:Aa,INPUT_CANCEL:Ba,STATE_POSSIBLE:eb,STATE_BEGAN:fb,STATE_CHANGED:gb,STATE_ENDED:hb,STATE_RECOGNIZED:ib,STATE_CANCELLED:jb,STATE_FAILED:kb,DIRECTION_NONE:Ca,DIRECTION_LEFT:Da,DIRECTION_RIGHT:Ea,DIRECTION_UP:Fa,DIRECTION_DOWN:Ga,DIRECTION_HORIZONTAL:Ha,DIRECTION_VERTICAL:Ia,DIRECTION_ALL:Ja,Manager:fa,Input:y,TouchAction:T,TouchInput:Q,MouseInput:M,PointerEventInput:N,TouchMouseInput:S,SingleTouchInput:O,Recognizer:V,AttrRecognizer:Z,Tap:da,Pan:$,Swipe:ca,Pinch:_,Rotate:ba,Press:aa,on:n,off:o,each:g,merge:i,extend:h,inherit:j,bindFn:k,prefixed:v}),"function"==ka&&__webpack_require__(1440)?!(__WEBPACK_AMD_DEFINE_RESULT__ = function(){return ea}.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)):"undefined"!=typeof module&&module.exports?module.exports=ea:a[c]=ea}(window,document,"Hammer"),function(a){ true?!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(318),__webpack_require__(1441)], __WEBPACK_AMD_DEFINE_FACTORY__ = (a), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)):"object"==typeof exports?a(require("jquery"),require("hammerjs")):a(jQuery,Hammer)}(function(a,b){function c(c,d){var e=a(c);e.data("hammer")||e.data("hammer",new b(e[0],d))}a.fn.hammer=function(a){return this.each(function(){c(this,a)})},b.Manager.prototype.emit=function(b){return function(c,d){b.call(this,c,d),a(this.element).trigger({type:c,gesture:d})}}(b.Manager.prototype.emit)}),function(a){a.Package?Materialize={}:a.Materialize={}}(window),Materialize.guid=function(){function a(){return Math.floor(65536*(1+Math.random())).toString(16).substring(1)}return function(){return a()+a()+"-"+a()+"-"+a()+"-"+a()+"-"+a()+a()+a()}}(),Materialize.elementOrParentIsFixed=function(a){var b=$(a),c=b.add(b.parents()),d=!1;return c.each(function(){return"fixed"===$(this).css("position")?(d=!0,!1):void 0}),d};var Vel;Vel=$?$.Velocity:jQuery?jQuery.Velocity:Velocity,function(a){a.fn.collapsible=function(b){var c={accordion:void 0};return b=a.extend(c,b),this.each(function(){function c(b){h=g.find("> li > .collapsible-header"),b.hasClass("active")?b.parent().addClass("active"):b.parent().removeClass("active"),b.parent().hasClass("active")?b.siblings(".collapsible-body").stop(!0,!1).slideDown({duration:350,easing:"easeOutQuart",queue:!1,complete:function(){a(this).css("height","")}}):b.siblings(".collapsible-body").stop(!0,!1).slideUp({duration:350,easing:"easeOutQuart",queue:!1,complete:function(){a(this).css("height","")}}),h.not(b).removeClass("active").parent().removeClass("active"),h.not(b).parent().children(".collapsible-body").stop(!0,!1).slideUp({duration:350,easing:"easeOutQuart",queue:!1,complete:function(){a(this).css("height","")}})}function d(b){b.hasClass("active")?b.parent().addClass("active"):b.parent().removeClass("active"),b.parent().hasClass("active")?b.siblings(".collapsible-body").stop(!0,!1).slideDown({duration:350,easing:"easeOutQuart",queue:!1,complete:function(){a(this).css("height","")}}):b.siblings(".collapsible-body").stop(!0,!1).slideUp({duration:350,easing:"easeOutQuart",queue:!1,complete:function(){a(this).css("height","")}})}function e(a){var b=f(a);return b.length>0}function f(a){return a.closest("li > .collapsible-header")}var g=a(this),h=a(this).find("> li > .collapsible-header"),i=g.data("collapsible");g.off("click.collapse","> li > .collapsible-header"),h.off("click.collapse"),g.on("click.collapse","> li > .collapsible-header",function(g){var h=a(this),j=a(g.target);e(j)&&(j=f(j)),j.toggleClass("active"),b.accordion||"accordion"===i||void 0===i?c(j):(d(j),h.hasClass("active")&&d(h))});var h=g.find("> li > .collapsible-header");b.accordion||"accordion"===i||void 0===i?c(h.filter(".active").first()):h.filter(".active").each(function(){d(a(this))})})},a(document).ready(function(){a(".collapsible").collapsible()})}(jQuery),function(a){a.fn.scrollTo=function(b){return a(this).scrollTop(a(this).scrollTop()-a(this).offset().top+a(b).offset().top),this},a.fn.dropdown=function(b){var c={inDuration:300,outDuration:225,constrain_width:!0,hover:!1,gutter:0,belowOrigin:!1,alignment:"left"};this.each(function(){function d(){void 0!==g.data("induration")&&(h.inDuration=g.data("inDuration")),void 0!==g.data("outduration")&&(h.outDuration=g.data("outDuration")),void 0!==g.data("constrainwidth")&&(h.constrain_width=g.data("constrainwidth")),void 0!==g.data("hover")&&(h.hover=g.data("hover")),void 0!==g.data("gutter")&&(h.gutter=g.data("gutter")),void 0!==g.data("beloworigin")&&(h.belowOrigin=g.data("beloworigin")),void 0!==g.data("alignment")&&(h.alignment=g.data("alignment"))}function e(b){"focus"===b&&(i=!0),d(),j.addClass("active"),g.addClass("active"),h.constrain_width===!0?j.css("width",g.outerWidth()):j.css("white-space","nowrap");var c,e=window.innerHeight,f=g.innerHeight(),k=g.offset().left,l=g.offset().top-a(window).scrollTop(),m=h.alignment,n=0;if(h.belowOrigin===!0&&(n=f),k+j.innerWidth()>a(window).width()?m="right":k-j.innerWidth()+g.innerWidth()<0&&(m="left"),l+j.innerHeight()>e)if(l+f-j.innerHeight()<0){var o=e-l-n;j.css("max-height",o)}else n||(n+=f),n-=j.innerHeight();if("left"===m)c=h.gutter,leftPosition=g.position().left+c;else if("right"===m){var p=g.position().left+g.outerWidth()-j.outerWidth();c=-h.gutter,leftPosition=p+c}j.css({position:"absolute",top:g.position().top+n,left:leftPosition}),j.stop(!0,!0).css("opacity",0).slideDown({queue:!1,duration:h.inDuration,easing:"easeOutCubic",complete:function(){a(this).css("height","")}}).animate({opacity:1},{queue:!1,duration:h.inDuration,easing:"easeOutSine"})}function f(){i=!1,j.fadeOut(h.outDuration),j.removeClass("active"),g.removeClass("active"),setTimeout(function(){j.css("max-height","")},h.outDuration)}var g=a(this),h=a.extend({},c,b),i=!1,j=a("#"+g.attr("data-activates"));if(d(),g.after(j),h.hover){var k=!1;g.unbind("click."+g.attr("id")),g.on("mouseenter",function(a){k===!1&&(e(),k=!0)}),g.on("mouseleave",function(b){var c=b.toElement||b.relatedTarget;a(c).closest(".dropdown-content").is(j)||(j.stop(!0,!0),f(),k=!1)}),j.on("mouseleave",function(b){var c=b.toElement||b.relatedTarget;a(c).closest(".dropdown-button").is(g)||(j.stop(!0,!0),f(),k=!1)})}else g.unbind("click."+g.attr("id")),g.bind("click."+g.attr("id"),function(b){i||(g[0]!=b.currentTarget||g.hasClass("active")||0!==a(b.target).closest(".dropdown-content").length?g.hasClass("active")&&(f(),a(document).unbind("click."+j.attr("id")+" touchstart."+j.attr("id"))):(b.preventDefault(),e("click")),j.hasClass("active")&&a(document).bind("click."+j.attr("id")+" touchstart."+j.attr("id"),function(b){j.is(b.target)||g.is(b.target)||g.find(b.target).length||(f(),a(document).unbind("click."+j.attr("id")+" touchstart."+j.attr("id")))}))});g.on("open",function(a,b){e(b)}),g.on("close",f)})},a(document).ready(function(){a(".dropdown-button").dropdown()})}(jQuery),function(a){var b=0,c=0,d=function(){return c++,"materialize-lean-overlay-"+c};a.fn.extend({openModal:function(c){a("body").css("overflow","hidden");var e={opacity:.5,in_duration:350,out_duration:250,ready:void 0,complete:void 0,dismissible:!0,starting_top:"4%"},f=d(),g=a(this),h=a('<div class="lean-overlay"></div>'),i=++b;h.attr("id",f).css("z-index",1e3+2*i),g.data("overlay-id",f).css("z-index",1e3+2*i+1),a("body").append(h),c=a.extend(e,c),c.dismissible&&(h.click(function(){g.closeModal(c)}),a(document).on("keyup.leanModal"+f,function(a){27===a.keyCode&&g.closeModal(c)})),g.find(".modal-close").on("click.close",function(a){g.closeModal(c)}),h.css({display:"block",opacity:0}),g.css({display:"block",opacity:0}),h.velocity({opacity:c.opacity},{duration:c.in_duration,queue:!1,ease:"easeOutCubic"}),g.data("associated-overlay",h[0]),g.hasClass("bottom-sheet")?g.velocity({bottom:"0",opacity:1},{duration:c.in_duration,queue:!1,ease:"easeOutCubic",complete:function(){"function"==typeof c.ready&&c.ready()}}):(a.Velocity.hook(g,"scaleX",.7),g.css({top:c.starting_top}),g.velocity({top:"10%",opacity:1,scaleX:"1"},{duration:c.in_duration,queue:!1,ease:"easeOutCubic",complete:function(){"function"==typeof c.ready&&c.ready()}}))}}),a.fn.extend({closeModal:function(c){var d={out_duration:250,complete:void 0},e=a(this),f=e.data("overlay-id"),g=a("#"+f);c=a.extend(d,c),a("body").css("overflow",""),e.find(".modal-close").off("click.close"),a(document).off("keyup.leanModal"+f),g.velocity({opacity:0},{duration:c.out_duration,queue:!1,ease:"easeOutQuart"}),e.hasClass("bottom-sheet")?e.velocity({bottom:"-100%",opacity:0},{duration:c.out_duration,queue:!1,ease:"easeOutCubic",complete:function(){
+	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;var __WEBPACK_AMD_DEFINE_RESULT__;var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_LOCAL_MODULE_0__;var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(jQuery, $, __webpack_provided_window_dot_jQuery) {if("undefined"==typeof jQuery){var jQuery;jQuery= true?$=__webpack_require__(1437):$}jQuery.easing.jswing=jQuery.easing.swing,jQuery.extend(jQuery.easing,{def:"easeOutQuad",swing:function(a,b,c,d,e){return jQuery.easing[jQuery.easing.def](a,b,c,d,e)},easeInQuad:function(a,b,c,d,e){return d*(b/=e)*b+c},easeOutQuad:function(a,b,c,d,e){return-d*(b/=e)*(b-2)+c},easeInOutQuad:function(a,b,c,d,e){return(b/=e/2)<1?d/2*b*b+c:-d/2*(--b*(b-2)-1)+c},easeInCubic:function(a,b,c,d,e){return d*(b/=e)*b*b+c},easeOutCubic:function(a,b,c,d,e){return d*((b=b/e-1)*b*b+1)+c},easeInOutCubic:function(a,b,c,d,e){return(b/=e/2)<1?d/2*b*b*b+c:d/2*((b-=2)*b*b+2)+c},easeInQuart:function(a,b,c,d,e){return d*(b/=e)*b*b*b+c},easeOutQuart:function(a,b,c,d,e){return-d*((b=b/e-1)*b*b*b-1)+c},easeInOutQuart:function(a,b,c,d,e){return(b/=e/2)<1?d/2*b*b*b*b+c:-d/2*((b-=2)*b*b*b-2)+c},easeInQuint:function(a,b,c,d,e){return d*(b/=e)*b*b*b*b+c},easeOutQuint:function(a,b,c,d,e){return d*((b=b/e-1)*b*b*b*b+1)+c},easeInOutQuint:function(a,b,c,d,e){return(b/=e/2)<1?d/2*b*b*b*b*b+c:d/2*((b-=2)*b*b*b*b+2)+c},easeInSine:function(a,b,c,d,e){return-d*Math.cos(b/e*(Math.PI/2))+d+c},easeOutSine:function(a,b,c,d,e){return d*Math.sin(b/e*(Math.PI/2))+c},easeInOutSine:function(a,b,c,d,e){return-d/2*(Math.cos(Math.PI*b/e)-1)+c},easeInExpo:function(a,b,c,d,e){return 0==b?c:d*Math.pow(2,10*(b/e-1))+c},easeOutExpo:function(a,b,c,d,e){return b==e?c+d:d*(-Math.pow(2,-10*b/e)+1)+c},easeInOutExpo:function(a,b,c,d,e){return 0==b?c:b==e?c+d:(b/=e/2)<1?d/2*Math.pow(2,10*(b-1))+c:d/2*(-Math.pow(2,-10*--b)+2)+c},easeInCirc:function(a,b,c,d,e){return-d*(Math.sqrt(1-(b/=e)*b)-1)+c},easeOutCirc:function(a,b,c,d,e){return d*Math.sqrt(1-(b=b/e-1)*b)+c},easeInOutCirc:function(a,b,c,d,e){return(b/=e/2)<1?-d/2*(Math.sqrt(1-b*b)-1)+c:d/2*(Math.sqrt(1-(b-=2)*b)+1)+c},easeInElastic:function(a,b,c,d,e){var f=1.70158,g=0,h=d;if(0==b)return c;if(1==(b/=e))return c+d;if(g||(g=.3*e),h<Math.abs(d)){h=d;var f=g/4}else var f=g/(2*Math.PI)*Math.asin(d/h);return-(h*Math.pow(2,10*(b-=1))*Math.sin((b*e-f)*(2*Math.PI)/g))+c},easeOutElastic:function(a,b,c,d,e){var f=1.70158,g=0,h=d;if(0==b)return c;if(1==(b/=e))return c+d;if(g||(g=.3*e),h<Math.abs(d)){h=d;var f=g/4}else var f=g/(2*Math.PI)*Math.asin(d/h);return h*Math.pow(2,-10*b)*Math.sin((b*e-f)*(2*Math.PI)/g)+d+c},easeInOutElastic:function(a,b,c,d,e){var f=1.70158,g=0,h=d;if(0==b)return c;if(2==(b/=e/2))return c+d;if(g||(g=e*(.3*1.5)),h<Math.abs(d)){h=d;var f=g/4}else var f=g/(2*Math.PI)*Math.asin(d/h);return 1>b?-.5*(h*Math.pow(2,10*(b-=1))*Math.sin((b*e-f)*(2*Math.PI)/g))+c:h*Math.pow(2,-10*(b-=1))*Math.sin((b*e-f)*(2*Math.PI)/g)*.5+d+c},easeInBack:function(a,b,c,d,e,f){return void 0==f&&(f=1.70158),d*(b/=e)*b*((f+1)*b-f)+c},easeOutBack:function(a,b,c,d,e,f){return void 0==f&&(f=1.70158),d*((b=b/e-1)*b*((f+1)*b+f)+1)+c},easeInOutBack:function(a,b,c,d,e,f){return void 0==f&&(f=1.70158),(b/=e/2)<1?d/2*(b*b*(((f*=1.525)+1)*b-f))+c:d/2*((b-=2)*b*(((f*=1.525)+1)*b+f)+2)+c},easeInBounce:function(a,b,c,d,e){return d-jQuery.easing.easeOutBounce(a,e-b,0,d,e)+c},easeOutBounce:function(a,b,c,d,e){return(b/=e)<1/2.75?d*(7.5625*b*b)+c:2/2.75>b?d*(7.5625*(b-=1.5/2.75)*b+.75)+c:2.5/2.75>b?d*(7.5625*(b-=2.25/2.75)*b+.9375)+c:d*(7.5625*(b-=2.625/2.75)*b+.984375)+c},easeInOutBounce:function(a,b,c,d,e){return e/2>b?.5*jQuery.easing.easeInBounce(a,2*b,0,d,e)+c:.5*jQuery.easing.easeOutBounce(a,2*b-e,0,d,e)+.5*d+c}}),jQuery.extend(jQuery.easing,{easeInOutMaterial:function(a,b,c,d,e){return(b/=e/2)<1?d/2*b*b+c:d/4*((b-=2)*b*b+2)+c}}),jQuery.Velocity?console.log("Velocity is already loaded. You may be needlessly importing Velocity again; note that Materialize includes Velocity."):(!function(a){function b(a){var b=a.length,d=c.type(a);return"function"===d||c.isWindow(a)?!1:1===a.nodeType&&b?!0:"array"===d||0===b||"number"==typeof b&&b>0&&b-1 in a}if(!__webpack_provided_window_dot_jQuery){var c=function(a,b){return new c.fn.init(a,b)};c.isWindow=function(a){return null!=a&&a==a.window},c.type=function(a){return null==a?a+"":"object"==typeof a||"function"==typeof a?e[g.call(a)]||"object":typeof a},c.isArray=Array.isArray||function(a){return"array"===c.type(a)},c.isPlainObject=function(a){var b;if(!a||"object"!==c.type(a)||a.nodeType||c.isWindow(a))return!1;try{if(a.constructor&&!f.call(a,"constructor")&&!f.call(a.constructor.prototype,"isPrototypeOf"))return!1}catch(d){return!1}for(b in a);return void 0===b||f.call(a,b)},c.each=function(a,c,d){var e,f=0,g=a.length,h=b(a);if(d){if(h)for(;g>f&&(e=c.apply(a[f],d),e!==!1);f++);else for(f in a)if(e=c.apply(a[f],d),e===!1)break}else if(h)for(;g>f&&(e=c.call(a[f],f,a[f]),e!==!1);f++);else for(f in a)if(e=c.call(a[f],f,a[f]),e===!1)break;return a},c.data=function(a,b,e){if(void 0===e){var f=a[c.expando],g=f&&d[f];if(void 0===b)return g;if(g&&b in g)return g[b]}else if(void 0!==b){var f=a[c.expando]||(a[c.expando]=++c.uuid);return d[f]=d[f]||{},d[f][b]=e,e}},c.removeData=function(a,b){var e=a[c.expando],f=e&&d[e];f&&c.each(b,function(a,b){delete f[b]})},c.extend=function(){var a,b,d,e,f,g,h=arguments[0]||{},i=1,j=arguments.length,k=!1;for("boolean"==typeof h&&(k=h,h=arguments[i]||{},i++),"object"!=typeof h&&"function"!==c.type(h)&&(h={}),i===j&&(h=this,i--);j>i;i++)if(null!=(f=arguments[i]))for(e in f)a=h[e],d=f[e],h!==d&&(k&&d&&(c.isPlainObject(d)||(b=c.isArray(d)))?(b?(b=!1,g=a&&c.isArray(a)?a:[]):g=a&&c.isPlainObject(a)?a:{},h[e]=c.extend(k,g,d)):void 0!==d&&(h[e]=d));return h},c.queue=function(a,d,e){function f(a,c){var d=c||[];return null!=a&&(b(Object(a))?!function(a,b){for(var c=+b.length,d=0,e=a.length;c>d;)a[e++]=b[d++];if(c!==c)for(;void 0!==b[d];)a[e++]=b[d++];return a.length=e,a}(d,"string"==typeof a?[a]:a):[].push.call(d,a)),d}if(a){d=(d||"fx")+"queue";var g=c.data(a,d);return e?(!g||c.isArray(e)?g=c.data(a,d,f(e)):g.push(e),g):g||[]}},c.dequeue=function(a,b){c.each(a.nodeType?[a]:a,function(a,d){b=b||"fx";var e=c.queue(d,b),f=e.shift();"inprogress"===f&&(f=e.shift()),f&&("fx"===b&&e.unshift("inprogress"),f.call(d,function(){c.dequeue(d,b)}))})},c.fn=c.prototype={init:function(a){if(a.nodeType)return this[0]=a,this;throw new Error("Not a DOM node.")},offset:function(){var b=this[0].getBoundingClientRect?this[0].getBoundingClientRect():{top:0,left:0};return{top:b.top+(a.pageYOffset||document.scrollTop||0)-(document.clientTop||0),left:b.left+(a.pageXOffset||document.scrollLeft||0)-(document.clientLeft||0)}},position:function(){function a(){for(var a=this.offsetParent||document;a&&"html"===!a.nodeType.toLowerCase&&"static"===a.style.position;)a=a.offsetParent;return a||document}var b=this[0],a=a.apply(b),d=this.offset(),e=/^(?:body|html)$/i.test(a.nodeName)?{top:0,left:0}:c(a).offset();return d.top-=parseFloat(b.style.marginTop)||0,d.left-=parseFloat(b.style.marginLeft)||0,a.style&&(e.top+=parseFloat(a.style.borderTopWidth)||0,e.left+=parseFloat(a.style.borderLeftWidth)||0),{top:d.top-e.top,left:d.left-e.left}}};var d={};c.expando="velocity"+(new Date).getTime(),c.uuid=0;for(var e={},f=e.hasOwnProperty,g=e.toString,h="Boolean Number String Function Array Date RegExp Object Error".split(" "),i=0;i<h.length;i++)e["[object "+h[i]+"]"]=h[i].toLowerCase();c.fn.init.prototype=c.fn,a.Velocity={Utilities:c}}}(window),function(a){"object"==typeof module&&"object"==typeof module.exports?module.exports=a(): true?!(__WEBPACK_AMD_DEFINE_FACTORY__ = (a), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)):a()}(function(){return function(a,b,c,d){function e(a){for(var b=-1,c=a?a.length:0,d=[];++b<c;){var e=a[b];e&&d.push(e)}return d}function f(a){return p.isWrapped(a)?a=[].slice.call(a):p.isNode(a)&&(a=[a]),a}function g(a){var b=m.data(a,"velocity");return null===b?d:b}function h(a){return function(b){return Math.round(b*a)*(1/a)}}function i(a,c,d,e){function f(a,b){return 1-3*b+3*a}function g(a,b){return 3*b-6*a}function h(a){return 3*a}function i(a,b,c){return((f(b,c)*a+g(b,c))*a+h(b))*a}function j(a,b,c){return 3*f(b,c)*a*a+2*g(b,c)*a+h(b)}function k(b,c){for(var e=0;p>e;++e){var f=j(c,a,d);if(0===f)return c;var g=i(c,a,d)-b;c-=g/f}return c}function l(){for(var b=0;t>b;++b)x[b]=i(b*u,a,d)}function m(b,c,e){var f,g,h=0;do g=c+(e-c)/2,f=i(g,a,d)-b,f>0?e=g:c=g;while(Math.abs(f)>r&&++h<s);return g}function n(b){for(var c=0,e=1,f=t-1;e!=f&&x[e]<=b;++e)c+=u;--e;var g=(b-x[e])/(x[e+1]-x[e]),h=c+g*u,i=j(h,a,d);return i>=q?k(b,h):0==i?h:m(b,c,c+u)}function o(){y=!0,(a!=c||d!=e)&&l()}var p=4,q=.001,r=1e-7,s=10,t=11,u=1/(t-1),v="Float32Array"in b;if(4!==arguments.length)return!1;for(var w=0;4>w;++w)if("number"!=typeof arguments[w]||isNaN(arguments[w])||!isFinite(arguments[w]))return!1;a=Math.min(a,1),d=Math.min(d,1),a=Math.max(a,0),d=Math.max(d,0);var x=v?new Float32Array(t):new Array(t),y=!1,z=function(b){return y||o(),a===c&&d===e?b:0===b?0:1===b?1:i(n(b),c,e)};z.getControlPoints=function(){return[{x:a,y:c},{x:d,y:e}]};var A="generateBezier("+[a,c,d,e]+")";return z.toString=function(){return A},z}function j(a,b){var c=a;return p.isString(a)?t.Easings[a]||(c=!1):c=p.isArray(a)&&1===a.length?h.apply(null,a):p.isArray(a)&&2===a.length?u.apply(null,a.concat([b])):p.isArray(a)&&4===a.length?i.apply(null,a):!1,c===!1&&(c=t.Easings[t.defaults.easing]?t.defaults.easing:s),c}function k(a){if(a){var b=(new Date).getTime(),c=t.State.calls.length;c>1e4&&(t.State.calls=e(t.State.calls));for(var f=0;c>f;f++)if(t.State.calls[f]){var h=t.State.calls[f],i=h[0],j=h[2],n=h[3],o=!!n,q=null;n||(n=t.State.calls[f][3]=b-16);for(var r=Math.min((b-n)/j.duration,1),s=0,u=i.length;u>s;s++){var w=i[s],y=w.element;if(g(y)){var z=!1;if(j.display!==d&&null!==j.display&&"none"!==j.display){if("flex"===j.display){var A=["-webkit-box","-moz-box","-ms-flexbox","-webkit-flex"];m.each(A,function(a,b){v.setPropertyValue(y,"display",b)})}v.setPropertyValue(y,"display",j.display)}j.visibility!==d&&"hidden"!==j.visibility&&v.setPropertyValue(y,"visibility",j.visibility);for(var B in w)if("element"!==B){var C,D=w[B],E=p.isString(D.easing)?t.Easings[D.easing]:D.easing;if(1===r)C=D.endValue;else{var F=D.endValue-D.startValue;if(C=D.startValue+F*E(r,j,F),!o&&C===D.currentValue)continue}if(D.currentValue=C,"tween"===B)q=C;else{if(v.Hooks.registered[B]){var G=v.Hooks.getRoot(B),H=g(y).rootPropertyValueCache[G];H&&(D.rootPropertyValue=H)}var I=v.setPropertyValue(y,B,D.currentValue+(0===parseFloat(C)?"":D.unitType),D.rootPropertyValue,D.scrollData);v.Hooks.registered[B]&&(g(y).rootPropertyValueCache[G]=v.Normalizations.registered[G]?v.Normalizations.registered[G]("extract",null,I[1]):I[1]),"transform"===I[0]&&(z=!0)}}j.mobileHA&&g(y).transformCache.translate3d===d&&(g(y).transformCache.translate3d="(0px, 0px, 0px)",z=!0),z&&v.flushTransformCache(y)}}j.display!==d&&"none"!==j.display&&(t.State.calls[f][2].display=!1),j.visibility!==d&&"hidden"!==j.visibility&&(t.State.calls[f][2].visibility=!1),j.progress&&j.progress.call(h[1],h[1],r,Math.max(0,n+j.duration-b),n,q),1===r&&l(f)}}t.State.isTicking&&x(k)}function l(a,b){if(!t.State.calls[a])return!1;for(var c=t.State.calls[a][0],e=t.State.calls[a][1],f=t.State.calls[a][2],h=t.State.calls[a][4],i=!1,j=0,k=c.length;k>j;j++){var l=c[j].element;if(b||f.loop||("none"===f.display&&v.setPropertyValue(l,"display",f.display),"hidden"===f.visibility&&v.setPropertyValue(l,"visibility",f.visibility)),f.loop!==!0&&(m.queue(l)[1]===d||!/\.velocityQueueEntryFlag/i.test(m.queue(l)[1]))&&g(l)){g(l).isAnimating=!1,g(l).rootPropertyValueCache={};var n=!1;m.each(v.Lists.transforms3D,function(a,b){var c=/^scale/.test(b)?1:0,e=g(l).transformCache[b];g(l).transformCache[b]!==d&&new RegExp("^\\("+c+"[^.]").test(e)&&(n=!0,delete g(l).transformCache[b])}),f.mobileHA&&(n=!0,delete g(l).transformCache.translate3d),n&&v.flushTransformCache(l),v.Values.removeClass(l,"velocity-animating")}if(!b&&f.complete&&!f.loop&&j===k-1)try{f.complete.call(e,e)}catch(o){setTimeout(function(){throw o},1)}h&&f.loop!==!0&&h(e),g(l)&&f.loop===!0&&!b&&(m.each(g(l).tweensContainer,function(a,b){/^rotate/.test(a)&&360===parseFloat(b.endValue)&&(b.endValue=0,b.startValue=360),/^backgroundPosition/.test(a)&&100===parseFloat(b.endValue)&&"%"===b.unitType&&(b.endValue=0,b.startValue=100)}),t(l,"reverse",{loop:!0,delay:f.delay})),f.queue!==!1&&m.dequeue(l,f.queue)}t.State.calls[a]=!1;for(var p=0,q=t.State.calls.length;q>p;p++)if(t.State.calls[p]!==!1){i=!0;break}i===!1&&(t.State.isTicking=!1,delete t.State.calls,t.State.calls=[])}var m,n=function(){if(c.documentMode)return c.documentMode;for(var a=7;a>4;a--){var b=c.createElement("div");if(b.innerHTML="<!--[if IE "+a+"]><span></span><![endif]-->",b.getElementsByTagName("span").length)return b=null,a}return d}(),o=function(){var a=0;return b.webkitRequestAnimationFrame||b.mozRequestAnimationFrame||function(b){var c,d=(new Date).getTime();return c=Math.max(0,16-(d-a)),a=d+c,setTimeout(function(){b(d+c)},c)}}(),p={isString:function(a){return"string"==typeof a},isArray:Array.isArray||function(a){return"[object Array]"===Object.prototype.toString.call(a)},isFunction:function(a){return"[object Function]"===Object.prototype.toString.call(a)},isNode:function(a){return a&&a.nodeType},isNodeList:function(a){return"object"==typeof a&&/^\[object (HTMLCollection|NodeList|Object)\]$/.test(Object.prototype.toString.call(a))&&a.length!==d&&(0===a.length||"object"==typeof a[0]&&a[0].nodeType>0)},isWrapped:function(a){return a&&(a.jquery||b.Zepto&&b.Zepto.zepto.isZ(a))},isSVG:function(a){return b.SVGElement&&a instanceof b.SVGElement},isEmptyObject:function(a){for(var b in a)return!1;return!0}},q=!1;if(a.fn&&a.fn.jquery?(m=a,q=!0):m=b.Velocity.Utilities,8>=n&&!q)throw new Error("Velocity: IE8 and below require jQuery to be loaded before Velocity.");if(7>=n)return void(jQuery.fn.velocity=jQuery.fn.animate);var r=400,s="swing",t={State:{isMobile:/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),isAndroid:/Android/i.test(navigator.userAgent),isGingerbread:/Android 2\.3\.[3-7]/i.test(navigator.userAgent),isChrome:b.chrome,isFirefox:/Firefox/i.test(navigator.userAgent),prefixElement:c.createElement("div"),prefixMatches:{},scrollAnchor:null,scrollPropertyLeft:null,scrollPropertyTop:null,isTicking:!1,calls:[]},CSS:{},Utilities:m,Redirects:{},Easings:{},Promise:b.Promise,defaults:{queue:"",duration:r,easing:s,begin:d,complete:d,progress:d,display:d,visibility:d,loop:!1,delay:!1,mobileHA:!0,_cacheValues:!0},init:function(a){m.data(a,"velocity",{isSVG:p.isSVG(a),isAnimating:!1,computedStyle:null,tweensContainer:null,rootPropertyValueCache:{},transformCache:{}})},hook:null,mock:!1,version:{major:1,minor:2,patch:2},debug:!1};b.pageYOffset!==d?(t.State.scrollAnchor=b,t.State.scrollPropertyLeft="pageXOffset",t.State.scrollPropertyTop="pageYOffset"):(t.State.scrollAnchor=c.documentElement||c.body.parentNode||c.body,t.State.scrollPropertyLeft="scrollLeft",t.State.scrollPropertyTop="scrollTop");var u=function(){function a(a){return-a.tension*a.x-a.friction*a.v}function b(b,c,d){var e={x:b.x+d.dx*c,v:b.v+d.dv*c,tension:b.tension,friction:b.friction};return{dx:e.v,dv:a(e)}}function c(c,d){var e={dx:c.v,dv:a(c)},f=b(c,.5*d,e),g=b(c,.5*d,f),h=b(c,d,g),i=1/6*(e.dx+2*(f.dx+g.dx)+h.dx),j=1/6*(e.dv+2*(f.dv+g.dv)+h.dv);return c.x=c.x+i*d,c.v=c.v+j*d,c}return function d(a,b,e){var f,g,h,i={x:-1,v:0,tension:null,friction:null},j=[0],k=0,l=1e-4,m=.016;for(a=parseFloat(a)||500,b=parseFloat(b)||20,e=e||null,i.tension=a,i.friction=b,f=null!==e,f?(k=d(a,b),g=k/e*m):g=m;h=c(h||i,g),j.push(1+h.x),k+=16,Math.abs(h.x)>l&&Math.abs(h.v)>l;);return f?function(a){return j[a*(j.length-1)|0]}:k}}();t.Easings={linear:function(a){return a},swing:function(a){return.5-Math.cos(a*Math.PI)/2},spring:function(a){return 1-Math.cos(4.5*a*Math.PI)*Math.exp(6*-a)}},m.each([["ease",[.25,.1,.25,1]],["ease-in",[.42,0,1,1]],["ease-out",[0,0,.58,1]],["ease-in-out",[.42,0,.58,1]],["easeInSine",[.47,0,.745,.715]],["easeOutSine",[.39,.575,.565,1]],["easeInOutSine",[.445,.05,.55,.95]],["easeInQuad",[.55,.085,.68,.53]],["easeOutQuad",[.25,.46,.45,.94]],["easeInOutQuad",[.455,.03,.515,.955]],["easeInCubic",[.55,.055,.675,.19]],["easeOutCubic",[.215,.61,.355,1]],["easeInOutCubic",[.645,.045,.355,1]],["easeInQuart",[.895,.03,.685,.22]],["easeOutQuart",[.165,.84,.44,1]],["easeInOutQuart",[.77,0,.175,1]],["easeInQuint",[.755,.05,.855,.06]],["easeOutQuint",[.23,1,.32,1]],["easeInOutQuint",[.86,0,.07,1]],["easeInExpo",[.95,.05,.795,.035]],["easeOutExpo",[.19,1,.22,1]],["easeInOutExpo",[1,0,0,1]],["easeInCirc",[.6,.04,.98,.335]],["easeOutCirc",[.075,.82,.165,1]],["easeInOutCirc",[.785,.135,.15,.86]]],function(a,b){t.Easings[b[0]]=i.apply(null,b[1])});var v=t.CSS={RegEx:{isHex:/^#([A-f\d]{3}){1,2}$/i,valueUnwrap:/^[A-z]+\((.*)\)$/i,wrappedValueAlreadyExtracted:/[0-9.]+ [0-9.]+ [0-9.]+( [0-9.]+)?/,valueSplit:/([A-z]+\(.+\))|(([A-z0-9#-.]+?)(?=\s|$))/gi},Lists:{colors:["fill","stroke","stopColor","color","backgroundColor","borderColor","borderTopColor","borderRightColor","borderBottomColor","borderLeftColor","outlineColor"],transformsBase:["translateX","translateY","scale","scaleX","scaleY","skewX","skewY","rotateZ"],transforms3D:["transformPerspective","translateZ","scaleZ","rotateX","rotateY"]},Hooks:{templates:{textShadow:["Color X Y Blur","black 0px 0px 0px"],boxShadow:["Color X Y Blur Spread","black 0px 0px 0px 0px"],clip:["Top Right Bottom Left","0px 0px 0px 0px"],backgroundPosition:["X Y","0% 0%"],transformOrigin:["X Y Z","50% 50% 0px"],perspectiveOrigin:["X Y","50% 50%"]},registered:{},register:function(){for(var a=0;a<v.Lists.colors.length;a++){var b="color"===v.Lists.colors[a]?"0 0 0 1":"255 255 255 1";v.Hooks.templates[v.Lists.colors[a]]=["Red Green Blue Alpha",b]}var c,d,e;if(n)for(c in v.Hooks.templates){d=v.Hooks.templates[c],e=d[0].split(" ");var f=d[1].match(v.RegEx.valueSplit);"Color"===e[0]&&(e.push(e.shift()),f.push(f.shift()),v.Hooks.templates[c]=[e.join(" "),f.join(" ")])}for(c in v.Hooks.templates){d=v.Hooks.templates[c],e=d[0].split(" ");for(var a in e){var g=c+e[a],h=a;v.Hooks.registered[g]=[c,h]}}},getRoot:function(a){var b=v.Hooks.registered[a];return b?b[0]:a},cleanRootPropertyValue:function(a,b){return v.RegEx.valueUnwrap.test(b)&&(b=b.match(v.RegEx.valueUnwrap)[1]),v.Values.isCSSNullValue(b)&&(b=v.Hooks.templates[a][1]),b},extractValue:function(a,b){var c=v.Hooks.registered[a];if(c){var d=c[0],e=c[1];return b=v.Hooks.cleanRootPropertyValue(d,b),b.toString().match(v.RegEx.valueSplit)[e]}return b},injectValue:function(a,b,c){var d=v.Hooks.registered[a];if(d){var e,f,g=d[0],h=d[1];return c=v.Hooks.cleanRootPropertyValue(g,c),e=c.toString().match(v.RegEx.valueSplit),e[h]=b,f=e.join(" ")}return c}},Normalizations:{registered:{clip:function(a,b,c){switch(a){case"name":return"clip";case"extract":var d;return v.RegEx.wrappedValueAlreadyExtracted.test(c)?d=c:(d=c.toString().match(v.RegEx.valueUnwrap),d=d?d[1].replace(/,(\s+)?/g," "):c),d;case"inject":return"rect("+c+")"}},blur:function(a,b,c){switch(a){case"name":return t.State.isFirefox?"filter":"-webkit-filter";case"extract":var d=parseFloat(c);if(!d&&0!==d){var e=c.toString().match(/blur\(([0-9]+[A-z]+)\)/i);d=e?e[1]:0}return d;case"inject":return parseFloat(c)?"blur("+c+")":"none"}},opacity:function(a,b,c){if(8>=n)switch(a){case"name":return"filter";case"extract":var d=c.toString().match(/alpha\(opacity=(.*)\)/i);return c=d?d[1]/100:1;case"inject":return b.style.zoom=1,parseFloat(c)>=1?"":"alpha(opacity="+parseInt(100*parseFloat(c),10)+")"}else switch(a){case"name":return"opacity";case"extract":return c;case"inject":return c}}},register:function(){9>=n||t.State.isGingerbread||(v.Lists.transformsBase=v.Lists.transformsBase.concat(v.Lists.transforms3D));for(var a=0;a<v.Lists.transformsBase.length;a++)!function(){var b=v.Lists.transformsBase[a];v.Normalizations.registered[b]=function(a,c,e){switch(a){case"name":return"transform";case"extract":return g(c)===d||g(c).transformCache[b]===d?/^scale/i.test(b)?1:0:g(c).transformCache[b].replace(/[()]/g,"");case"inject":var f=!1;switch(b.substr(0,b.length-1)){case"translate":f=!/(%|px|em|rem|vw|vh|\d)$/i.test(e);break;case"scal":case"scale":t.State.isAndroid&&g(c).transformCache[b]===d&&1>e&&(e=1),f=!/(\d)$/i.test(e);break;case"skew":f=!/(deg|\d)$/i.test(e);break;case"rotate":f=!/(deg|\d)$/i.test(e)}return f||(g(c).transformCache[b]="("+e+")"),g(c).transformCache[b]}}}();for(var a=0;a<v.Lists.colors.length;a++)!function(){var b=v.Lists.colors[a];v.Normalizations.registered[b]=function(a,c,e){switch(a){case"name":return b;case"extract":var f;if(v.RegEx.wrappedValueAlreadyExtracted.test(e))f=e;else{var g,h={black:"rgb(0, 0, 0)",blue:"rgb(0, 0, 255)",gray:"rgb(128, 128, 128)",green:"rgb(0, 128, 0)",red:"rgb(255, 0, 0)",white:"rgb(255, 255, 255)"};/^[A-z]+$/i.test(e)?g=h[e]!==d?h[e]:h.black:v.RegEx.isHex.test(e)?g="rgb("+v.Values.hexToRgb(e).join(" ")+")":/^rgba?\(/i.test(e)||(g=h.black),f=(g||e).toString().match(v.RegEx.valueUnwrap)[1].replace(/,(\s+)?/g," ")}return 8>=n||3!==f.split(" ").length||(f+=" 1"),f;case"inject":return 8>=n?4===e.split(" ").length&&(e=e.split(/\s+/).slice(0,3).join(" ")):3===e.split(" ").length&&(e+=" 1"),(8>=n?"rgb":"rgba")+"("+e.replace(/\s+/g,",").replace(/\.(\d)+(?=,)/g,"")+")"}}}()}},Names:{camelCase:function(a){return a.replace(/-(\w)/g,function(a,b){return b.toUpperCase()})},SVGAttribute:function(a){var b="width|height|x|y|cx|cy|r|rx|ry|x1|x2|y1|y2";return(n||t.State.isAndroid&&!t.State.isChrome)&&(b+="|transform"),new RegExp("^("+b+")$","i").test(a)},prefixCheck:function(a){if(t.State.prefixMatches[a])return[t.State.prefixMatches[a],!0];for(var b=["","Webkit","Moz","ms","O"],c=0,d=b.length;d>c;c++){var e;if(e=0===c?a:b[c]+a.replace(/^\w/,function(a){return a.toUpperCase()}),p.isString(t.State.prefixElement.style[e]))return t.State.prefixMatches[a]=e,[e,!0]}return[a,!1]}},Values:{hexToRgb:function(a){var b,c=/^#?([a-f\d])([a-f\d])([a-f\d])$/i,d=/^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i;return a=a.replace(c,function(a,b,c,d){return b+b+c+c+d+d}),b=d.exec(a),b?[parseInt(b[1],16),parseInt(b[2],16),parseInt(b[3],16)]:[0,0,0]},isCSSNullValue:function(a){return 0==a||/^(none|auto|transparent|(rgba\(0, ?0, ?0, ?0\)))$/i.test(a)},getUnitType:function(a){return/^(rotate|skew)/i.test(a)?"deg":/(^(scale|scaleX|scaleY|scaleZ|alpha|flexGrow|flexHeight|zIndex|fontWeight)$)|((opacity|red|green|blue|alpha)$)/i.test(a)?"":"px"},getDisplayType:function(a){var b=a&&a.tagName.toString().toLowerCase();return/^(b|big|i|small|tt|abbr|acronym|cite|code|dfn|em|kbd|strong|samp|var|a|bdo|br|img|map|object|q|script|span|sub|sup|button|input|label|select|textarea)$/i.test(b)?"inline":/^(li)$/i.test(b)?"list-item":/^(tr)$/i.test(b)?"table-row":/^(table)$/i.test(b)?"table":/^(tbody)$/i.test(b)?"table-row-group":"block"},addClass:function(a,b){a.classList?a.classList.add(b):a.className+=(a.className.length?" ":"")+b},removeClass:function(a,b){a.classList?a.classList.remove(b):a.className=a.className.toString().replace(new RegExp("(^|\\s)"+b.split(" ").join("|")+"(\\s|$)","gi")," ")}},getPropertyValue:function(a,c,e,f){function h(a,c){function e(){j&&v.setPropertyValue(a,"display","none")}var i=0;if(8>=n)i=m.css(a,c);else{var j=!1;if(/^(width|height)$/.test(c)&&0===v.getPropertyValue(a,"display")&&(j=!0,v.setPropertyValue(a,"display",v.Values.getDisplayType(a))),!f){if("height"===c&&"border-box"!==v.getPropertyValue(a,"boxSizing").toString().toLowerCase()){var k=a.offsetHeight-(parseFloat(v.getPropertyValue(a,"borderTopWidth"))||0)-(parseFloat(v.getPropertyValue(a,"borderBottomWidth"))||0)-(parseFloat(v.getPropertyValue(a,"paddingTop"))||0)-(parseFloat(v.getPropertyValue(a,"paddingBottom"))||0);return e(),k}if("width"===c&&"border-box"!==v.getPropertyValue(a,"boxSizing").toString().toLowerCase()){var l=a.offsetWidth-(parseFloat(v.getPropertyValue(a,"borderLeftWidth"))||0)-(parseFloat(v.getPropertyValue(a,"borderRightWidth"))||0)-(parseFloat(v.getPropertyValue(a,"paddingLeft"))||0)-(parseFloat(v.getPropertyValue(a,"paddingRight"))||0);return e(),l}}var o;o=g(a)===d?b.getComputedStyle(a,null):g(a).computedStyle?g(a).computedStyle:g(a).computedStyle=b.getComputedStyle(a,null),"borderColor"===c&&(c="borderTopColor"),i=9===n&&"filter"===c?o.getPropertyValue(c):o[c],(""===i||null===i)&&(i=a.style[c]),e()}if("auto"===i&&/^(top|right|bottom|left)$/i.test(c)){var p=h(a,"position");("fixed"===p||"absolute"===p&&/top|left/i.test(c))&&(i=m(a).position()[c]+"px")}return i}var i;if(v.Hooks.registered[c]){var j=c,k=v.Hooks.getRoot(j);e===d&&(e=v.getPropertyValue(a,v.Names.prefixCheck(k)[0])),v.Normalizations.registered[k]&&(e=v.Normalizations.registered[k]("extract",a,e)),i=v.Hooks.extractValue(j,e)}else if(v.Normalizations.registered[c]){var l,o;l=v.Normalizations.registered[c]("name",a),"transform"!==l&&(o=h(a,v.Names.prefixCheck(l)[0]),v.Values.isCSSNullValue(o)&&v.Hooks.templates[c]&&(o=v.Hooks.templates[c][1])),i=v.Normalizations.registered[c]("extract",a,o)}if(!/^[\d-]/.test(i))if(g(a)&&g(a).isSVG&&v.Names.SVGAttribute(c))if(/^(height|width)$/i.test(c))try{i=a.getBBox()[c]}catch(p){i=0}else i=a.getAttribute(c);else i=h(a,v.Names.prefixCheck(c)[0]);return v.Values.isCSSNullValue(i)&&(i=0),t.debug>=2&&console.log("Get "+c+": "+i),i},setPropertyValue:function(a,c,d,e,f){var h=c;if("scroll"===c)f.container?f.container["scroll"+f.direction]=d:"Left"===f.direction?b.scrollTo(d,f.alternateValue):b.scrollTo(f.alternateValue,d);else if(v.Normalizations.registered[c]&&"transform"===v.Normalizations.registered[c]("name",a))v.Normalizations.registered[c]("inject",a,d),h="transform",d=g(a).transformCache[c];else{if(v.Hooks.registered[c]){var i=c,j=v.Hooks.getRoot(c);e=e||v.getPropertyValue(a,j),d=v.Hooks.injectValue(i,d,e),c=j}if(v.Normalizations.registered[c]&&(d=v.Normalizations.registered[c]("inject",a,d),c=v.Normalizations.registered[c]("name",a)),h=v.Names.prefixCheck(c)[0],8>=n)try{a.style[h]=d}catch(k){t.debug&&console.log("Browser does not support ["+d+"] for ["+h+"]")}else g(a)&&g(a).isSVG&&v.Names.SVGAttribute(c)?a.setAttribute(c,d):a.style[h]=d;t.debug>=2&&console.log("Set "+c+" ("+h+"): "+d)}return[h,d]},flushTransformCache:function(a){function b(b){return parseFloat(v.getPropertyValue(a,b))}var c="";if((n||t.State.isAndroid&&!t.State.isChrome)&&g(a).isSVG){var d={translate:[b("translateX"),b("translateY")],skewX:[b("skewX")],skewY:[b("skewY")],scale:1!==b("scale")?[b("scale"),b("scale")]:[b("scaleX"),b("scaleY")],rotate:[b("rotateZ"),0,0]};m.each(g(a).transformCache,function(a){/^translate/i.test(a)?a="translate":/^scale/i.test(a)?a="scale":/^rotate/i.test(a)&&(a="rotate"),d[a]&&(c+=a+"("+d[a].join(" ")+") ",delete d[a])})}else{var e,f;m.each(g(a).transformCache,function(b){return e=g(a).transformCache[b],"transformPerspective"===b?(f=e,!0):(9===n&&"rotateZ"===b&&(b="rotate"),void(c+=b+e+" "))}),f&&(c="perspective"+f+" "+c)}v.setPropertyValue(a,"transform",c)}};v.Hooks.register(),v.Normalizations.register(),t.hook=function(a,b,c){var e=d;return a=f(a),m.each(a,function(a,f){if(g(f)===d&&t.init(f),c===d)e===d&&(e=t.CSS.getPropertyValue(f,b));else{var h=t.CSS.setPropertyValue(f,b,c);"transform"===h[0]&&t.CSS.flushTransformCache(f),e=h}}),e};var w=function(){function a(){return h?B.promise||null:i}function e(){function a(a){function l(a,b){var c=d,e=d,g=d;return p.isArray(a)?(c=a[0],!p.isArray(a[1])&&/^[\d-]/.test(a[1])||p.isFunction(a[1])||v.RegEx.isHex.test(a[1])?g=a[1]:(p.isString(a[1])&&!v.RegEx.isHex.test(a[1])||p.isArray(a[1]))&&(e=b?a[1]:j(a[1],h.duration),a[2]!==d&&(g=a[2]))):c=a,b||(e=e||h.easing),p.isFunction(c)&&(c=c.call(f,y,x)),p.isFunction(g)&&(g=g.call(f,y,x)),[c||0,e,g]}function n(a,b){var c,d;return d=(b||"0").toString().toLowerCase().replace(/[%A-z]+$/,function(a){return c=a,""}),c||(c=v.Values.getUnitType(a)),[d,c]}function r(){var a={myParent:f.parentNode||c.body,position:v.getPropertyValue(f,"position"),fontSize:v.getPropertyValue(f,"fontSize")},d=a.position===I.lastPosition&&a.myParent===I.lastParent,e=a.fontSize===I.lastFontSize;I.lastParent=a.myParent,I.lastPosition=a.position,I.lastFontSize=a.fontSize;var h=100,i={};if(e&&d)i.emToPx=I.lastEmToPx,i.percentToPxWidth=I.lastPercentToPxWidth,i.percentToPxHeight=I.lastPercentToPxHeight;else{var j=g(f).isSVG?c.createElementNS("http://www.w3.org/2000/svg","rect"):c.createElement("div");t.init(j),a.myParent.appendChild(j),m.each(["overflow","overflowX","overflowY"],function(a,b){t.CSS.setPropertyValue(j,b,"hidden")}),t.CSS.setPropertyValue(j,"position",a.position),t.CSS.setPropertyValue(j,"fontSize",a.fontSize),t.CSS.setPropertyValue(j,"boxSizing","content-box"),m.each(["minWidth","maxWidth","width","minHeight","maxHeight","height"],function(a,b){t.CSS.setPropertyValue(j,b,h+"%")}),t.CSS.setPropertyValue(j,"paddingLeft",h+"em"),i.percentToPxWidth=I.lastPercentToPxWidth=(parseFloat(v.getPropertyValue(j,"width",null,!0))||1)/h,i.percentToPxHeight=I.lastPercentToPxHeight=(parseFloat(v.getPropertyValue(j,"height",null,!0))||1)/h,i.emToPx=I.lastEmToPx=(parseFloat(v.getPropertyValue(j,"paddingLeft"))||1)/h,a.myParent.removeChild(j)}return null===I.remToPx&&(I.remToPx=parseFloat(v.getPropertyValue(c.body,"fontSize"))||16),null===I.vwToPx&&(I.vwToPx=parseFloat(b.innerWidth)/100,I.vhToPx=parseFloat(b.innerHeight)/100),i.remToPx=I.remToPx,i.vwToPx=I.vwToPx,i.vhToPx=I.vhToPx,t.debug>=1&&console.log("Unit ratios: "+JSON.stringify(i),f),i}if(h.begin&&0===y)try{h.begin.call(o,o)}catch(u){setTimeout(function(){throw u},1)}if("scroll"===C){var w,z,A,D=/^x$/i.test(h.axis)?"Left":"Top",E=parseFloat(h.offset)||0;h.container?p.isWrapped(h.container)||p.isNode(h.container)?(h.container=h.container[0]||h.container,w=h.container["scroll"+D],A=w+m(f).position()[D.toLowerCase()]+E):h.container=null:(w=t.State.scrollAnchor[t.State["scrollProperty"+D]],z=t.State.scrollAnchor[t.State["scrollProperty"+("Left"===D?"Top":"Left")]],A=m(f).offset()[D.toLowerCase()]+E),i={scroll:{rootPropertyValue:!1,startValue:w,currentValue:w,endValue:A,unitType:"",easing:h.easing,scrollData:{container:h.container,direction:D,alternateValue:z}},element:f},t.debug&&console.log("tweensContainer (scroll): ",i.scroll,f)}else if("reverse"===C){if(!g(f).tweensContainer)return void m.dequeue(f,h.queue);"none"===g(f).opts.display&&(g(f).opts.display="auto"),"hidden"===g(f).opts.visibility&&(g(f).opts.visibility="visible"),g(f).opts.loop=!1,g(f).opts.begin=null,g(f).opts.complete=null,s.easing||delete h.easing,s.duration||delete h.duration,h=m.extend({},g(f).opts,h);var F=m.extend(!0,{},g(f).tweensContainer);for(var G in F)if("element"!==G){var H=F[G].startValue;F[G].startValue=F[G].currentValue=F[G].endValue,F[G].endValue=H,p.isEmptyObject(s)||(F[G].easing=h.easing),t.debug&&console.log("reverse tweensContainer ("+G+"): "+JSON.stringify(F[G]),f)}i=F}else if("start"===C){var F;g(f).tweensContainer&&g(f).isAnimating===!0&&(F=g(f).tweensContainer),m.each(q,function(a,b){if(RegExp("^"+v.Lists.colors.join("$|^")+"$").test(a)){var c=l(b,!0),e=c[0],f=c[1],g=c[2];if(v.RegEx.isHex.test(e)){for(var h=["Red","Green","Blue"],i=v.Values.hexToRgb(e),j=g?v.Values.hexToRgb(g):d,k=0;k<h.length;k++){var m=[i[k]];f&&m.push(f),j!==d&&m.push(j[k]),q[a+h[k]]=m}delete q[a]}}});for(var K in q){var L=l(q[K]),M=L[0],N=L[1],O=L[2];K=v.Names.camelCase(K);var P=v.Hooks.getRoot(K),Q=!1;if(g(f).isSVG||"tween"===P||v.Names.prefixCheck(P)[1]!==!1||v.Normalizations.registered[P]!==d){(h.display!==d&&null!==h.display&&"none"!==h.display||h.visibility!==d&&"hidden"!==h.visibility)&&/opacity|filter/.test(K)&&!O&&0!==M&&(O=0),h._cacheValues&&F&&F[K]?(O===d&&(O=F[K].endValue+F[K].unitType),Q=g(f).rootPropertyValueCache[P]):v.Hooks.registered[K]?O===d?(Q=v.getPropertyValue(f,P),O=v.getPropertyValue(f,K,Q)):Q=v.Hooks.templates[P][1]:O===d&&(O=v.getPropertyValue(f,K));var R,S,T,U=!1;if(R=n(K,O),O=R[0],T=R[1],R=n(K,M),M=R[0].replace(/^([+-\/*])=/,function(a,b){return U=b,""}),S=R[1],O=parseFloat(O)||0,M=parseFloat(M)||0,"%"===S&&(/^(fontSize|lineHeight)$/.test(K)?(M/=100,S="em"):/^scale/.test(K)?(M/=100,S=""):/(Red|Green|Blue)$/i.test(K)&&(M=M/100*255,S="")),/[\/*]/.test(U))S=T;else if(T!==S&&0!==O)if(0===M)S=T;else{e=e||r();var V=/margin|padding|left|right|width|text|word|letter/i.test(K)||/X$/.test(K)||"x"===K?"x":"y";
+	switch(T){case"%":O*="x"===V?e.percentToPxWidth:e.percentToPxHeight;break;case"px":break;default:O*=e[T+"ToPx"]}switch(S){case"%":O*=1/("x"===V?e.percentToPxWidth:e.percentToPxHeight);break;case"px":break;default:O*=1/e[S+"ToPx"]}}switch(U){case"+":M=O+M;break;case"-":M=O-M;break;case"*":M=O*M;break;case"/":M=O/M}i[K]={rootPropertyValue:Q,startValue:O,currentValue:O,endValue:M,unitType:S,easing:N},t.debug&&console.log("tweensContainer ("+K+"): "+JSON.stringify(i[K]),f)}else t.debug&&console.log("Skipping ["+P+"] due to a lack of browser support.")}i.element=f}i.element&&(v.Values.addClass(f,"velocity-animating"),J.push(i),""===h.queue&&(g(f).tweensContainer=i,g(f).opts=h),g(f).isAnimating=!0,y===x-1?(t.State.calls.push([J,o,h,null,B.resolver]),t.State.isTicking===!1&&(t.State.isTicking=!0,k())):y++)}var e,f=this,h=m.extend({},t.defaults,s),i={};switch(g(f)===d&&t.init(f),parseFloat(h.delay)&&h.queue!==!1&&m.queue(f,h.queue,function(a){t.velocityQueueEntryFlag=!0,g(f).delayTimer={setTimeout:setTimeout(a,parseFloat(h.delay)),next:a}}),h.duration.toString().toLowerCase()){case"fast":h.duration=200;break;case"normal":h.duration=r;break;case"slow":h.duration=600;break;default:h.duration=parseFloat(h.duration)||1}t.mock!==!1&&(t.mock===!0?h.duration=h.delay=1:(h.duration*=parseFloat(t.mock)||1,h.delay*=parseFloat(t.mock)||1)),h.easing=j(h.easing,h.duration),h.begin&&!p.isFunction(h.begin)&&(h.begin=null),h.progress&&!p.isFunction(h.progress)&&(h.progress=null),h.complete&&!p.isFunction(h.complete)&&(h.complete=null),h.display!==d&&null!==h.display&&(h.display=h.display.toString().toLowerCase(),"auto"===h.display&&(h.display=t.CSS.Values.getDisplayType(f))),h.visibility!==d&&null!==h.visibility&&(h.visibility=h.visibility.toString().toLowerCase()),h.mobileHA=h.mobileHA&&t.State.isMobile&&!t.State.isGingerbread,h.queue===!1?h.delay?setTimeout(a,h.delay):a():m.queue(f,h.queue,function(b,c){return c===!0?(B.promise&&B.resolver(o),!0):(t.velocityQueueEntryFlag=!0,void a(b))}),""!==h.queue&&"fx"!==h.queue||"inprogress"===m.queue(f)[0]||m.dequeue(f)}var h,i,n,o,q,s,u=arguments[0]&&(arguments[0].p||m.isPlainObject(arguments[0].properties)&&!arguments[0].properties.names||p.isString(arguments[0].properties));if(p.isWrapped(this)?(h=!1,n=0,o=this,i=this):(h=!0,n=1,o=u?arguments[0].elements||arguments[0].e:arguments[0]),o=f(o)){u?(q=arguments[0].properties||arguments[0].p,s=arguments[0].options||arguments[0].o):(q=arguments[n],s=arguments[n+1]);var x=o.length,y=0;if(!/^(stop|finish)$/i.test(q)&&!m.isPlainObject(s)){var z=n+1;s={};for(var A=z;A<arguments.length;A++)p.isArray(arguments[A])||!/^(fast|normal|slow)$/i.test(arguments[A])&&!/^\d/.test(arguments[A])?p.isString(arguments[A])||p.isArray(arguments[A])?s.easing=arguments[A]:p.isFunction(arguments[A])&&(s.complete=arguments[A]):s.duration=arguments[A]}var B={promise:null,resolver:null,rejecter:null};h&&t.Promise&&(B.promise=new t.Promise(function(a,b){B.resolver=a,B.rejecter=b}));var C;switch(q){case"scroll":C="scroll";break;case"reverse":C="reverse";break;case"finish":case"stop":m.each(o,function(a,b){g(b)&&g(b).delayTimer&&(clearTimeout(g(b).delayTimer.setTimeout),g(b).delayTimer.next&&g(b).delayTimer.next(),delete g(b).delayTimer)});var D=[];return m.each(t.State.calls,function(a,b){b&&m.each(b[1],function(c,e){var f=s===d?"":s;return f===!0||b[2].queue===f||s===d&&b[2].queue===!1?void m.each(o,function(c,d){d===e&&((s===!0||p.isString(s))&&(m.each(m.queue(d,p.isString(s)?s:""),function(a,b){p.isFunction(b)&&b(null,!0)}),m.queue(d,p.isString(s)?s:"",[])),"stop"===q?(g(d)&&g(d).tweensContainer&&f!==!1&&m.each(g(d).tweensContainer,function(a,b){b.endValue=b.currentValue}),D.push(a)):"finish"===q&&(b[2].duration=1))}):!0})}),"stop"===q&&(m.each(D,function(a,b){l(b,!0)}),B.promise&&B.resolver(o)),a();default:if(!m.isPlainObject(q)||p.isEmptyObject(q)){if(p.isString(q)&&t.Redirects[q]){var E=m.extend({},s),F=E.duration,G=E.delay||0;return E.backwards===!0&&(o=m.extend(!0,[],o).reverse()),m.each(o,function(a,b){parseFloat(E.stagger)?E.delay=G+parseFloat(E.stagger)*a:p.isFunction(E.stagger)&&(E.delay=G+E.stagger.call(b,a,x)),E.drag&&(E.duration=parseFloat(F)||(/^(callout|transition)/.test(q)?1e3:r),E.duration=Math.max(E.duration*(E.backwards?1-a/x:(a+1)/x),.75*E.duration,200)),t.Redirects[q].call(b,b,E||{},a,x,o,B.promise?B:d)}),a()}var H="Velocity: First argument ("+q+") was not a property map, a known action, or a registered redirect. Aborting.";return B.promise?B.rejecter(new Error(H)):console.log(H),a()}C="start"}var I={lastParent:null,lastPosition:null,lastFontSize:null,lastPercentToPxWidth:null,lastPercentToPxHeight:null,lastEmToPx:null,remToPx:null,vwToPx:null,vhToPx:null},J=[];m.each(o,function(a,b){p.isNode(b)&&e.call(b)});var K,E=m.extend({},t.defaults,s);if(E.loop=parseInt(E.loop),K=2*E.loop-1,E.loop)for(var L=0;K>L;L++){var M={delay:E.delay,progress:E.progress};L===K-1&&(M.display=E.display,M.visibility=E.visibility,M.complete=E.complete),w(o,"reverse",M)}return a()}};t=m.extend(w,t),t.animate=w;var x=b.requestAnimationFrame||o;return t.State.isMobile||c.hidden===d||c.addEventListener("visibilitychange",function(){c.hidden?(x=function(a){return setTimeout(function(){a(!0)},16)},k()):x=b.requestAnimationFrame||o}),a.Velocity=t,a!==b&&(a.fn.velocity=w,a.fn.velocity.defaults=t.defaults),m.each(["Down","Up"],function(a,b){t.Redirects["slide"+b]=function(a,c,e,f,g,h){var i=m.extend({},c),j=i.begin,k=i.complete,l={height:"",marginTop:"",marginBottom:"",paddingTop:"",paddingBottom:""},n={};i.display===d&&(i.display="Down"===b?"inline"===t.CSS.Values.getDisplayType(a)?"inline-block":"block":"none"),i.begin=function(){j&&j.call(g,g);for(var c in l){n[c]=a.style[c];var d=t.CSS.getPropertyValue(a,c);l[c]="Down"===b?[d,0]:[0,d]}n.overflow=a.style.overflow,a.style.overflow="hidden"},i.complete=function(){for(var b in n)a.style[b]=n[b];k&&k.call(g,g),h&&h.resolver(g)},t(a,l,i)}}),m.each(["In","Out"],function(a,b){t.Redirects["fade"+b]=function(a,c,e,f,g,h){var i=m.extend({},c),j={opacity:"In"===b?1:0},k=i.complete;i.complete=e!==f-1?i.begin=null:function(){k&&k.call(g,g),h&&h.resolver(g)},i.display===d&&(i.display="In"===b?"auto":"none"),t(this,j,i)}}),t}(__webpack_provided_window_dot_jQuery||window.Zepto||window,window,document)})),!function(a,b,c,d){"use strict";function e(a,b,c){return setTimeout(k(a,c),b)}function f(a,b,c){return Array.isArray(a)?(g(a,c[b],c),!0):!1}function g(a,b,c){var e;if(a)if(a.forEach)a.forEach(b,c);else if(a.length!==d)for(e=0;e<a.length;)b.call(c,a[e],e,a),e++;else for(e in a)a.hasOwnProperty(e)&&b.call(c,a[e],e,a)}function h(a,b,c){for(var e=Object.keys(b),f=0;f<e.length;)(!c||c&&a[e[f]]===d)&&(a[e[f]]=b[e[f]]),f++;return a}function i(a,b){return h(a,b,!0)}function j(a,b,c){var d,e=b.prototype;d=a.prototype=Object.create(e),d.constructor=a,d._super=e,c&&h(d,c)}function k(a,b){return function(){return a.apply(b,arguments)}}function l(a,b){return typeof a==ka?a.apply(b?b[0]||d:d,b):a}function m(a,b){return a===d?b:a}function n(a,b,c){g(r(b),function(b){a.addEventListener(b,c,!1)})}function o(a,b,c){g(r(b),function(b){a.removeEventListener(b,c,!1)})}function p(a,b){for(;a;){if(a==b)return!0;a=a.parentNode}return!1}function q(a,b){return a.indexOf(b)>-1}function r(a){return a.trim().split(/\s+/g)}function s(a,b,c){if(a.indexOf&&!c)return a.indexOf(b);for(var d=0;d<a.length;){if(c&&a[d][c]==b||!c&&a[d]===b)return d;d++}return-1}function t(a){return Array.prototype.slice.call(a,0)}function u(a,b,c){for(var d=[],e=[],f=0;f<a.length;){var g=b?a[f][b]:a[f];s(e,g)<0&&d.push(a[f]),e[f]=g,f++}return c&&(d=b?d.sort(function(a,c){return a[b]>c[b]}):d.sort()),d}function v(a,b){for(var c,e,f=b[0].toUpperCase()+b.slice(1),g=0;g<ia.length;){if(c=ia[g],e=c?c+f:b,e in a)return e;g++}return d}function w(){return oa++}function x(a){var b=a.ownerDocument;return b.defaultView||b.parentWindow}function y(a,b){var c=this;this.manager=a,this.callback=b,this.element=a.element,this.target=a.options.inputTarget,this.domHandler=function(b){l(a.options.enable,[a])&&c.handler(b)},this.init()}function z(a){var b,c=a.options.inputClass;return new(b=c?c:ra?N:sa?Q:qa?S:M)(a,A)}function A(a,b,c){var d=c.pointers.length,e=c.changedPointers.length,f=b&ya&&0===d-e,g=b&(Aa|Ba)&&0===d-e;c.isFirst=!!f,c.isFinal=!!g,f&&(a.session={}),c.eventType=b,B(a,c),a.emit("hammer.input",c),a.recognize(c),a.session.prevInput=c}function B(a,b){var c=a.session,d=b.pointers,e=d.length;c.firstInput||(c.firstInput=E(b)),e>1&&!c.firstMultiple?c.firstMultiple=E(b):1===e&&(c.firstMultiple=!1);var f=c.firstInput,g=c.firstMultiple,h=g?g.center:f.center,i=b.center=F(d);b.timeStamp=na(),b.deltaTime=b.timeStamp-f.timeStamp,b.angle=J(h,i),b.distance=I(h,i),C(c,b),b.offsetDirection=H(b.deltaX,b.deltaY),b.scale=g?L(g.pointers,d):1,b.rotation=g?K(g.pointers,d):0,D(c,b);var j=a.element;p(b.srcEvent.target,j)&&(j=b.srcEvent.target),b.target=j}function C(a,b){var c=b.center,d=a.offsetDelta||{},e=a.prevDelta||{},f=a.prevInput||{};(b.eventType===ya||f.eventType===Aa)&&(e=a.prevDelta={x:f.deltaX||0,y:f.deltaY||0},d=a.offsetDelta={x:c.x,y:c.y}),b.deltaX=e.x+(c.x-d.x),b.deltaY=e.y+(c.y-d.y)}function D(a,b){var c,e,f,g,h=a.lastInterval||b,i=b.timeStamp-h.timeStamp;if(b.eventType!=Ba&&(i>xa||h.velocity===d)){var j=h.deltaX-b.deltaX,k=h.deltaY-b.deltaY,l=G(i,j,k);e=l.x,f=l.y,c=ma(l.x)>ma(l.y)?l.x:l.y,g=H(j,k),a.lastInterval=b}else c=h.velocity,e=h.velocityX,f=h.velocityY,g=h.direction;b.velocity=c,b.velocityX=e,b.velocityY=f,b.direction=g}function E(a){for(var b=[],c=0;c<a.pointers.length;)b[c]={clientX:la(a.pointers[c].clientX),clientY:la(a.pointers[c].clientY)},c++;return{timeStamp:na(),pointers:b,center:F(b),deltaX:a.deltaX,deltaY:a.deltaY}}function F(a){var b=a.length;if(1===b)return{x:la(a[0].clientX),y:la(a[0].clientY)};for(var c=0,d=0,e=0;b>e;)c+=a[e].clientX,d+=a[e].clientY,e++;return{x:la(c/b),y:la(d/b)}}function G(a,b,c){return{x:b/a||0,y:c/a||0}}function H(a,b){return a===b?Ca:ma(a)>=ma(b)?a>0?Da:Ea:b>0?Fa:Ga}function I(a,b,c){c||(c=Ka);var d=b[c[0]]-a[c[0]],e=b[c[1]]-a[c[1]];return Math.sqrt(d*d+e*e)}function J(a,b,c){c||(c=Ka);var d=b[c[0]]-a[c[0]],e=b[c[1]]-a[c[1]];return 180*Math.atan2(e,d)/Math.PI}function K(a,b){return J(b[1],b[0],La)-J(a[1],a[0],La)}function L(a,b){return I(b[0],b[1],La)/I(a[0],a[1],La)}function M(){this.evEl=Na,this.evWin=Oa,this.allow=!0,this.pressed=!1,y.apply(this,arguments)}function N(){this.evEl=Ra,this.evWin=Sa,y.apply(this,arguments),this.store=this.manager.session.pointerEvents=[]}function O(){this.evTarget=Ua,this.evWin=Va,this.started=!1,y.apply(this,arguments)}function P(a,b){var c=t(a.touches),d=t(a.changedTouches);return b&(Aa|Ba)&&(c=u(c.concat(d),"identifier",!0)),[c,d]}function Q(){this.evTarget=Xa,this.targetIds={},y.apply(this,arguments)}function R(a,b){var c=t(a.touches),d=this.targetIds;if(b&(ya|za)&&1===c.length)return d[c[0].identifier]=!0,[c,c];var e,f,g=t(a.changedTouches),h=[],i=this.target;if(f=c.filter(function(a){return p(a.target,i)}),b===ya)for(e=0;e<f.length;)d[f[e].identifier]=!0,e++;for(e=0;e<g.length;)d[g[e].identifier]&&h.push(g[e]),b&(Aa|Ba)&&delete d[g[e].identifier],e++;return h.length?[u(f.concat(h),"identifier",!0),h]:void 0}function S(){y.apply(this,arguments);var a=k(this.handler,this);this.touch=new Q(this.manager,a),this.mouse=new M(this.manager,a)}function T(a,b){this.manager=a,this.set(b)}function U(a){if(q(a,bb))return bb;var b=q(a,cb),c=q(a,db);return b&&c?cb+" "+db:b||c?b?cb:db:q(a,ab)?ab:_a}function V(a){this.id=w(),this.manager=null,this.options=i(a||{},this.defaults),this.options.enable=m(this.options.enable,!0),this.state=eb,this.simultaneous={},this.requireFail=[]}function W(a){return a&jb?"cancel":a&hb?"end":a&gb?"move":a&fb?"start":""}function X(a){return a==Ga?"down":a==Fa?"up":a==Da?"left":a==Ea?"right":""}function Y(a,b){var c=b.manager;return c?c.get(a):a}function Z(){V.apply(this,arguments)}function $(){Z.apply(this,arguments),this.pX=null,this.pY=null}function _(){Z.apply(this,arguments)}function aa(){V.apply(this,arguments),this._timer=null,this._input=null}function ba(){Z.apply(this,arguments)}function ca(){Z.apply(this,arguments)}function da(){V.apply(this,arguments),this.pTime=!1,this.pCenter=!1,this._timer=null,this._input=null,this.count=0}function ea(a,b){return b=b||{},b.recognizers=m(b.recognizers,ea.defaults.preset),new fa(a,b)}function fa(a,b){b=b||{},this.options=i(b,ea.defaults),this.options.inputTarget=this.options.inputTarget||a,this.handlers={},this.session={},this.recognizers=[],this.element=a,this.input=z(this),this.touchAction=new T(this,this.options.touchAction),ga(this,!0),g(b.recognizers,function(a){var b=this.add(new a[0](a[1]));a[2]&&b.recognizeWith(a[2]),a[3]&&b.requireFailure(a[3])},this)}function ga(a,b){var c=a.element;g(a.options.cssProps,function(a,d){c.style[v(c.style,d)]=b?a:""})}function ha(a,c){var d=b.createEvent("Event");d.initEvent(a,!0,!0),d.gesture=c,c.target.dispatchEvent(d)}var ia=["","webkit","moz","MS","ms","o"],ja=b.createElement("div"),ka="function",la=Math.round,ma=Math.abs,na=Date.now,oa=1,pa=/mobile|tablet|ip(ad|hone|od)|android/i,qa="ontouchstart"in a,ra=v(a,"PointerEvent")!==d,sa=qa&&pa.test(navigator.userAgent),ta="touch",ua="pen",va="mouse",wa="kinect",xa=25,ya=1,za=2,Aa=4,Ba=8,Ca=1,Da=2,Ea=4,Fa=8,Ga=16,Ha=Da|Ea,Ia=Fa|Ga,Ja=Ha|Ia,Ka=["x","y"],La=["clientX","clientY"];y.prototype={handler:function(){},init:function(){this.evEl&&n(this.element,this.evEl,this.domHandler),this.evTarget&&n(this.target,this.evTarget,this.domHandler),this.evWin&&n(x(this.element),this.evWin,this.domHandler)},destroy:function(){this.evEl&&o(this.element,this.evEl,this.domHandler),this.evTarget&&o(this.target,this.evTarget,this.domHandler),this.evWin&&o(x(this.element),this.evWin,this.domHandler)}};var Ma={mousedown:ya,mousemove:za,mouseup:Aa},Na="mousedown",Oa="mousemove mouseup";j(M,y,{handler:function(a){var b=Ma[a.type];b&ya&&0===a.button&&(this.pressed=!0),b&za&&1!==a.which&&(b=Aa),this.pressed&&this.allow&&(b&Aa&&(this.pressed=!1),this.callback(this.manager,b,{pointers:[a],changedPointers:[a],pointerType:va,srcEvent:a}))}});var Pa={pointerdown:ya,pointermove:za,pointerup:Aa,pointercancel:Ba,pointerout:Ba},Qa={2:ta,3:ua,4:va,5:wa},Ra="pointerdown",Sa="pointermove pointerup pointercancel";a.MSPointerEvent&&(Ra="MSPointerDown",Sa="MSPointerMove MSPointerUp MSPointerCancel"),j(N,y,{handler:function(a){var b=this.store,c=!1,d=a.type.toLowerCase().replace("ms",""),e=Pa[d],f=Qa[a.pointerType]||a.pointerType,g=f==ta,h=s(b,a.pointerId,"pointerId");e&ya&&(0===a.button||g)?0>h&&(b.push(a),h=b.length-1):e&(Aa|Ba)&&(c=!0),0>h||(b[h]=a,this.callback(this.manager,e,{pointers:b,changedPointers:[a],pointerType:f,srcEvent:a}),c&&b.splice(h,1))}});var Ta={touchstart:ya,touchmove:za,touchend:Aa,touchcancel:Ba},Ua="touchstart",Va="touchstart touchmove touchend touchcancel";j(O,y,{handler:function(a){var b=Ta[a.type];if(b===ya&&(this.started=!0),this.started){var c=P.call(this,a,b);b&(Aa|Ba)&&0===c[0].length-c[1].length&&(this.started=!1),this.callback(this.manager,b,{pointers:c[0],changedPointers:c[1],pointerType:ta,srcEvent:a})}}});var Wa={touchstart:ya,touchmove:za,touchend:Aa,touchcancel:Ba},Xa="touchstart touchmove touchend touchcancel";j(Q,y,{handler:function(a){var b=Wa[a.type],c=R.call(this,a,b);c&&this.callback(this.manager,b,{pointers:c[0],changedPointers:c[1],pointerType:ta,srcEvent:a})}}),j(S,y,{handler:function(a,b,c){var d=c.pointerType==ta,e=c.pointerType==va;if(d)this.mouse.allow=!1;else if(e&&!this.mouse.allow)return;b&(Aa|Ba)&&(this.mouse.allow=!0),this.callback(a,b,c)},destroy:function(){this.touch.destroy(),this.mouse.destroy()}});var Ya=v(ja.style,"touchAction"),Za=Ya!==d,$a="compute",_a="auto",ab="manipulation",bb="none",cb="pan-x",db="pan-y";T.prototype={set:function(a){a==$a&&(a=this.compute()),Za&&(this.manager.element.style[Ya]=a),this.actions=a.toLowerCase().trim()},update:function(){this.set(this.manager.options.touchAction)},compute:function(){var a=[];return g(this.manager.recognizers,function(b){l(b.options.enable,[b])&&(a=a.concat(b.getTouchAction()))}),U(a.join(" "))},preventDefaults:function(a){if(!Za){var b=a.srcEvent,c=a.offsetDirection;if(this.manager.session.prevented)return void b.preventDefault();var d=this.actions,e=q(d,bb),f=q(d,db),g=q(d,cb);return e||f&&c&Ha||g&&c&Ia?this.preventSrc(b):void 0}},preventSrc:function(a){this.manager.session.prevented=!0,a.preventDefault()}};var eb=1,fb=2,gb=4,hb=8,ib=hb,jb=16,kb=32;V.prototype={defaults:{},set:function(a){return h(this.options,a),this.manager&&this.manager.touchAction.update(),this},recognizeWith:function(a){if(f(a,"recognizeWith",this))return this;var b=this.simultaneous;return a=Y(a,this),b[a.id]||(b[a.id]=a,a.recognizeWith(this)),this},dropRecognizeWith:function(a){return f(a,"dropRecognizeWith",this)?this:(a=Y(a,this),delete this.simultaneous[a.id],this)},requireFailure:function(a){if(f(a,"requireFailure",this))return this;var b=this.requireFail;return a=Y(a,this),-1===s(b,a)&&(b.push(a),a.requireFailure(this)),this},dropRequireFailure:function(a){if(f(a,"dropRequireFailure",this))return this;a=Y(a,this);var b=s(this.requireFail,a);return b>-1&&this.requireFail.splice(b,1),this},hasRequireFailures:function(){return this.requireFail.length>0},canRecognizeWith:function(a){return!!this.simultaneous[a.id]},emit:function(a){function b(b){c.manager.emit(c.options.event+(b?W(d):""),a)}var c=this,d=this.state;hb>d&&b(!0),b(),d>=hb&&b(!0)},tryEmit:function(a){return this.canEmit()?this.emit(a):void(this.state=kb)},canEmit:function(){for(var a=0;a<this.requireFail.length;){if(!(this.requireFail[a].state&(kb|eb)))return!1;a++}return!0},recognize:function(a){var b=h({},a);return l(this.options.enable,[this,b])?(this.state&(ib|jb|kb)&&(this.state=eb),this.state=this.process(b),void(this.state&(fb|gb|hb|jb)&&this.tryEmit(b))):(this.reset(),void(this.state=kb))},process:function(){},getTouchAction:function(){},reset:function(){}},j(Z,V,{defaults:{pointers:1},attrTest:function(a){var b=this.options.pointers;return 0===b||a.pointers.length===b},process:function(a){var b=this.state,c=a.eventType,d=b&(fb|gb),e=this.attrTest(a);return d&&(c&Ba||!e)?b|jb:d||e?c&Aa?b|hb:b&fb?b|gb:fb:kb}}),j($,Z,{defaults:{event:"pan",threshold:10,pointers:1,direction:Ja},getTouchAction:function(){var a=this.options.direction,b=[];return a&Ha&&b.push(db),a&Ia&&b.push(cb),b},directionTest:function(a){var b=this.options,c=!0,d=a.distance,e=a.direction,f=a.deltaX,g=a.deltaY;return e&b.direction||(b.direction&Ha?(e=0===f?Ca:0>f?Da:Ea,c=f!=this.pX,d=Math.abs(a.deltaX)):(e=0===g?Ca:0>g?Fa:Ga,c=g!=this.pY,d=Math.abs(a.deltaY))),a.direction=e,c&&d>b.threshold&&e&b.direction},attrTest:function(a){return Z.prototype.attrTest.call(this,a)&&(this.state&fb||!(this.state&fb)&&this.directionTest(a))},emit:function(a){this.pX=a.deltaX,this.pY=a.deltaY;var b=X(a.direction);b&&this.manager.emit(this.options.event+b,a),this._super.emit.call(this,a)}}),j(_,Z,{defaults:{event:"pinch",threshold:0,pointers:2},getTouchAction:function(){return[bb]},attrTest:function(a){return this._super.attrTest.call(this,a)&&(Math.abs(a.scale-1)>this.options.threshold||this.state&fb)},emit:function(a){if(this._super.emit.call(this,a),1!==a.scale){var b=a.scale<1?"in":"out";this.manager.emit(this.options.event+b,a)}}}),j(aa,V,{defaults:{event:"press",pointers:1,time:500,threshold:5},getTouchAction:function(){return[_a]},process:function(a){var b=this.options,c=a.pointers.length===b.pointers,d=a.distance<b.threshold,f=a.deltaTime>b.time;if(this._input=a,!d||!c||a.eventType&(Aa|Ba)&&!f)this.reset();else if(a.eventType&ya)this.reset(),this._timer=e(function(){this.state=ib,this.tryEmit()},b.time,this);else if(a.eventType&Aa)return ib;return kb},reset:function(){clearTimeout(this._timer)},emit:function(a){this.state===ib&&(a&&a.eventType&Aa?this.manager.emit(this.options.event+"up",a):(this._input.timeStamp=na(),this.manager.emit(this.options.event,this._input)))}}),j(ba,Z,{defaults:{event:"rotate",threshold:0,pointers:2},getTouchAction:function(){return[bb]},attrTest:function(a){return this._super.attrTest.call(this,a)&&(Math.abs(a.rotation)>this.options.threshold||this.state&fb)}}),j(ca,Z,{defaults:{event:"swipe",threshold:10,velocity:.65,direction:Ha|Ia,pointers:1},getTouchAction:function(){return $.prototype.getTouchAction.call(this)},attrTest:function(a){var b,c=this.options.direction;return c&(Ha|Ia)?b=a.velocity:c&Ha?b=a.velocityX:c&Ia&&(b=a.velocityY),this._super.attrTest.call(this,a)&&c&a.direction&&a.distance>this.options.threshold&&ma(b)>this.options.velocity&&a.eventType&Aa},emit:function(a){var b=X(a.direction);b&&this.manager.emit(this.options.event+b,a),this.manager.emit(this.options.event,a)}}),j(da,V,{defaults:{event:"tap",pointers:1,taps:1,interval:300,time:250,threshold:2,posThreshold:10},getTouchAction:function(){return[ab]},process:function(a){var b=this.options,c=a.pointers.length===b.pointers,d=a.distance<b.threshold,f=a.deltaTime<b.time;if(this.reset(),a.eventType&ya&&0===this.count)return this.failTimeout();if(d&&f&&c){if(a.eventType!=Aa)return this.failTimeout();var g=this.pTime?a.timeStamp-this.pTime<b.interval:!0,h=!this.pCenter||I(this.pCenter,a.center)<b.posThreshold;this.pTime=a.timeStamp,this.pCenter=a.center,h&&g?this.count+=1:this.count=1,this._input=a;var i=this.count%b.taps;if(0===i)return this.hasRequireFailures()?(this._timer=e(function(){this.state=ib,this.tryEmit()},b.interval,this),fb):ib}return kb},failTimeout:function(){return this._timer=e(function(){this.state=kb},this.options.interval,this),kb},reset:function(){clearTimeout(this._timer)},emit:function(){this.state==ib&&(this._input.tapCount=this.count,this.manager.emit(this.options.event,this._input))}}),ea.VERSION="2.0.4",ea.defaults={domEvents:!1,touchAction:$a,enable:!0,inputTarget:null,inputClass:null,preset:[[ba,{enable:!1}],[_,{enable:!1},["rotate"]],[ca,{direction:Ha}],[$,{direction:Ha},["swipe"]],[da],[da,{event:"doubletap",taps:2},["tap"]],[aa]],cssProps:{userSelect:"default",touchSelect:"none",touchCallout:"none",contentZooming:"none",userDrag:"none",tapHighlightColor:"rgba(0,0,0,0)"}};var lb=1,mb=2;fa.prototype={set:function(a){return h(this.options,a),a.touchAction&&this.touchAction.update(),a.inputTarget&&(this.input.destroy(),this.input.target=a.inputTarget,this.input.init()),this},stop:function(a){this.session.stopped=a?mb:lb},recognize:function(a){var b=this.session;if(!b.stopped){this.touchAction.preventDefaults(a);var c,d=this.recognizers,e=b.curRecognizer;(!e||e&&e.state&ib)&&(e=b.curRecognizer=null);for(var f=0;f<d.length;)c=d[f],b.stopped===mb||e&&c!=e&&!c.canRecognizeWith(e)?c.reset():c.recognize(a),!e&&c.state&(fb|gb|hb)&&(e=b.curRecognizer=c),f++}},get:function(a){if(a instanceof V)return a;for(var b=this.recognizers,c=0;c<b.length;c++)if(b[c].options.event==a)return b[c];return null},add:function(a){if(f(a,"add",this))return this;var b=this.get(a.options.event);return b&&this.remove(b),this.recognizers.push(a),a.manager=this,this.touchAction.update(),a},remove:function(a){if(f(a,"remove",this))return this;var b=this.recognizers;return a=this.get(a),b.splice(s(b,a),1),this.touchAction.update(),this},on:function(a,b){var c=this.handlers;return g(r(a),function(a){c[a]=c[a]||[],c[a].push(b)}),this},off:function(a,b){var c=this.handlers;return g(r(a),function(a){b?c[a].splice(s(c[a],b),1):delete c[a]}),this},emit:function(a,b){this.options.domEvents&&ha(a,b);var c=this.handlers[a]&&this.handlers[a].slice();if(c&&c.length){b.type=a,b.preventDefault=function(){b.srcEvent.preventDefault()};for(var d=0;d<c.length;)c[d](b),d++}},destroy:function(){this.element&&ga(this,!1),this.handlers={},this.session={},this.input.destroy(),this.element=null}},h(ea,{INPUT_START:ya,INPUT_MOVE:za,INPUT_END:Aa,INPUT_CANCEL:Ba,STATE_POSSIBLE:eb,STATE_BEGAN:fb,STATE_CHANGED:gb,STATE_ENDED:hb,STATE_RECOGNIZED:ib,STATE_CANCELLED:jb,STATE_FAILED:kb,DIRECTION_NONE:Ca,DIRECTION_LEFT:Da,DIRECTION_RIGHT:Ea,DIRECTION_UP:Fa,DIRECTION_DOWN:Ga,DIRECTION_HORIZONTAL:Ha,DIRECTION_VERTICAL:Ia,DIRECTION_ALL:Ja,Manager:fa,Input:y,TouchAction:T,TouchInput:Q,MouseInput:M,PointerEventInput:N,TouchMouseInput:S,SingleTouchInput:O,Recognizer:V,AttrRecognizer:Z,Tap:da,Pan:$,Swipe:ca,Pinch:_,Rotate:ba,Press:aa,on:n,off:o,each:g,merge:i,extend:h,inherit:j,bindFn:k,prefixed:v}),"function"==ka&&__webpack_require__(1438)?!(__WEBPACK_AMD_DEFINE_RESULT__ = function(){return ea}.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)):"undefined"!=typeof module&&module.exports?module.exports=ea:a[c]=ea}(window,document,"Hammer"),function(a){ true?!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(318),__webpack_require__(1439)], __WEBPACK_AMD_DEFINE_FACTORY__ = (a), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)):"object"==typeof exports?a(require("jquery"),require("hammerjs")):a(jQuery,Hammer)}(function(a,b){function c(c,d){var e=a(c);e.data("hammer")||e.data("hammer",new b(e[0],d))}a.fn.hammer=function(a){return this.each(function(){c(this,a)})},b.Manager.prototype.emit=function(b){return function(c,d){b.call(this,c,d),a(this.element).trigger({type:c,gesture:d})}}(b.Manager.prototype.emit)}),function(a){a.Package?Materialize={}:a.Materialize={}}(window),Materialize.guid=function(){function a(){return Math.floor(65536*(1+Math.random())).toString(16).substring(1)}return function(){return a()+a()+"-"+a()+"-"+a()+"-"+a()+"-"+a()+a()+a()}}(),Materialize.elementOrParentIsFixed=function(a){var b=$(a),c=b.add(b.parents()),d=!1;return c.each(function(){return"fixed"===$(this).css("position")?(d=!0,!1):void 0}),d};var Vel;Vel=$?$.Velocity:jQuery?jQuery.Velocity:Velocity,function(a){a.fn.collapsible=function(b){var c={accordion:void 0};return b=a.extend(c,b),this.each(function(){function c(b){h=g.find("> li > .collapsible-header"),b.hasClass("active")?b.parent().addClass("active"):b.parent().removeClass("active"),b.parent().hasClass("active")?b.siblings(".collapsible-body").stop(!0,!1).slideDown({duration:350,easing:"easeOutQuart",queue:!1,complete:function(){a(this).css("height","")}}):b.siblings(".collapsible-body").stop(!0,!1).slideUp({duration:350,easing:"easeOutQuart",queue:!1,complete:function(){a(this).css("height","")}}),h.not(b).removeClass("active").parent().removeClass("active"),h.not(b).parent().children(".collapsible-body").stop(!0,!1).slideUp({duration:350,easing:"easeOutQuart",queue:!1,complete:function(){a(this).css("height","")}})}function d(b){b.hasClass("active")?b.parent().addClass("active"):b.parent().removeClass("active"),b.parent().hasClass("active")?b.siblings(".collapsible-body").stop(!0,!1).slideDown({duration:350,easing:"easeOutQuart",queue:!1,complete:function(){a(this).css("height","")}}):b.siblings(".collapsible-body").stop(!0,!1).slideUp({duration:350,easing:"easeOutQuart",queue:!1,complete:function(){a(this).css("height","")}})}function e(a){var b=f(a);return b.length>0}function f(a){return a.closest("li > .collapsible-header")}var g=a(this),h=a(this).find("> li > .collapsible-header"),i=g.data("collapsible");g.off("click.collapse","> li > .collapsible-header"),h.off("click.collapse"),g.on("click.collapse","> li > .collapsible-header",function(g){var h=a(this),j=a(g.target);e(j)&&(j=f(j)),j.toggleClass("active"),b.accordion||"accordion"===i||void 0===i?c(j):(d(j),h.hasClass("active")&&d(h))});var h=g.find("> li > .collapsible-header");b.accordion||"accordion"===i||void 0===i?c(h.filter(".active").first()):h.filter(".active").each(function(){d(a(this))})})},a(document).ready(function(){a(".collapsible").collapsible()})}(jQuery),function(a){a.fn.scrollTo=function(b){return a(this).scrollTop(a(this).scrollTop()-a(this).offset().top+a(b).offset().top),this},a.fn.dropdown=function(b){var c={inDuration:300,outDuration:225,constrain_width:!0,hover:!1,gutter:0,belowOrigin:!1,alignment:"left"};this.each(function(){function d(){void 0!==g.data("induration")&&(h.inDuration=g.data("inDuration")),void 0!==g.data("outduration")&&(h.outDuration=g.data("outDuration")),void 0!==g.data("constrainwidth")&&(h.constrain_width=g.data("constrainwidth")),void 0!==g.data("hover")&&(h.hover=g.data("hover")),void 0!==g.data("gutter")&&(h.gutter=g.data("gutter")),void 0!==g.data("beloworigin")&&(h.belowOrigin=g.data("beloworigin")),void 0!==g.data("alignment")&&(h.alignment=g.data("alignment"))}function e(b){"focus"===b&&(i=!0),d(),j.addClass("active"),g.addClass("active"),h.constrain_width===!0?j.css("width",g.outerWidth()):j.css("white-space","nowrap");var c,e=window.innerHeight,f=g.innerHeight(),k=g.offset().left,l=g.offset().top-a(window).scrollTop(),m=h.alignment,n=0;if(h.belowOrigin===!0&&(n=f),k+j.innerWidth()>a(window).width()?m="right":k-j.innerWidth()+g.innerWidth()<0&&(m="left"),l+j.innerHeight()>e)if(l+f-j.innerHeight()<0){var o=e-l-n;j.css("max-height",o)}else n||(n+=f),n-=j.innerHeight();if("left"===m)c=h.gutter,leftPosition=g.position().left+c;else if("right"===m){var p=g.position().left+g.outerWidth()-j.outerWidth();c=-h.gutter,leftPosition=p+c}j.css({position:"absolute",top:g.position().top+n,left:leftPosition}),j.stop(!0,!0).css("opacity",0).slideDown({queue:!1,duration:h.inDuration,easing:"easeOutCubic",complete:function(){a(this).css("height","")}}).animate({opacity:1},{queue:!1,duration:h.inDuration,easing:"easeOutSine"})}function f(){i=!1,j.fadeOut(h.outDuration),j.removeClass("active"),g.removeClass("active"),setTimeout(function(){j.css("max-height","")},h.outDuration)}var g=a(this),h=a.extend({},c,b),i=!1,j=a("#"+g.attr("data-activates"));if(d(),g.after(j),h.hover){var k=!1;g.unbind("click."+g.attr("id")),g.on("mouseenter",function(a){k===!1&&(e(),k=!0)}),g.on("mouseleave",function(b){var c=b.toElement||b.relatedTarget;a(c).closest(".dropdown-content").is(j)||(j.stop(!0,!0),f(),k=!1)}),j.on("mouseleave",function(b){var c=b.toElement||b.relatedTarget;a(c).closest(".dropdown-button").is(g)||(j.stop(!0,!0),f(),k=!1)})}else g.unbind("click."+g.attr("id")),g.bind("click."+g.attr("id"),function(b){i||(g[0]!=b.currentTarget||g.hasClass("active")||0!==a(b.target).closest(".dropdown-content").length?g.hasClass("active")&&(f(),a(document).unbind("click."+j.attr("id")+" touchstart."+j.attr("id"))):(b.preventDefault(),e("click")),j.hasClass("active")&&a(document).bind("click."+j.attr("id")+" touchstart."+j.attr("id"),function(b){j.is(b.target)||g.is(b.target)||g.find(b.target).length||(f(),a(document).unbind("click."+j.attr("id")+" touchstart."+j.attr("id")))}))});g.on("open",function(a,b){e(b)}),g.on("close",f)})},a(document).ready(function(){a(".dropdown-button").dropdown()})}(jQuery),function(a){var b=0,c=0,d=function(){return c++,"materialize-lean-overlay-"+c};a.fn.extend({openModal:function(c){a("body").css("overflow","hidden");var e={opacity:.5,in_duration:350,out_duration:250,ready:void 0,complete:void 0,dismissible:!0,starting_top:"4%"},f=d(),g=a(this),h=a('<div class="lean-overlay"></div>'),i=++b;h.attr("id",f).css("z-index",1e3+2*i),g.data("overlay-id",f).css("z-index",1e3+2*i+1),a("body").append(h),c=a.extend(e,c),c.dismissible&&(h.click(function(){g.closeModal(c)}),a(document).on("keyup.leanModal"+f,function(a){27===a.keyCode&&g.closeModal(c)})),g.find(".modal-close").on("click.close",function(a){g.closeModal(c)}),h.css({display:"block",opacity:0}),g.css({display:"block",opacity:0}),h.velocity({opacity:c.opacity},{duration:c.in_duration,queue:!1,ease:"easeOutCubic"}),g.data("associated-overlay",h[0]),g.hasClass("bottom-sheet")?g.velocity({bottom:"0",opacity:1},{duration:c.in_duration,queue:!1,ease:"easeOutCubic",complete:function(){"function"==typeof c.ready&&c.ready()}}):(a.Velocity.hook(g,"scaleX",.7),g.css({top:c.starting_top}),g.velocity({top:"10%",opacity:1,scaleX:"1"},{duration:c.in_duration,queue:!1,ease:"easeOutCubic",complete:function(){"function"==typeof c.ready&&c.ready()}}))}}),a.fn.extend({closeModal:function(c){var d={out_duration:250,complete:void 0},e=a(this),f=e.data("overlay-id"),g=a("#"+f);c=a.extend(d,c),a("body").css("overflow",""),e.find(".modal-close").off("click.close"),a(document).off("keyup.leanModal"+f),g.velocity({opacity:0},{duration:c.out_duration,queue:!1,ease:"easeOutQuart"}),e.hasClass("bottom-sheet")?e.velocity({bottom:"-100%",opacity:0},{duration:c.out_duration,queue:!1,ease:"easeOutCubic",complete:function(){
 	g.css({display:"none"}),"function"==typeof c.complete&&c.complete(),g.remove(),b--}}):e.velocity({top:c.starting_top,opacity:0,scaleX:.7},{duration:c.out_duration,complete:function(){a(this).css("display","none"),"function"==typeof c.complete&&c.complete(),g.remove(),b--}})}}),a.fn.extend({leanModal:function(b){return this.each(function(){var c={starting_top:"4%"},d=a.extend(c,b);a(this).click(function(b){d.starting_top=(a(this).offset().top-a(window).scrollTop())/1.15;var c=a(this).attr("href")||"#"+a(this).data("target");a(c).openModal(d),b.preventDefault()})})}})}(jQuery),function(a){a.fn.materialbox=function(){return this.each(function(){function b(){f=!1;var b=i.parent(".material-placeholder"),d=(window.innerWidth,window.innerHeight,i.data("width")),g=i.data("height");i.velocity("stop",!0),a("#materialbox-overlay").velocity("stop",!0),a(".materialbox-caption").velocity("stop",!0),a("#materialbox-overlay").velocity({opacity:0},{duration:h,queue:!1,easing:"easeOutQuad",complete:function(){e=!1,a(this).remove()}}),i.velocity({width:d,height:g,left:0,top:0},{duration:h,queue:!1,easing:"easeOutQuad"}),a(".materialbox-caption").velocity({opacity:0},{duration:h,queue:!1,easing:"easeOutQuad",complete:function(){b.css({height:"",width:"",position:"",top:"",left:""}),i.css({height:"",top:"",left:"",width:"","max-width":"",position:"","z-index":""}),i.removeClass("active"),f=!0,a(this).remove(),c.css("overflow","")}})}if(!a(this).hasClass("initialized")){a(this).addClass("initialized");var c,d,e=!1,f=!0,g=275,h=200,i=a(this),j=a("<div></div>").addClass("material-placeholder");i.wrap(j),i.on("click",function(){var h=i.parent(".material-placeholder"),j=window.innerWidth,k=window.innerHeight,l=i.width(),m=i.height();if(f===!1)return b(),!1;if(e&&f===!0)return b(),!1;f=!1,i.addClass("active"),e=!0,h.css({width:h[0].getBoundingClientRect().width,height:h[0].getBoundingClientRect().height,position:"relative",top:0,left:0}),c=void 0,d=h[0].parentNode;for(;null!==d&&!a(d).is(document);){var n=a(d);"hidden"===n.css("overflow")&&(n.css("overflow","visible"),c=void 0===c?n:c.add(n)),d=d.parentNode}i.css({position:"absolute","z-index":1e3}).data("width",l).data("height",m);var o=a('<div id="materialbox-overlay"></div>').css({opacity:0}).click(function(){f===!0&&b()});if(a("body").append(o),o.velocity({opacity:1},{duration:g,queue:!1,easing:"easeOutQuad"}),""!==i.data("caption")){var p=a('<div class="materialbox-caption"></div>');p.text(i.data("caption")),a("body").append(p),p.css({display:"inline"}),p.velocity({opacity:1},{duration:g,queue:!1,easing:"easeOutQuad"})}var q=0,r=l/j,s=m/k,t=0,u=0;r>s?(q=m/l,t=.9*j,u=.9*j*q):(q=l/m,t=.9*k*q,u=.9*k),i.hasClass("responsive-img")?i.velocity({"max-width":t,width:l},{duration:0,queue:!1,complete:function(){i.css({left:0,top:0}).velocity({height:u,width:t,left:a(document).scrollLeft()+j/2-i.parent(".material-placeholder").offset().left-t/2,top:a(document).scrollTop()+k/2-i.parent(".material-placeholder").offset().top-u/2},{duration:g,queue:!1,easing:"easeOutQuad",complete:function(){f=!0}})}}):i.css("left",0).css("top",0).velocity({height:u,width:t,left:a(document).scrollLeft()+j/2-i.parent(".material-placeholder").offset().left-t/2,top:a(document).scrollTop()+k/2-i.parent(".material-placeholder").offset().top-u/2},{duration:g,queue:!1,easing:"easeOutQuad",complete:function(){f=!0}})}),a(window).scroll(function(){e&&b()}),a(document).keyup(function(a){27===a.keyCode&&f===!0&&e&&b()})}})},a(document).ready(function(){a(".materialboxed").materialbox()})}(jQuery),function(a){a.fn.parallax=function(){var b=a(window).width();return this.each(function(c){function d(c){var d;d=601>b?e.height()>0?e.height():e.children("img").height():e.height()>0?e.height():500;var f=e.children("img").first(),g=f.height(),h=g-d,i=e.offset().top+d,j=e.offset().top,k=a(window).scrollTop(),l=window.innerHeight,m=k+l,n=(m-j)/(d+l),o=Math.round(h*n);c&&f.css("display","block"),i>k&&k+l>j&&f.css("transform","translate3D(-50%,"+o+"px, 0)")}var e=a(this);e.addClass("parallax"),e.children("img").one("load",function(){d(!0)}).each(function(){this.complete&&a(this).load()}),a(window).scroll(function(){b=a(window).width(),d(!1)}),a(window).resize(function(){b=a(window).width(),d(!1)})})}}(jQuery),function(a){var b={init:function(){return this.each(function(){var b=a(this);a(window).width();b.width("100%");var c,d,e=b.find("li.tab a"),f=b.width(),g=b.find("li").first().outerWidth(),h=0;c=a(e.filter('[href="'+location.hash+'"]')),0===c.length&&(c=a(this).find("li.tab a.active").first()),0===c.length&&(c=a(this).find("li.tab a").first()),c.addClass("active"),h=e.index(c),0>h&&(h=0),d=a(c[0].hash),b.append('<div class="indicator"></div>');var i=b.find(".indicator");b.is(":visible")&&(i.css({right:f-(h+1)*g}),i.css({left:h*g})),a(window).resize(function(){f=b.width(),g=b.find("li").first().outerWidth(),0>h&&(h=0),0!==g&&0!==f&&(i.css({right:f-(h+1)*g}),i.css({left:h*g}))}),e.not(c).each(function(){a(this.hash).hide()}),b.on("click","a",function(j){if(a(this).parent().hasClass("disabled"))return void j.preventDefault();f=b.width(),g=b.find("li").first().outerWidth(),c.removeClass("active"),d.hide(),c=a(this),d=a(this.hash),e=b.find("li.tab a"),c.addClass("active");var k=h;h=e.index(a(this)),0>h&&(h=0),d.show(),h-k>=0?(i.velocity({right:f-(h+1)*g},{duration:300,queue:!1,easing:"easeOutQuad"}),i.velocity({left:h*g},{duration:300,queue:!1,easing:"easeOutQuad",delay:90})):(i.velocity({left:h*g},{duration:300,queue:!1,easing:"easeOutQuad"}),i.velocity({right:f-(h+1)*g},{duration:300,queue:!1,easing:"easeOutQuad",delay:90})),j.preventDefault()})})},select_tab:function(a){this.find('a[href="#'+a+'"]').trigger("click")}};a.fn.tabs=function(c){return b[c]?b[c].apply(this,Array.prototype.slice.call(arguments,1)):"object"!=typeof c&&c?void a.error("Method "+c+" does not exist on jQuery.tooltip"):b.init.apply(this,arguments)},a(document).ready(function(){a("ul.tabs").tabs()})}(jQuery),function(a){a.fn.tooltip=function(c){var d=5,e={delay:350};return"remove"===c?(this.each(function(){a("#"+a(this).attr("data-tooltip-id")).remove(),a(this).off("mouseenter.tooltip mouseleave.tooltip")}),!1):(c=a.extend(e,c),this.each(function(){var e=Materialize.guid(),f=a(this);f.attr("data-tooltip-id",e);var g=a("<span></span>").text(f.attr("data-tooltip")),h=a("<div></div>");h.addClass("material-tooltip").append(g).appendTo(a("body")).attr("id",e);var i=a("<div></div>").addClass("backdrop");i.appendTo(h),i.css({top:0,left:0}),f.off("mouseenter.tooltip mouseleave.tooltip");var j,k=!1;f.on({"mouseenter.tooltip":function(a){var e=f.attr("data-delay");e=void 0===e||""===e?c.delay:e,j=setTimeout(function(){k=!0,h.velocity("stop"),i.velocity("stop"),h.css({display:"block",left:"0px",top:"0px"}),h.children("span").text(f.attr("data-tooltip"));var a,c,e,g=f.outerWidth(),j=f.outerHeight(),l=f.attr("data-position"),m=h.outerHeight(),n=h.outerWidth(),o="0px",p="0px",q=8;"top"===l?(a=f.offset().top-m-d,c=f.offset().left+g/2-n/2,e=b(c,a,n,m),o="-10px",i.css({borderRadius:"14px 14px 0 0",transformOrigin:"50% 90%",marginTop:m,marginLeft:n/2-i.width()/2})):"left"===l?(a=f.offset().top+j/2-m/2,c=f.offset().left-n-d,e=b(c,a,n,m),p="-10px",i.css({width:"14px",height:"14px",borderRadius:"14px 0 0 14px",transformOrigin:"95% 50%",marginTop:m/2,marginLeft:n})):"right"===l?(a=f.offset().top+j/2-m/2,c=f.offset().left+g+d,e=b(c,a,n,m),p="+10px",i.css({width:"14px",height:"14px",borderRadius:"0 14px 14px 0",transformOrigin:"5% 50%",marginTop:m/2,marginLeft:"0px"})):(a=f.offset().top+f.outerHeight()+d,c=f.offset().left+g/2-n/2,e=b(c,a,n,m),o="+10px",i.css({marginLeft:n/2-i.width()/2})),h.css({top:e.y,left:e.x}),q=n/8,8>q&&(q=8),("right"===l||"left"===l)&&(q=n/10,6>q&&(q=6)),h.velocity({marginTop:o,marginLeft:p},{duration:350,queue:!1}).velocity({opacity:1},{duration:300,delay:50,queue:!1}),i.css({display:"block"}).velocity({opacity:1},{duration:55,delay:0,queue:!1}).velocity({scale:q},{duration:300,delay:0,queue:!1,easing:"easeInOutQuad"})},e)},"mouseleave.tooltip":function(){k=!1,clearTimeout(j),setTimeout(function(){1!=k&&(h.velocity({opacity:0,marginTop:0,marginLeft:0},{duration:225,queue:!1}),i.velocity({opacity:0,scale:1},{duration:225,queue:!1,complete:function(){i.css("display","none"),h.css("display","none"),k=!1}}))},225)}})}))};var b=function(b,c,d,e){var f=b,g=c;return 0>f?f=4:f+d>window.innerWidth&&(f-=f+d-window.innerWidth),0>g?g=4:g+e>window.innerHeight+a(window).scrollTop&&(g-=g+e-window.innerHeight),{x:f,y:g}};a(document).ready(function(){a(".tooltipped").tooltip()})}(jQuery),function(a){"use strict";function b(a){return null!==a&&a===a.window}function c(a){return b(a)?a:9===a.nodeType&&a.defaultView}function d(a){var b,d,e={top:0,left:0},f=a&&a.ownerDocument;return b=f.documentElement,"undefined"!=typeof a.getBoundingClientRect&&(e=a.getBoundingClientRect()),d=c(f),{top:e.top+d.pageYOffset-b.clientTop,left:e.left+d.pageXOffset-b.clientLeft}}function e(a){var b="";for(var c in a)a.hasOwnProperty(c)&&(b+=c+":"+a[c]+";");return b}function f(a){if(k.allowEvent(a)===!1)return null;for(var b=null,c=a.target||a.srcElement;null!==c.parentElement;){if(!(c instanceof SVGElement||-1===c.className.indexOf("waves-effect"))){b=c;break}if(c.classList.contains("waves-effect")){b=c;break}c=c.parentElement}return b}function g(b){var c=f(b);null!==c&&(j.show(b,c),"ontouchstart"in a&&(c.addEventListener("touchend",j.hide,!1),c.addEventListener("touchcancel",j.hide,!1)),c.addEventListener("mouseup",j.hide,!1),c.addEventListener("mouseleave",j.hide,!1))}var h=h||{},i=document.querySelectorAll.bind(document),j={duration:750,show:function(a,b){if(2===a.button)return!1;var c=b||this,f=document.createElement("div");f.className="waves-ripple",c.appendChild(f);var g=d(c),h=a.pageY-g.top,i=a.pageX-g.left,k="scale("+c.clientWidth/100*10+")";"touches"in a&&(h=a.touches[0].pageY-g.top,i=a.touches[0].pageX-g.left),f.setAttribute("data-hold",Date.now()),f.setAttribute("data-scale",k),f.setAttribute("data-x",i),f.setAttribute("data-y",h);var l={top:h+"px",left:i+"px"};f.className=f.className+" waves-notransition",f.setAttribute("style",e(l)),f.className=f.className.replace("waves-notransition",""),l["-webkit-transform"]=k,l["-moz-transform"]=k,l["-ms-transform"]=k,l["-o-transform"]=k,l.transform=k,l.opacity="1",l["-webkit-transition-duration"]=j.duration+"ms",l["-moz-transition-duration"]=j.duration+"ms",l["-o-transition-duration"]=j.duration+"ms",l["transition-duration"]=j.duration+"ms",l["-webkit-transition-timing-function"]="cubic-bezier(0.250, 0.460, 0.450, 0.940)",l["-moz-transition-timing-function"]="cubic-bezier(0.250, 0.460, 0.450, 0.940)",l["-o-transition-timing-function"]="cubic-bezier(0.250, 0.460, 0.450, 0.940)",l["transition-timing-function"]="cubic-bezier(0.250, 0.460, 0.450, 0.940)",f.setAttribute("style",e(l))},hide:function(a){k.touchup(a);var b=this,c=(1.4*b.clientWidth,null),d=b.getElementsByClassName("waves-ripple");if(!(d.length>0))return!1;c=d[d.length-1];var f=c.getAttribute("data-x"),g=c.getAttribute("data-y"),h=c.getAttribute("data-scale"),i=Date.now()-Number(c.getAttribute("data-hold")),l=350-i;0>l&&(l=0),setTimeout(function(){var a={top:g+"px",left:f+"px",opacity:"0","-webkit-transition-duration":j.duration+"ms","-moz-transition-duration":j.duration+"ms","-o-transition-duration":j.duration+"ms","transition-duration":j.duration+"ms","-webkit-transform":h,"-moz-transform":h,"-ms-transform":h,"-o-transform":h,transform:h};c.setAttribute("style",e(a)),setTimeout(function(){try{b.removeChild(c)}catch(a){return!1}},j.duration)},l)},wrapInput:function(a){for(var b=0;b<a.length;b++){var c=a[b];if("input"===c.tagName.toLowerCase()){var d=c.parentNode;if("i"===d.tagName.toLowerCase()&&-1!==d.className.indexOf("waves-effect"))continue;var e=document.createElement("i");e.className=c.className+" waves-input-wrapper";var f=c.getAttribute("style");f||(f=""),e.setAttribute("style",f),c.className="waves-button-input",c.removeAttribute("style"),d.replaceChild(e,c),e.appendChild(c)}}}},k={touches:0,allowEvent:function(a){var b=!0;return"touchstart"===a.type?k.touches+=1:"touchend"===a.type||"touchcancel"===a.type?setTimeout(function(){k.touches>0&&(k.touches-=1)},500):"mousedown"===a.type&&k.touches>0&&(b=!1),b},touchup:function(a){k.allowEvent(a)}};h.displayEffect=function(b){b=b||{},"duration"in b&&(j.duration=b.duration),j.wrapInput(i(".waves-effect")),"ontouchstart"in a&&document.body.addEventListener("touchstart",g,!1),document.body.addEventListener("mousedown",g,!1)},h.attach=function(b){"input"===b.tagName.toLowerCase()&&(j.wrapInput([b]),b=b.parentElement),"ontouchstart"in a&&b.addEventListener("touchstart",g,!1),b.addEventListener("mousedown",g,!1)},a.Waves=h,document.addEventListener("DOMContentLoaded",function(){h.displayEffect()},!1)}(window),Materialize.toast=function(a,b,c,d){function e(a){var b=document.createElement("div");if(b.classList.add("toast"),c)for(var e=c.split(" "),f=0,g=e.length;g>f;f++)b.classList.add(e[f]);("object"==typeof HTMLElement?a instanceof HTMLElement:a&&"object"==typeof a&&null!==a&&1===a.nodeType&&"string"==typeof a.nodeName)?b.appendChild(a):a instanceof jQuery?b.appendChild(a[0]):b.innerHTML=a;var h=new Hammer(b,{prevent_default:!1});return h.on("pan",function(a){var c=a.deltaX,d=80;b.classList.contains("panning")||b.classList.add("panning");var e=1-Math.abs(c/d);0>e&&(e=0),Vel(b,{left:c,opacity:e},{duration:50,queue:!1,easing:"easeOutQuad"})}),h.on("panend",function(a){var c=a.deltaX,e=80;Math.abs(c)>e?Vel(b,{marginTop:"-40px"},{duration:375,easing:"easeOutExpo",queue:!1,complete:function(){"function"==typeof d&&d(),b.parentNode.removeChild(b)}}):(b.classList.remove("panning"),Vel(b,{left:0,opacity:1},{duration:300,easing:"easeOutExpo",queue:!1}))}),b}c=c||"";var f=document.getElementById("toast-container");null===f&&(f=document.createElement("div"),f.id="toast-container",document.body.appendChild(f));var g=e(a);a&&f.appendChild(g),g.style.top="35px",g.style.opacity=0,Vel(g,{top:"0px",opacity:1},{duration:300,easing:"easeOutCubic",queue:!1});var h=b,i=setInterval(function(){null===g.parentNode&&window.clearInterval(i),g.classList.contains("panning")||(h-=20),0>=h&&(Vel(g,{opacity:0,marginTop:"-40px"},{duration:375,easing:"easeOutExpo",queue:!1,complete:function(){"function"==typeof d&&d(),this[0].parentNode.removeChild(this[0])}}),window.clearInterval(i))},20)},function(a){var b={init:function(b){var c={menuWidth:240,edge:"left",closeOnClick:!1};b=a.extend(c,b),a(this).each(function(){function c(c){g=!1,h=!1,a("body").css("overflow",""),a("#sidenav-overlay").velocity({opacity:0},{duration:200,queue:!1,easing:"easeOutQuad",complete:function(){a(this).remove()}}),"left"===b.edge?(f.css({width:"",right:"",left:"0"}),e.velocity({left:-1*(b.menuWidth+10)},{duration:200,queue:!1,easing:"easeOutCubic",complete:function(){c===!0&&(e.removeAttr("style"),e.css("width",b.menuWidth))}})):(f.css({width:"",right:"0",left:""}),e.velocity({right:-1*(b.menuWidth+10)},{duration:200,queue:!1,easing:"easeOutCubic",complete:function(){c===!0&&(e.removeAttr("style"),e.css("width",b.menuWidth))}}))}var d=a(this),e=a("#"+d.attr("data-activates"));240!=b.menuWidth&&e.css("width",b.menuWidth);var f=a('<div class="drag-target"></div>');a("body").append(f),"left"==b.edge?(e.css("left",-1*(b.menuWidth+10)),f.css({left:0})):(e.addClass("right-aligned").css("right",-1*(b.menuWidth+10)).css("left",""),f.css({right:0})),e.hasClass("fixed")&&window.innerWidth>992&&e.css("left",0),e.hasClass("fixed")&&a(window).resize(function(){window.innerWidth>992?0!==a("#sidenav-overlay").css("opacity")&&h?c(!0):(e.removeAttr("style"),e.css("width",b.menuWidth)):h===!1&&("left"===b.edge?e.css("left",-1*(b.menuWidth+10)):e.css("right",-1*(b.menuWidth+10)))}),b.closeOnClick===!0&&e.on("click.itemclick","a:not(.collapsible-header)",function(){c()});var g=!1,h=!1;f.on("click",function(){c()}),f.hammer({prevent_default:!1}).bind("pan",function(d){if("touch"==d.gesture.pointerType){var f=(d.gesture.direction,d.gesture.center.x);d.gesture.center.y,d.gesture.velocityX;if(a("body").css("overflow","hidden"),0===a("#sidenav-overlay").length){var g=a('<div id="sidenav-overlay"></div>');g.css("opacity",0).click(function(){c()}),a("body").append(g)}if("left"===b.edge&&(f>b.menuWidth?f=b.menuWidth:0>f&&(f=0)),"left"===b.edge)f<b.menuWidth/2?h=!1:f>=b.menuWidth/2&&(h=!0),e.css("left",f-b.menuWidth);else{f<window.innerWidth-b.menuWidth/2?h=!0:f>=window.innerWidth-b.menuWidth/2&&(h=!1);var i=-1*(f-b.menuWidth/2);i>0&&(i=0),e.css("right",i)}var j;"left"===b.edge?(j=f/b.menuWidth,a("#sidenav-overlay").velocity({opacity:j},{duration:50,queue:!1,easing:"easeOutQuad"})):(j=Math.abs((f-window.innerWidth)/b.menuWidth),a("#sidenav-overlay").velocity({opacity:j},{duration:50,queue:!1,easing:"easeOutQuad"}))}}).bind("panend",function(c){if("touch"==c.gesture.pointerType){var d=c.gesture.velocityX;g=!1,"left"===b.edge?h&&.3>=d||-.5>d?(e.velocity({left:0},{duration:300,queue:!1,easing:"easeOutQuad"}),a("#sidenav-overlay").velocity({opacity:1},{duration:50,queue:!1,easing:"easeOutQuad"}),f.css({width:"50%",right:0,left:""})):(!h||d>.3)&&(a("body").css("overflow",""),e.velocity({left:-1*(b.menuWidth+10)},{duration:200,queue:!1,easing:"easeOutQuad"}),a("#sidenav-overlay").velocity({opacity:0},{duration:200,queue:!1,easing:"easeOutQuad",complete:function(){a(this).remove()}}),f.css({width:"10px",right:"",left:0})):h&&d>=-.3||d>.5?(e.velocity({right:0},{duration:300,queue:!1,easing:"easeOutQuad"}),a("#sidenav-overlay").velocity({opacity:1},{duration:50,queue:!1,easing:"easeOutQuad"}),f.css({width:"50%",right:"",left:0})):(!h||-.3>d)&&(a("body").css("overflow",""),e.velocity({right:-1*(b.menuWidth+10)},{duration:200,queue:!1,easing:"easeOutQuad"}),a("#sidenav-overlay").velocity({opacity:0},{duration:200,queue:!1,easing:"easeOutQuad",complete:function(){a(this).remove()}}),f.css({width:"10px",right:0,left:""}))}}),d.click(function(){if(h===!0)h=!1,g=!1,c();else{a("body").css("overflow","hidden"),a("body").append(f),"left"===b.edge?(f.css({width:"50%",right:0,left:""}),e.velocity({left:0},{duration:300,queue:!1,easing:"easeOutQuad"})):(f.css({width:"50%",right:"",left:0}),e.velocity({right:0},{duration:300,queue:!1,easing:"easeOutQuad"}),e.css("left",""));var d=a('<div id="sidenav-overlay"></div>');d.css("opacity",0).click(function(){h=!1,g=!1,c(),d.velocity({opacity:0},{duration:300,queue:!1,easing:"easeOutQuad",complete:function(){a(this).remove()}})}),a("body").append(d),d.velocity({opacity:1},{duration:300,queue:!1,easing:"easeOutQuad",complete:function(){h=!0,g=!1}})}return!1})})},show:function(){this.trigger("click")},hide:function(){a("#sidenav-overlay").trigger("click")}};a.fn.sideNav=function(c){return b[c]?b[c].apply(this,Array.prototype.slice.call(arguments,1)):"object"!=typeof c&&c?void a.error("Method "+c+" does not exist on jQuery.sideNav"):b.init.apply(this,arguments)}}(jQuery),function(a){function b(b,c,d,e){var f=a();return a.each(g,function(a,g){if(g.height()>0){var h=g.offset().top,i=g.offset().left,j=i+g.width(),k=h+g.height(),l=!(i>c||e>j||h>d||b>k);l&&f.push(g)}}),f}function c(){++j;var c=f.scrollTop(),d=f.scrollLeft(),e=d+f.width(),g=c+f.height(),i=b(c+k.top+200,e+k.right,g+k.bottom,d+k.left);a.each(i,function(a,b){var c=b.data("scrollSpy:ticks");"number"!=typeof c&&b.triggerHandler("scrollSpy:enter"),b.data("scrollSpy:ticks",j)}),a.each(h,function(a,b){var c=b.data("scrollSpy:ticks");"number"==typeof c&&c!==j&&(b.triggerHandler("scrollSpy:exit"),b.data("scrollSpy:ticks",null))}),h=i}function d(){f.trigger("scrollSpy:winSize")}function e(a,b,c){var d,e,f,g=null,h=0;c||(c={});var i=function(){h=c.leading===!1?0:l(),g=null,f=a.apply(d,e),d=e=null};return function(){var j=l();h||c.leading!==!1||(h=j);var k=b-(j-h);return d=this,e=arguments,0>=k?(clearTimeout(g),g=null,h=j,f=a.apply(d,e),d=e=null):g||c.trailing===!1||(g=setTimeout(i,k)),f}}var f=a(window),g=[],h=[],i=!1,j=0,k={top:0,right:0,bottom:0,left:0},l=Date.now||function(){return(new Date).getTime()};a.scrollSpy=function(b,d){var h=[];b=a(b),b.each(function(b,c){g.push(a(c)),a(c).data("scrollSpy:id",b),a("a[href=#"+a(c).attr("id")+"]").click(function(b){b.preventDefault();var c=a(this.hash).offset().top+1;a("html, body").animate({scrollTop:c-200},{duration:400,queue:!1,easing:"easeOutCubic"})})}),d=d||{throttle:100},k.top=d.offsetTop||0,k.right=d.offsetRight||0,k.bottom=d.offsetBottom||0,k.left=d.offsetLeft||0;var j=e(c,d.throttle||100),l=function(){a(document).ready(j)};return i||(f.on("scroll",l),f.on("resize",l),i=!0),setTimeout(l,0),b.on("scrollSpy:enter",function(){h=a.grep(h,function(a){return 0!=a.height()});var b=a(this);h[0]?(a("a[href=#"+h[0].attr("id")+"]").removeClass("active"),b.data("scrollSpy:id")<h[0].data("scrollSpy:id")?h.unshift(a(this)):h.push(a(this))):h.push(a(this)),a("a[href=#"+h[0].attr("id")+"]").addClass("active")}),b.on("scrollSpy:exit",function(){if(h=a.grep(h,function(a){return 0!=a.height()}),h[0]){a("a[href=#"+h[0].attr("id")+"]").removeClass("active");var b=a(this);h=a.grep(h,function(a){return a.attr("id")!=b.attr("id")}),h[0]&&a("a[href=#"+h[0].attr("id")+"]").addClass("active")}}),b},a.winSizeSpy=function(b){return a.winSizeSpy=function(){return f},b=b||{throttle:100},f.on("resize",e(d,b.throttle||100))},a.fn.scrollSpy=function(b){return a.scrollSpy(a(this),b)}}(jQuery),function(a){a(document).ready(function(){function b(b){var c=b.css("font-family"),e=b.css("font-size");e&&d.css("font-size",e),c&&d.css("font-family",c),"off"===b.attr("wrap")&&d.css("overflow-wrap","normal").css("white-space","pre"),d.text(b.val()+"\n");var f=d.html().replace(/\n/g,"<br>");d.html(f),b.is(":visible")?d.css("width",b.width()):d.css("width",a(window).width()/2),b.css("height",d.height())}Materialize.updateTextFields=function(){var b="input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=number], input[type=search], textarea";a(b).each(function(b,c){a(c).val().length>0||c.autofocus||void 0!==a(this).attr("placeholder")||a(c)[0].validity.badInput===!0?a(this).siblings("label, i").addClass("active"):a(this).siblings("label, i").removeClass("active")})};var c="input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=number], input[type=search], textarea";a(document).on("change",c,function(){(0!==a(this).val().length||void 0!==a(this).attr("placeholder"))&&a(this).siblings("label").addClass("active"),validate_field(a(this))}),a(document).ready(function(){Materialize.updateTextFields()}),a(document).on("reset",function(b){var d=a(b.target);d.is("form")&&(d.find(c).removeClass("valid").removeClass("invalid"),d.find(c).each(function(){""===a(this).attr("value")&&a(this).siblings("label, i").removeClass("active")}),d.find("select.initialized").each(function(){var a=d.find("option[selected]").text();d.siblings("input.select-dropdown").val(a)}))}),a(document).on("focus",c,function(){a(this).siblings("label, i").addClass("active")}),a(document).on("blur",c,function(){var b=a(this);0===b.val().length&&b[0].validity.badInput!==!0&&void 0===b.attr("placeholder")&&b.siblings("label, i").removeClass("active"),0===b.val().length&&b[0].validity.badInput!==!0&&void 0!==b.attr("placeholder")&&b.siblings("i").removeClass("active"),validate_field(b)}),window.validate_field=function(a){var b=void 0!==a.attr("length"),c=parseInt(a.attr("length")),d=a.val().length;0===a.val().length&&a[0].validity.badInput===!1?a.hasClass("validate")&&(a.removeClass("valid"),a.removeClass("invalid")):a.hasClass("validate")&&(a.is(":valid")&&b&&c>=d||a.is(":valid")&&!b?(a.removeClass("invalid"),a.addClass("valid")):(a.removeClass("valid"),a.addClass("invalid")))};var d=a(".hiddendiv").first();d.length||(d=a('<div class="hiddendiv common"></div>'),a("body").append(d));var e=".materialize-textarea";a(e).each(function(){var c=a(this);c.val().length&&b(c)}),a("body").on("keyup keydown autoresize",e,function(){b(a(this))}),a(document).on("change",'.file-field input[type="file"]',function(){for(var b=a(this).closest(".file-field"),c=b.find("input.file-path"),d=a(this)[0].files,e=[],f=0;f<d.length;f++)e.push(d[f].name);c.val(e.join(", ")),c.trigger("change")});var f,g="input[type=range]",h=!1;a(g).each(function(){var b=a('<span class="thumb"><span class="value"></span></span>');a(this).after(b)});var i=".range-field";a(document).on("change",g,function(b){var c=a(this).siblings(".thumb");c.find(".value").html(a(this).val())}),a(document).on("input mousedown touchstart",g,function(b){var c=a(this).siblings(".thumb"),d=a(this).outerWidth();c.length<=0&&(c=a('<span class="thumb"><span class="value"></span></span>'),a(this).after(c)),c.find(".value").html(a(this).val()),h=!0,a(this).addClass("active"),c.hasClass("active")||c.velocity({height:"30px",width:"30px",top:"-20px",marginLeft:"-15px"},{duration:300,easing:"easeOutExpo"}),"input"!==b.type&&(f=void 0===b.pageX||null===b.pageX?b.originalEvent.touches[0].pageX-a(this).offset().left:b.pageX-a(this).offset().left,0>f?f=0:f>d&&(f=d),c.addClass("active").css("left",f)),c.find(".value").html(a(this).val())}),a(document).on("mouseup touchend",i,function(){h=!1,a(this).removeClass("active")}),a(document).on("mousemove touchmove",i,function(b){var c,d=a(this).children(".thumb");if(h){d.hasClass("active")||d.velocity({height:"30px",width:"30px",top:"-20px",marginLeft:"-15px"},{duration:300,easing:"easeOutExpo"}),c=void 0===b.pageX||null===b.pageX?b.originalEvent.touches[0].pageX-a(this).offset().left:b.pageX-a(this).offset().left;var e=a(this).outerWidth();0>c?c=0:c>e&&(c=e),d.addClass("active").css("left",c),d.find(".value").html(d.siblings(g).val())}}),a(document).on("mouseout touchleave",i,function(){if(!h){var b=a(this).children(".thumb");b.hasClass("active")&&b.velocity({height:"0",width:"0",top:"10px",marginLeft:"-6px"},{duration:100}),b.removeClass("active")}})}),a.fn.material_select=function(b){function c(a,b,c){var e=a.indexOf(b),f=-1===e;return f?a.push(b):a.splice(e,1),c.siblings("ul.dropdown-content").find("li").eq(b).toggleClass("active"),c.find("option").eq(b).prop("selected",f),d(a,c),f}function d(a,b){for(var c="",d=0,e=a.length;e>d;d++){var f=b.find("option").eq(a[d]).text();c+=0===d?f:", "+f}""===c&&(c=b.find("option:disabled").eq(0).text()),b.siblings("input.select-dropdown").val(c)}a(this).each(function(){var d=a(this);if(!d.hasClass("browser-default")){var e=d.attr("multiple")?!0:!1,f=d.data("select-id");if(f&&(d.parent().find("span.caret").remove(),d.parent().find("input").remove(),d.unwrap(),a("ul#select-options-"+f).remove()),"destroy"===b)return void d.data("select-id",null).removeClass("initialized");var g=Materialize.guid();d.data("select-id",g);var h=a('<div class="select-wrapper"></div>');h.addClass(d.attr("class"));var i=a('<ul id="select-options-'+g+'" class="dropdown-content select-dropdown '+(e?"multiple-select-dropdown":"")+'"></ul>'),j=d.children("option, optgroup"),k=[],l=!1,m=d.find("option:selected").html()||d.find("option:first").html()||"",n=function(b,c,d){var e=c.is(":disabled")?"disabled ":"",f=c.data("icon"),g=c.attr("class");if(f){var h="";return g&&(h=' class="'+g+'"'),"multiple"===d?i.append(a('<li class="'+e+'"><img src="'+f+'"'+h+'><span><input type="checkbox"'+e+"/><label></label>"+c.html()+"</span></li>")):i.append(a('<li class="'+e+'"><img src="'+f+'"'+h+"><span>"+c.html()+"</span></li>")),!0}"multiple"===d?i.append(a('<li class="'+e+'"><span><input type="checkbox"'+e+"/><label></label>"+c.html()+"</span></li>")):i.append(a('<li class="'+e+'"><span>'+c.html()+"</span></li>"))};j.length&&j.each(function(){if(a(this).is("option"))e?n(d,a(this),"multiple"):n(d,a(this));else if(a(this).is("optgroup")){var b=a(this).children("option");i.append(a('<li class="optgroup"><span>'+a(this).attr("label")+"</span></li>")),b.each(function(){n(d,a(this))})}}),i.find("li:not(.optgroup)").each(function(f){a(this).click(function(g){if(!a(this).hasClass("disabled")&&!a(this).hasClass("optgroup")){var h=!0;e?(a('input[type="checkbox"]',this).prop("checked",function(a,b){return!b}),h=c(k,a(this).index(),d),q.trigger("focus")):(i.find("li").removeClass("active"),a(this).toggleClass("active"),q.val(a(this).text())),activateOption(i,a(this)),d.find("option").eq(f).prop("selected",h),d.trigger("change"),"undefined"!=typeof b&&b()}g.stopPropagation()})}),d.wrap(h);var o=a('<span class="caret">&#9660;</span>');d.is(":disabled")&&o.addClass("disabled");var p=m.replace(/"/g,"&quot;"),q=a('<input type="text" class="select-dropdown" readonly="true" '+(d.is(":disabled")?"disabled":"")+' data-activates="select-options-'+g+'" value="'+p+'"/>');d.before(q),q.before(o),q.after(i),d.is(":disabled")||q.dropdown({hover:!1,closeOnClick:!1}),d.attr("tabindex")&&a(q[0]).attr("tabindex",d.attr("tabindex")),d.addClass("initialized"),q.on({focus:function(){if(a("ul.select-dropdown").not(i[0]).is(":visible")&&a("input.select-dropdown").trigger("close"),!i.is(":visible")){a(this).trigger("open",["focus"]);var b=a(this).val(),c=i.find("li").filter(function(){return a(this).text().toLowerCase()===b.toLowerCase()})[0];activateOption(i,c)}},click:function(a){a.stopPropagation()}}),q.on("blur",function(){e||a(this).trigger("close"),i.find("li.selected").removeClass("selected")}),i.hover(function(){l=!0},function(){l=!1}),a(window).on({click:function(){e&&(l||q.trigger("close"))}}),e&&d.find("option:selected:not(:disabled)").each(function(){var b=a(this).index();c(k,b,d),i.find("li").eq(b).find(":checkbox").prop("checked",!0)}),activateOption=function(b,c){if(c){b.find("li.selected").removeClass("selected");var d=a(c);d.addClass("selected"),i.scrollTo(d)}};var r=[],s=function(b){if(9==b.which)return void q.trigger("close");if(40==b.which&&!i.is(":visible"))return void q.trigger("open");if(13!=b.which||i.is(":visible")){b.preventDefault();var c=String.fromCharCode(b.which).toLowerCase(),d=[9,13,27,38,40];if(c&&-1===d.indexOf(b.which)){r.push(c);var f=r.join(""),g=i.find("li").filter(function(){return 0===a(this).text().toLowerCase().indexOf(f)})[0];g&&activateOption(i,g)}if(13==b.which){var h=i.find("li.selected:not(.disabled)")[0];h&&(a(h).trigger("click"),e||q.trigger("close"))}40==b.which&&(g=i.find("li.selected").length?i.find("li.selected").next("li:not(.disabled)")[0]:i.find("li:not(.disabled)")[0],activateOption(i,g)),27==b.which&&q.trigger("close"),38==b.which&&(g=i.find("li.selected").prev("li:not(.disabled)")[0],g&&activateOption(i,g)),setTimeout(function(){r=[]},1e3)}};q.on("keydown",s)}})}}(jQuery),function(a){var b={init:function(b){var c={indicators:!0,height:400,transition:500,interval:6e3};return b=a.extend(c,b),this.each(function(){function c(a,b){a.hasClass("center-align")?a.velocity({opacity:0,translateY:-100},{duration:b,queue:!1}):a.hasClass("right-align")?a.velocity({opacity:0,translateX:100},{duration:b,queue:!1}):a.hasClass("left-align")&&a.velocity({opacity:0,translateX:-100},{duration:b,queue:!1})}function d(a){a>=j.length?a=0:0>a&&(a=j.length-1),k=i.find(".active").index(),k!=a&&(e=j.eq(k),$caption=e.find(".caption"),e.removeClass("active"),e.velocity({opacity:0},{duration:b.transition,queue:!1,easing:"easeOutQuad",complete:function(){j.not(".active").velocity({opacity:0,translateX:0,translateY:0},{duration:0,queue:!1})}}),c($caption,b.transition),b.indicators&&f.eq(k).removeClass("active"),j.eq(a).velocity({opacity:1},{duration:b.transition,queue:!1,easing:"easeOutQuad"}),j.eq(a).find(".caption").velocity({opacity:1,translateX:0,translateY:0},{duration:b.transition,delay:b.transition,queue:!1,easing:"easeOutQuad"}),j.eq(a).addClass("active"),b.indicators&&f.eq(a).addClass("active"))}var e,f,g,h=a(this),i=h.find("ul.slides").first(),j=i.find("li"),k=i.find(".active").index();-1!=k&&(e=j.eq(k)),h.hasClass("fullscreen")||(b.indicators?h.height(b.height+40):h.height(b.height),i.height(b.height)),j.find(".caption").each(function(){c(a(this),0)}),j.find("img").each(function(){var b="data:image/gif;base64,R0lGODlhAQABAIABAP///wAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";
 	a(this).attr("src")!==b&&(a(this).css("background-image","url("+a(this).attr("src")+")"),a(this).attr("src",b))}),b.indicators&&(f=a('<ul class="indicators"></ul>'),j.each(function(c){var e=a('<li class="indicator-item"></li>');e.click(function(){var c=i.parent(),e=c.find(a(this)).index();d(e),clearInterval(g),g=setInterval(function(){k=i.find(".active").index(),j.length==k+1?k=0:k+=1,d(k)},b.transition+b.interval)}),f.append(e)}),h.append(f),f=h.find("ul.indicators").find("li.indicator-item")),e?e.show():(j.first().addClass("active").velocity({opacity:1},{duration:b.transition,queue:!1,easing:"easeOutQuad"}),k=0,e=j.eq(k),b.indicators&&f.eq(k).addClass("active")),e.find("img").each(function(){e.find(".caption").velocity({opacity:1,translateX:0,translateY:0},{duration:b.transition,queue:!1,easing:"easeOutQuad"})}),g=setInterval(function(){k=i.find(".active").index(),d(k+1)},b.transition+b.interval);var l=!1,m=!1,n=!1;h.hammer({prevent_default:!1}).bind("pan",function(a){if("touch"===a.gesture.pointerType){clearInterval(g);var b=a.gesture.direction,c=a.gesture.deltaX,d=a.gesture.velocityX;$curr_slide=i.find(".active"),$curr_slide.velocity({translateX:c},{duration:50,queue:!1,easing:"easeOutQuad"}),4===b&&(c>h.innerWidth()/2||-.65>d)?n=!0:2===b&&(c<-1*h.innerWidth()/2||d>.65)&&(m=!0);var e;m&&(e=$curr_slide.next(),0===e.length&&(e=j.first()),e.velocity({opacity:1},{duration:300,queue:!1,easing:"easeOutQuad"})),n&&(e=$curr_slide.prev(),0===e.length&&(e=j.last()),e.velocity({opacity:1},{duration:300,queue:!1,easing:"easeOutQuad"}))}}).bind("panend",function(a){"touch"===a.gesture.pointerType&&($curr_slide=i.find(".active"),l=!1,curr_index=i.find(".active").index(),n||m?m?(d(curr_index+1),$curr_slide.velocity({translateX:-1*h.innerWidth()},{duration:300,queue:!1,easing:"easeOutQuad",complete:function(){$curr_slide.velocity({opacity:0,translateX:0},{duration:0,queue:!1})}})):n&&(d(curr_index-1),$curr_slide.velocity({translateX:h.innerWidth()},{duration:300,queue:!1,easing:"easeOutQuad",complete:function(){$curr_slide.velocity({opacity:0,translateX:0},{duration:0,queue:!1})}})):$curr_slide.velocity({translateX:0},{duration:300,queue:!1,easing:"easeOutQuad"}),m=!1,n=!1,clearInterval(g),g=setInterval(function(){k=i.find(".active").index(),j.length==k+1?k=0:k+=1,d(k)},b.transition+b.interval))}),h.on("sliderPause",function(){clearInterval(g)}),h.on("sliderStart",function(){clearInterval(g),g=setInterval(function(){k=i.find(".active").index(),j.length==k+1?k=0:k+=1,d(k)},b.transition+b.interval)}),h.on("sliderNext",function(){k=i.find(".active").index(),d(k+1)}),h.on("sliderPrev",function(){k=i.find(".active").index(),d(k-1)})})},pause:function(){a(this).trigger("sliderPause")},start:function(){a(this).trigger("sliderStart")},next:function(){a(this).trigger("sliderNext")},prev:function(){a(this).trigger("sliderPrev")}};a.fn.slider=function(c){return b[c]?b[c].apply(this,Array.prototype.slice.call(arguments,1)):"object"!=typeof c&&c?void a.error("Method "+c+" does not exist on jQuery.tooltip"):b.init.apply(this,arguments)}}(jQuery),function(a){a(document).ready(function(){a(document).on("click.card",".card",function(b){a(this).find("> .card-reveal").length&&(a(b.target).is(a(".card-reveal .card-title"))||a(b.target).is(a(".card-reveal .card-title i"))?a(this).find(".card-reveal").velocity({translateY:0},{duration:225,queue:!1,easing:"easeInOutQuad",complete:function(){a(this).css({display:"none"})}}):(a(b.target).is(a(".card .activator"))||a(b.target).is(a(".card .activator i")))&&(a(b.target).closest(".card").css("overflow","hidden"),a(this).find(".card-reveal").css({display:"block"}).velocity("stop",!1).velocity({translateY:"-100%"},{duration:300,queue:!1,easing:"easeInOutQuad"}))),a(".card-reveal").closest(".card").css("overflow","hidden")})})}(jQuery),function(a){a(document).ready(function(){a(document).on("click.chip",".chip .material-icons",function(b){a(this).parent().remove()})})}(jQuery),function(a){a(document).ready(function(){a.fn.pushpin=function(b){var c={top:0,bottom:1/0,offset:0};return b=a.extend(c,b),$index=0,this.each(function(){function c(a){a.removeClass("pin-top"),a.removeClass("pinned"),a.removeClass("pin-bottom")}function d(d,e){d.each(function(){b.top<=e&&b.bottom>=e&&!a(this).hasClass("pinned")&&(c(a(this)),a(this).css("top",b.offset),a(this).addClass("pinned")),e<b.top&&!a(this).hasClass("pin-top")&&(c(a(this)),a(this).css("top",0),a(this).addClass("pin-top")),e>b.bottom&&!a(this).hasClass("pin-bottom")&&(c(a(this)),a(this).addClass("pin-bottom"),a(this).css("top",b.bottom-g))})}var e=Materialize.guid(),f=a(this),g=a(this).offset().top;d(f,a(window).scrollTop()),a(window).on("scroll."+e,function(){var c=a(window).scrollTop()+b.offset;d(f,c)})})}})}(jQuery),function(a){a(document).ready(function(){a.fn.reverse=[].reverse,a(document).on("mouseenter.fixedActionBtn",".fixed-action-btn:not(.click-to-toggle)",function(c){var d=a(this);b(d)}),a(document).on("mouseleave.fixedActionBtn",".fixed-action-btn:not(.click-to-toggle)",function(b){var d=a(this);c(d)}),a(document).on("click.fixedActionBtn",".fixed-action-btn.click-to-toggle > a",function(d){var e=a(this),f=e.parent();f.hasClass("active")?c(f):b(f)})}),a.fn.extend({openFAB:function(){b(a(this))},closeFAB:function(){c(a(this))}});var b=function(b){if($this=b,$this.hasClass("active")===!1){var c,d,e=$this.hasClass("horizontal");e===!0?d=40:c=40,$this.addClass("active"),$this.find("ul .btn-floating").velocity({scaleY:".4",scaleX:".4",translateY:c+"px",translateX:d+"px"},{duration:0});var f=0;$this.find("ul .btn-floating").reverse().each(function(){a(this).velocity({opacity:"1",scaleX:"1",scaleY:"1",translateY:"0",translateX:"0"},{duration:80,delay:f}),f+=40})}},c=function(a){$this=a;var b,c,d=$this.hasClass("horizontal");d===!0?c=40:b=40,$this.removeClass("active");$this.find("ul .btn-floating").velocity("stop",!0),$this.find("ul .btn-floating").velocity({opacity:"0",scaleX:".4",scaleY:".4",translateY:b+"px",translateX:c+"px"},{duration:80})}}(jQuery),function(a){Materialize.fadeInImage=function(b){var c=a(b);c.css({opacity:0}),a(c).velocity({opacity:1},{duration:650,queue:!1,easing:"easeOutSine"}),a(c).velocity({opacity:1},{duration:1300,queue:!1,easing:"swing",step:function(b,c){c.start=100;var d=b/100,e=150-(100-b)/1.75;100>e&&(e=100),b>=0&&a(this).css({"-webkit-filter":"grayscale("+d+")brightness("+e+"%)",filter:"grayscale("+d+")brightness("+e+"%)"})}})},Materialize.showStaggeredList=function(b){var c=0;a(b).find("li").velocity({translateX:"-100px"},{duration:0}),a(b).find("li").each(function(){a(this).velocity({opacity:"1",translateX:"0"},{duration:800,delay:c,easing:[60,10]}),c+=120})},a(document).ready(function(){var b=!1,c=!1;a(".dismissable").each(function(){a(this).hammer({prevent_default:!1}).bind("pan",function(d){if("touch"===d.gesture.pointerType){var e=a(this),f=d.gesture.direction,g=d.gesture.deltaX,h=d.gesture.velocityX;e.velocity({translateX:g},{duration:50,queue:!1,easing:"easeOutQuad"}),4===f&&(g>e.innerWidth()/2||-.75>h)&&(b=!0),2===f&&(g<-1*e.innerWidth()/2||h>.75)&&(c=!0)}}).bind("panend",function(d){if(Math.abs(d.gesture.deltaX)<a(this).innerWidth()/2&&(c=!1,b=!1),"touch"===d.gesture.pointerType){var e=a(this);if(b||c){var f;f=b?e.innerWidth():-1*e.innerWidth(),e.velocity({translateX:f},{duration:100,queue:!1,easing:"easeOutQuad",complete:function(){e.css("border","none"),e.velocity({height:0,padding:0},{duration:200,queue:!1,easing:"easeOutQuad",complete:function(){e.remove()}})}})}else e.velocity({translateX:0},{duration:100,queue:!1,easing:"easeOutQuad"});b=!1,c=!1}})})})}(jQuery),function(a){Materialize.scrollFire=function(a){var b=!1;window.addEventListener("scroll",function(){b=!0}),setInterval(function(){if(b){b=!1;for(var c=window.pageYOffset+window.innerHeight,d=0;d<a.length;d++){var e=a[d],f=e.selector,g=e.offset,h=e.callback,i=document.querySelector(f);if(null!==i){var j=i.getBoundingClientRect().top+window.pageYOffset;if(c>j+g&&e.done!==!0){var k=new Function(h);k(),e.done=!0}}}}},100)}}(jQuery),function(a){ true?!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(318)], __WEBPACK_AMD_DEFINE_FACTORY__ = (a), __WEBPACK_LOCAL_MODULE_0__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__)):"object"==typeof exports?module.exports=a(require("jquery")):this.Picker=a(jQuery)}(function(a){function b(f,g,i,l){function m(){return b._.node("div",b._.node("div",b._.node("div",b._.node("div",y.component.nodes(t.open),v.box),v.wrap),v.frame),v.holder)}function n(){w.data(g,y).addClass(v.input).attr("tabindex",-1).val(w.data("value")?y.get("select",u.format):f.value),u.editable||w.on("focus."+t.id+" click."+t.id,function(a){a.preventDefault(),y.$root[0].focus()}).on("keydown."+t.id,q),e(f,{haspopup:!0,expanded:!1,readonly:!1,owns:f.id+"_root"})}function o(){y.$root.on({keydown:q,focusin:function(a){y.$root.removeClass(v.focused),a.stopPropagation()},"mousedown click":function(b){var c=b.target;c!=y.$root.children()[0]&&(b.stopPropagation(),"mousedown"!=b.type||a(c).is("input, select, textarea, button, option")||(b.preventDefault(),y.$root[0].focus()))}}).on({focus:function(){w.addClass(v.target)},blur:function(){w.removeClass(v.target)}}).on("focus.toOpen",r).on("click","[data-pick], [data-nav], [data-clear], [data-close]",function(){var b=a(this),c=b.data(),d=b.hasClass(v.navDisabled)||b.hasClass(v.disabled),e=h();e=e&&(e.type||e.href),(d||e&&!a.contains(y.$root[0],e))&&y.$root[0].focus(),!d&&c.nav?y.set("highlight",y.component.item.highlight,{nav:c.nav}):!d&&"pick"in c?y.set("select",c.pick):c.clear?y.clear().close(!0):c.close&&y.close(!0)}),e(y.$root[0],"hidden",!0)}function p(){var b;u.hiddenName===!0?(b=f.name,f.name=""):(b=["string"==typeof u.hiddenPrefix?u.hiddenPrefix:"","string"==typeof u.hiddenSuffix?u.hiddenSuffix:"_submit"],b=b[0]+f.name+b[1]),y._hidden=a('<input type=hidden name="'+b+'"'+(w.data("value")||f.value?' value="'+y.get("select",u.formatSubmit)+'"':"")+">")[0],w.on("change."+t.id,function(){y._hidden.value=f.value?y.get("select",u.formatSubmit):""}),u.container?a(u.container).append(y._hidden):w.after(y._hidden)}function q(a){var b=a.keyCode,c=/^(8|46)$/.test(b);return 27==b?(y.close(),!1):void((32==b||c||!t.open&&y.component.key[b])&&(a.preventDefault(),a.stopPropagation(),c?y.clear().close():y.open()))}function r(a){a.stopPropagation(),"focus"==a.type&&y.$root.addClass(v.focused),y.open()}if(!f)return b;var s=!1,t={id:f.id||"P"+Math.abs(~~(Math.random()*new Date))},u=i?a.extend(!0,{},i.defaults,l):l||{},v=a.extend({},b.klasses(),u.klass),w=a(f),x=function(){return this.start()},y=x.prototype={constructor:x,$node:w,start:function(){return t&&t.start?y:(t.methods={},t.start=!0,t.open=!1,t.type=f.type,f.autofocus=f==h(),f.readOnly=!u.editable,f.id=f.id||t.id,"text"!=f.type&&(f.type="text"),y.component=new i(y,u),y.$root=a(b._.node("div",m(),v.picker,'id="'+f.id+'_root" tabindex="0"')),o(),u.formatSubmit&&p(),n(),u.container?a(u.container).append(y.$root):w.after(y.$root),y.on({start:y.component.onStart,render:y.component.onRender,stop:y.component.onStop,open:y.component.onOpen,close:y.component.onClose,set:y.component.onSet}).on({start:u.onStart,render:u.onRender,stop:u.onStop,open:u.onOpen,close:u.onClose,set:u.onSet}),s=c(y.$root.children()[0]),f.autofocus&&y.open(),y.trigger("start").trigger("render"))},render:function(a){return a?y.$root.html(m()):y.$root.find("."+v.box).html(y.component.nodes(t.open)),y.trigger("render")},stop:function(){return t.start?(y.close(),y._hidden&&y._hidden.parentNode.removeChild(y._hidden),y.$root.remove(),w.removeClass(v.input).removeData(g),setTimeout(function(){w.off("."+t.id)},0),f.type=t.type,f.readOnly=!1,y.trigger("stop"),t.methods={},t.start=!1,y):y},open:function(c){return t.open?y:(w.addClass(v.active),e(f,"expanded",!0),setTimeout(function(){y.$root.addClass(v.opened),e(y.$root[0],"hidden",!1)},0),c!==!1&&(t.open=!0,s&&k.css("overflow","hidden").css("padding-right","+="+d()),y.$root[0].focus(),j.on("click."+t.id+" focusin."+t.id,function(a){var b=a.target;b!=f&&b!=document&&3!=a.which&&y.close(b===y.$root.children()[0])}).on("keydown."+t.id,function(c){var d=c.keyCode,e=y.component.key[d],f=c.target;27==d?y.close(!0):f!=y.$root[0]||!e&&13!=d?a.contains(y.$root[0],f)&&13==d&&(c.preventDefault(),f.click()):(c.preventDefault(),e?b._.trigger(y.component.key.go,y,[b._.trigger(e)]):y.$root.find("."+v.highlighted).hasClass(v.disabled)||y.set("select",y.component.item.highlight).close())})),y.trigger("open"))},close:function(a){return a&&(y.$root.off("focus.toOpen")[0].focus(),setTimeout(function(){y.$root.on("focus.toOpen",r)},0)),w.removeClass(v.active),e(f,"expanded",!1),setTimeout(function(){y.$root.removeClass(v.opened+" "+v.focused),e(y.$root[0],"hidden",!0)},0),t.open?(t.open=!1,s&&k.css("overflow","").css("padding-right","-="+d()),j.off("."+t.id),y.trigger("close")):y},clear:function(a){return y.set("clear",null,a)},set:function(b,c,d){var e,f,g=a.isPlainObject(b),h=g?b:{};if(d=g&&a.isPlainObject(c)?c:d||{},b){g||(h[b]=c);for(e in h)f=h[e],e in y.component.item&&(void 0===f&&(f=null),y.component.set(e,f,d)),("select"==e||"clear"==e)&&w.val("clear"==e?"":y.get(e,u.format)).trigger("change");y.render()}return d.muted?y:y.trigger("set",h)},get:function(a,c){if(a=a||"value",null!=t[a])return t[a];if("valueSubmit"==a){if(y._hidden)return y._hidden.value;a="value"}if("value"==a)return f.value;if(a in y.component.item){if("string"==typeof c){var d=y.component.get(a);return d?b._.trigger(y.component.formats.toString,y.component,[c,d]):""}return y.component.get(a)}},on:function(b,c,d){var e,f,g=a.isPlainObject(b),h=g?b:{};if(b){g||(h[b]=c);for(e in h)f=h[e],d&&(e="_"+e),t.methods[e]=t.methods[e]||[],t.methods[e].push(f)}return y},off:function(){var a,b,c=arguments;for(a=0,namesCount=c.length;a<namesCount;a+=1)b=c[a],b in t.methods&&delete t.methods[b];return y},trigger:function(a,c){var d=function(a){var d=t.methods[a];d&&d.map(function(a){b._.trigger(a,y,[c])})};return d("_"+a),d(a),y}};return new x}function c(a){var b,c="position";return a.currentStyle?b=a.currentStyle[c]:window.getComputedStyle&&(b=getComputedStyle(a)[c]),"fixed"==b}function d(){if(k.height()<=i.height())return 0;var b=a('<div style="visibility:hidden;width:100px" />').appendTo("body"),c=b[0].offsetWidth;b.css("overflow","scroll");var d=a('<div style="width:100%" />').appendTo(b),e=d[0].offsetWidth;return b.remove(),c-e}function e(b,c,d){if(a.isPlainObject(c))for(var e in c)f(b,e,c[e]);else f(b,c,d)}function f(a,b,c){a.setAttribute(("role"==b?"":"aria-")+b,c)}function g(b,c){a.isPlainObject(b)||(b={attribute:c}),c="";for(var d in b){var e=("role"==d?"":"aria-")+d,f=b[d];c+=null==f?"":e+'="'+b[d]+'"'}return c}function h(){try{return document.activeElement}catch(a){}}var i=a(window),j=a(document),k=a(document.documentElement);return b.klasses=function(a){return a=a||"picker",{picker:a,opened:a+"--opened",focused:a+"--focused",input:a+"__input",active:a+"__input--active",target:a+"__input--target",holder:a+"__holder",frame:a+"__frame",wrap:a+"__wrap",box:a+"__box"}},b._={group:function(a){for(var c,d="",e=b._.trigger(a.min,a);e<=b._.trigger(a.max,a,[e]);e+=a.i)c=b._.trigger(a.item,a,[e]),d+=b._.node(a.node,c[0],c[1],c[2]);return d},node:function(b,c,d,e){return c?(c=a.isArray(c)?c.join(""):c,d=d?' class="'+d+'"':"",e=e?" "+e:"","<"+b+d+e+">"+c+"</"+b+">"):""},lead:function(a){return(10>a?"0":"")+a},trigger:function(a,b,c){return"function"==typeof a?a.apply(b,c||[]):a},digits:function(a){return/\d/.test(a[1])?2:1},isDate:function(a){return{}.toString.call(a).indexOf("Date")>-1&&this.isInteger(a.getDate())},isInteger:function(a){return{}.toString.call(a).indexOf("Number")>-1&&a%1===0},ariaAttr:g},b.extend=function(c,d){a.fn[c]=function(e,f){var g=this.data(c);return"picker"==e?g:g&&"string"==typeof e?b._.trigger(g[e],g,[f]):this.each(function(){var f=a(this);f.data(c)||new b(this,c,d,e)})},a.fn[c].defaults=d.defaults},b}),function(a){ true?!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__WEBPACK_LOCAL_MODULE_0__,__webpack_require__(318)], __WEBPACK_AMD_DEFINE_FACTORY__ = (a), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)):"object"==typeof exports?module.exports=a(require("./picker.js"),require("jquery")):a(Picker,jQuery)}(function(a,b){function c(a,b){var c=this,d=a.$node[0],e=d.value,f=a.$node.data("value"),g=f||e,h=f?b.formatSubmit:b.format,i=function(){return d.currentStyle?"rtl"==d.currentStyle.direction:"rtl"==getComputedStyle(a.$root[0]).direction};c.settings=b,c.$node=a.$node,c.queue={min:"measure create",max:"measure create",now:"now create",select:"parse create validate",highlight:"parse navigate create validate",view:"parse create validate viewset",disable:"deactivate",enable:"activate"},c.item={},c.item.clear=null,c.item.disable=(b.disable||[]).slice(0),c.item.enable=-function(a){return a[0]===!0?a.shift():-1}(c.item.disable),c.set("min",b.min).set("max",b.max).set("now"),g?c.set("select",g,{format:h}):c.set("select",null).set("highlight",c.item.now),c.key={40:7,38:-7,39:function(){return i()?-1:1},37:function(){return i()?1:-1},go:function(a){var b=c.item.highlight,d=new Date(b.year,b.month,b.date+a);c.set("highlight",d,{interval:a}),this.render()}},a.on("render",function(){a.$root.find("."+b.klass.selectMonth).on("change",function(){var c=this.value;c&&(a.set("highlight",[a.get("view").year,c,a.get("highlight").date]),a.$root.find("."+b.klass.selectMonth).trigger("focus"))}),a.$root.find("."+b.klass.selectYear).on("change",function(){var c=this.value;c&&(a.set("highlight",[c,a.get("view").month,a.get("highlight").date]),a.$root.find("."+b.klass.selectYear).trigger("focus"))})},1).on("open",function(){var d="";c.disabled(c.get("now"))&&(d=":not(."+b.klass.buttonToday+")"),a.$root.find("button"+d+", select").attr("disabled",!1)},1).on("close",function(){a.$root.find("button, select").attr("disabled",!0)},1)}var d=7,e=6,f=a._;c.prototype.set=function(a,b,c){var d=this,e=d.item;return null===b?("clear"==a&&(a="select"),e[a]=b,d):(e["enable"==a?"disable":"flip"==a?"enable":a]=d.queue[a].split(" ").map(function(e){return b=d[e](a,b,c)}).pop(),"select"==a?d.set("highlight",e.select,c):"highlight"==a?d.set("view",e.highlight,c):a.match(/^(flip|min|max|disable|enable)$/)&&(e.select&&d.disabled(e.select)&&d.set("select",e.select,c),e.highlight&&d.disabled(e.highlight)&&d.set("highlight",e.highlight,c)),d)},c.prototype.get=function(a){return this.item[a]},c.prototype.create=function(a,c,d){var e,g=this;return c=void 0===c?a:c,c==-(1/0)||c==1/0?e=c:b.isPlainObject(c)&&f.isInteger(c.pick)?c=c.obj:b.isArray(c)?(c=new Date(c[0],c[1],c[2]),c=f.isDate(c)?c:g.create().obj):c=f.isInteger(c)||f.isDate(c)?g.normalize(new Date(c),d):g.now(a,c,d),{year:e||c.getFullYear(),month:e||c.getMonth(),date:e||c.getDate(),day:e||c.getDay(),obj:e||c,pick:e||c.getTime()}},c.prototype.createRange=function(a,c){var d=this,e=function(a){return a===!0||b.isArray(a)||f.isDate(a)?d.create(a):a};return f.isInteger(a)||(a=e(a)),f.isInteger(c)||(c=e(c)),f.isInteger(a)&&b.isPlainObject(c)?a=[c.year,c.month,c.date+a]:f.isInteger(c)&&b.isPlainObject(a)&&(c=[a.year,a.month,a.date+c]),{from:e(a),to:e(c)}},c.prototype.withinRange=function(a,b){return a=this.createRange(a.from,a.to),b.pick>=a.from.pick&&b.pick<=a.to.pick},c.prototype.overlapRanges=function(a,b){var c=this;return a=c.createRange(a.from,a.to),b=c.createRange(b.from,b.to),c.withinRange(a,b.from)||c.withinRange(a,b.to)||c.withinRange(b,a.from)||c.withinRange(b,a.to)},c.prototype.now=function(a,b,c){return b=new Date,c&&c.rel&&b.setDate(b.getDate()+c.rel),this.normalize(b,c)},c.prototype.navigate=function(a,c,d){var e,f,g,h,i=b.isArray(c),j=b.isPlainObject(c),k=this.item.view;if(i||j){for(j?(f=c.year,g=c.month,h=c.date):(f=+c[0],g=+c[1],h=+c[2]),d&&d.nav&&k&&k.month!==g&&(f=k.year,g=k.month),e=new Date(f,g+(d&&d.nav?d.nav:0),1),f=e.getFullYear(),g=e.getMonth();new Date(f,g,h).getMonth()!==g;)h-=1;c=[f,g,h]}return c},c.prototype.normalize=function(a){return a.setHours(0,0,0,0),a},c.prototype.measure=function(a,b){var c=this;return b?"string"==typeof b?b=c.parse(a,b):f.isInteger(b)&&(b=c.now(a,b,{rel:b})):b="min"==a?-(1/0):1/0,b},c.prototype.viewset=function(a,b){return this.create([b.year,b.month,1])},c.prototype.validate=function(a,c,d){var e,g,h,i,j=this,k=c,l=d&&d.interval?d.interval:1,m=-1===j.item.enable,n=j.item.min,o=j.item.max,p=m&&j.item.disable.filter(function(a){if(b.isArray(a)){var d=j.create(a).pick;d<c.pick?e=!0:d>c.pick&&(g=!0)}return f.isInteger(a)}).length;if((!d||!d.nav)&&(!m&&j.disabled(c)||m&&j.disabled(c)&&(p||e||g)||!m&&(c.pick<=n.pick||c.pick>=o.pick)))for(m&&!p&&(!g&&l>0||!e&&0>l)&&(l*=-1);j.disabled(c)&&(Math.abs(l)>1&&(c.month<k.month||c.month>k.month)&&(c=k,l=l>0?1:-1),c.pick<=n.pick?(h=!0,l=1,c=j.create([n.year,n.month,n.date+(c.pick===n.pick?0:-1)])):c.pick>=o.pick&&(i=!0,l=-1,c=j.create([o.year,o.month,o.date+(c.pick===o.pick?0:1)])),!h||!i);)c=j.create([c.year,c.month,c.date+l]);return c},c.prototype.disabled=function(a){var c=this,d=c.item.disable.filter(function(d){return f.isInteger(d)?a.day===(c.settings.firstDay?d:d-1)%7:b.isArray(d)||f.isDate(d)?a.pick===c.create(d).pick:b.isPlainObject(d)?c.withinRange(d,a):void 0});return d=d.length&&!d.filter(function(a){return b.isArray(a)&&"inverted"==a[3]||b.isPlainObject(a)&&a.inverted}).length,-1===c.item.enable?!d:d||a.pick<c.item.min.pick||a.pick>c.item.max.pick},c.prototype.parse=function(a,b,c){var d=this,e={};return b&&"string"==typeof b?(c&&c.format||(c=c||{},c.format=d.settings.format),d.formats.toArray(c.format).map(function(a){var c=d.formats[a],g=c?f.trigger(c,d,[b,e]):a.replace(/^!/,"").length;c&&(e[a]=b.substr(0,g)),b=b.substr(g)}),[e.yyyy||e.yy,+(e.mm||e.m)-1,e.dd||e.d]):b},c.prototype.formats=function(){function a(a,b,c){var d=a.match(/\w+/)[0];return c.mm||c.m||(c.m=b.indexOf(d)+1),d.length}function b(a){return a.match(/\w+/)[0].length}return{d:function(a,b){return a?f.digits(a):b.date},dd:function(a,b){return a?2:f.lead(b.date)},ddd:function(a,c){return a?b(a):this.settings.weekdaysShort[c.day]},dddd:function(a,c){return a?b(a):this.settings.weekdaysFull[c.day]},m:function(a,b){return a?f.digits(a):b.month+1},mm:function(a,b){return a?2:f.lead(b.month+1)},mmm:function(b,c){var d=this.settings.monthsShort;return b?a(b,d,c):d[c.month]},mmmm:function(b,c){var d=this.settings.monthsFull;return b?a(b,d,c):d[c.month]},yy:function(a,b){return a?2:(""+b.year).slice(2)},yyyy:function(a,b){return a?4:b.year},toArray:function(a){return a.split(/(d{1,4}|m{1,4}|y{4}|yy|!.)/g)},toString:function(a,b){var c=this;return c.formats.toArray(a).map(function(a){return f.trigger(c.formats[a],c,[0,b])||a.replace(/^!/,"")}).join("")}}}(),c.prototype.isDateExact=function(a,c){var d=this;return f.isInteger(a)&&f.isInteger(c)||"boolean"==typeof a&&"boolean"==typeof c?a===c:(f.isDate(a)||b.isArray(a))&&(f.isDate(c)||b.isArray(c))?d.create(a).pick===d.create(c).pick:b.isPlainObject(a)&&b.isPlainObject(c)?d.isDateExact(a.from,c.from)&&d.isDateExact(a.to,c.to):!1},c.prototype.isDateOverlap=function(a,c){var d=this,e=d.settings.firstDay?1:0;return f.isInteger(a)&&(f.isDate(c)||b.isArray(c))?(a=a%7+e,a===d.create(c).day+1):f.isInteger(c)&&(f.isDate(a)||b.isArray(a))?(c=c%7+e,c===d.create(a).day+1):b.isPlainObject(a)&&b.isPlainObject(c)?d.overlapRanges(a,c):!1},c.prototype.flipEnable=function(a){var b=this.item;b.enable=a||(-1==b.enable?1:-1)},c.prototype.deactivate=function(a,c){var d=this,e=d.item.disable.slice(0);return"flip"==c?d.flipEnable():c===!1?(d.flipEnable(1),e=[]):c===!0?(d.flipEnable(-1),e=[]):c.map(function(a){for(var c,g=0;g<e.length;g+=1)if(d.isDateExact(a,e[g])){c=!0;break}c||(f.isInteger(a)||f.isDate(a)||b.isArray(a)||b.isPlainObject(a)&&a.from&&a.to)&&e.push(a)}),e},c.prototype.activate=function(a,c){var d=this,e=d.item.disable,g=e.length;return"flip"==c?d.flipEnable():c===!0?(d.flipEnable(1),e=[]):c===!1?(d.flipEnable(-1),e=[]):c.map(function(a){var c,h,i,j;for(i=0;g>i;i+=1){if(h=e[i],d.isDateExact(h,a)){c=e[i]=null,j=!0;break}if(d.isDateOverlap(h,a)){b.isPlainObject(a)?(a.inverted=!0,c=a):b.isArray(a)?(c=a,c[3]||c.push("inverted")):f.isDate(a)&&(c=[a.getFullYear(),a.getMonth(),a.getDate(),"inverted"]);break}}if(c)for(i=0;g>i;i+=1)if(d.isDateExact(e[i],a)){e[i]=null;break}if(j)for(i=0;g>i;i+=1)if(d.isDateOverlap(e[i],a)){e[i]=null;break}c&&e.push(c)}),e.filter(function(a){return null!=a})},c.prototype.nodes=function(a){var b=this,c=b.settings,g=b.item,h=g.now,i=g.select,j=g.highlight,k=g.view,l=g.disable,m=g.min,n=g.max,o=function(a,b){return c.firstDay&&(a.push(a.shift()),b.push(b.shift())),f.node("thead",f.node("tr",f.group({min:0,max:d-1,i:1,node:"th",item:function(d){return[a[d],c.klass.weekdays,'scope=col title="'+b[d]+'"']}})))}((c.showWeekdaysFull?c.weekdaysFull:c.weekdaysLetter).slice(0),c.weekdaysFull.slice(0)),p=function(a){return f.node("div"," ",c.klass["nav"+(a?"Next":"Prev")]+(a&&k.year>=n.year&&k.month>=n.month||!a&&k.year<=m.year&&k.month<=m.month?" "+c.klass.navDisabled:""),"data-nav="+(a||-1)+" "+f.ariaAttr({role:"button",controls:b.$node[0].id+"_table"})+' title="'+(a?c.labelMonthNext:c.labelMonthPrev)+'"')},q=function(d){var e=c.showMonthsShort?c.monthsShort:c.monthsFull;return"short_months"==d&&(e=c.monthsShort),c.selectMonths&&void 0==d?f.node("select",f.group({min:0,max:11,i:1,node:"option",item:function(a){return[e[a],0,"value="+a+(k.month==a?" selected":"")+(k.year==m.year&&a<m.month||k.year==n.year&&a>n.month?" disabled":"")]}}),c.klass.selectMonth+" browser-default",(a?"":"disabled")+" "+f.ariaAttr({controls:b.$node[0].id+"_table"})+' title="'+c.labelMonthSelect+'"'):"short_months"==d?null!=i?f.node("div",e[i.month]):f.node("div",e[k.month]):f.node("div",e[k.month],c.klass.month)},r=function(d){var e=k.year,g=c.selectYears===!0?5:~~(c.selectYears/2);if(g){var h=m.year,i=n.year,j=e-g,l=e+g;if(h>j&&(l+=h-j,j=h),l>i){var o=j-h,p=l-i;j-=o>p?p:o,l=i}if(c.selectYears&&void 0==d)return f.node("select",f.group({min:j,max:l,i:1,node:"option",item:function(a){return[a,0,"value="+a+(e==a?" selected":"")]}}),c.klass.selectYear+" browser-default",(a?"":"disabled")+" "+f.ariaAttr({controls:b.$node[0].id+"_table"})+' title="'+c.labelYearSelect+'"')}return"raw"==d?f.node("div",e):f.node("div",e,c.klass.year)};return createDayLabel=function(){return null!=i?f.node("div",i.date):f.node("div",h.date)},createWeekdayLabel=function(){var a;a=null!=i?i.day:h.day;var b=c.weekdaysFull[a];return b},f.node("div",f.node("div",createWeekdayLabel(),"picker__weekday-display")+f.node("div",q("short_months"),c.klass.month_display)+f.node("div",createDayLabel(),c.klass.day_display)+f.node("div",r("raw"),c.klass.year_display),c.klass.date_display)+f.node("div",f.node("div",(c.selectYears?q()+r():q()+r())+p()+p(1),c.klass.header)+f.node("table",o+f.node("tbody",f.group({min:0,max:e-1,i:1,node:"tr",item:function(a){var e=c.firstDay&&0===b.create([k.year,k.month,1]).day?-7:0;return[f.group({min:d*a-k.day+e+1,max:function(){return this.min+d-1},i:1,node:"td",item:function(a){a=b.create([k.year,k.month,a+(c.firstDay?1:0)]);var d=i&&i.pick==a.pick,e=j&&j.pick==a.pick,g=l&&b.disabled(a)||a.pick<m.pick||a.pick>n.pick,o=f.trigger(b.formats.toString,b,[c.format,a]);return[f.node("div",a.date,function(b){return b.push(k.month==a.month?c.klass.infocus:c.klass.outfocus),h.pick==a.pick&&b.push(c.klass.now),d&&b.push(c.klass.selected),e&&b.push(c.klass.highlighted),g&&b.push(c.klass.disabled),b.join(" ")}([c.klass.day]),"data-pick="+a.pick+" "+f.ariaAttr({role:"gridcell",label:o,selected:d&&b.$node.val()===o?!0:null,activedescendant:e?!0:null,disabled:g?!0:null})),"",f.ariaAttr({role:"presentation"})]}})]}})),c.klass.table,'id="'+b.$node[0].id+'_table" '+f.ariaAttr({role:"grid",controls:b.$node[0].id,readonly:!0})),c.klass.calendar_container)+f.node("div",f.node("button",c.today,"btn-flat picker__today","type=button data-pick="+h.pick+(a&&!b.disabled(h)?"":" disabled")+" "+f.ariaAttr({controls:b.$node[0].id}))+f.node("button",c.clear,"btn-flat picker__clear","type=button data-clear=1"+(a?"":" disabled")+" "+f.ariaAttr({controls:b.$node[0].id}))+f.node("button",c.close,"btn-flat picker__close","type=button data-close=true "+(a?"":" disabled")+" "+f.ariaAttr({controls:b.$node[0].id})),c.klass.footer)},c.defaults=function(a){return{labelMonthNext:"Next month",labelMonthPrev:"Previous month",labelMonthSelect:"Select a month",labelYearSelect:"Select a year",monthsFull:["January","February","March","April","May","June","July","August","September","October","November","December"],monthsShort:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],weekdaysFull:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],weekdaysShort:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],weekdaysLetter:["S","M","T","W","T","F","S"],today:"Today",clear:"Clear",close:"Close",format:"d mmmm, yyyy",klass:{table:a+"table",header:a+"header",date_display:a+"date-display",day_display:a+"day-display",month_display:a+"month-display",year_display:a+"year-display",calendar_container:a+"calendar-container",navPrev:a+"nav--prev",navNext:a+"nav--next",navDisabled:a+"nav--disabled",month:a+"month",year:a+"year",selectMonth:a+"select--month",selectYear:a+"select--year",weekdays:a+"weekday",day:a+"day",disabled:a+"day--disabled",selected:a+"day--selected",highlighted:a+"day--highlighted",now:a+"day--today",infocus:a+"day--infocus",outfocus:a+"day--outfocus",footer:a+"footer",buttonClear:a+"button--clear",buttonToday:a+"button--today",buttonClose:a+"button--close"}}}(a.klasses().picker+"__"),a.extend("pickadate",c)}),function(a){function b(){var b=+a(this).attr("length"),c=+a(this).val().length,d=b>=c;a(this).parent().find('span[class="character-counter"]').html(c+"/"+b),e(d,a(this))}function c(b){var c=a("<span/>").addClass("character-counter").css("float","right").css("font-size","12px").css("height",1);b.parent().append(c)}function d(){a(this).parent().find('span[class="character-counter"]').html("")}function e(a,b){var c=b.hasClass("invalid");a&&c?b.removeClass("invalid"):a||c||(b.removeClass("valid"),b.addClass("invalid"))}a.fn.characterCounter=function(){return this.each(function(){var e=void 0!==a(this).attr("length");e&&(a(this).on("input",b),a(this).on("focus",b),a(this).on("blur",d),c(a(this)))})},a(document).ready(function(){a("input, textarea").characterCounter()})}(jQuery),function(a){var b={init:function(b){var c={time_constant:200,dist:-100,shift:0,padding:0,full_width:!1};return b=a.extend(c,b),this.each(function(){function c(){"undefined"!=typeof window.ontouchstart&&(F[0].addEventListener("touchstart",k),F[0].addEventListener("touchmove",l),F[0].addEventListener("touchend",m)),F[0].addEventListener("mousedown",k),F[0].addEventListener("mousemove",l),F[0].addEventListener("mouseup",m),F[0].addEventListener("click",j)}function d(a){return a.targetTouches&&a.targetTouches.length>=1?a.targetTouches[0].clientX:a.clientX}function e(a){return a.targetTouches&&a.targetTouches.length>=1?a.targetTouches[0].clientY:a.clientY}function f(a){return a>=s?a%s:0>a?f(s+a%s):a}function g(a){var c,d,e,g,h,i,j;for(o="number"==typeof a?a:o,p=Math.floor((o+r/2)/r),e=o-p*r,g=0>e?1:-1,h=-g*e*2/r,b.full_width?j="translateX(0)":(j="translateX("+(F[0].clientWidth-item_width)/2+"px) ",j+="translateY("+(F[0].clientHeight-item_width)/2+"px)"),i=n[f(p)],i.style[z]=j+" translateX("+-e/2+"px) translateX("+g*b.shift*h*c+"px) translateZ("+b.dist*h+"px)",i.style.zIndex=0,b.full_width?tweenedOpacity=1:tweenedOpacity=1-.2*h,i.style.opacity=tweenedOpacity,d=s>>1,c=1;d>=c;++c)b.full_width?(zTranslation=b.dist,tweenedOpacity=c===d&&0>e?1-h:1):(zTranslation=b.dist*(2*c+h*g),tweenedOpacity=1-.2*(2*c+h*g)),i=n[f(p+c)],i.style[z]=j+" translateX("+(b.shift+(r*c-e)/2)+"px) translateZ("+zTranslation+"px)",i.style.zIndex=-c,i.style.opacity=tweenedOpacity,b.full_width?(zTranslation=b.dist,tweenedOpacity=c===d&&e>0?1-h:1):(zTranslation=b.dist*(2*c-h*g),tweenedOpacity=1-.2*(2*c-h*g)),i=n[f(p-c)],i.style[z]=j+" translateX("+(-b.shift+(-r*c-e)/2)+"px) translateZ("+zTranslation+"px)",i.style.zIndex=-c,i.style.opacity=tweenedOpacity;i=n[f(p)],i.style[z]=j+" translateX("+-e/2+"px) translateX("+g*b.shift*h+"px) translateZ("+b.dist*h+"px)",i.style.zIndex=0,b.full_width?tweenedOpacity=1:tweenedOpacity=1-.2*h,
 	i.style.opacity=tweenedOpacity}function h(){var a,b,c,d;a=Date.now(),b=a-B,B=a,c=o-A,A=o,d=1e3*c/(1+b),x=.8*d+.2*x}function i(){var a,c;v&&(a=Date.now()-B,c=v*Math.exp(-a/b.time_constant),c>2||-2>c?(g(w-c),requestAnimationFrame(i)):g(w))}function j(c){if(D)return c.preventDefault(),c.stopPropagation(),!1;if(!b.full_width){var d=a(c.target).closest(".carousel-item").index(),e=p%s-d;0>e?Math.abs(e+s)<Math.abs(e)&&(e+=s):e>0&&Math.abs(e-s)<e&&(e-=s),0>e?a(this).trigger("carouselNext",[Math.abs(e)]):e>0&&a(this).trigger("carouselPrev",[e])}}function k(a){q=!0,D=!1,E=!1,t=d(a),u=e(a),x=v=0,A=o,B=Date.now(),clearInterval(C),C=setInterval(h,100)}function l(a){var b,c,f;if(q)if(b=d(a),y=e(a),c=t-b,f=Math.abs(u-y),30>f&&!E)(c>2||-2>c)&&(D=!0,t=b,g(o+c));else{if(D)return a.preventDefault(),a.stopPropagation(),!1;E=!0}return D?(a.preventDefault(),a.stopPropagation(),!1):void 0}function m(a){return q=!1,clearInterval(C),w=o,(x>10||-10>x)&&(v=.9*x,w=o+v),w=Math.round(w/r)*r,v=w-o,B=Date.now(),requestAnimationFrame(i),a.preventDefault(),a.stopPropagation(),!1}var n,o,p,q,r,s,t,u,v,w,x,z,A,B,C,D,E,F=a(this);return F.hasClass("initialized")?!0:(b.full_width&&(b.dist=0,imageHeight=F.find(".carousel-item img").first().load(function(){F.css("height",a(this).height())})),F.addClass("initialized"),q=!1,o=w=0,n=[],item_width=F.find(".carousel-item").first().innerWidth(),r=2*item_width+b.padding,F.find(".carousel-item").each(function(){n.push(a(this)[0])}),s=n.length,z="transform",["webkit","Moz","O","ms"].every(function(a){var b=a+"Transform";return"undefined"!=typeof document.body.style[b]?(z=b,!1):!0}),window.onresize=g,c(),g(o),a(this).on("carouselNext",function(a,b){void 0===b&&(b=1),w=o+r*b,o!==w&&(v=w-o,B=Date.now(),requestAnimationFrame(i))}),void a(this).on("carouselPrev",function(a,b){void 0===b&&(b=1),w=o-r*b,o!==w&&(v=w-o,B=Date.now(),requestAnimationFrame(i))}))})},next:function(b){a(this).trigger("carouselNext",[b])},prev:function(b){a(this).trigger("carouselPrev",[b])}};a.fn.carousel=function(c){return b[c]?b[c].apply(this,Array.prototype.slice.call(arguments,1)):"object"!=typeof c&&c?void a.error("Method "+c+" does not exist on jQuery.carousel"):b.init.apply(this,arguments)}}(jQuery);
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(318), __webpack_require__(318), __webpack_require__(318)))
 
 /***/ },
-/* 1439 */
+/* 1437 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -78153,7 +78497,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1440 */
+/* 1438 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {module.exports = __webpack_amd_options__;
@@ -78161,7 +78505,7 @@ webpackJsonp([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, {}))
 
 /***/ },
-/* 1441 */
+/* 1439 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/*! Hammer.JS - v2.0.6 - 2015-12-23
@@ -80735,7 +81079,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 1442 */
+/* 1440 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(jQuery) {/**
