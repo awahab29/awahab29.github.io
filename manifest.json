@@ -1,6 +1,6 @@
 {
   "app.css": "style.css",
-  "app.js": "scripts/app.4da02d6124db007c1993.js",
+  "app.js": "scripts/app.6fde6de510b3e775fdf8.js",
   "images\\ACaslonPro-Regular.otf": "images/ACaslonPro-Regular.otf",
   "images\\CL350.png": "images/CL350.png",
   "images\\CL605.png": "images/CL605.png",
@@ -399,5 +399,5 @@
   "images\\zm.svg": "images/zm.svg",
   "images\\zw.svg": "images/zw.svg",
   "libphonenumber.js": "libphonenumber.js",
-  "vendor.js": "scripts/vendor.4da02d6124db007c1993.js"
+  "vendor.js": "scripts/vendor.6fde6de510b3e775fdf8.js"
 }
